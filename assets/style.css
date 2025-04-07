@@ -7,10 +7,21 @@
     box-sizing: border-box;
     /* border: red;
     border-style: solid; */
+    font-family: "Pokemon";
+}
+
+:root {
+    --bleu-pokemon: #2F68B1;
+    --jaune-pokemon: #FFCC01;
+}
+
+@font-face {
+    font-family: Pokemon;
+    src: url("fonts/Pokemon Classic.ttf");
 }
 
 body {
-    background-image: url("assets/images/background.jpg");
+    background-image: url("images/background.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -18,13 +29,79 @@ body {
 
     display: flex;
     flex-direction: column;
-    margin: 8px 48px;
+    margin: 8px;
 }
 
 h1 {
-    background-image: url("assets/images/logo.png");
+    background-image: url("images/logo.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     height: 200px;
+}
+
+.game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+
+    .box {
+        background-color: #F8F8F8;
+        border: 6px double black;
+        border-radius: 4px;
+        color: black;
+        padding: 8px;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+        top: 180px;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 8px 8px 0 8px;
+
+        .input {
+            background-color: #F8F8F8;
+            border: 2px solid black;
+            border-radius: 2px;
+            color: black;
+            max-width: 100%;
+            padding: 0 8px;
+        }
+
+        .btnSubmit {
+            display: flex;
+            align-items: center;
+            margin-left: 4px;
+            border: 2px solid black;
+            background-color: #ced4da;
+            padding: 4px;
+            border-radius: 2px;
+            max-height: 24px;
+        }
+    }
+
+    .professor {
+        height: 200px;
+        position: relative;
+        top: 180px;
+    }
+
+    .containerStarter {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        top: 420px;
+    }
+
+    .pokemon {
+        width: 100px;
+    }
 }

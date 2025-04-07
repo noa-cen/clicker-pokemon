@@ -4,7 +4,7 @@
 			"english": "Bulbasaur",
 			"french": "Bulbizarre"
 		},
-		"image": "/images/pokemon/1.png",
+		"image": "assets/images/pokemon/1.png",
 		"type": [
 			"Grass",
 			"Poison"
@@ -24,7 +24,7 @@
 			"english": "Ivysaur",
 			"french": "Herbizarre"
 		},
-		"image": "/images/pokemon/2.png",
+		"image": "assets/images/pokemon/2.png",
 		"type": [
 			"Grass",
 			"Poison"
@@ -44,7 +44,7 @@
 			"english": "Venusaur",
 			"french": "Florizarre"
 		},
-		"image": "/images/pokemon/3.png",
+		"image": "assets/images/pokemon/3.png",
 		"type": [
 			"Grass",
 			"Poison"
@@ -64,7 +64,7 @@
 			"english": "Charmander",
 			"french": "Salamèche"
 		},
-		"image": "/images/pokemon/4.png",
+		"image": "assets/images/pokemon/4.png",
 		"type": [
 			"Fire"
 		],
@@ -83,7 +83,7 @@
 			"english": "Charmeleon",
 			"french": "Reptincel"
 		},
-		"image": "/images/pokemon/5.png",
+		"image": "assets/images/pokemon/5.png",
 		"type": [
 			"Fire"
 		],
@@ -102,7 +102,7 @@
 			"english": "Charizard",
 			"french": "Dracaufeu"
 		},
-		"image": "/images/pokemon/6.png",
+		"image": "assets/images/pokemon/6.png",
 		"type": [
 			"Fire",
 			"Flying"
@@ -122,7 +122,7 @@
 			"english": "Squirtle",
 			"french": "Carapuce"
 		},
-		"image": "/images/pokemon/7.png",
+		"image": "assets/images/pokemon/7.png",
 		"type": [
 			"Water"
 		],
@@ -141,7 +141,7 @@
 			"english": "Wartortle",
 			"french": "Carabaffe"
 		},
-		"image": "/images/pokemon/8.png",
+		"image": "assets/images/pokemon/8.png",
 		"type": [
 			"Water"
 		],
@@ -160,7 +160,7 @@
 			"english": "Blastoise",
 			"french": "Tortank"
 		},
-		"image": "/images/pokemon/9.png",
+		"image": "assets/images/pokemon/9.png",
 		"type": [
 			"Water"
 		],
@@ -179,7 +179,7 @@
 			"english": "Caterpie",
 			"french": "Chenipan"
 		},
-		"image": "/images/pokemon/10.png",
+		"image": "assets/images/pokemon/10.png",
 		"type": [
 			"Bug"
 		],
