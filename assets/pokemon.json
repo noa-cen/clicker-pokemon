@@ -1,0 +1,2851 @@
+[{
+		"id": 1,
+		"name": {
+			"english": "Bulbasaur",
+			"french": "Bulbizarre"
+		},
+		"image": "/images/pokemon/1.png",
+		"type": [
+			"Grass",
+			"Poison"
+		],
+		"base": {
+			"HP": 45,
+			"Attack": 49,
+			"Defense": 49,
+			"Sp. Attack": 65,
+			"Sp. Defense": 65,
+			"Speed": 45
+		}
+	},
+	{
+		"id": 2,
+		"name": {
+			"english": "Ivysaur",
+			"french": "Herbizarre"
+		},
+		"image": "/images/pokemon/2.png",
+		"type": [
+			"Grass",
+			"Poison"
+		],
+		"base": {
+			"HP": 60,
+			"Attack": 62,
+			"Defense": 63,
+			"Sp. Attack": 80,
+			"Sp. Defense": 80,
+			"Speed": 60
+		}
+	},
+	{
+		"id": 3,
+		"name": {
+			"english": "Venusaur",
+			"french": "Florizarre"
+		},
+		"image": "/images/pokemon/3.png",
+		"type": [
+			"Grass",
+			"Poison"
+		],
+		"base": {
+			"HP": 80,
+			"Attack": 82,
+			"Defense": 83,
+			"Sp. Attack": 100,
+			"Sp. Defense": 100,
+			"Speed": 80
+		}
+	},
+	{
+		"id": 4,
+		"name": {
+			"english": "Charmander",
+			"french": "Salamèche"
+		},
+		"image": "/images/pokemon/4.png",
+		"type": [
+			"Fire"
+		],
+		"base": {
+			"HP": 39,
+			"Attack": 52,
+			"Defense": 43,
+			"Sp. Attack": 60,
+			"Sp. Defense": 50,
+			"Speed": 65
+		}
+	},
+	{
+		"id": 5,
+		"name": {
+			"english": "Charmeleon",
+			"french": "Reptincel"
+		},
+		"image": "/images/pokemon/5.png",
+		"type": [
+			"Fire"
+		],
+		"base": {
+			"HP": 58,
+			"Attack": 64,
+			"Defense": 58,
+			"Sp. Attack": 80,
+			"Sp. Defense": 65,
+			"Speed": 80
+		}
+	},
+	{
+		"id": 6,
+		"name": {
+			"english": "Charizard",
+			"french": "Dracaufeu"
+		},
+		"image": "/images/pokemon/6.png",
+		"type": [
+			"Fire",
+			"Flying"
+		],
+		"base": {
+			"HP": 78,
+			"Attack": 84,
+			"Defense": 78,
+			"Sp. Attack": 109,
+			"Sp. Defense": 85,
+			"Speed": 100
+		}
+	},
+	{
+		"id": 7,
+		"name": {
+			"english": "Squirtle",
+			"french": "Carapuce"
+		},
+		"image": "/images/pokemon/7.png",
+		"type": [
+			"Water"
+		],
+		"base": {
+			"HP": 44,
+			"Attack": 48,
+			"Defense": 65,
+			"Sp. Attack": 50,
+			"Sp. Defense": 64,
+			"Speed": 43
+		}
+	},
+	{
+		"id": 8,
+		"name": {
+			"english": "Wartortle",
+			"french": "Carabaffe"
+		},
+		"image": "/images/pokemon/8.png",
+		"type": [
+			"Water"
+		],
+		"base": {
+			"HP": 59,
+			"Attack": 63,
+			"Defense": 80,
+			"Sp. Attack": 65,
+			"Sp. Defense": 80,
+			"Speed": 58
+		}
+	},
+	{
+		"id": 9,
+		"name": {
+			"english": "Blastoise",
+			"french": "Tortank"
+		},
+		"image": "/images/pokemon/9.png",
+		"type": [
+			"Water"
+		],
+		"base": {
+			"HP": 79,
+			"Attack": 83,
+			"Defense": 100,
+			"Sp. Attack": 85,
+			"Sp. Defense": 105,
+			"Speed": 78
+		}
+	},
+	{
+		"id": 10,
+		"name": {
+			"english": "Caterpie",
+			"french": "Chenipan"
+		},
+		"image": "/images/pokemon/10.png",
+		"type": [
+			"Bug"
+		],
+		"base": {
+			"HP": 45,
+			"Attack": 30,
+			"Defense": 35,
+			"Sp. Attack": 20,
+			"Sp. Defense": 20,
+			"Speed": 45
+		}
+	},
+	{
+		"id": 11,
+		"name": {
+			"english": "Metapod",
+			"french": "Chrysacier"
+		},
+		"image": "/images/pokemon/11.png",
+		"type": [
+			"Bug"
+		],
+		"base": {
+			"HP": 50,
+			"Attack": 20,
+			"Defense": 55,
+			"Sp. Attack": 25,
+			"Sp. Defense": 25,
+			"Speed": 30
+		}
+	},
+	{
+		"id": 12,
+		"name": {
+			"english": "Butterfree",
+			"french": "Papilusion"
+		},
+		"image": "/images/pokemon/12.png",
+		"type": [
+			"Bug",
+			"Flying"
+		],
+		"base": {
+			"HP": 60,
+			"Attack": 45,
+			"Defense": 50,
+			"Sp. Attack": 90,
+			"Sp. Defense": 80,
+			"Speed": 70
+		}
+	},
+	{
+		"id": 13,
+		"name": {
+			"english": "Weedle",
+			"french": "Aspicot"
+		},
+		"image": "/images/pokemon/13.png",
+		"type": [
+			"Bug",
+			"Poison"
+		],
+		"base": {
+			"HP": 40,
+			"Attack": 35,
+			"Defense": 30,
+			"Sp. Attack": 20,
+			"Sp. Defense": 20,
+			"Speed": 50
+		}
+	},
+	{
+		"id": 14,
+		"name": {
+			"english": "Kakuna",
+			"french": "Coconfort"
+		},
+		"image": "/images/pokemon/14.png",
+		"type": [
+			"Bug",
+			"Poison"
+		],
+		"base": {
+			"HP": 45,
+			"Attack": 25,
+			"Defense": 50,
+			"Sp. Attack": 25,
+			"Sp. Defense": 25,
+			"Speed": 35
+		}
+	},
+	{
+		"id": 15,
+		"name": {
+			"english": "Beedrill",
+			"french": "Dardargnan"
+		},
+		"image": "/images/pokemon/15.png",
+		"type": [
+			"Bug",
+			"Poison"
+		],
+		"base": {
+			"HP": 65,
+			"Attack": 90,
+			"Defense": 40,
+			"Sp. Attack": 45,
+			"Sp. Defense": 80,
+			"Speed": 75
+		}
+		},
+		{
+		"id": 16,
+		"name": {
+			"english": "Pidgey",
+			"french": "Roucool"
+		},
+		"image": "/images/pokemon/16.png",
+		"type": [
+			"Normal",
+			"Flying"
+		],
+		"base": {
+			"HP": 40,
+			"Attack": 45,
+			"Defense": 40,
+			"Sp. Attack": 35,
+			"Sp. Defense": 35,
+			"Speed": 56
+		}
+		},
+		{
+		"id": 17,
+		"name": {
+			"english": "Pidgeotto",
+			"french": "Roucoups"
+		},
+		"image": "/images/pokemon/17.png",
+		"type": [
+			"Normal",
+			"Flying"
+		],
+		"base": {
+			"HP": 63,
+			"Attack": 60,
+			"Defense": 55,
+			"Sp. Attack": 50,
+			"Sp. Defense": 50,
+			"Speed": 71
+		}
+		},
+		{
+		"id": 18,
+		"name": {
+			"english": "Pidgeot",
+			"french": "Roucarnage"
+		},
+		"image": "/images/pokemon/18.png",
+		"type": [
+			"Normal",
+			"Flying"
+		],
+		"base": {
+			"HP": 83,
+			"Attack": 80,
+			"Defense": 75,
+			"Sp. Attack": 70,
+			"Sp. Defense": 70,
+			"Speed": 101
+		}
+		},
+		{
+		"id": 19,
+		"name": {
+			"english": "Rattata",
+			"french": "Rattata"
+		},
+		"image": "/images/pokemon/19.png",
+		"type": [
+			"Normal"
+		],
+		"base": {
+			"HP": 30,
+			"Attack": 56,
+			"Defense": 35,
+			"Sp. Attack": 25,
+			"Sp. Defense": 35,
+			"Speed": 72
+		}
+		},
+		{
+		"id": 20,
+		"name": {
+			"english": "Raticate",
+			"french": "Rattatac"
+		},
+		"image": "/images/pokemon/20.png",
+		"type": [
+			"Normal"
+		],
+		"base": {
+			"HP": 55,
+			"Attack": 81,
+			"Defense": 60,
+			"Sp. Attack": 50,
+			"Sp. Defense": 70,
+			"Speed": 97
+		}
+		},
+		{
+		"id": 21,
+		"name": {
+			"english": "Spearow",
+			"french": "Piafabec"
+		},
+		"image": "/images/pokemon/21.png",
+		"type": [
+			"Normal",
+			"Flying"
+		],
+		"base": {
+			"HP": 40,
+			"Attack": 60,
+			"Defense": 30,
+			"Sp. Attack": 31,
+			"Sp. Defense": 31,
+			"Speed": 70
+		}
+		},
+		{
+		"id": 22,
+		"name": {
+			"english": "Fearow",
+			"french": "Rapasdepic"
+		},
+		"image": "/images/pokemon/22.png",
+		"type": [
+			"Normal",
+			"Flying"
+		],
+		"base": {
+			"HP": 65,
+			"Attack": 90,
+			"Defense": 65,
+			"Sp. Attack": 61,
+			"Sp. Defense": 61,
+			"Speed": 100
+		}
+		},
+		{
+		"id": 23,
+		"name": {
+			"english": "Ekans",
+			"french": "Abo"
+		},
+		"image": "/images/pokemon/23.png",
+		"type": [
+			"Poison"
+		],
+		"base": {
+			"HP": 35,
+			"Attack": 60,
+			"Defense": 44,
+			"Sp. Attack": 40,
+			"Sp. Defense": 54,
+			"Speed": 55
+		}
+		},
+		{
+		"id": 24,
+		"name": {
+			"english": "Arbok",
+			"french": "Arbok"
+		},
+		"image": "/images/pokemon/24.png",
+		"type": [
+			"Poison"
+		],
+		"base": {
+			"HP": 60,
+			"Attack": 95,
+			"Defense": 69,
+			"Sp. Attack": 65,
+			"Sp. Defense": 79,
+			"Speed": 80
+		}
+	},
+	{
+		"id": 25,
+		"name": {
+			"english": "Pikachu",
+			"french": "Pikachu"
+		},
+		"image": "/images/pokemon/25.png",
+		"type": [
+			"Electric"
+		],
+		"base": {
+			"HP": 35,
+			"Attack": 55,
+			"Defense": 40,
+			"Sp. Attack": 50,
+			"Sp. Defense": 50,
+			"Speed": 90
+		}
+	},
+	{
+		"id": 26,
+		"name": {
+			"english": "Raichu",
+			"french": "Raichu"
+		},
+		"image": "/images/pokemon/26.png",
+		"type": [
+			"Electric"
+		],
+		"base": {
+			"HP": 60,
+			"Attack": 90,
+			"Defense": 55,
+			"Sp. Attack": 90,
+			"Sp. Defense": 80,
+			"Speed": 110
+		}
+	},
+	{
+		"id": 27,
+		"name": {
+			"english": "Sandshrew",
+			"french": "Sabelette"
+		},
+		"image": "/images/pokemon/27.png",
+		"type": [
+			"Ground"
+		],
+		"base": {
+			"HP": 50,
+			"Attack": 75,
+			"Defense": 85,
+			"Sp. Attack": 20,
+			"Sp. Defense": 30,
+			"Speed": 40
+		}
+	},
+	{
+		"id": 28,
+		"name": {
+			"english": "Sandslash",
+			"french": "Sablaireau"
+		},
+		"image": "/images/pokemon/28.png",
+		"type": [
+			"Ground"
+		],
+		"base": {
+			"HP": 75,
+			"Attack": 100,
+			"Defense": 110,
+			"Sp. Attack": 45,
+			"Sp. Defense": 55,
+			"Speed": 65
+		}
+	},
+	{
+		"id": 29,
+		"name": {
+			"english": "Nidoran♀",
+			"french": "Nidoran♀"
+		},
+		"image": "/images/pokemon/29.png",
+		"type": [
+			"Poison"
+		],
+		"base": {
+			"HP": 55,
+			"Attack": 47,
+			"Defense": 52,
+			"Sp. Attack": 40,
+			"Sp. Defense": 40,
+			"Speed": 41
+		}
+	},
+	{
+		"id": 30,
+		"name": {
+			"english": "Nidorina",
+			"french": "Nidorina"
+		},
+		"image": "/images/pokemon/30.png",
+		"type": [
+			"Poison"
+		],
+		"base": {
+			"HP": 70,
+			"Attack": 62,
+			"Defense": 67,
+			"Sp. Attack": 55,
+			"Sp. Defense": 55,
+			"Speed": 56
+		}
+	},
+	{
+		"id": 31,
+		"name": {
+			"english": "Nidoqueen",
+			"french": "Nidoqueen"
+		},
+		"image": "/images/pokemon/31.png",
+		"type": [
+			"Poison",
+			"Ground"
+		],
+		"base": {
+			"HP": 90,
+			"Attack": 92,
+			"Defense": 87,
+			"Sp. Attack": 75,
+			"Sp. Defense": 85,
+			"Speed": 76
+		}
+	},
+	{
+		"id": 32,
+		"name": {
+			"english": "Nidoran♂",
+			"french": "Nidoran♂"
+		},
+		"image": "/images/pokemon/32.png",
+		"type": [
+			"Poison"
+		],
+		"base": {
+			"HP": 46,
+			"Attack": 57,
+			"Defense": 40,
+			"Sp. Attack": 40,
+			"Sp. Defense": 40,
+			"Speed": 50
+		}
+	},
+	{
+		"id": 33,
+		"name": {
+			"english": "Nidorino",
+			"french": "Nidorino"
+		},
+		"image": "/images/pokemon/33.png",
+		"type": [
+			"Poison"
+		],
+		"base": {
+			"HP": 61,
+			"Attack": 72,
+			"Defense": 57,
+			"Sp. Attack": 55,
+			"Sp. Defense": 55,
+			"Speed": 65
+		}
+	},
+	{
+		"id": 34,
+		"name": {
+			"english": "Nidoking",
+			"french": "Nidoking"
+		},
+		"image": "/images/pokemon/34.png",
+		"type": [
+			"Poison",
+			"Ground"
+		],
+		"base": {
+			"HP": 81,
+			"Attack": 102,
+			"Defense": 77,
+			"Sp. Attack": 85,
+			"Sp. Defense": 75,
+			"Speed": 85
+		}
+	},
+	{
+		"id": 35,
+		"name": {
+			"english": "Clefairy",
+			"french": "Mélofée"
+		},
+		"image": "/images/pokemon/35.png",
+		"type": [
+			"Fairy"
+		],
+		"base": {
+			"HP": 70,
+			"Attack": 45,
+			"Defense": 48,
+			"Sp. Attack": 60,
+			"Sp. Defense": 65,
+			"Speed": 35
+		}
+	},
+	{
+		"id": 36,
+		"name": {
+			"english": "Clefable",
+			"french": "Mélodelfe"
+		},
+		"image": "/images/pokemon/36.png",
+		"type": [
+			"Fairy"
+		],
+		"base": {
+			"HP": 95,
+			"Attack": 70,
+			"Defense": 73,
+			"Sp. Attack": 95,
+			"Sp. Defense": 90,
+			"Speed": 60
+		}
+	},
+	{
+		"id": 37,
+		"name": {
+			"english": "Vulpix",
+			"french": "Goupix"
+		},
+		"image": "/images/pokemon/37.png",
+		"type": [
+			"Fire"
+		],
+		"base": {
+			"HP": 38,
+			"Attack": 41,
+			"Defense": 40,
+			"Sp. Attack": 50,
+			"Sp. Defense": 65,
+			"Speed": 65
+		}
+	},
+	{
+		"id": 38,
+		"name": {
+			"english": "Ninetales",
+			"french": "Feunard"
+		},
+		"image": "/images/pokemon/38.png",
+		"type": [
+			"Fire"
+		],
+		"base": {
+			"HP": 73,
+			"Attack": 76,
+			"Defense": 75,
+			"Sp. Attack": 81,
+			"Sp. Defense": 100,
+			"Speed": 100
+		}
+	},
+	{
+		"id": 39,
+		"name": {
+			"english": "Jigglypuff",
+			"french": "Rondoudou"
+		},
+		"image": "/images/pokemon/39.png",
+		"type": [
+			"Normal",
+			"Fairy"
+		],
+		"base": {
+			"HP": 115,
+			"Attack": 45,
+			"Defense": 20,
+			"Sp. Attack": 45,
+			"Sp. Defense": 25,
+			"Speed": 20
+		}
+	},
+	{
+		"id": 40,
+		"name": {
+			"english": "Wigglytuff",
+			"french": "Grodoudou"
+		},
+		"image": "/images/pokemon/40.png",
+		"type": [
+			"Normal",
+			"Fairy"
+		],
+		"base": {
+			"HP": 140,
+			"Attack": 70,
+			"Defense": 45,
+			"Sp. Attack": 85,
+			"Sp. Defense": 50,
+			"Speed": 45
+		}
+	},
+	{
+		"id": 41,
+		"name": {
+			"english": "Zubat",
+			"french": "Nosferapti"
+		},
+		"image": "/images/pokemon/41.png",
+		"type": [
+			"Poison",
+			"Flying"
+		],
+		"base": {
+			"HP": 40,
+			"Attack": 45,
+			"Defense": 35,
+			"Sp. Attack": 30,
+			"Sp. Defense": 40,
+			"Speed": 55
+		}
+	},
+	{
+		"id": 42,
+		"name": {
+			"english": "Golbat",
+			"french": "Nosferalto"
+		},
+		"image": "/images/pokemon/42.png",
+		"type": [
+			"Poison",
+			"Flying"
+		],
+		"base": {
+			"HP": 75,
+			"Attack": 80,
+			"Defense": 70,
+			"Sp. Attack": 65,
+			"Sp. Defense": 75,
+			"Speed": 90
+		}
+	},
+	{
+		"id": 43,
+		"name": {
+			"english": "Oddish",
+			"french": "Mystherbe"
+		},
+		"image": "/images/pokemon/43.png",
+		"type": [
+			"Grass",
+			"Poison"
+		],
+		"base": {
+			"HP": 45,
+			"Attack": 50,
+			"Defense": 55,
+			"Sp. Attack": 75,
+			"Sp. Defense": 65,
+			"Speed": 30
+		}
+	},
+	{
+		"id": 44,
+		"name": {
+			"english": "Gloom",
+			"french": "Ortide"
+		},
+		"image": "/images/pokemon/44.png",
+		"type": [
+			"Grass",
+			"Poison"
+		],
+		"base": {
+			"HP": 60,
+			"Attack": 65,
+			"Defense": 70,
+			"Sp. Attack": 85,
+			"Sp. Defense": 75,
+			"Speed": 40
+		}
+	},
+	{
+		"id": 45,
+		"name": {
+			"english": "Vileplume",
+			"french": "Rafflesia"
+		},
+		"image": "/images/pokemon/45.png",
+		"type": [
+			"Grass",
+			"Poison"
+		],
+		"base": {
+			"HP": 75,
+			"Attack": 80,
+			"Defense": 85,
+			"Sp. Attack": 110,
+			"Sp. Defense": 90,
+			"Speed": 50
+		}
+	},
+	{
+		"id": 46,
+		"name": {
+			"english": "Paras",
+			"french": "Paras"
+		},
+		"image": "/images/pokemon/46.png",
+		"type": [
+			"Bug",
+			"Grass"
+		],
+		"base": {
+			"HP": 35,
+			"Attack": 70,
+			"Defense": 55,
+			"Sp. Attack": 45,
+			"Sp. Defense": 55,
+			"Speed": 25
+		}
+	},
+	{
+		"id": 47,
+		"name": {
+			"english": "Parasect",
+			"french": "Parasect"
+		},
+		"image": "/images/pokemon/47.png",
+		"type": [
+			"Bug",
+			"Grass"
+		],
+		"base": {
+			"HP": 60,
+			"Attack": 95,
+			"Defense": 80,
+			"Sp. Attack": 60,
+			"Sp. Defense": 80,
+			"Speed": 30
+		}
+	},
+	{
+		"id": 48,
+		"name": {
+			"english": "Venonat",
+			"french": "Mimitoss"
+		},
+		"image": "/images/pokemon/48.png",
+		"type": [
+			"Bug",
+			"Poison"
+		],
+		"base": {
+			"HP": 60,
+			"Attack": 55,
+			"Defense": 50,
+			"Sp. Attack": 40,
+			"Sp. Defense": 55,
+			"Speed": 45
+		}
+	},
+	{
+		"id": 49,
+		"name": {
+			"english": "Venomoth",
+			"french": "Aéromite"
+		},
+		"image": "/images/pokemon/49.png",
+		"type": [
+			"Bug",
+			"Poison"
+		],
+		"base": {
+			"HP": 70,
+			"Attack": 65,
+			"Defense": 60,
+			"Sp. Attack": 90,
+			"Sp. Defense": 75,
+			"Speed": 90
+		}
+	},
+	{
+		"id": 50,
+		"name": {
+			"english": "Diglett",
+			"french": "Taupiqueur"
+		},
+		"image": "/images/pokemon/50.png",
+		"type": [
+			"Ground"
+		],
+		"base": {
+			"HP": 10,
+			"Attack": 55,
+			"Defense": 25,
+			"Sp. Attack": 35,
+			"Sp. Defense": 45,
+			"Speed": 95
+		}
+	},
+	{
+		"id": 51,
+		"name": {
+			"english": "Dugtrio",
+			"french": "Triopikeur"
+		},
+		"image": "/images/pokemon/51.png",
+		"type": [
+			"Ground"
+		],
+		"base": {
+			"HP": 35,
+			"Attack": 100,
+			"Defense": 50,
+			"Sp. Attack": 50,
+			"Sp. Defense": 70,
+			"Speed": 120
+		}
+	},
+	{
+		"id": 52,
+		"name": {
+			"english": "Meowth",
+			"french": "Miaouss"
+		},
+		"image": "/images/pokemon/52.png",
+		"type": [
+			"Normal"
+		],
+		"base": {
+			"HP": 40,
+			"Attack": 45,
+			"Defense": 35,
+			"Sp. Attack": 40,
+			"Sp. Defense": 40,
+			"Speed": 90
+		}
+	},
+	{
+		"id": 53,
+		"name": {
+			"english": "Persian",
+			"french": "Persian"
+		},
+		"image": "/images/pokemon/53.png",
+		"type": [
+			"Normal"
+		],
+		"base": {
+			"HP": 65,
+			"Attack": 70,
+			"Defense": 60,
+			"Sp. Attack": 65,
+			"Sp. Defense": 65,
+			"Speed": 115
+		}
+	},
+	{
+		"id": 54,
+		"name": {
+			"english": "Psyduck",
+			"french": "Psykokwak"
+		},
+		"image": "/images/pokemon/54.png",
+		"type": [
+			"Water"
+		],
+		"base": {
+			"HP": 50,
+			"Attack": 52,
+			"Defense": 48,
+			"Sp. Attack": 65,
+			"Sp. Defense": 50,
+			"Speed": 55
+		}
+	},
+	{
+		"id": 55,
+		"name": {
+			"english": "Golduck",
+			"french": "Akwakwak"
+		},
+		"image": "/images/pokemon/55.png",
+		"type": [
+			"Water"
+		],
+		"base": {
+			"HP": 80,
+			"Attack": 82,
+			"Defense": 78,
+			"Sp. Attack": 95,
+			"Sp. Defense": 80,
+			"Speed": 85
+		}
+	},
+	{
+		"id": 56,
+		"name": {
+			"english": "Mankey",
+			"french": "Férosinge"
+		},
+		"image": "/images/pokemon/56.png",
+		"type": [
+			"Fighting"
+		],
+		"base": {
+			"HP": 40,
+			"Attack": 80,
+			"Defense": 35,
+			"Sp. Attack": 35,
+			"Sp. Defense": 45,
+			"Speed": 70
+		}
+	},
+	{
+		"id": 57,
+		"name": {
+			"english": "Primeape",
+			"french": "Colossinge"
+		},
+		"image": "/images/pokemon/57.png",
+		"type": [
+			"Fighting"
+		],
+		"base": {
+			"HP": 65,
+			"Attack": 105,
+			"Defense": 60,
+			"Sp. Attack": 60,
+			"Sp. Defense": 70,
+			"Speed": 95
+		}
+	},
+	{
+		"id": 58,
+		"name": {
+			"english": "Growlithe",
+			"french": "Caninos"
+		},
+		"image": "/images/pokemon/58.png",
+		"type": [
+			"Fire"
+		],
+		"base": {
+			"HP": 55,
+			"Attack": 70,
+			"Defense": 45,
+			"Sp. Attack": 70,
+			"Sp. Defense": 50,
+			"Speed": 60
+		}
+	},
+	{
+		"id": 59,
+		"name": {
+			"english": "Arcanine",
+			"french": "Arcanin"
+		},
+		"image": "/images/pokemon/59.png",
+		"type": [
+			"Fire"
+		],
+		"base": {
+			"HP": 90,
+			"Attack": 110,
+			"Defense": 80,
+			"Sp. Attack": 100,
+			"Sp. Defense": 80,
+			"Speed": 95
+		}
+	},
+	{
+		"id": 60,
+		"name": {
+			"english": "Poliwag",
+			"french": "Ptitard"
+		},
+		"image": "/images/pokemon/60.png",
+		"type": [
+			"Water"
+		],
+		"base": {
+			"HP": 40,
+			"Attack": 50,
+			"Defense": 40,
+			"Sp. Attack": 40,
+			"Sp. Defense": 40,
+			"Speed": 90
+		}
+	},
+	{
+		"id": 61,
+		"name": {
+			"english": "Poliwhirl",
+			"french": "Têtarte"
+		},
+		"image": "/images/pokemon/61.png",
+		"type": [
+			"Water"
+		],
+		"base": {
+			"HP": 65,
+			"Attack": 65,
+			"Defense": 65,
+			"Sp. Attack": 50,
+			"Sp. Defense": 50,
+			"Speed": 90
+		}
+	},
+	{
+		"id": 62,
+		"name": {
+			"english": "Poliwrath",
+			"french": "Tartard"
+		},
+		"image": "/images/pokemon/62.png",
+		"type": [
+			"Water",
+			"Fighting"
+		],
+		"base": {
+			"HP": 90,
+			"Attack": 95,
+			"Defense": 95,
+			"Sp. Attack": 70,
+			"Sp. Defense": 90,
+			"Speed": 70
+		}
+	},
+	{
+		"id": 63,
+		"name": {
+			"english": "Abra",
+			"french": "Abra"
+		},
+		"image": "/images/pokemon/63.png",
+		"type": [
+			"Psychic"
+		],
+		"base": {
+			"HP": 25,
+			"Attack": 20,
+			"Defense": 15,
+			"Sp. Attack": 105,
+			"Sp. Defense": 55,
+			"Speed": 90
+		}
+	},
+	{
+		"id": 64,
+		"name": {
+			"english": "Kadabra",
+			"french": "Kadabra"
+		},
+		"image": "/images/pokemon/64.png",
+		"type": [
+			"Psychic"
+		],
+		"base": {
+			"HP": 40,
+			"Attack": 35,
+			"Defense": 30,
+			"Sp. Attack": 120,
+			"Sp. Defense": 70,
+			"Speed": 105
+		}
+	},
+	{
+		"id": 65,
+		"name": {
+			"english": "Alakazam",
+			"french": "Alakazam"
+		},
+		"image": "/images/pokemon/65.png",
+		"type": [
+			"Psychic"
+		],
+		"base": {
+			"HP": 55,
+			"Attack": 50,
+			"Defense": 45,
+			"Sp. Attack": 135,
+			"Sp. Defense": 95,
+			"Speed": 120
+		}
+	},
+	{
+		"id": 66,
+		"name": {
+			"english": "Machop",
+			"french": "Machoc"
+		},
+		"image": "/images/pokemon/66.png",
+		"type": [
+			"Fighting"
+		],
+		"base": {
+			"HP": 70,
+			"Attack": 80,
+			"Defense": 50,
+			"Sp. Attack": 35,
+			"Sp. Defense": 35,
+			"Speed": 35
+		}
+	},
+	{
+		"id": 67,
+		"name": {
+			"english": "Machoke",
+			"french": "Machopeur"
+		},
+		"image": "/images/pokemon/67.png",
+		"type": [
+			"Fighting"
+		],
+		"base": {
+			"HP": 80,
+			"Attack": 100,
+			"Defense": 70,
+			"Sp. Attack": 50,
+			"Sp. Defense": 60,
+			"Speed": 45
+		}
+	},
+	{
+		"id": 68,
+		"name": {
+			"english": "Machamp",
+			"french": "Mackogneur"
+		},
+		"image": "/images/pokemon/68.png",
+		"type": [
+			"Fighting"
+		],
+		"base": {
+			"HP": 90,
+			"Attack": 130,
+			"Defense": 80,
+			"Sp. Attack": 65,
+			"Sp. Defense": 85,
+			"Speed": 55
+		}
+	},
+	{
+		"id": 69,
+		"name": {
+			"english": "Bellsprout",
+			"french": "Chétiflor"
+		},
+		"image": "/images/pokemon/69.png",
+		"type": [
+			"Grass",
+			"Poison"
+		],
+		"base": {
+			"HP": 50,
+			"Attack": 75,
+			"Defense": 35,
+			"Sp. Attack": 70,
+			"Sp. Defense": 30,
+			"Speed": 40
+		}
+	},
+	{
+		"id": 70,
+		"name": {
+			"english": "Weepinbell",
+			"french": "Boustiflor"
+		},
+		"image": "/images/pokemon/70.png",
+		"type": [
+			"Grass",
+			"Poison"
+		],
+		"base": {
+			"HP": 65,
+			"Attack": 90,
+			"Defense": 50,
+			"Sp. Attack": 85,
+			"Sp. Defense": 45,
+			"Speed": 55
+		}
+	},
+	{
+		"id": 71,
+		"name": {
+			"english": "Victreebel",
+			"french": "Empiflor"
+		},
+		"image": "/images/pokemon/71.png",
+		"type": [
+			"Grass",
+			"Poison"
+		],
+		"base": {
+			"HP": 80,
+			"Attack": 105,
+			"Defense": 65,
+			"Sp. Attack": 100,
+			"Sp. Defense": 70,
+			"Speed": 70
+		}
+	},
+	{
+		"id": 72,
+		"name": {
+			"english": "Tentacool",
+			"french": "Tentacool"
+		},
+		"image": "/images/pokemon/72.png",
+		"type": [
+			"Water",
+			"Poison"
+		],
+		"base": {
+			"HP": 40,
+			"Attack": 40,
+			"Defense": 35,
+			"Sp. Attack": 50,
+			"Sp. Defense": 100,
+			"Speed": 70
+		}
+	},
+	{
+		"id": 73,
+		"name": {
+			"english": "Tentacruel",
+			"french": "Tentacruel"
+		},
+		"image": "/images/pokemon/73.png",
+		"type": [
+			"Water",
+			"Poison"
+		],
+		"base": {
+			"HP": 80,
+			"Attack": 70,
+			"Defense": 65,
+			"Sp. Attack": 80,
+			"Sp. Defense": 120,
+			"Speed": 100
+		}
+	},
+	{
+		"id": 74,
+		"name": {
+			"english": "Geodude",
+			"french": "Racaillou"
+		},
+		"image": "/images/pokemon/74.png",
+		"type": [
+			"Rock",
+			"Ground"
+		],
+		"base": {
+			"HP": 40,
+			"Attack": 80,
+			"Defense": 100,
+			"Sp. Attack": 30,
+			"Sp. Defense": 30,
+			"Speed": 20
+		}
+	},
+	{
+		"id": 75,
+		"name": {
+			"english": "Graveler",
+			"french": "Gravalanch"
+		},
+		"image": "/images/pokemon/75.png",
+		"type": [
+			"Rock",
+			"Ground"
+		],
+		"base": {
+			"HP": 55,
+			"Attack": 95,
+			"Defense": 115,
+			"Sp. Attack": 45,
+			"Sp. Defense": 45,
+			"Speed": 35
+		}
+	},
+	{
+		"id": 76,
+		"name": {
+			"english": "Golem",
+			"french": "Grolem"
+		},
+		"image": "/images/pokemon/76.png",
+		"type": [
+			"Rock",
+			"Ground"
+		],
+		"base": {
+			"HP": 80,
+			"Attack": 120,
+			"Defense": 130,
+			"Sp. Attack": 55,
+			"Sp. Defense": 65,
+			"Speed": 45
+		}
+	},
+	{
+		"id": 77,
+		"name": {
+			"english": "Ponyta",
+			"french": "Ponyta"
+		},
+		"image": "/images/pokemon/77.png",
+		"type": [
+			"Fire"
+		],
+		"base": {
+			"HP": 50,
+			"Attack": 85,
+			"Defense": 55,
+			"Sp. Attack": 65,
+			"Sp. Defense": 65,
+			"Speed": 90
+		}
+	},
+	{
+		"id": 78,
+		"name": {
+			"english": "Rapidash",
+			"french": "Galopa"
+		},
+		"image": "/images/pokemon/78.png",
+		"type": [
+			"Fire"
+		],
+		"base": {
+			"HP": 65,
+			"Attack": 100,
+			"Defense": 70,
+			"Sp. Attack": 80,
+			"Sp. Defense": 80,
+			"Speed": 105
+		}
+	},
+	{
+		"id": 79,
+		"name": {
+			"english": "Slowpoke",
+			"french": "Ramoloss"
+		},
+		"image": "/images/pokemon/79.png",
+		"type": [
+			"Water",
+			"Psychic"
+		],
+		"base": {
+			"HP": 90,
+			"Attack": 65,
+			"Defense": 65,
+			"Sp. Attack": 40,
+			"Sp. Defense": 40,
+			"Speed": 15
+		}
+	},
+	{
+		"id": 80,
+		"name": {
+			"english": "Slowbro",
+			"french": "Flagadoss"
+		},
+		"image": "/images/pokemon/80.png",
+		"type": [
+			"Water",
+			"Psychic"
+		],
+		"base": {
+			"HP": 95,
+			"Attack": 75,
+			"Defense": 110,
+			"Sp. Attack": 100,
+			"Sp. Defense": 80,
+			"Speed": 30
+		}
+	},
+	{
+		"id": 81,
+		"name": {
+			"english": "Magnemite",
+			"french": "Magnéti"
+		},
+		"image": "/images/pokemon/81.png",
+		"type": [
+			"Electric",
+			"Steel"
+		],
+		"base": {
+			"HP": 25,
+			"Attack": 35,
+			"Defense": 70,
+			"Sp. Attack": 95,
+			"Sp. Defense": 55,
+			"Speed": 45
+		}
+	},
+	{
+		"id": 82,
+		"name": {
+			"english": "Magneton",
+			"french": "Magnéton"
+		},
+		"image": "/images/pokemon/82.png",
+		"type": [
+			"Electric",
+			"Steel"
+		],
+		"base": {
+			"HP": 50,
+			"Attack": 60,
+			"Defense": 95,
+			"Sp. Attack": 120,
+			"Sp. Defense": 70,
+			"Speed": 70
+		}
+	},
+	{
+		"id": 83,
+		"name": {
+			"english": "Farfetch'd",
+			"french": "Canarticho"
+		},
+		"image": "/images/pokemon/83.png",
+		"type": [
+			"Normal",
+			"Flying"
+		],
+		"base": {
+			"HP": 52,
+			"Attack": 90,
+			"Defense": 55,
+			"Sp. Attack": 58,
+			"Sp. Defense": 62,
+			"Speed": 60
+		}
+	},
+	{
+		"id": 84,
+		"name": {
+			"english": "Doduo",
+			"french": "Doduo"
+		},
+		"image": "/images/pokemon/84.png",
+		"type": [
+			"Normal",
+			"Flying"
+		],
+		"base": {
+			"HP": 35,
+			"Attack": 85,
+			"Defense": 45,
+			"Sp. Attack": 35,
+			"Sp. Defense": 35,
+			"Speed": 75
+		}
+	},
+	{
+		"id": 85,
+		"name": {
+			"english": "Dodrio",
+			"french": "Dodrio"
+		},
+		"image": "/images/pokemon/85.png",
+		"type": [
+			"Normal",
+			"Flying"
+		],
+		"base": {
+			"HP": 60,
+			"Attack": 110,
+			"Defense": 70,
+			"Sp. Attack": 60,
+			"Sp. Defense": 60,
+			"Speed": 110
+		}
+	},
+	{
+		"id": 86,
+		"name": {
+			"english": "Seel",
+			"french": "Otaria"
+		},
+		"image": "/images/pokemon/86.png",
+		"type": [
+			"Water"
+			],
+		"base": {
+			"HP": 65,
+			"Attack": 45,
+			"Defense": 55,
+			"Sp. Attack": 45,
+			"Sp. Defense": 70,
+			"Speed": 45
+		}
+	},
+	{
+		"id": 87,
+		"name": {
+			"english": "Dewgong",
+			"french": "Lamantine"
+		},
+		"image": "/images/pokemon/87.png",
+		"type": [
+			"Water", "Ice"
+			],
+		"base": {
+			"HP": 90,
+			"Attack": 70,
+			"Defense": 80,
+			"Sp. Attack": 70,
+			"Sp. Defense": 95,
+			"Speed": 70
+		}
+	},
+	{
+		"id": 88,
+		"name": {
+			"english": "Grimer",
+			"french": "Tadmorv"
+		},
+		"image": "/images/pokemon/88.png",
+		"type": [
+			"Poison"
+			],
+		"base": {
+			"HP": 80,
+			"Attack": 80,
+			"Defense": 50,
+			"Sp. Attack": 40,
+			"Sp. Defense": 50,
+			"Speed": 25
+		}
+	},
+	{
+		"id": 89,
+		"name": {
+			"english": "Muk",
+			"french": "Grotadmorv"
+		},
+		"image": "/images/pokemon/89.png",
+		"type": [
+			"Poison"
+			],
+		"base": {
+			"HP": 105,
+			"Attack": 105,
+			"Defense": 75,
+			"Sp. Attack": 65,
+			"Sp. Defense": 100,
+			"Speed": 50
+		}
+	},
+	{
+		"id": 90,
+		"name": {
+			"english": "Shellder",
+			"french": "Kokiyas"
+		},
+		"image": "/images/pokemon/90.png",
+		"type": [
+			"Water"
+			],
+		"base": {
+			"HP": 30,
+			"Attack": 65,
+			"Defense": 100,
+			"Sp. Attack": 45,
+			"Sp. Defense": 25,
+			"Speed": 40
+		}
+	},
+	{
+		"id": 91,
+		"name": {
+			"english": "Cloyster",
+			"french": "Crustabri"
+		},
+		"image": "/images/pokemon/91.png",
+		"type": [
+			"Water", "Ice"
+			],
+		"base": {
+			"HP": 50,
+			"Attack": 95,
+			"Defense": 180,
+			"Sp. Attack": 85,
+			"Sp. Defense": 45,
+			"Speed": 70
+		}
+	},
+	{
+		"id": 92,
+		"name": {
+			"english": "Gastly",
+			"french": "Fantominus"
+		},
+		"image": "/images/pokemon/92.png",
+		"type": [
+			"Ghost", "Poison"
+			],
+		"base": {
+			"HP": 30,
+			"Attack": 35,
+			"Defense": 30,
+			"Sp. Attack": 100,
+			"Sp. Defense": 35,
+			"Speed": 80
+		}
+	},
+	{
+		"id": 93,
+		"name": {
+			"english": "Haunter",
+			"french": "Spectrum"
+		},
+		"image": "/images/pokemon/93.png",
+		"type": [
+			"Ghost", "Poison"
+			],
+		"base": {
+			"HP": 45,
+			"Attack": 50,
+			"Defense": 45,
+			"Sp. Attack": 115,
+			"Sp. Defense": 55,
+			"Speed": 95
+		}
+	},
+	{
+		"id": 94,
+		"name": {
+			"english": "Gengar",
+			"french": "Ectoplasma"
+		},
+		"image": "/images/pokemon/94.png",
+		"type": [
+			"Ghost", "Poison"
+			],
+		"base": {
+			"HP": 60,
+			"Attack": 65,
+			"Defense": 60,
+			"Sp. Attack": 130,
+			"Sp. Defense": 75,
+			"Speed": 110
+		}
+	},
+	{
+		"id": 95,
+		"name": {
+			"english": "Onix",
+			"french": "Onix"
+		},
+		"image": "/images/pokemon/95.png",
+		"type": [
+			"Rock", "Ground"
+			],
+		"base": {
+			"HP": 35,
+			"Attack": 45,
+			"Defense": 160,
+			"Sp. Attack": 30,
+			"Sp. Defense": 45,
+			"Speed": 70
+		}
+	},
+	{
+		"id": 100,
+		"name": {
+			"english": "Voltorb",
+			"french": "Voltorbe"
+		},
+		"image": "/images/pokemon/100.png",
+		"type": [
+			"Electric"
+			],
+		"base": {
+			"HP": 40,
+			"Attack": 30,
+			"Defense": 50,
+			"Sp. Attack": 55,
+			"Sp. Defense": 55,
+			"Speed": 100
+		}
+	},
+	{
+		"id": 101,
+		"name": {
+			"english": "Electrode",
+			"french": "Électrode"
+		},
+		"image": "/images/pokemon/101.png",
+		"type": [
+			"Electric"
+			],
+		"base": {
+			"HP": 60,
+			"Attack": 50,
+			"Defense": 70,
+			"Sp. Attack": 80,
+			"Sp. Defense": 80,
+			"Speed": 150
+		}
+	},
+	{
+		"id": 102,
+		"name": {
+			"english": "Exeggcute",
+			"french": "Noeunoeuf"
+		},
+		"image": "/images/pokemon/102.png",
+		"type": [
+			"Grass", "Psychic"
+			],
+		"base": {
+			"HP": 60,
+			"Attack": 40,
+			"Defense": 80,
+			"Sp. Attack": 60,
+			"Sp. Defense": 45,
+			"Speed": 40
+		}
+	},
+	{
+		"id": 103,
+		"name": {
+			"english": "Exeggutor",
+			"french": "Noadkoko"
+		},
+		"image": "/images/pokemon/103.png",
+		"type": [
+			"Grass", "Psychic"
+			],
+		"base": {
+			"HP": 95,
+			"Attack": 95,
+			"Defense": 85,
+			"Sp. Attack": 125,
+			"Sp. Defense": 75,
+			"Speed": 55
+		}
+	},
+	{
+		"id": 104,
+		"name": {
+			"english": "Cubone",
+			"french": "Osselait"
+		},
+		"image": "/images/pokemon/104.png",
+		"type": [
+			"Ground"
+			],
+		"base": {
+			"HP": 50,
+			"Attack": 50,
+			"Defense": 95,
+			"Sp. Attack": 40,
+			"Sp. Defense": 50,
+			"Speed": 35
+		}
+	},
+	{
+		"id": 105,
+		"name": {
+			"english": "Marowak",
+			"french": "Ossatueur"
+		},
+		"image": "/images/pokemon/105.png",
+		"type": [
+			"Ground"
+			],
+		"base": {
+			"HP": 60,
+			"Attack": 80,
+			"Defense": 110,
+			"Sp. Attack": 50,
+			"Sp. Defense": 80,
+			"Speed": 45
+		}
+	},
+	{
+		"id": 106,
+		"name": {
+			"english": "Hitmonlee",
+			"french": "Kicklee"
+		},
+		"image": "/images/pokemon/106.png",
+		"type": [
+			"Fighting"
+			],
+		"base": {
+			"HP": 50,
+			"Attack": 120,
+			"Defense": 53,
+			"Sp. Attack": 35,
+			"Sp. Defense": 110,
+			"Speed": 87
+		}
+	},
+	{
+		"id": 107,
+		"name": {
+			"english": "Hitmonchan",
+			"french": "Tygnon"
+		},
+		"image": "/images/pokemon/107.png",
+		"type": [
+			"Fighting"
+			],
+		"base": {
+			"HP": 50,
+			"Attack": 105,
+			"Defense": 79,
+			"Sp. Attack": 35,
+			"Sp. Defense": 110,
+			"Speed": 76
+		}
+	},
+	{
+		"id": 108,
+		"name": {
+			"english": "Lickitung",
+			"french": "Excelangue"
+		},
+		"image": "/images/pokemon/108.png",
+		"type": [
+			"Normal"
+			],
+		"base": {
+			"HP": 90,
+			"Attack": 55,
+			"Defense": 75,
+			"Sp. Attack": 60,
+			"Sp. Defense": 75,
+			"Speed": 30
+		}
+	},
+	{
+		"id": 109,
+		"name": {
+			"english": "Koffing",
+			"french": "Smogo"
+		},
+		"image": "/images/pokemon/109.png",
+		"type": [
+			"Poison"
+			],
+		"base": {
+			"HP": 40,
+			"Attack": 65,
+			"Defense": 95,
+			"Sp. Attack": 60,
+			"Sp. Defense": 45,
+			"Speed": 35
+		}
+	},
+	{
+		"id": 110,
+		"name": {
+			"english": "Weezing",
+			"french": "Smogogo"
+		},
+		"image": "/images/pokemon/110.png",
+		"type": [
+			"Poison"
+			],
+		"base": {
+			"HP": 65,
+			"Attack": 90,
+			"Defense": 120,
+			"Sp. Attack": 85,
+			"Sp. Defense": 70,
+			"Speed": 60
+		}
+	},
+	{
+		"id": 111,
+		"name": {
+			"english": "Rhyhorn",
+			"french": "Rhinocorne"
+		},
+		"image": "/images/pokemon/111.png",
+		"type": [
+			"Ground", "Rock"
+			],
+		"base": {
+			"HP": 80,
+			"Attack": 85,
+			"Defense": 95,
+			"Sp. Attack": 30,
+			"Sp. Defense": 30,
+			"Speed": 25
+		}
+	},
+	{
+		"id": 112,
+		"name": {
+			"english": "Rhydon",
+			"french": "Rhinoféros"
+		},
+		"image": "/images/pokemon/112.png",
+		"type": [
+			"Ground", "Rock"
+			],
+		"base": {
+			"HP": 105,
+			"Attack": 130,
+			"Defense": 120,
+			"Sp. Attack": 45,
+			"Sp. Defense": 45,
+			"Speed": 40
+		}
+	},
+	{
+		"id": 113,
+		"name": {
+			"english": "Chansey",
+			"french": "Leveinard"
+		},
+		"image": "/images/pokemon/113.png",
+		"type": [
+			"Normal"
+			],
+		"base": {
+			"HP": 250,
+			"Attack": 5,
+			"Defense": 5,
+			"Sp. Attack": 35,
+			"Sp. Defense": 105,
+			"Speed": 50
+		}
+	},
+	{
+		"id": 114,
+		"name": {
+			"english": "Tangela",
+			"french": "Saquedeneu"
+		},
+		"image": "/images/pokemon/114.png",
+		"type": [
+			"Grass"
+			],
+		"base": {
+			"HP": 65,
+			"Attack": 55,
+			"Defense": 115,
+			"Sp. Attack": 100,
+			"Sp. Defense": 40,
+			"Speed": 60
+		}
+	},
+	{
+		"id": 115,
+		"name": {
+			"english": "Kangaskhan",
+			"french": "Kangourex"
+		},
+		"image": "/images/pokemon/115.png",
+		"type": [
+			"Normal"
+			],
+		"base": {
+			"HP": 105,
+			"Attack": 95,
+			"Defense": 80,
+			"Sp. Attack": 40,
+			"Sp. Defense": 80,
+			"Speed": 90
+		}
+	},
+	{
+		"id": 116,
+		"name": {
+			"english": "Horsea",
+			"french": "Hypocéan"
+		},
+		"image": "/images/pokemon/116.png",
+		"type": [
+			"Water"
+		],
+		"base": {
+			"HP": 30,
+			"Attack": 40,
+			"Defense": 70,
+			"Sp. Attack": 70,
+			"Sp. Defense": 25,
+			"Speed": 60
+		}
+	},
+	{
+		"id": 117,
+		"name": {
+			"english": "Seadra",
+			"french": "Hypocéan"
+		},
+		"image": "/images/pokemon/117.png",
+		"type": [
+			"Water"
+		],
+		"base": {
+			"HP": 55,
+			"Attack": 65,
+			"Defense": 95,
+			"Sp. Attack": 95,
+			"Sp. Defense": 45,
+			"Speed": 85
+		}
+	},
+	{
+		"id": 118,
+		"name": {
+			"english": "Goldeen",
+			"french": "Poissirène"
+		},
+		"image": "/images/pokemon/118.png",
+		"type": [
+			"Water"
+		],
+		"base": {
+			"HP": 45,
+			"Attack": 67,
+			"Defense": 60,
+			"Sp. Attack": 35,
+			"Sp. Defense": 50,
+			"Speed": 63
+		}
+	},
+	{
+		"id": 119,
+		"name": {
+			"english": "Seaking",
+			"french": "Poissoroy"
+		},
+		"image": "/images/pokemon/119.png",
+		"type": [
+			"Water"
+		],
+		"base": {
+			"HP": 80,
+			"Attack": 92,
+			"Defense": 65,
+			"Sp. Attack": 65,
+			"Sp. Defense": 80,
+			"Speed": 68
+		}
+	},
+	{
+		"id": 120,
+		"name": {
+			"english": "Staryu",
+			"french": "Stari"
+		},
+		"image": "/images/pokemon/120.png",
+		"type": [
+			"Water"
+		],
+		"base": {
+			"HP": 30,
+			"Attack": 45,
+			"Defense": 35,
+			"Sp. Attack": 70,
+			"Sp. Defense": 70,
+			"Speed": 85
+		}
+	},
+	{
+		"id": 121,
+		"name": {
+			"english": "Starmie",
+			"french": "Staross"
+		},
+		"image": "/images/pokemon/121.png",
+		"type": [
+			"Water",
+			"Psychic"
+		],
+		"base": {
+			"HP": 60,
+			"Attack": 75,
+			"Defense": 85,
+			"Sp. Attack": 100,
+			"Sp. Defense": 85,
+			"Speed": 115
+		}
+	},
+	{
+		"id": 122,
+		"name": {
+			"english": "Mr. Mime",
+			"french": "M. Mime"
+		},
+		"image": "/images/pokemon/122.png",
+		"type": [
+			"Psychic",
+			"Fairy"
+		],
+		"base": {
+			"HP": 40,
+			"Attack": 45,
+			"Defense": 65,
+			"Sp. Attack": 100,
+			"Sp. Defense": 120,
+			"Speed": 90
+		}
+	},
+	{
+		"id": 123,
+		"name": {
+			"english": "Scyther",
+			"french": "Insécateur"
+		},
+		"image": "/images/pokemon/123.png",
+		"type": [
+			"Bug",
+			"Flying"
+		],
+		"base": {
+			"HP": 70,
+			"Attack": 110,
+			"Defense": 80,
+			"Sp. Attack": 55,
+			"Sp. Defense": 80,
+			"Speed": 105
+		}
+	},
+	{
+		"id": 124,
+		"name": {
+			"english": "Jynx",
+			"french": "Lippoutou"
+		},
+		"image": "/images/pokemon/124.png",
+		"type": [
+			"Ice",
+			"Psychic"
+		],
+		"base": {
+			"HP": 65,
+			"Attack": 50,
+			"Defense": 35,
+			"Sp. Attack": 115,
+			"Sp. Defense": 95,
+			"Speed": 95
+		}
+	},
+	{
+		"id": 125,
+		"name": {
+			"english": "Electabuzz",
+			"french": "Élektek"
+		},
+		"image": "/images/pokemon/125.png",
+		"type": [
+			"Electric"
+		],
+		"base": {
+			"HP": 65,
+			"Attack": 83,
+			"Defense": 57,
+			"Sp. Attack": 95,
+			"Sp. Defense": 85,
+			"Speed": 105
+		}
+	},
+	{
+		"id": 126,
+		"name": {
+			"english": "Magmar",
+			"french": "Magmar"
+		},
+		"image": "/images/pokemon/126.png",
+		"type": [
+			"Fire"
+		],
+		"base": {
+			"HP": 65,
+			"Attack": 95,
+			"Defense": 57,
+			"Sp. Attack": 100,
+			"Sp. Defense": 85,
+			"Speed": 93
+		}
+	},
+	{
+		"id": 127,
+		"name": {
+			"english": "Pinsir",
+			"french": "Scarabrute"
+		},
+		"image": "/images/pokemon/127.png",
+		"type": [
+			"Bug"
+		],
+		"base": {
+			"HP": 65,
+			"Attack": 125,
+			"Defense": 100,
+			"Sp. Attack": 55,
+			"Sp. Defense": 70,
+			"Speed": 85
+		}
+	},
+	{
+		"id": 128,
+		"name": {
+			"english": "Tauros",
+			"french": "Tauros"
+		},
+		"image": "/images/pokemon/128.png",
+		"type": [
+			"Normal"
+		],
+		"base": {
+			"HP": 75,
+			"Attack": 100,
+			"Defense": 95,
+			"Sp. Attack": 40,
+			"Sp. Defense": 70,
+			"Speed": 110
+		}
+	},
+	{
+		"id": 129,
+		"name": {
+			"english": "Magikarp",
+			"french": "Magicarpe"
+		},
+		"image": "/images/pokemon/129.png",
+		"type": [
+			"Water"
+		],
+		"base": {
+			"HP": 20,
+			"Attack": 10,
+			"Defense": 55,
+			"Sp. Attack": 15,
+			"Sp. Defense": 20,
+			"Speed": 80
+		}
+	},
+	{
+		"id": 130,
+		"name": {
+			"english": "Gyarados",
+			"french": "Léviator"
+		},
+		"image": "/images/pokemon/130.png",
+		"type": [
+			"Water",
+			"Flying"
+		],
+		"base": {
+			"HP": 95,
+			"Attack": 125,
+			"Defense": 79,
+			"Sp. Attack": 60,
+			"Sp. Defense": 100,
+			"Speed": 81
+		}
+	},
+	{
+		"id": 131,
+		"name": {
+			"english": "Lapras",
+			"french": "Lokhlass"
+		},
+		"image": "/images/pokemon/131.png",
+		"type": [
+			"Water",
+			"Ice"
+		],
+		"base": {
+			"HP": 130,
+			"Attack": 85,
+			"Defense": 80,
+			"Sp. Attack": 85,
+			"Sp. Defense": 95,
+			"Speed": 60
+		}
+	},
+	{
+		"id": 132,
+		"name": {
+			"english": "Ditto",
+			"french": "Métamorph"
+		},
+		"image": "/images/pokemon/132.png",
+		"type": [
+			"Normal"
+		],
+		"base": {
+			"HP": 48,
+			"Attack": 48,
+			"Defense": 48,
+			"Sp. Attack": 48,
+			"Sp. Defense": 48,
+			"Speed": 48
+		}
+	},
+	{
+		"id": 133,
+		"name": {
+			"english": "Eevee",
+			"french": "Évoli"
+		},
+		"image": "/images/pokemon/133.png",
+		"type": [
+			"Normal"
+		],
+		"base": {
+			"HP": 55,
+			"Attack": 55,
+			"Defense": 50,
+			"Sp. Attack": 45,
+			"Sp. Defense": 65,
+			"Speed": 55
+		}
+	},
+	{
+		"id": 134,
+		"name": {
+			"english": "Vaporeon",
+			"french": "Aquali"
+		},
+		"image": "/images/pokemon/134.png",
+		"type": [
+			"Water"
+		],
+		"base": {
+			"HP": 130,
+			"Attack": 65,
+			"Defense": 60,
+			"Sp. Attack": 110,
+			"Sp. Defense": 95,
+			"Speed": 65
+		}
+	},
+	{
+		"id": 135,
+		"name": {
+			"english": "Jolteon",
+			"french": "Voltali"
+		},
+		"image": "/images/pokemon/135.png",
+		"type": [
+			"Electric"
+		],
+		"base": {
+			"HP": 65,
+			"Attack": 65,
+			"Defense": 60,
+			"Sp. Attack": 110,
+			"Sp. Defense": 95,
+			"Speed": 130
+		}
+	},
+	{
+		"id": 136,
+		"name": {
+			"english": "Flareon",
+			"french": "Pyroli"
+		},
+		"image": "/images/pokemon/136.png",
+		"type": [
+			"Fire"
+		],
+		"base": {
+			"HP": 65,
+			"Attack": 130,
+			"Defense": 60,
+			"Sp. Attack": 95,
+			"Sp. Defense": 110,
+			"Speed": 65
+		}
+	},
+	{
+		"id": 137,
+		"name": {
+			"english": "Porygon",
+			"french": "Porygon"
+		},
+		"image": "/images/pokemon/137.png",
+		"type": [
+			"Normal"
+		],
+		"base": {
+			"HP": 65,
+			"Attack": 60,
+			"Defense": 70,
+			"Sp. Attack": 85,
+			"Sp. Defense": 75,
+			"Speed": 40
+		}
+	},
+	{
+		"id": 138,
+		"name": {
+			"english": "Omanyte",
+			"french": "Amonita"
+		},
+		"image": "/images/pokemon/138.png",
+		"type": [
+			"Rock",
+			"Water"
+		],
+		"base": {
+			"HP": 35,
+			"Attack": 40,
+			"Defense": 100,
+			"Sp. Attack": 90,
+			"Sp. Defense": 55,
+			"Speed": 35
+		}
+	},
+	{
+		"id": 139,
+		"name": {
+			"english": "Omastar",
+			"french": "Amonistar"
+		},
+		"image": "/images/pokemon/139.png",
+		"type": [
+			"Rock",
+			"Water"
+		],
+		"base": {
+			"HP": 70,
+			"Attack": 60,
+			"Defense": 125,
+			"Sp. Attack": 115,
+			"Sp. Defense": 70,
+			"Speed": 55
+		}
+	},
+	{
+		"id": 140,
+		"name": {
+			"english": "Kabuto",
+			"french": "Kabuto"
+		},
+		"image": "/images/pokemon/140.png",
+		"type": [
+			"Rock",
+			"Water"
+		],
+		"base": {
+			"HP": 30,
+			"Attack": 80,
+			"Defense": 90,
+			"Sp. Attack": 55,
+			"Sp. Defense": 45,
+			"Speed": 55
+		}
+	},
+	{
+		"id": 141,
+		"name": {
+			"english": "Kabutops",
+			"french": "Kabutops"
+		},
+		"image": "/images/pokemon/141.png",
+		"type": [
+			"Rock",
+			"Water"
+		],
+		"base": {
+			"HP": 60,
+			"Attack": 115,
+			"Defense": 105,
+			"Sp. Attack": 65,
+			"Sp. Defense": 70,
+			"Speed": 80
+		}
+	},
+	{
+		"id": 142,
+		"name": {
+			"english": "Aerodactyl",
+			"french": "Ptéra"
+		},
+		"image": "/images/pokemon/142.png",
+		"type": [
+			"Rock",
+			"Flying"
+		],
+		"base": {
+			"HP": 80,
+			"Attack": 105,
+			"Defense": 65,
+			"Sp. Attack": 60,
+			"Sp. Defense": 75,
+			"Speed": 130
+		}
+	},
+	{
+		"id": 143,
+		"name": {
+			"english": "Snorlax",
+			"french": "Ronflex"
+		},
+		"image": "/images/pokemon/143.png",
+		"type": [
+			"Normal"
+		],
+		"base": {
+			"HP": 160,
+			"Attack": 110,
+			"Defense": 65,
+			"Sp. Attack": 65,
+			"Sp. Defense": 110,
+			"Speed": 30
+		}
+	},
+	{
+		"id": 144,
+		"name": {
+			"english": "Articuno",
+			"french": "Artikodin"
+		},
+		"image": "/images/pokemon/144.png",
+		"type": [
+			"Ice",
+			"Flying"
+		],
+		"base": {
+			"HP": 90,
+			"Attack": 85,
+			"Defense": 100,
+			"Sp. Attack": 95,
+			"Sp. Defense": 125,
+			"Speed": 85
+		}
+	},
+	{
+		"id": 145,
+		"name": {
+			"english": "Zapdos",
+			"french": "Électhor"
+		},
+		"image": "/images/pokemon/145.png",
+		"type": [
+			"Electric",
+			"Flying"
+		],
+		"base": {
+			"HP": 90,
+			"Attack": 90,
+			"Defense": 85,
+			"Sp. Attack": 125,
+			"Sp. Defense": 90,
+			"Speed": 100
+		}
+	},
+	{
+		"id": 146,
+		"name": {
+			"english": "Moltres",
+			"french": "Sulfura"
+		},
+		"image": "/images/pokemon/146.png",
+		"type": [
+			"Fire",
+			"Flying"
+		],
+		"base": {
+			"HP": 90,
+			"Attack": 100,
+			"Defense": 90,
+			"Sp. Attack": 125,
+			"Sp. Defense": 85,
+			"Speed": 90
+		}
+	},
+	{
+		"id": 147,
+		"name": {
+			"english": "Dratini",
+			"french": "Minidraco"
+		},
+		"image": "/images/pokemon/147.png",
+		"type": [
+			"Dragon"
+		],
+		"base": {
+			"HP": 41,
+			"Attack": 64,
+			"Defense": 45,
+			"Sp. Attack": 50,
+			"Sp. Defense": 50,
+			"Speed": 50
+		}
+	},
+	{
+		"id": 148,
+		"name": {
+			"english": "Dragonair",
+			"french": "Draco"
+		},
+		"image": "/images/pokemon/148.png",
+		"type": [
+			"Dragon"
+		],
+		"base": {
+			"HP": 61,
+			"Attack": 84,
+			"Defense": 65,
+			"Sp. Attack": 70,
+			"Sp. Defense": 70,
+			"Speed": 70
+		}
+	},
+	{
+		"id": 149,
+		"name": {
+			"english": "Dragonite",
+			"french": "Dracolosse"
+		},
+		"image": "/images/pokemon/149.png",
+		"type": [
+			"Dragon",
+			"Flying"
+		],
+		"base": {
+			"HP": 91,
+			"Attack": 134,
+			"Defense": 95,
+			"Sp. Attack": 100,
+			"Sp. Defense": 100,
+			"Speed": 80
+		}
+	},
+	{
+		"id": 150,
+		"name": {
+			"english": "Mewtwo",
+			"french": "Mewtwo"
+		},
+		"image": "/images/pokemon/150.png",
+		"type": [
+			"Psychic"
+		],
+		"base": {
+			"HP": 106,
+			"Attack": 110,
+			"Defense": 90,
+			"Sp. Attack": 154,
+			"Sp. Defense": 90,
+			"Speed": 130
+		}
+	},
+	{
+		"id": 151,
+		"name": {
+			"english": "Mew",
+			"french": "Mew"
+		},
+		"image": "/images/pokemon/151.png",
+		"type": [
+			"Psychic"
+		],
+		"base": {
+			"HP": 100,
+			"Attack": 100,
+			"Defense": 100,
+			"Sp. Attack": 100,
+			"Sp. Defense": 100,
+			"Speed": 100
+		}
+	}
+]
