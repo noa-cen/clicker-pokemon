@@ -1,4 +1,4 @@
-import { showStarterChoice, play } from './pokemon.js';
+import { showStarterChoice, rules } from './pokemon.js';
 
 const gameContainer = document.querySelector(".game-container");
 
@@ -6,7 +6,7 @@ function startGame() {
     const starter = localStorage.getItem("starter");
 
     if (starter) {
-        play(starter, gameContainer);
+        rules(starter, gameContainer);
     } else {
         const box = document.createElement("article");
         box.id = "question";
@@ -66,6 +66,7 @@ function chooseStarter(playerName) {
 
     const hello = document.createElement("p");
     hello.classList.add("box");
+    hello.id = "hello";
     hello.innerHTML = `Hello ${playerName},<br> let's choose your starter.`;
     gameContainer.appendChild(hello);
 
@@ -73,3 +74,4 @@ function chooseStarter(playerName) {
 }
 
 startGame();
+// localStorage.clear();
