@@ -53,6 +53,7 @@ body {
 
 .message {
     display: flex;
+    flex-direction: column;
     align-items: flex-start;
 }
 
@@ -120,10 +121,43 @@ h1 {
     margin: 0 auto;
 }
 
+.pokedollar-img {
+    width: 30px;
+}
+
 .pokedex {
     width: 60px;
 }
 
-.pokedollar-img {
-    width: 30px;
+.shop {
+    margin-top: 8px;
+    width: 60px;
+}
+
+.pokedexModal {
+    position: fixed;
+    top: 4px;
+    left: 4px;
+    width: calc(100% - 8px);
+    height: calc(100% - 8px);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    z-index: 1000;
+    margin: auto;
+}
+
+.close-modal {
+    position: fixed;
+    top: 3px;
+    right: 5px;
+    background-color: transparent;
+    color: black;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
 }

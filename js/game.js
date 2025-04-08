@@ -1,5 +1,6 @@
 import { showStarterChoice, rules } from './pokemon.js';
 import { openPokedex } from './pokedex.js';
+import { openShop } from './shop.js';
 
 const top = document.querySelector(".top");
 const message = document.querySelector(".message");
@@ -76,7 +77,7 @@ function chooseStarter(playerName) {
     showStarterChoice(message);
 }
 
-function displayPokedex(message) {
+function displayMenu(message) {
     const pokedex = document.createElement("img");
     pokedex.classList.add("pokedex");
     pokedex.src = "assets/images/pokedex.png";
@@ -84,10 +85,15 @@ function displayPokedex(message) {
     pokedex.id = "pokedex";
     message.appendChild(pokedex);
 
-    document.addEventListener('DOMContentLoaded', () => {
-        const pokedex = document.getElementById('pokedex');
-        pokedex.addEventListener('click', openPokedex);
-      });
+    const shop = document.createElement("img");
+    shop.classList.add("shop");
+    shop.src = "assets/images/shop.png";
+    shop.alt = "shop";
+    shop.id = "shop";
+    message.appendChild(shop);
+
+    pokedex.addEventListener('click', openPokedex);
+    shop.addEventListener('click', openShop);
 }
 
 function animatePokedollar() {
@@ -137,7 +143,7 @@ export function play(pokemonClicker) {
 
         if (firstClick) {
             top.appendChild(counter);
-            displayPokedex(message);
+            displayMenu(message);
             firstClick = false;
         }
 
