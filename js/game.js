@@ -152,4 +152,3 @@ export function play(pokemonClicker) {
 }
 
 startGame();
-// localStorage.clear();
