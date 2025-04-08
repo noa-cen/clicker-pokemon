@@ -92,8 +92,16 @@ function displayMenu(message) {
     shop.id = "shop";
     message.appendChild(shop);
 
+    const bag = document.createElement("img");
+    bag.classList.add("bag");
+    bag.src = "assets/images/bag.png";
+    bag.alt = "bag";
+    bag.id = "bag";
+    message.appendChild(bag);
+
     pokedex.addEventListener('click', openPokedex);
     shop.addEventListener('click', openShop);
+    bag.addEventListener('click', openBag);
 }
 
 function animatePokedollar() {
