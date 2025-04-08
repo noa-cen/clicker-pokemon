@@ -16,15 +16,22 @@ export async function getPokemon() {
 }
 
 export function createPokemonElement(pokemon) {
+    const pokemonsCaptured = JSON.parse(localStorage.getItem("pokemons")) || [];
+    const hasPokemon = pokemonsCaptured.includes(pokemon.id);
+
     const pokemonElement = document.createElement("img");
     pokemonElement.classList.add("pokemon");
-    pokemonElement.src = pokemon.image;
     pokemonElement.alt = pokemon.name.english;
     pokemonElement.id = `${pokemon.name.english.toLowerCase()}`;
+
+    pokemonElement.src = hasPokemon
+        ? `assets/images/pokemon/color/${pokemon.id}.png`
+        : pokemon.image;
+
     return pokemonElement;
 }
 
-export function showStarterChoice(gameContainer) {
+export function showStarterChoice() {
     document.querySelector("h1").style.display = "none";
 
     getPokemon().then(pokemons => {
@@ -39,14 +46,22 @@ export function showStarterChoice(gameContainer) {
             containerStarter.appendChild(element);
 
             element.addEventListener("click", () => {
-                localStorage.setItem("starter", element.id);
-                rules(element.id);
-            });
+                let pokemonsCaptured = JSON.parse(localStorage.getItem("pokemons")) || [];
+            
+                if (!pokemonsCaptured.includes(pokemon.id)) {
+                    pokemonsCaptured.push(pokemon.id);
+                    localStorage.setItem("pokemons", JSON.stringify(pokemonsCaptured));
+            
+                    element.src = `assets/images/pokemon/color/${pokemon.id}.png`;
+                }
+            
+                rules(pokemon.id);
+            });                     
         });
     });
 }
 
-export function rules(starter) {
+export function rules(pokemon) {
     document.querySelector("h1").style.display = "none";
     let hello = document.getElementById("hello");
     if (hello) {
@@ -54,15 +69,10 @@ export function rules(starter) {
     }
 
     getPokemon().then(pokemons => {
-        const chosenPokemon = pokemons.find(p => p.name.english.toLowerCase() === starter.toLowerCase());
+        const chosenPokemon = pokemons.find(p => p.id === Number(pokemon));
 
         const starters = document.querySelectorAll(".pokemon");
         starters.forEach(p => p.remove());
-        document.querySelector("h1").style.display = "none";
-
-        const counter = document.createElement("p");
-        counter.classList.add("box");
-        counter.id = "pokedollars";
 
         const chosenElement = createPokemonElement(chosenPokemon);
         bottom.appendChild(chosenElement);
@@ -75,7 +85,6 @@ export function rules(starter) {
             Keep going to unlock surprises.<br><br>
             Ready? Let's go!
         `;
-
         message.appendChild(rulesMessage);
 
         play(chosenElement);

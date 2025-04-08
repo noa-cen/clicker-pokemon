@@ -7,11 +7,11 @@ const message = document.querySelector(".message");
 const bottom = document.querySelector(".bottom");
 
 function startGame() {
-    const starter = localStorage.getItem("starter");
+    const pokemons = JSON.parse(localStorage.getItem("pokemons") || "[]");
 
-    if (starter) {
-        rules(starter);
-    } else {
+        if (pokemons.length > 0) {
+            rules(pokemons[0]);
+        } else {
         const box = document.createElement("article");
         box.id = "question";
         box.classList.add("box");
