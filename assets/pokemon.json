@@ -198,7 +198,7 @@
 			"english": "Metapod",
 			"french": "Chrysacier"
 		},
-		"image": "/images/pokemon/11.png",
+		"image": "assets/images/pokemon/11.png",
 		"type": [
 			"Bug"
 		],
@@ -217,7 +217,7 @@
 			"english": "Butterfree",
 			"french": "Papilusion"
 		},
-		"image": "/images/pokemon/12.png",
+		"image": "assets/images/pokemon/12.png",
 		"type": [
 			"Bug",
 			"Flying"
@@ -237,7 +237,7 @@
 			"english": "Weedle",
 			"french": "Aspicot"
 		},
-		"image": "/images/pokemon/13.png",
+		"image": "assets/images/pokemon/13.png",
 		"type": [
 			"Bug",
 			"Poison"
@@ -257,7 +257,7 @@
 			"english": "Kakuna",
 			"french": "Coconfort"
 		},
-		"image": "/images/pokemon/14.png",
+		"image": "assets/images/pokemon/14.png",
 		"type": [
 			"Bug",
 			"Poison"
@@ -277,7 +277,7 @@
 			"english": "Beedrill",
 			"french": "Dardargnan"
 		},
-		"image": "/images/pokemon/15.png",
+		"image": "assets/images/pokemon/15.png",
 		"type": [
 			"Bug",
 			"Poison"
@@ -297,7 +297,7 @@
 			"english": "Pidgey",
 			"french": "Roucool"
 		},
-		"image": "/images/pokemon/16.png",
+		"image": "assets/images/pokemon/16.png",
 		"type": [
 			"Normal",
 			"Flying"
@@ -317,7 +317,7 @@
 			"english": "Pidgeotto",
 			"french": "Roucoups"
 		},
-		"image": "/images/pokemon/17.png",
+		"image": "assets/images/pokemon/17.png",
 		"type": [
 			"Normal",
 			"Flying"
@@ -337,7 +337,7 @@
 			"english": "Pidgeot",
 			"french": "Roucarnage"
 		},
-		"image": "/images/pokemon/18.png",
+		"image": "assets/images/pokemon/18.png",
 		"type": [
 			"Normal",
 			"Flying"
@@ -357,7 +357,7 @@
 			"english": "Rattata",
 			"french": "Rattata"
 		},
-		"image": "/images/pokemon/19.png",
+		"image": "assets/images/pokemon/19.png",
 		"type": [
 			"Normal"
 		],
@@ -376,7 +376,7 @@
 			"english": "Raticate",
 			"french": "Rattatac"
 		},
-		"image": "/images/pokemon/20.png",
+		"image": "assets/images/pokemon/20.png",
 		"type": [
 			"Normal"
 		],
@@ -395,7 +395,7 @@
 			"english": "Spearow",
 			"french": "Piafabec"
 		},
-		"image": "/images/pokemon/21.png",
+		"image": "assets/images/pokemon/21.png",
 		"type": [
 			"Normal",
 			"Flying"
@@ -415,7 +415,7 @@
 			"english": "Fearow",
 			"french": "Rapasdepic"
 		},
-		"image": "/images/pokemon/22.png",
+		"image": "assets/images/pokemon/22.png",
 		"type": [
 			"Normal",
 			"Flying"
@@ -435,7 +435,7 @@
 			"english": "Ekans",
 			"french": "Abo"
 		},
-		"image": "/images/pokemon/23.png",
+		"image": "assets/images/pokemon/23.png",
 		"type": [
 			"Poison"
 		],
@@ -454,7 +454,7 @@
 			"english": "Arbok",
 			"french": "Arbok"
 		},
-		"image": "/images/pokemon/24.png",
+		"image": "assets/images/pokemon/24.png",
 		"type": [
 			"Poison"
 		],
@@ -473,7 +473,7 @@
 			"english": "Pikachu",
 			"french": "Pikachu"
 		},
-		"image": "/images/pokemon/25.png",
+		"image": "assets/images/pokemon/25.png",
 		"type": [
 			"Electric"
 		],
@@ -492,7 +492,7 @@
 			"english": "Raichu",
 			"french": "Raichu"
 		},
-		"image": "/images/pokemon/26.png",
+		"image": "assets/images/pokemon/26.png",
 		"type": [
 			"Electric"
 		],
@@ -511,7 +511,7 @@
 			"english": "Sandshrew",
 			"french": "Sabelette"
 		},
-		"image": "/images/pokemon/27.png",
+		"image": "assets/images/pokemon/27.png",
 		"type": [
 			"Ground"
 		],
@@ -530,7 +530,7 @@
 			"english": "Sandslash",
 			"french": "Sablaireau"
 		},
-		"image": "/images/pokemon/28.png",
+		"image": "assets/images/pokemon/28.png",
 		"type": [
 			"Ground"
 		],
@@ -549,7 +549,7 @@
 			"english": "Nidoran♀",
 			"french": "Nidoran♀"
 		},
-		"image": "/images/pokemon/29.png",
+		"image": "assets/images/pokemon/29.png",
 		"type": [
 			"Poison"
 		],
@@ -568,7 +568,7 @@
 			"english": "Nidorina",
 			"french": "Nidorina"
 		},
-		"image": "/images/pokemon/30.png",
+		"image": "assets/images/pokemon/30.png",
 		"type": [
 			"Poison"
 		],
@@ -587,7 +587,7 @@
 			"english": "Nidoqueen",
 			"french": "Nidoqueen"
 		},
-		"image": "/images/pokemon/31.png",
+		"image": "assets/images/pokemon/31.png",
 		"type": [
 			"Poison",
 			"Ground"
@@ -607,7 +607,7 @@
 			"english": "Nidoran♂",
 			"french": "Nidoran♂"
 		},
-		"image": "/images/pokemon/32.png",
+		"image": "assets/images/pokemon/32.png",
 		"type": [
 			"Poison"
 		],
@@ -626,7 +626,7 @@
 			"english": "Nidorino",
 			"french": "Nidorino"
 		},
-		"image": "/images/pokemon/33.png",
+		"image": "assets/images/pokemon/33.png",
 		"type": [
 			"Poison"
 		],
@@ -645,7 +645,7 @@
 			"english": "Nidoking",
 			"french": "Nidoking"
 		},
-		"image": "/images/pokemon/34.png",
+		"image": "assets/images/pokemon/34.png",
 		"type": [
 			"Poison",
 			"Ground"
@@ -665,7 +665,7 @@
 			"english": "Clefairy",
 			"french": "Mélofée"
 		},
-		"image": "/images/pokemon/35.png",
+		"image": "assets/images/pokemon/35.png",
 		"type": [
 			"Fairy"
 		],
@@ -684,7 +684,7 @@
 			"english": "Clefable",
 			"french": "Mélodelfe"
 		},
-		"image": "/images/pokemon/36.png",
+		"image": "assets/images/pokemon/36.png",
 		"type": [
 			"Fairy"
 		],
@@ -703,7 +703,7 @@
 			"english": "Vulpix",
 			"french": "Goupix"
 		},
-		"image": "/images/pokemon/37.png",
+		"image": "assets/images/pokemon/37.png",
 		"type": [
 			"Fire"
 		],
@@ -722,7 +722,7 @@
 			"english": "Ninetales",
 			"french": "Feunard"
 		},
-		"image": "/images/pokemon/38.png",
+		"image": "assets/images/pokemon/38.png",
 		"type": [
 			"Fire"
 		],
@@ -741,7 +741,7 @@
 			"english": "Jigglypuff",
 			"french": "Rondoudou"
 		},
-		"image": "/images/pokemon/39.png",
+		"image": "assets/images/pokemon/39.png",
 		"type": [
 			"Normal",
 			"Fairy"
@@ -761,7 +761,7 @@
 			"english": "Wigglytuff",
 			"french": "Grodoudou"
 		},
-		"image": "/images/pokemon/40.png",
+		"image": "assets/images/pokemon/40.png",
 		"type": [
 			"Normal",
 			"Fairy"
@@ -781,7 +781,7 @@
 			"english": "Zubat",
 			"french": "Nosferapti"
 		},
-		"image": "/images/pokemon/41.png",
+		"image": "assets/images/pokemon/41.png",
 		"type": [
 			"Poison",
 			"Flying"
@@ -801,7 +801,7 @@
 			"english": "Golbat",
 			"french": "Nosferalto"
 		},
-		"image": "/images/pokemon/42.png",
+		"image": "assets/images/pokemon/42.png",
 		"type": [
 			"Poison",
 			"Flying"
@@ -821,7 +821,7 @@
 			"english": "Oddish",
 			"french": "Mystherbe"
 		},
-		"image": "/images/pokemon/43.png",
+		"image": "assets/images/pokemon/43.png",
 		"type": [
 			"Grass",
 			"Poison"
@@ -841,7 +841,7 @@
 			"english": "Gloom",
 			"french": "Ortide"
 		},
-		"image": "/images/pokemon/44.png",
+		"image": "assets/images/pokemon/44.png",
 		"type": [
 			"Grass",
 			"Poison"
@@ -861,7 +861,7 @@
 			"english": "Vileplume",
 			"french": "Rafflesia"
 		},
-		"image": "/images/pokemon/45.png",
+		"image": "assets/images/pokemon/45.png",
 		"type": [
 			"Grass",
 			"Poison"
@@ -881,7 +881,7 @@
 			"english": "Paras",
 			"french": "Paras"
 		},
-		"image": "/images/pokemon/46.png",
+		"image": "assets/images/pokemon/46.png",
 		"type": [
 			"Bug",
 			"Grass"
@@ -901,7 +901,7 @@
 			"english": "Parasect",
 			"french": "Parasect"
 		},
-		"image": "/images/pokemon/47.png",
+		"image": "assets/images/pokemon/47.png",
 		"type": [
 			"Bug",
 			"Grass"
@@ -921,7 +921,7 @@
 			"english": "Venonat",
 			"french": "Mimitoss"
 		},
-		"image": "/images/pokemon/48.png",
+		"image": "assets/images/pokemon/48.png",
 		"type": [
 			"Bug",
 			"Poison"
@@ -941,7 +941,7 @@
 			"english": "Venomoth",
 			"french": "Aéromite"
 		},
-		"image": "/images/pokemon/49.png",
+		"image": "assets/images/pokemon/49.png",
 		"type": [
 			"Bug",
 			"Poison"
@@ -961,7 +961,7 @@
 			"english": "Diglett",
 			"french": "Taupiqueur"
 		},
-		"image": "/images/pokemon/50.png",
+		"image": "assets/images/pokemon/50.png",
 		"type": [
 			"Ground"
 		],
@@ -980,7 +980,7 @@
 			"english": "Dugtrio",
 			"french": "Triopikeur"
 		},
-		"image": "/images/pokemon/51.png",
+		"image": "assets/images/pokemon/51.png",
 		"type": [
 			"Ground"
 		],
@@ -999,7 +999,7 @@
 			"english": "Meowth",
 			"french": "Miaouss"
 		},
-		"image": "/images/pokemon/52.png",
+		"image": "assets/images/pokemon/52.png",
 		"type": [
 			"Normal"
 		],
@@ -1018,7 +1018,7 @@
 			"english": "Persian",
 			"french": "Persian"
 		},
-		"image": "/images/pokemon/53.png",
+		"image": "assets/images/pokemon/53.png",
 		"type": [
 			"Normal"
 		],
@@ -1037,7 +1037,7 @@
 			"english": "Psyduck",
 			"french": "Psykokwak"
 		},
-		"image": "/images/pokemon/54.png",
+		"image": "assets/images/pokemon/54.png",
 		"type": [
 			"Water"
 		],
@@ -1056,7 +1056,7 @@
 			"english": "Golduck",
 			"french": "Akwakwak"
 		},
-		"image": "/images/pokemon/55.png",
+		"image": "assets/images/pokemon/55.png",
 		"type": [
 			"Water"
 		],
@@ -1075,7 +1075,7 @@
 			"english": "Mankey",
 			"french": "Férosinge"
 		},
-		"image": "/images/pokemon/56.png",
+		"image": "assets/images/pokemon/56.png",
 		"type": [
 			"Fighting"
 		],
@@ -1094,7 +1094,7 @@
 			"english": "Primeape",
 			"french": "Colossinge"
 		},
-		"image": "/images/pokemon/57.png",
+		"image": "assets/images/pokemon/57.png",
 		"type": [
 			"Fighting"
 		],
@@ -1113,7 +1113,7 @@
 			"english": "Growlithe",
 			"french": "Caninos"
 		},
-		"image": "/images/pokemon/58.png",
+		"image": "assets/images/pokemon/58.png",
 		"type": [
 			"Fire"
 		],
@@ -1132,7 +1132,7 @@
 			"english": "Arcanine",
 			"french": "Arcanin"
 		},
-		"image": "/images/pokemon/59.png",
+		"image": "assets/images/pokemon/59.png",
 		"type": [
 			"Fire"
 		],
@@ -1151,7 +1151,7 @@
 			"english": "Poliwag",
 			"french": "Ptitard"
 		},
-		"image": "/images/pokemon/60.png",
+		"image": "assets/images/pokemon/60.png",
 		"type": [
 			"Water"
 		],
@@ -1170,7 +1170,7 @@
 			"english": "Poliwhirl",
 			"french": "Têtarte"
 		},
-		"image": "/images/pokemon/61.png",
+		"image": "assets/images/pokemon/61.png",
 		"type": [
 			"Water"
 		],
@@ -1189,7 +1189,7 @@
 			"english": "Poliwrath",
 			"french": "Tartard"
 		},
-		"image": "/images/pokemon/62.png",
+		"image": "assets/images/pokemon/62.png",
 		"type": [
 			"Water",
 			"Fighting"
@@ -1209,7 +1209,7 @@
 			"english": "Abra",
 			"french": "Abra"
 		},
-		"image": "/images/pokemon/63.png",
+		"image": "assets/images/pokemon/63.png",
 		"type": [
 			"Psychic"
 		],
@@ -1228,7 +1228,7 @@
 			"english": "Kadabra",
 			"french": "Kadabra"
 		},
-		"image": "/images/pokemon/64.png",
+		"image": "assets/images/pokemon/64.png",
 		"type": [
 			"Psychic"
 		],
@@ -1247,7 +1247,7 @@
 			"english": "Alakazam",
 			"french": "Alakazam"
 		},
-		"image": "/images/pokemon/65.png",
+		"image": "assets/images/pokemon/65.png",
 		"type": [
 			"Psychic"
 		],
@@ -1266,7 +1266,7 @@
 			"english": "Machop",
 			"french": "Machoc"
 		},
-		"image": "/images/pokemon/66.png",
+		"image": "assets/images/pokemon/66.png",
 		"type": [
 			"Fighting"
 		],
@@ -1285,7 +1285,7 @@
 			"english": "Machoke",
 			"french": "Machopeur"
 		},
-		"image": "/images/pokemon/67.png",
+		"image": "assets/images/pokemon/67.png",
 		"type": [
 			"Fighting"
 		],
@@ -1304,7 +1304,7 @@
 			"english": "Machamp",
 			"french": "Mackogneur"
 		},
-		"image": "/images/pokemon/68.png",
+		"image": "assets/images/pokemon/68.png",
 		"type": [
 			"Fighting"
 		],
@@ -1323,7 +1323,7 @@
 			"english": "Bellsprout",
 			"french": "Chétiflor"
 		},
-		"image": "/images/pokemon/69.png",
+		"image": "assets/images/pokemon/69.png",
 		"type": [
 			"Grass",
 			"Poison"
@@ -1343,7 +1343,7 @@
 			"english": "Weepinbell",
 			"french": "Boustiflor"
 		},
-		"image": "/images/pokemon/70.png",
+		"image": "assets/images/pokemon/70.png",
 		"type": [
 			"Grass",
 			"Poison"
@@ -1363,7 +1363,7 @@
 			"english": "Victreebel",
 			"french": "Empiflor"
 		},
-		"image": "/images/pokemon/71.png",
+		"image": "assets/images/pokemon/71.png",
 		"type": [
 			"Grass",
 			"Poison"
@@ -1383,7 +1383,7 @@
 			"english": "Tentacool",
 			"french": "Tentacool"
 		},
-		"image": "/images/pokemon/72.png",
+		"image": "assets/images/pokemon/72.png",
 		"type": [
 			"Water",
 			"Poison"
@@ -1403,7 +1403,7 @@
 			"english": "Tentacruel",
 			"french": "Tentacruel"
 		},
-		"image": "/images/pokemon/73.png",
+		"image": "assets/images/pokemon/73.png",
 		"type": [
 			"Water",
 			"Poison"
@@ -1423,7 +1423,7 @@
 			"english": "Geodude",
 			"french": "Racaillou"
 		},
-		"image": "/images/pokemon/74.png",
+		"image": "assets/images/pokemon/74.png",
 		"type": [
 			"Rock",
 			"Ground"
@@ -1443,7 +1443,7 @@
 			"english": "Graveler",
 			"french": "Gravalanch"
 		},
-		"image": "/images/pokemon/75.png",
+		"image": "assets/images/pokemon/75.png",
 		"type": [
 			"Rock",
 			"Ground"
@@ -1463,7 +1463,7 @@
 			"english": "Golem",
 			"french": "Grolem"
 		},
-		"image": "/images/pokemon/76.png",
+		"image": "assets/images/pokemon/76.png",
 		"type": [
 			"Rock",
 			"Ground"
@@ -1483,7 +1483,7 @@
 			"english": "Ponyta",
 			"french": "Ponyta"
 		},
-		"image": "/images/pokemon/77.png",
+		"image": "assets/images/pokemon/77.png",
 		"type": [
 			"Fire"
 		],
@@ -1502,7 +1502,7 @@
 			"english": "Rapidash",
 			"french": "Galopa"
 		},
-		"image": "/images/pokemon/78.png",
+		"image": "assets/images/pokemon/78.png",
 		"type": [
 			"Fire"
 		],
@@ -1521,7 +1521,7 @@
 			"english": "Slowpoke",
 			"french": "Ramoloss"
 		},
-		"image": "/images/pokemon/79.png",
+		"image": "assets/images/pokemon/79.png",
 		"type": [
 			"Water",
 			"Psychic"
@@ -1541,7 +1541,7 @@
 			"english": "Slowbro",
 			"french": "Flagadoss"
 		},
-		"image": "/images/pokemon/80.png",
+		"image": "assets/images/pokemon/80.png",
 		"type": [
 			"Water",
 			"Psychic"
@@ -1561,7 +1561,7 @@
 			"english": "Magnemite",
 			"french": "Magnéti"
 		},
-		"image": "/images/pokemon/81.png",
+		"image": "assets/images/pokemon/81.png",
 		"type": [
 			"Electric",
 			"Steel"
@@ -1581,7 +1581,7 @@
 			"english": "Magneton",
 			"french": "Magnéton"
 		},
-		"image": "/images/pokemon/82.png",
+		"image": "assets/images/pokemon/82.png",
 		"type": [
 			"Electric",
 			"Steel"
@@ -1601,7 +1601,7 @@
 			"english": "Farfetch'd",
 			"french": "Canarticho"
 		},
-		"image": "/images/pokemon/83.png",
+		"image": "assets/images/pokemon/83.png",
 		"type": [
 			"Normal",
 			"Flying"
@@ -1621,7 +1621,7 @@
 			"english": "Doduo",
 			"french": "Doduo"
 		},
-		"image": "/images/pokemon/84.png",
+		"image": "assets/images/pokemon/84.png",
 		"type": [
 			"Normal",
 			"Flying"
@@ -1641,7 +1641,7 @@
 			"english": "Dodrio",
 			"french": "Dodrio"
 		},
-		"image": "/images/pokemon/85.png",
+		"image": "assets/images/pokemon/85.png",
 		"type": [
 			"Normal",
 			"Flying"
@@ -1661,7 +1661,7 @@
 			"english": "Seel",
 			"french": "Otaria"
 		},
-		"image": "/images/pokemon/86.png",
+		"image": "assets/images/pokemon/86.png",
 		"type": [
 			"Water"
 			],
@@ -1680,7 +1680,7 @@
 			"english": "Dewgong",
 			"french": "Lamantine"
 		},
-		"image": "/images/pokemon/87.png",
+		"image": "assets/images/pokemon/87.png",
 		"type": [
 			"Water", "Ice"
 			],
@@ -1699,7 +1699,7 @@
 			"english": "Grimer",
 			"french": "Tadmorv"
 		},
-		"image": "/images/pokemon/88.png",
+		"image": "assets/images/pokemon/88.png",
 		"type": [
 			"Poison"
 			],
@@ -1718,7 +1718,7 @@
 			"english": "Muk",
 			"french": "Grotadmorv"
 		},
-		"image": "/images/pokemon/89.png",
+		"image": "assets/images/pokemon/89.png",
 		"type": [
 			"Poison"
 			],
@@ -1737,7 +1737,7 @@
 			"english": "Shellder",
 			"french": "Kokiyas"
 		},
-		"image": "/images/pokemon/90.png",
+		"image": "assets/images/pokemon/90.png",
 		"type": [
 			"Water"
 			],
@@ -1756,7 +1756,7 @@
 			"english": "Cloyster",
 			"french": "Crustabri"
 		},
-		"image": "/images/pokemon/91.png",
+		"image": "assets/images/pokemon/91.png",
 		"type": [
 			"Water", "Ice"
 			],
@@ -1775,7 +1775,7 @@
 			"english": "Gastly",
 			"french": "Fantominus"
 		},
-		"image": "/images/pokemon/92.png",
+		"image": "assets/images/pokemon/92.png",
 		"type": [
 			"Ghost", "Poison"
 			],
@@ -1794,7 +1794,7 @@
 			"english": "Haunter",
 			"french": "Spectrum"
 		},
-		"image": "/images/pokemon/93.png",
+		"image": "assets/images/pokemon/93.png",
 		"type": [
 			"Ghost", "Poison"
 			],
@@ -1813,7 +1813,7 @@
 			"english": "Gengar",
 			"french": "Ectoplasma"
 		},
-		"image": "/images/pokemon/94.png",
+		"image": "assets/images/pokemon/94.png",
 		"type": [
 			"Ghost", "Poison"
 			],
@@ -1832,7 +1832,7 @@
 			"english": "Onix",
 			"french": "Onix"
 		},
-		"image": "/images/pokemon/95.png",
+		"image": "assets/images/pokemon/95.png",
 		"type": [
 			"Rock", "Ground"
 			],
@@ -1851,7 +1851,7 @@
 			"english": "Voltorb",
 			"french": "Voltorbe"
 		},
-		"image": "/images/pokemon/100.png",
+		"image": "assets/images/pokemon/100.png",
 		"type": [
 			"Electric"
 			],
@@ -1870,7 +1870,7 @@
 			"english": "Electrode",
 			"french": "Électrode"
 		},
-		"image": "/images/pokemon/101.png",
+		"image": "assets/images/pokemon/101.png",
 		"type": [
 			"Electric"
 			],
@@ -1889,7 +1889,7 @@
 			"english": "Exeggcute",
 			"french": "Noeunoeuf"
 		},
-		"image": "/images/pokemon/102.png",
+		"image": "assets/images/pokemon/102.png",
 		"type": [
 			"Grass", "Psychic"
 			],
@@ -1908,7 +1908,7 @@
 			"english": "Exeggutor",
 			"french": "Noadkoko"
 		},
-		"image": "/images/pokemon/103.png",
+		"image": "assets/images/pokemon/103.png",
 		"type": [
 			"Grass", "Psychic"
 			],
@@ -1927,7 +1927,7 @@
 			"english": "Cubone",
 			"french": "Osselait"
 		},
-		"image": "/images/pokemon/104.png",
+		"image": "assets/images/pokemon/104.png",
 		"type": [
 			"Ground"
 			],
@@ -1946,7 +1946,7 @@
 			"english": "Marowak",
 			"french": "Ossatueur"
 		},
-		"image": "/images/pokemon/105.png",
+		"image": "assets/images/pokemon/105.png",
 		"type": [
 			"Ground"
 			],
@@ -1965,7 +1965,7 @@
 			"english": "Hitmonlee",
 			"french": "Kicklee"
 		},
-		"image": "/images/pokemon/106.png",
+		"image": "assets/images/pokemon/106.png",
 		"type": [
 			"Fighting"
 			],
@@ -1984,7 +1984,7 @@
 			"english": "Hitmonchan",
 			"french": "Tygnon"
 		},
-		"image": "/images/pokemon/107.png",
+		"image": "assets/images/pokemon/107.png",
 		"type": [
 			"Fighting"
 			],
@@ -2003,7 +2003,7 @@
 			"english": "Lickitung",
 			"french": "Excelangue"
 		},
-		"image": "/images/pokemon/108.png",
+		"image": "assets/images/pokemon/108.png",
 		"type": [
 			"Normal"
 			],
@@ -2022,7 +2022,7 @@
 			"english": "Koffing",
 			"french": "Smogo"
 		},
-		"image": "/images/pokemon/109.png",
+		"image": "assets/images/pokemon/109.png",
 		"type": [
 			"Poison"
 			],
@@ -2041,7 +2041,7 @@
 			"english": "Weezing",
 			"french": "Smogogo"
 		},
-		"image": "/images/pokemon/110.png",
+		"image": "assets/images/pokemon/110.png",
 		"type": [
 			"Poison"
 			],
@@ -2060,7 +2060,7 @@
 			"english": "Rhyhorn",
 			"french": "Rhinocorne"
 		},
-		"image": "/images/pokemon/111.png",
+		"image": "assets/images/pokemon/111.png",
 		"type": [
 			"Ground", "Rock"
 			],
@@ -2079,7 +2079,7 @@
 			"english": "Rhydon",
 			"french": "Rhinoféros"
 		},
-		"image": "/images/pokemon/112.png",
+		"image": "assets/images/pokemon/112.png",
 		"type": [
 			"Ground", "Rock"
 			],
@@ -2098,7 +2098,7 @@
 			"english": "Chansey",
 			"french": "Leveinard"
 		},
-		"image": "/images/pokemon/113.png",
+		"image": "assets/images/pokemon/113.png",
 		"type": [
 			"Normal"
 			],
@@ -2117,7 +2117,7 @@
 			"english": "Tangela",
 			"french": "Saquedeneu"
 		},
-		"image": "/images/pokemon/114.png",
+		"image": "assets/images/pokemon/114.png",
 		"type": [
 			"Grass"
 			],
@@ -2136,7 +2136,7 @@
 			"english": "Kangaskhan",
 			"french": "Kangourex"
 		},
-		"image": "/images/pokemon/115.png",
+		"image": "assets/images/pokemon/115.png",
 		"type": [
 			"Normal"
 			],
@@ -2155,7 +2155,7 @@
 			"english": "Horsea",
 			"french": "Hypocéan"
 		},
-		"image": "/images/pokemon/116.png",
+		"image": "assets/images/pokemon/116.png",
 		"type": [
 			"Water"
 		],
@@ -2174,7 +2174,7 @@
 			"english": "Seadra",
 			"french": "Hypocéan"
 		},
-		"image": "/images/pokemon/117.png",
+		"image": "assets/images/pokemon/117.png",
 		"type": [
 			"Water"
 		],
@@ -2193,7 +2193,7 @@
 			"english": "Goldeen",
 			"french": "Poissirène"
 		},
-		"image": "/images/pokemon/118.png",
+		"image": "assets/images/pokemon/118.png",
 		"type": [
 			"Water"
 		],
@@ -2212,7 +2212,7 @@
 			"english": "Seaking",
 			"french": "Poissoroy"
 		},
-		"image": "/images/pokemon/119.png",
+		"image": "assets/images/pokemon/119.png",
 		"type": [
 			"Water"
 		],
@@ -2231,7 +2231,7 @@
 			"english": "Staryu",
 			"french": "Stari"
 		},
-		"image": "/images/pokemon/120.png",
+		"image": "assets/images/pokemon/120.png",
 		"type": [
 			"Water"
 		],
@@ -2250,7 +2250,7 @@
 			"english": "Starmie",
 			"french": "Staross"
 		},
-		"image": "/images/pokemon/121.png",
+		"image": "assets/images/pokemon/121.png",
 		"type": [
 			"Water",
 			"Psychic"
@@ -2270,7 +2270,7 @@
 			"english": "Mr. Mime",
 			"french": "M. Mime"
 		},
-		"image": "/images/pokemon/122.png",
+		"image": "assets/images/pokemon/122.png",
 		"type": [
 			"Psychic",
 			"Fairy"
@@ -2290,7 +2290,7 @@
 			"english": "Scyther",
 			"french": "Insécateur"
 		},
-		"image": "/images/pokemon/123.png",
+		"image": "assets/images/pokemon/123.png",
 		"type": [
 			"Bug",
 			"Flying"
@@ -2310,7 +2310,7 @@
 			"english": "Jynx",
 			"french": "Lippoutou"
 		},
-		"image": "/images/pokemon/124.png",
+		"image": "assets/images/pokemon/124.png",
 		"type": [
 			"Ice",
 			"Psychic"
@@ -2330,7 +2330,7 @@
 			"english": "Electabuzz",
 			"french": "Élektek"
 		},
-		"image": "/images/pokemon/125.png",
+		"image": "assets/images/pokemon/125.png",
 		"type": [
 			"Electric"
 		],
@@ -2349,7 +2349,7 @@
 			"english": "Magmar",
 			"french": "Magmar"
 		},
-		"image": "/images/pokemon/126.png",
+		"image": "assets/images/pokemon/126.png",
 		"type": [
 			"Fire"
 		],
@@ -2368,7 +2368,7 @@
 			"english": "Pinsir",
 			"french": "Scarabrute"
 		},
-		"image": "/images/pokemon/127.png",
+		"image": "assets/images/pokemon/127.png",
 		"type": [
 			"Bug"
 		],
@@ -2387,7 +2387,7 @@
 			"english": "Tauros",
 			"french": "Tauros"
 		},
-		"image": "/images/pokemon/128.png",
+		"image": "assets/images/pokemon/128.png",
 		"type": [
 			"Normal"
 		],
@@ -2406,7 +2406,7 @@
 			"english": "Magikarp",
 			"french": "Magicarpe"
 		},
-		"image": "/images/pokemon/129.png",
+		"image": "assets/images/pokemon/129.png",
 		"type": [
 			"Water"
 		],
@@ -2425,7 +2425,7 @@
 			"english": "Gyarados",
 			"french": "Léviator"
 		},
-		"image": "/images/pokemon/130.png",
+		"image": "assets/images/pokemon/130.png",
 		"type": [
 			"Water",
 			"Flying"
@@ -2445,7 +2445,7 @@
 			"english": "Lapras",
 			"french": "Lokhlass"
 		},
-		"image": "/images/pokemon/131.png",
+		"image": "assets/images/pokemon/131.png",
 		"type": [
 			"Water",
 			"Ice"
@@ -2465,7 +2465,7 @@
 			"english": "Ditto",
 			"french": "Métamorph"
 		},
-		"image": "/images/pokemon/132.png",
+		"image": "assets/images/pokemon/132.png",
 		"type": [
 			"Normal"
 		],
@@ -2484,7 +2484,7 @@
 			"english": "Eevee",
 			"french": "Évoli"
 		},
-		"image": "/images/pokemon/133.png",
+		"image": "assets/images/pokemon/133.png",
 		"type": [
 			"Normal"
 		],
@@ -2503,7 +2503,7 @@
 			"english": "Vaporeon",
 			"french": "Aquali"
 		},
-		"image": "/images/pokemon/134.png",
+		"image": "assets/images/pokemon/134.png",
 		"type": [
 			"Water"
 		],
@@ -2522,7 +2522,7 @@
 			"english": "Jolteon",
 			"french": "Voltali"
 		},
-		"image": "/images/pokemon/135.png",
+		"image": "assets/images/pokemon/135.png",
 		"type": [
 			"Electric"
 		],
@@ -2541,7 +2541,7 @@
 			"english": "Flareon",
 			"french": "Pyroli"
 		},
-		"image": "/images/pokemon/136.png",
+		"image": "assets/images/pokemon/136.png",
 		"type": [
 			"Fire"
 		],
@@ -2560,7 +2560,7 @@
 			"english": "Porygon",
 			"french": "Porygon"
 		},
-		"image": "/images/pokemon/137.png",
+		"image": "assets/images/pokemon/137.png",
 		"type": [
 			"Normal"
 		],
@@ -2579,7 +2579,7 @@
 			"english": "Omanyte",
 			"french": "Amonita"
 		},
-		"image": "/images/pokemon/138.png",
+		"image": "assets/images/pokemon/138.png",
 		"type": [
 			"Rock",
 			"Water"
@@ -2599,7 +2599,7 @@
 			"english": "Omastar",
 			"french": "Amonistar"
 		},
-		"image": "/images/pokemon/139.png",
+		"image": "assets/images/pokemon/139.png",
 		"type": [
 			"Rock",
 			"Water"
@@ -2619,7 +2619,7 @@
 			"english": "Kabuto",
 			"french": "Kabuto"
 		},
-		"image": "/images/pokemon/140.png",
+		"image": "assets/images/pokemon/140.png",
 		"type": [
 			"Rock",
 			"Water"
@@ -2639,7 +2639,7 @@
 			"english": "Kabutops",
 			"french": "Kabutops"
 		},
-		"image": "/images/pokemon/141.png",
+		"image": "assets/images/pokemon/141.png",
 		"type": [
 			"Rock",
 			"Water"
@@ -2659,7 +2659,7 @@
 			"english": "Aerodactyl",
 			"french": "Ptéra"
 		},
-		"image": "/images/pokemon/142.png",
+		"image": "assets/images/pokemon/142.png",
 		"type": [
 			"Rock",
 			"Flying"
@@ -2679,7 +2679,7 @@
 			"english": "Snorlax",
 			"french": "Ronflex"
 		},
-		"image": "/images/pokemon/143.png",
+		"image": "assets/images/pokemon/143.png",
 		"type": [
 			"Normal"
 		],
@@ -2698,7 +2698,7 @@
 			"english": "Articuno",
 			"french": "Artikodin"
 		},
-		"image": "/images/pokemon/144.png",
+		"image": "assets/images/pokemon/144.png",
 		"type": [
 			"Ice",
 			"Flying"
@@ -2718,7 +2718,7 @@
 			"english": "Zapdos",
 			"french": "Électhor"
 		},
-		"image": "/images/pokemon/145.png",
+		"image": "assets/images/pokemon/145.png",
 		"type": [
 			"Electric",
 			"Flying"
@@ -2738,7 +2738,7 @@
 			"english": "Moltres",
 			"french": "Sulfura"
 		},
-		"image": "/images/pokemon/146.png",
+		"image": "assets/images/pokemon/146.png",
 		"type": [
 			"Fire",
 			"Flying"
@@ -2758,7 +2758,7 @@
 			"english": "Dratini",
 			"french": "Minidraco"
 		},
-		"image": "/images/pokemon/147.png",
+		"image": "assets/images/pokemon/147.png",
 		"type": [
 			"Dragon"
 		],
@@ -2777,7 +2777,7 @@
 			"english": "Dragonair",
 			"french": "Draco"
 		},
-		"image": "/images/pokemon/148.png",
+		"image": "assets/images/pokemon/148.png",
 		"type": [
 			"Dragon"
 		],
@@ -2796,7 +2796,7 @@
 			"english": "Dragonite",
 			"french": "Dracolosse"
 		},
-		"image": "/images/pokemon/149.png",
+		"image": "assets/images/pokemon/149.png",
 		"type": [
 			"Dragon",
 			"Flying"
@@ -2816,7 +2816,7 @@
 			"english": "Mewtwo",
 			"french": "Mewtwo"
 		},
-		"image": "/images/pokemon/150.png",
+		"image": "assets/images/pokemon/150.png",
 		"type": [
 			"Psychic"
 		],
@@ -2835,7 +2835,7 @@
 			"english": "Mew",
 			"french": "Mew"
 		},
-		"image": "/images/pokemon/151.png",
+		"image": "assets/images/pokemon/151.png",
 		"type": [
 			"Psychic"
 		],

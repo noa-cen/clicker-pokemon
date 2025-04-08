@@ -26,10 +26,40 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: 50% 100%;
+}
 
+.game-container {
     display: flex;
     flex-direction: column;
-    margin: 8px;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 92svh;
+    width: 100svw;
+    padding: 4px;
+}
+
+.top, .message, .bottom {
+    width: calc(100svw - 8px);
+    height: calc(92svh / 3);
+    padding: 0 4px;
+}
+
+.top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.message {
+    display: flex;
+    align-items: flex-start;
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 h1 {
@@ -38,13 +68,7 @@ h1 {
     background-repeat: no-repeat;
     background-position: center;
     height: 200px;
-}
-
-.game-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-items: center;
+    width: 100%;
 }
 
 .box {
@@ -59,7 +83,7 @@ h1 {
     justify-content: center;
 }
 
-.container {
+.inputContainer {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -70,7 +94,7 @@ h1 {
         border: 2px solid black;
         border-radius: 2px;
         color: black;
-        max-width: 100%;
+        width: 100%;
         padding: 0 8px;
     }
 
@@ -87,21 +111,17 @@ h1 {
 }
 
 .professor {
-    height: 200px;
-    position: relative;
-    top: 180px;
-}
-
-.containerStarter {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-    top: 420px;
+    height: 180px;
+    margin: 0 auto;
 }
 
 .pokemon {
     width: 100px;
+    margin: 0 auto;
+}
+
+.pokedex {
+    width: 60px;
 }
 
 .pokedollar-img {

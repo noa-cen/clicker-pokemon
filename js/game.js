@@ -1,24 +1,27 @@
 import { showStarterChoice, rules } from './pokemon.js';
+import { openPokedex } from './pokedex.js';
 
-const gameContainer = document.querySelector(".game-container");
+const top = document.querySelector(".top");
+const message = document.querySelector(".message");
+const bottom = document.querySelector(".bottom");
 
 function startGame() {
     const starter = localStorage.getItem("starter");
 
     if (starter) {
-        rules(starter, gameContainer);
+        rules(starter);
     } else {
         const box = document.createElement("article");
         box.id = "question";
         box.classList.add("box");
-        gameContainer.appendChild(box);
+        message.appendChild(box);
 
         const question = document.createElement("p");
         question.textContent = "What's your name ?";
         box.appendChild(question);
 
         const inputContainer = document.createElement("article");
-        inputContainer.classList.add("container");
+        inputContainer.classList.add("inputContainer");
         box.appendChild(inputContainer);
 
         const inputName = document.createElement("input");
@@ -35,7 +38,7 @@ function startGame() {
         const professorOak = document.createElement("img");
         professorOak.src = "assets/images/professorOak.png";
         professorOak.classList.add("professor");
-        gameContainer.appendChild(professorOak);
+        bottom.appendChild(professorOak);
 
         const playerName = localStorage.getItem("playerName");
 
@@ -61,16 +64,85 @@ function askName() {
 function chooseStarter(playerName) {
     const question = document.getElementById("question");
     const professor = document.querySelector(".professor");
-    gameContainer.removeChild(question);
-    gameContainer.removeChild(professor);
+    message.removeChild(question);
+    bottom.removeChild(professor);
 
     const hello = document.createElement("p");
     hello.classList.add("box");
     hello.id = "hello";
     hello.innerHTML = `Hello ${playerName},<br> let's choose your starter.`;
-    gameContainer.appendChild(hello);
+    message.appendChild(hello);
 
-    showStarterChoice(gameContainer);
+    showStarterChoice(message);
+}
+
+function displayPokedex(message) {
+    const pokedex = document.createElement("img");
+    pokedex.classList.add("pokedex");
+    pokedex.src = "assets/images/pokedex.png";
+    pokedex.alt = "pokedex";
+    pokedex.id = "pokedex";
+    message.appendChild(pokedex);
+
+    document.addEventListener('DOMContentLoaded', () => {
+        const pokedex = document.getElementById('pokedex');
+        pokedex.addEventListener('click', openPokedex);
+      });
+}
+
+function animatePokedollar() {
+    const pokedollarImg = document.createElement("img");
+    pokedollarImg.src = "assets/images/pokedollar.png";
+    pokedollarImg.alt = "Pokédollar";
+    pokedollarImg.classList.add("pokedollar-img");
+
+    pokedollarImg.style.position = "absolute";
+    const randomLeft = Math.random() * (245 - 30) + 30;
+    pokedollarImg.style.left = `${randomLeft}px`;
+    pokedollarImg.style.top = `75px`;
+    pokedollarImg.style.transform = "translateY(-75px)";
+    pokedollarImg.style.transition = "transform 0.5s ease, opacity 0.5s ease";
+    top.appendChild(pokedollarImg);
+
+    setTimeout(() => {
+        pokedollarImg.style.transform = "scale(1)";
+        pokedollarImg.style.opacity = "0";
+    }, 10);
+
+    setTimeout(() => {
+        pokedollarImg.remove();
+    }, 500);
+}
+
+export function play(pokemonClicker) {
+    const counter = document.createElement("p");
+    counter.classList.add("box");
+    counter.id = "pokedollars";
+
+    let pokedollars = parseInt(localStorage.getItem("pokedollars")) || 0;
+    counter.textContent = `Pokédollars: ${pokedollars}₽`;
+
+    let firstClick = true;
+
+    pokemonClicker.addEventListener("click", () => {
+        const rulesMessage = document.getElementById("rulesMessage");
+        if (rulesMessage) {
+            rulesMessage.remove();
+        }
+        const clickSound = new Audio("assets/sounds/money.mp3");
+        clickSound.play();
+        pokedollars++;
+        counter.textContent = `Pokédollars: ${pokedollars}₽`;
+        localStorage.setItem("pokedollars", pokedollars);
+
+        if (firstClick) {
+            top.appendChild(counter);
+            displayPokedex(message);
+            firstClick = false;
+        }
+
+        animatePokedollar();
+    });
 }
 
 startGame();
