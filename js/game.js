@@ -78,13 +78,6 @@ function chooseStarter(playerName) {
 }
 
 function displayMenu(message) {
-    const pokedex = document.createElement("img");
-    pokedex.classList.add("pokedex");
-    pokedex.src = "assets/images/pokedex.png";
-    pokedex.alt = "pokedex";
-    pokedex.id = "pokedex";
-    message.appendChild(pokedex);
-
     const shop = document.createElement("img");
     shop.classList.add("shop");
     shop.src = "assets/images/shop.png";
@@ -92,16 +85,22 @@ function displayMenu(message) {
     shop.id = "shop";
     message.appendChild(shop);
 
-    const bag = document.createElement("img");
-    bag.classList.add("bag");
-    bag.src = "assets/images/bag.png";
-    bag.alt = "bag";
-    bag.id = "bag";
-    message.appendChild(bag);
+    const pokedex = document.createElement("img");
+    pokedex.classList.add("pokedex");
+    pokedex.src = "assets/images/pokedex.png";
+    pokedex.alt = "pokedex";
+    pokedex.id = "pokedex";
+    message.appendChild(pokedex);
+
+    const ash = document.createElement("img");
+    ash.classList.add("ash");
+    ash.src = "assets/images/ash.png";
+    ash.alt = "ash";
+    ash.id = "ash";
+    message.appendChild(ash);
 
     pokedex.addEventListener('click', openPokedex);
     shop.addEventListener('click', openShop);
-    bag.addEventListener('click', openBag);
 }
 
 function animatePokedollar() {

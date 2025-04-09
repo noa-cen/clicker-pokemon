@@ -1,0 +1,113 @@
+[{
+    "id": 1,
+    "name": "pokeball",
+    "image": "assets/images/shop/pokeball-1.png",
+    "cost": "200",
+    "description": "capture low-level Pokemon",
+    "quantity": 0
+},
+{
+    "id": 2,
+    "name": "greatball",
+    "image": "assets/images/shop/greatball-1.png",
+    "cost": "600",
+    "description": "capture medium level Pokemon",
+    "quantity": 0
+},
+{
+    "id": 3,
+    "name": "ultraball",
+    "image": "assets/images/shop/ultraball-1.png",
+    "cost": "1200",
+    "description": "capture high-level Pokemon",
+    "quantity": 0
+},
+{
+    "id": 4,
+    "name": "masterball",
+    "image": "assets/images/shop/masterball-1.png",
+    "cost": "",
+    "description": "captures any Pokemon (only one exists)",
+    "quantity": 1
+},
+{
+    "id": 5,
+    "name": "leaf stone",
+    "image": "assets/images/shop/leafStone.png",
+    "cost": "2100",
+    "description": "used to evolve Gloom, Weepinbell and Exeggcute",
+    "quantity": 0
+},
+{
+    "id": 6,
+    "name": "thunder stone",
+    "image": "assets/images/shop/thunderStone.png",
+    "cost": "2100",
+    "description": "used to evolve Pikachu and Eevee",
+    "quantity": 0
+},
+{
+    "id": 7,
+    "name": "water stone",
+    "image": "assets/images/shop/waterStone.png",
+    "cost": "2100",
+    "description": "used to evolve Poliwhirl, Shellder, Staryu and Eeve",
+    "quantity": 0
+},
+{
+    "id": 8,
+    "name": "moon stone",
+    "image": "assets/images/shop/moonStone.png",
+    "cost": "2100",
+    "description": "used to evolve Nidorino, Nidorina, Clefairy and Jigglypuff",
+    "quantity": 0
+},
+{
+    "id": 9,
+    "name": "fire stone",
+    "image": "assets/images/shop/fireStone.png",
+    "cost": "2100",
+    "description": "use to evolve Growlithe, Vulpix and Eevee",
+    "quantity": 0
+},
+{
+    "id": 10,
+    "name": "rare candy",
+    "image": "assets/images/shop/rareCandy.png",
+    "cost": "2100",
+    "description": "level gain",
+    "quantity": 0
+},
+{
+    "id": 11,
+    "name": "bike voucher",
+    "image": "assets/images/shop/bikeVoucher.png",
+    "cost": "",
+    "description": "free bike",
+    "quantity": 1
+},
+{
+    "id": 12,
+    "name": "bicycle",
+    "image": "assets/images/shop/bicycle.png",
+    "cost": "1000000",
+    "description": "travel at double speed",
+    "quantity": 1
+},
+{
+    "id": 13,
+    "name": "items finder",
+    "image": "assets/images/shop/itemsFinder.png",
+    "cost": "10000",
+    "description": "reveals hidden items",
+    "quantity": 1
+},
+{
+    "id": 14,
+    "name": "pokeflute",
+    "image": "assets/images/shop/pokeflute.png",
+    "cost": "5000",
+    "description": "wakes up Snorlax",
+    "quantity": 1
+}
+]

@@ -126,15 +126,58 @@ h1 {
 }
 
 .pokedex {
-    width: 60px;
-}
-
-.shop, .bag {
     margin-top: 8px;
-    width: 60px;
+    width: 50px;
 }
 
-.pokedexModal {
+.shop {
+    width: 45px;
+}
+
+.itemContainer {
+    display: flex;
+    margin-top: 8px;
+
+    .itemImage {
+        width: 50px;
+        height: 50px;
+        object-fit: contain;
+    }
+
+    .itemInfo {
+        display: flex;
+        flex-direction: column;
+        font-size: 10px;
+
+        .itemHeader {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .itemHeader h3 {
+            font-size: 12px;
+        }
+
+        .cost {
+            font-size: 14px;
+            min-width: 50px;
+            text-align: right;
+        }
+
+        .itemDescription {
+            width: 72svw;
+        }
+    }
+}
+
+.ash {
+    margin-top: 8px;
+    margin-left: 3px;
+    width: 40px;
+}
+
+.modal {
     position: fixed;
     top: 4px;
     left: 4px;
@@ -142,7 +185,7 @@ h1 {
     height: calc(100% - 8px);
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     overflow-x: hidden;
     overflow-y: scroll;

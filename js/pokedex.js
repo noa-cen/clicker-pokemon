@@ -7,7 +7,7 @@ const gameContainer = document.querySelector(".game-container");
 
 export function openPokedex() {
     const pokedexModal = document.createElement("section");
-    pokedexModal.classList.add("pokedexModal");
+    pokedexModal.classList.add("modal");
     pokedexModal.classList.add("box");
 
     getPokemon().then(pokemons => {
