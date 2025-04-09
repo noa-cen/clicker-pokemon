@@ -96,9 +96,19 @@
             "image": "assets/images/shop/masterball-1.png"
         },
         {
+            "id": 10,
+            "name": "rare candy",
+            "image": "assets/images/shop/rareCandy.png"
+        },
+        {
             "id": 11,
             "name": "bike voucher",
             "image": "assets/images/shop/bikeVoucher.png"
+        },
+        {
+            "id": 16,
+            "name": "nugget",
+            "image": "assets/images/shop/nugget.png"
         }
     ]
 },

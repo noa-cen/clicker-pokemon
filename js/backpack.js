@@ -1,4 +1,5 @@
 import { getItems } from './shop.js';
+import { animatePokedollar } from './game.js';
 
 const gameContainer = document.querySelector(".game-container");
 
@@ -29,6 +30,8 @@ export function openBackpack() {
     backpackModal.appendChild(closeButton);
 
     closeButton.addEventListener("click", () => {
+        const clickSound = new Audio("assets/sounds/click.mp3");
+        clickSound.play();
         backpackModal.remove();
     });
 
@@ -70,7 +73,7 @@ export function itemsFinder() {
 
     if (backpack["items finder"]) {
         setInterval(() => {
-            const randomChoice = Math.random() < 0.8;
+            const randomChoice = Math.random() < 0.9;
 
             if (randomChoice) {
                 const currentPokedollars = parseInt(localStorage.getItem("pokedollars")) || 0;
@@ -78,6 +81,9 @@ export function itemsFinder() {
                 localStorage.setItem("pokedollars", newPokedollars);
                 let counter = document.getElementById("pokedollars");
                 counter.textContent = `Pokédollars: ${newPokedollars}₽`;
+                const clickSound = new Audio("assets/sounds/money.mp3");
+                clickSound.play();
+                animatePokedollar();
             } else {
                 const itemsFinder = getItems().find(item => item.name === "items finder");
                 const randomItem = itemsFinder.items[Math.floor(Math.random() * itemsFinder.items.length)];

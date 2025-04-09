@@ -1,12 +1,13 @@
 import { showStarterChoice, rules } from './pokemon.js';
 import { openPokedex } from './pokedex.js';
 import { openShop } from './shop.js';
-import { openBackpack } from './backpack.js';
+import { openBackpack, itemsFinder } from './backpack.js';
 import { playerInfo } from './ash.js';
 
 const top = document.querySelector(".top");
 const message = document.querySelector(".message");
 const bottom = document.querySelector(".bottom");
+const gameContainer = document.querySelector(".game-container");
 
 function startGame() {
     const pokemons = JSON.parse(localStorage.getItem("pokemons") || "[]");
@@ -108,13 +109,29 @@ function displayMenu(message) {
     ash.id = "ash";
     message.appendChild(ash);
 
-    pokedex.addEventListener('click', openPokedex);
-    shop.addEventListener('click', openShop);
-    backpack.addEventListener('click', openBackpack);
-    ash.addEventListener('click', playerInfo);
+    pokedex.addEventListener('click', () => {
+        const clickSound = new Audio("assets/sounds/click.mp3");
+        clickSound.play();
+        openPokedex();
+    });
+    shop.addEventListener('click', () => {
+        const clickSound = new Audio("assets/sounds/click.mp3");
+        clickSound.play();
+        openShop();
+    });
+    backpack.addEventListener('click', () => {
+        const clickSound = new Audio("assets/sounds/click.mp3");
+        clickSound.play();
+        openBackpack();
+    });
+    ash.addEventListener('click', () => {
+        const clickSound = new Audio("assets/sounds/click.mp3");
+        clickSound.play();
+        playerInfo();
+    });
 }
 
-function animatePokedollar() {
+export function animatePokedollar() {
     const pokedollarImg = document.createElement("img");
     pokedollarImg.src = "assets/images/pokedollar.png";
     pokedollarImg.alt = "Pokédollar";
@@ -137,6 +154,87 @@ function animatePokedollar() {
         pokedollarImg.remove();
     }, 500);
 }
+
+function playMusic() {
+    const mediaPlayer = document.createElement("section");
+    mediaPlayer.classList.add("mediaPlayer");
+
+    const backwardBtn = document.createElement("p");
+    backwardBtn.innerHTML = '<i class="fa-solid fa-backward"></i>';
+    backwardBtn.classList.add("mediaPlayerBtn");
+    const playPauseBtn = document.createElement("p");
+    playPauseBtn.innerHTML = '<i class="fa-solid fa-volume-xmark"></i>';
+    playPauseBtn.classList.add("mediaPlayerBtn");
+    const forwardBtn = document.createElement("p");
+    forwardBtn.innerHTML = '<i class="fa-solid fa-forward"></i>';
+    forwardBtn.classList.add("mediaPlayerBtn");
+
+    mediaPlayer.appendChild(backwardBtn);
+    mediaPlayer.appendChild(playPauseBtn);
+    mediaPlayer.appendChild(forwardBtn);
+
+    const playlist = [
+        "assets/sounds/01 Opening (part 1).mp3",
+        "assets/sounds/02 Opening (part 2).mp3",
+        "assets/sounds/03 To Bill's Origin ~ From Cerulean.mp3",
+        "assets/sounds/04 Pallet Town's Theme.mp3",
+        "assets/sounds/05 Pokemon Center.mp3",
+        "assets/sounds/06 Pokemon Gym.mp3"
+    ];
+
+    let currentTrack = 0;
+    let isPlaying = false;
+    let music = new Audio(playlist[currentTrack]);
+
+    function playPreviousTrack() {
+        if (music) {
+            music.pause();
+            music.currentTime = 0;
+        }
+
+        currentTrack = (currentTrack - 1) % playlist.length;
+        music = new Audio(playlist[currentTrack]);
+        music.play();
+    }
+
+    function playNextTrack() {
+        if (music) {
+            music.pause();
+            music.currentTime = 0;
+        }
+        
+        currentTrack = (currentTrack + 1) % playlist.length;
+        music = new Audio(playlist[currentTrack]);
+        music.addEventListener("ended", playNextTrack);
+        music.play();
+    }
+
+    backwardBtn.addEventListener("click", () => {
+        playPreviousTrack();
+    });
+
+    playPauseBtn.addEventListener("click", () => {
+        if (isPlaying) {
+            music.pause();
+            isPlaying = false;
+            playPauseBtn.innerHTML = '<i class="fa-solid fa-volume-xmark"></i>';
+        } else {
+            music.play();
+            isPlaying = true;
+            playPauseBtn.innerHTML = '<i class="fa-solid fa-volume-high"></i>';
+
+            music.addEventListener("ended", playNextTrack);
+        }
+    });
+
+    forwardBtn.addEventListener("click", () => {
+        playNextTrack();
+    });
+
+    top.appendChild(mediaPlayer);
+}
+playMusic();
+
 
 export function play(pokemonClicker) {
     const counter = document.createElement("p");
@@ -167,6 +265,7 @@ export function play(pokemonClicker) {
 
         animatePokedollar();
     });
+    itemsFinder();
 }
 
 startGame();

@@ -62,6 +62,11 @@ export function openShop() {
                     let counter = document.getElementById("pokedollars");
                     counter.textContent = `Pokédollars: ${newPokedollars}₽`;
                     localStorage.setItem("pokedollars", newPokedollars);
+
+                    if (item.quantity === 1) {
+                        itemElement.classList.add("disabled");
+                        itemElement.style.pointerEvents = "none";
+                    }
             
                     if (item.name === "items finder") {
                         itemsFinder();
@@ -77,6 +82,8 @@ export function openShop() {
     shopModal.appendChild(closeButton);
 
     closeButton.addEventListener("click", () => {
+        const clickSound = new Audio("assets/sounds/click.mp3");
+        clickSound.play();
         shopModal.remove();
     });
 

@@ -145,10 +145,16 @@ h1 {
     width: 30px;
 }
 
-.ash, .backpack, .shop, .pokedex {
-    margin-top: 8px;
+.ash, .backpack, .shop {
+    margin-top: 16px;
     margin-left: 3px;
-    width: 40px;
+    width: 45px;
+}
+
+.pokedex {
+    margin-top: 10px;
+    margin-left: 9px;
+    height: 50px;
 }
 
 .itemContainer {
@@ -187,7 +193,7 @@ h1 {
 
 .modal {
     position: fixed;
-    top: 24px;
+    top: 20px;
     left: 8px;
     width: calc(100% - 16px);
     height: calc(100% - 56px);
@@ -202,7 +208,7 @@ h1 {
 
 .playerModal {
     position: fixed;
-    top: 24px;
+    top: 20px;
     left: 8px;
     width: calc(100% - 16px);
     display: flex;
@@ -243,4 +249,34 @@ h1 {
 
 .disabled {
     filter: grayscale(100%);
+}
+
+.mediaPlayer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #FFFFFF;
+    border: 2px solid black;
+    border-radius: 4px;
+    padding: 4px;
+}
+
+.mediaPlayerBtn {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    margin: 0 4px;
+    cursor: pointer;
+}
+
+.mediaPlayerBtn i {
+    pointer-events: none;
+    width: 100%;
+    text-align: center;
 }

@@ -42,6 +42,8 @@ export function openPokedex() {
     pokedexModal.appendChild(closeButton);
 
     closeButton.addEventListener("click", () => {
+        const clickSound = new Audio("assets/sounds/click.mp3");
+        clickSound.play();
         pokedexModal.remove();
     });
 
