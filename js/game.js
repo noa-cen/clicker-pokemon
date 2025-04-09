@@ -85,6 +85,13 @@ function displayMenu(message) {
     shop.id = "shop";
     message.appendChild(shop);
 
+    const backpack = document.createElement("img");
+    backpack.classList.add("backpack");
+    backpack.src = "assets/images/backpack.png";
+    backpack.alt = "backpack";
+    backpack.id = "backpack";
+    message.appendChild(backpack);
+
     const pokedex = document.createElement("img");
     pokedex.classList.add("pokedex");
     pokedex.src = "assets/images/pokedex.png";
@@ -132,9 +139,6 @@ export function play(pokemonClicker) {
     counter.classList.add("box");
     counter.id = "pokedollars";
 
-    let pokedollars = parseInt(localStorage.getItem("pokedollars")) || 0;
-    counter.textContent = `Pokédollars: ${pokedollars}₽`;
-
     let firstClick = true;
 
     pokemonClicker.addEventListener("click", () => {
@@ -144,6 +148,9 @@ export function play(pokemonClicker) {
         }
         const clickSound = new Audio("assets/sounds/money.mp3");
         clickSound.play();
+
+        let pokedollars = parseInt(localStorage.getItem("pokedollars")) || 0;
+        counter.textContent = `Pokédollars: ${pokedollars}₽`;
         pokedollars++;
         counter.textContent = `Pokédollars: ${pokedollars}₽`;
         localStorage.setItem("pokedollars", pokedollars);

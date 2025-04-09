@@ -2,7 +2,7 @@
     "id": 1,
     "name": "pokeball",
     "image": "assets/images/shop/pokeball-1.png",
-    "cost": "200",
+    "cost": "10",
     "description": "capture low-level Pokemon",
     "quantity": 0
 },
@@ -108,6 +108,14 @@
     "image": "assets/images/shop/pokeflute.png",
     "cost": "5000",
     "description": "wakes up Snorlax",
+    "quantity": 1
+},
+{
+    "id": 15,
+    "name": "multi-exp",
+    "image": "assets/images/shop/multi-exp.png",
+    "cost": "5000",
+    "description": "automatic experience gain",
     "quantity": 1
 }
 ]

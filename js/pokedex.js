@@ -12,8 +12,23 @@ export function openPokedex() {
 
     getPokemon().then(pokemons => {
         pokemons.forEach(pokemon => {
-            const element = createPokemonElement(pokemon);
-            pokedexModal.appendChild(element);
+            const pokemonWrapper = document.createElement("article");
+            pokemonWrapper.classList.add("pokemonWrapper");
+
+            const element = createPokemonElement(pokemon, "pokemonPokedex");
+            const pokedexInfo = document.createElement("article");
+            pokedexInfo.classList.add("pokedexInfo");
+            const name = document.createElement("p");
+            name.textContent = `${pokemon.number}: ${pokemon.name.english}`;
+            name.classList.add("name");
+            const type = document.createElement("p");
+            type.textContent = `type: ${pokemon.type}`;
+
+            pokedexInfo.appendChild(name);
+            pokedexInfo.appendChild(type);
+            pokemonWrapper.appendChild(element);
+            pokemonWrapper.appendChild(pokedexInfo);
+            pokedexModal.appendChild(pokemonWrapper);
         });
     });
 

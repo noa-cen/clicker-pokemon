@@ -55,11 +55,11 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    justify-content: space-between;
 }
 
 .bottom {
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 
@@ -81,7 +81,6 @@ h1 {
     max-width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
 }
 
 .inputContainer {
@@ -121,17 +120,35 @@ h1 {
     margin: 0 auto;
 }
 
+.pokemonWrapper {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    .pokedexInfo {
+        display: flex;
+        flex-direction: column;
+        font-size: 10px;
+    }
+
+    .name {
+        font-size: 14px;
+    }
+}
+
+.pokemonPokedex {
+    width: 65px;
+    margin-top: 8px;
+}
+
 .pokedollar-img {
     width: 30px;
 }
 
-.pokedex {
+.ash, .backpack, .shop, .pokedex {
     margin-top: 8px;
-    width: 50px;
-}
-
-.shop {
-    width: 45px;
+    margin-left: 3px;
+    width: 40px;
 }
 
 .itemContainer {
@@ -166,31 +183,24 @@ h1 {
         }
 
         .itemDescription {
-            width: 72svw;
+            width: 70svw;
         }
     }
 }
 
-.ash {
-    margin-top: 8px;
-    margin-left: 3px;
-    width: 40px;
-}
-
 .modal {
     position: fixed;
-    top: 4px;
-    left: 4px;
-    width: calc(100% - 8px);
-    height: calc(100% - 8px);
+    top: 8px;
+    left: 8px;
+    width: calc(100% - 16px);
+    height: calc(100% - 16px);
     display: flex;
-    flex-flow: row wrap;
+    flex-direction: column;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
     overflow-x: hidden;
     overflow-y: scroll;
     z-index: 1000;
-    margin: auto;
 }
 
 .close-modal {
@@ -203,4 +213,8 @@ h1 {
     padding: 10px;
     cursor: pointer;
     font-size: 16px;
+}
+
+.disabled {
+    filter: grayscale(100%);
 }

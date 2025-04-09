@@ -15,12 +15,12 @@ export async function getPokemon() {
     }
 }
 
-export function createPokemonElement(pokemon) {
+export function createPokemonElement(pokemon, className = "pokemon") {
     const pokemonsCaptured = JSON.parse(localStorage.getItem("pokemons")) || [];
     const hasPokemon = pokemonsCaptured.includes(pokemon.id);
 
     const pokemonElement = document.createElement("img");
-    pokemonElement.classList.add("pokemon");
+    pokemonElement.classList.add(className);
     pokemonElement.alt = pokemon.name.english;
     pokemonElement.id = `${pokemon.name.english.toLowerCase()}`;
 

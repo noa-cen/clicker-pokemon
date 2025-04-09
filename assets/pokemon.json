@@ -1,5 +1,6 @@
 [{
 		"id": 1,
+		"number": "001",
 		"name": {
 			"english": "Bulbasaur",
 			"french": "Bulbizarre"
@@ -20,6 +21,7 @@
 	},
 	{
 		"id": 2,
+		"number": "002",
 		"name": {
 			"english": "Ivysaur",
 			"french": "Herbizarre"
@@ -40,6 +42,7 @@
 	},
 	{
 		"id": 3,
+		"number": "003",
 		"name": {
 			"english": "Venusaur",
 			"french": "Florizarre"
@@ -60,6 +63,7 @@
 	},
 	{
 		"id": 4,
+		"number": "004",
 		"name": {
 			"english": "Charmander",
 			"french": "Salamèche"
@@ -79,6 +83,7 @@
 	},
 	{
 		"id": 5,
+		"number": "005",
 		"name": {
 			"english": "Charmeleon",
 			"french": "Reptincel"
@@ -98,6 +103,7 @@
 	},
 	{
 		"id": 6,
+		"number": "006",
 		"name": {
 			"english": "Charizard",
 			"french": "Dracaufeu"
@@ -118,6 +124,7 @@
 	},
 	{
 		"id": 7,
+		"number": "007",
 		"name": {
 			"english": "Squirtle",
 			"french": "Carapuce"
@@ -137,6 +144,7 @@
 	},
 	{
 		"id": 8,
+		"number": "008",
 		"name": {
 			"english": "Wartortle",
 			"french": "Carabaffe"
@@ -156,6 +164,7 @@
 	},
 	{
 		"id": 9,
+		"number": "009",
 		"name": {
 			"english": "Blastoise",
 			"french": "Tortank"
@@ -175,6 +184,7 @@
 	},
 	{
 		"id": 10,
+		"number": "010",
 		"name": {
 			"english": "Caterpie",
 			"french": "Chenipan"
@@ -194,6 +204,7 @@
 	},
 	{
 		"id": 11,
+		"number": "011",
 		"name": {
 			"english": "Metapod",
 			"french": "Chrysacier"
@@ -213,6 +224,7 @@
 	},
 	{
 		"id": 12,
+		"number": "012",
 		"name": {
 			"english": "Butterfree",
 			"french": "Papilusion"
@@ -233,6 +245,7 @@
 	},
 	{
 		"id": 13,
+		"number": "013",
 		"name": {
 			"english": "Weedle",
 			"french": "Aspicot"
@@ -253,6 +266,7 @@
 	},
 	{
 		"id": 14,
+		"number": "014",
 		"name": {
 			"english": "Kakuna",
 			"french": "Coconfort"
@@ -273,6 +287,7 @@
 	},
 	{
 		"id": 15,
+		"number": "015",
 		"name": {
 			"english": "Beedrill",
 			"french": "Dardargnan"
@@ -293,6 +308,7 @@
 		},
 		{
 		"id": 16,
+		"number": "016",
 		"name": {
 			"english": "Pidgey",
 			"french": "Roucool"
@@ -313,6 +329,7 @@
 		},
 		{
 		"id": 17,
+		"number": "017",
 		"name": {
 			"english": "Pidgeotto",
 			"french": "Roucoups"
@@ -333,6 +350,7 @@
 		},
 		{
 		"id": 18,
+		"number": "018",
 		"name": {
 			"english": "Pidgeot",
 			"french": "Roucarnage"
@@ -353,6 +371,7 @@
 		},
 		{
 		"id": 19,
+		"number": "019",
 		"name": {
 			"english": "Rattata",
 			"french": "Rattata"
@@ -372,6 +391,7 @@
 		},
 		{
 		"id": 20,
+		"number": "020",
 		"name": {
 			"english": "Raticate",
 			"french": "Rattatac"
@@ -391,6 +411,7 @@
 		},
 		{
 		"id": 21,
+		"number": "021",
 		"name": {
 			"english": "Spearow",
 			"french": "Piafabec"
@@ -411,6 +432,7 @@
 		},
 		{
 		"id": 22,
+		"number": "022",
 		"name": {
 			"english": "Fearow",
 			"french": "Rapasdepic"
@@ -431,6 +453,7 @@
 		},
 		{
 		"id": 23,
+		"number": "023",
 		"name": {
 			"english": "Ekans",
 			"french": "Abo"
@@ -450,6 +473,7 @@
 		},
 		{
 		"id": 24,
+		"number": "024",
 		"name": {
 			"english": "Arbok",
 			"french": "Arbok"
@@ -469,6 +493,7 @@
 	},
 	{
 		"id": 25,
+		"number": "025",
 		"name": {
 			"english": "Pikachu",
 			"french": "Pikachu"
@@ -488,6 +513,7 @@
 	},
 	{
 		"id": 26,
+		"number": "026",
 		"name": {
 			"english": "Raichu",
 			"french": "Raichu"
@@ -507,6 +533,7 @@
 	},
 	{
 		"id": 27,
+		"number": "027",
 		"name": {
 			"english": "Sandshrew",
 			"french": "Sabelette"
@@ -526,6 +553,7 @@
 	},
 	{
 		"id": 28,
+		"number": "028",
 		"name": {
 			"english": "Sandslash",
 			"french": "Sablaireau"
@@ -545,6 +573,7 @@
 	},
 	{
 		"id": 29,
+		"number": "029",
 		"name": {
 			"english": "Nidoran♀",
 			"french": "Nidoran♀"
@@ -564,6 +593,7 @@
 	},
 	{
 		"id": 30,
+		"number": "030",
 		"name": {
 			"english": "Nidorina",
 			"french": "Nidorina"
@@ -583,6 +613,7 @@
 	},
 	{
 		"id": 31,
+		"number": "031",
 		"name": {
 			"english": "Nidoqueen",
 			"french": "Nidoqueen"
@@ -603,6 +634,7 @@
 	},
 	{
 		"id": 32,
+		"number": "032",
 		"name": {
 			"english": "Nidoran♂",
 			"french": "Nidoran♂"
@@ -622,6 +654,7 @@
 	},
 	{
 		"id": 33,
+		"number": "033",
 		"name": {
 			"english": "Nidorino",
 			"french": "Nidorino"
@@ -641,6 +674,7 @@
 	},
 	{
 		"id": 34,
+		"number": "034",
 		"name": {
 			"english": "Nidoking",
 			"french": "Nidoking"
@@ -661,6 +695,7 @@
 	},
 	{
 		"id": 35,
+		"number": "035",
 		"name": {
 			"english": "Clefairy",
 			"french": "Mélofée"
@@ -680,6 +715,7 @@
 	},
 	{
 		"id": 36,
+		"number": "036",
 		"name": {
 			"english": "Clefable",
 			"french": "Mélodelfe"
@@ -699,6 +735,7 @@
 	},
 	{
 		"id": 37,
+		"number": "037",
 		"name": {
 			"english": "Vulpix",
 			"french": "Goupix"
@@ -718,6 +755,7 @@
 	},
 	{
 		"id": 38,
+		"number": "038",
 		"name": {
 			"english": "Ninetales",
 			"french": "Feunard"
@@ -737,6 +775,7 @@
 	},
 	{
 		"id": 39,
+		"number": "039",
 		"name": {
 			"english": "Jigglypuff",
 			"french": "Rondoudou"
@@ -757,6 +796,7 @@
 	},
 	{
 		"id": 40,
+		"number": "040",
 		"name": {
 			"english": "Wigglytuff",
 			"french": "Grodoudou"
@@ -777,6 +817,7 @@
 	},
 	{
 		"id": 41,
+		"number": "041",
 		"name": {
 			"english": "Zubat",
 			"french": "Nosferapti"
@@ -797,6 +838,7 @@
 	},
 	{
 		"id": 42,
+		"number": "042",
 		"name": {
 			"english": "Golbat",
 			"french": "Nosferalto"
@@ -817,6 +859,7 @@
 	},
 	{
 		"id": 43,
+		"number": "043",
 		"name": {
 			"english": "Oddish",
 			"french": "Mystherbe"
@@ -837,6 +880,7 @@
 	},
 	{
 		"id": 44,
+		"number": "044",
 		"name": {
 			"english": "Gloom",
 			"french": "Ortide"
@@ -857,6 +901,7 @@
 	},
 	{
 		"id": 45,
+		"number": "045",
 		"name": {
 			"english": "Vileplume",
 			"french": "Rafflesia"
@@ -877,6 +922,7 @@
 	},
 	{
 		"id": 46,
+		"number": "046",
 		"name": {
 			"english": "Paras",
 			"french": "Paras"
@@ -897,6 +943,7 @@
 	},
 	{
 		"id": 47,
+		"number": "047",
 		"name": {
 			"english": "Parasect",
 			"french": "Parasect"
@@ -917,6 +964,7 @@
 	},
 	{
 		"id": 48,
+		"number": "048",
 		"name": {
 			"english": "Venonat",
 			"french": "Mimitoss"
@@ -937,6 +985,7 @@
 	},
 	{
 		"id": 49,
+		"number": "049",
 		"name": {
 			"english": "Venomoth",
 			"french": "Aéromite"
@@ -957,6 +1006,7 @@
 	},
 	{
 		"id": 50,
+		"number": "050",
 		"name": {
 			"english": "Diglett",
 			"french": "Taupiqueur"
@@ -976,6 +1026,7 @@
 	},
 	{
 		"id": 51,
+		"number": "051",
 		"name": {
 			"english": "Dugtrio",
 			"french": "Triopikeur"
@@ -995,6 +1046,7 @@
 	},
 	{
 		"id": 52,
+		"number": "052",
 		"name": {
 			"english": "Meowth",
 			"french": "Miaouss"
@@ -1014,6 +1066,7 @@
 	},
 	{
 		"id": 53,
+		"number": "053",
 		"name": {
 			"english": "Persian",
 			"french": "Persian"
@@ -1033,6 +1086,7 @@
 	},
 	{
 		"id": 54,
+		"number": "054",
 		"name": {
 			"english": "Psyduck",
 			"french": "Psykokwak"
@@ -1052,6 +1106,7 @@
 	},
 	{
 		"id": 55,
+		"number": "055",
 		"name": {
 			"english": "Golduck",
 			"french": "Akwakwak"
@@ -1071,6 +1126,7 @@
 	},
 	{
 		"id": 56,
+		"number": "056",
 		"name": {
 			"english": "Mankey",
 			"french": "Férosinge"
@@ -1090,6 +1146,7 @@
 	},
 	{
 		"id": 57,
+		"number": "057",
 		"name": {
 			"english": "Primeape",
 			"french": "Colossinge"
@@ -1109,6 +1166,7 @@
 	},
 	{
 		"id": 58,
+		"number": "058",
 		"name": {
 			"english": "Growlithe",
 			"french": "Caninos"
@@ -1128,6 +1186,7 @@
 	},
 	{
 		"id": 59,
+		"number": "059",
 		"name": {
 			"english": "Arcanine",
 			"french": "Arcanin"
@@ -1147,6 +1206,7 @@
 	},
 	{
 		"id": 60,
+		"number": "060",
 		"name": {
 			"english": "Poliwag",
 			"french": "Ptitard"
@@ -1166,6 +1226,7 @@
 	},
 	{
 		"id": 61,
+		"number": "061",
 		"name": {
 			"english": "Poliwhirl",
 			"french": "Têtarte"
@@ -1185,6 +1246,7 @@
 	},
 	{
 		"id": 62,
+		"number": "062",
 		"name": {
 			"english": "Poliwrath",
 			"french": "Tartard"
@@ -1205,6 +1267,7 @@
 	},
 	{
 		"id": 63,
+		"number": "063",
 		"name": {
 			"english": "Abra",
 			"french": "Abra"
@@ -1224,6 +1287,7 @@
 	},
 	{
 		"id": 64,
+		"number": "064",
 		"name": {
 			"english": "Kadabra",
 			"french": "Kadabra"
@@ -1243,6 +1307,7 @@
 	},
 	{
 		"id": 65,
+		"number": "065",
 		"name": {
 			"english": "Alakazam",
 			"french": "Alakazam"
@@ -1262,6 +1327,7 @@
 	},
 	{
 		"id": 66,
+		"number": "066",
 		"name": {
 			"english": "Machop",
 			"french": "Machoc"
@@ -1281,6 +1347,7 @@
 	},
 	{
 		"id": 67,
+		"number": "067",
 		"name": {
 			"english": "Machoke",
 			"french": "Machopeur"
@@ -1300,6 +1367,7 @@
 	},
 	{
 		"id": 68,
+		"number": "068",
 		"name": {
 			"english": "Machamp",
 			"french": "Mackogneur"
@@ -1319,6 +1387,7 @@
 	},
 	{
 		"id": 69,
+		"number": "069",
 		"name": {
 			"english": "Bellsprout",
 			"french": "Chétiflor"
@@ -1339,6 +1408,7 @@
 	},
 	{
 		"id": 70,
+		"number": "070",
 		"name": {
 			"english": "Weepinbell",
 			"french": "Boustiflor"
@@ -1359,6 +1429,7 @@
 	},
 	{
 		"id": 71,
+		"number": "071",
 		"name": {
 			"english": "Victreebel",
 			"french": "Empiflor"
@@ -1379,6 +1450,7 @@
 	},
 	{
 		"id": 72,
+		"number": "072",
 		"name": {
 			"english": "Tentacool",
 			"french": "Tentacool"
@@ -1399,6 +1471,7 @@
 	},
 	{
 		"id": 73,
+		"number": "073",
 		"name": {
 			"english": "Tentacruel",
 			"french": "Tentacruel"
@@ -1419,6 +1492,7 @@
 	},
 	{
 		"id": 74,
+		"number": "074",
 		"name": {
 			"english": "Geodude",
 			"french": "Racaillou"
@@ -1439,6 +1513,7 @@
 	},
 	{
 		"id": 75,
+		"number": "075",
 		"name": {
 			"english": "Graveler",
 			"french": "Gravalanch"
@@ -1459,6 +1534,7 @@
 	},
 	{
 		"id": 76,
+		"number": "076",
 		"name": {
 			"english": "Golem",
 			"french": "Grolem"
@@ -1479,6 +1555,7 @@
 	},
 	{
 		"id": 77,
+		"number": "077",
 		"name": {
 			"english": "Ponyta",
 			"french": "Ponyta"
@@ -1498,6 +1575,7 @@
 	},
 	{
 		"id": 78,
+		"number": "078",
 		"name": {
 			"english": "Rapidash",
 			"french": "Galopa"
@@ -1517,6 +1595,7 @@
 	},
 	{
 		"id": 79,
+		"number": "079",
 		"name": {
 			"english": "Slowpoke",
 			"french": "Ramoloss"
@@ -1537,6 +1616,7 @@
 	},
 	{
 		"id": 80,
+		"number": "080",
 		"name": {
 			"english": "Slowbro",
 			"french": "Flagadoss"
@@ -1557,6 +1637,7 @@
 	},
 	{
 		"id": 81,
+		"number": "081",
 		"name": {
 			"english": "Magnemite",
 			"french": "Magnéti"
@@ -1577,6 +1658,7 @@
 	},
 	{
 		"id": 82,
+		"number": "082",
 		"name": {
 			"english": "Magneton",
 			"french": "Magnéton"
@@ -1597,6 +1679,7 @@
 	},
 	{
 		"id": 83,
+		"number": "083",
 		"name": {
 			"english": "Farfetch'd",
 			"french": "Canarticho"
@@ -1617,6 +1700,7 @@
 	},
 	{
 		"id": 84,
+		"number": "084",
 		"name": {
 			"english": "Doduo",
 			"french": "Doduo"
@@ -1637,6 +1721,7 @@
 	},
 	{
 		"id": 85,
+		"number": "085",
 		"name": {
 			"english": "Dodrio",
 			"french": "Dodrio"
@@ -1657,6 +1742,7 @@
 	},
 	{
 		"id": 86,
+		"number": "086",
 		"name": {
 			"english": "Seel",
 			"french": "Otaria"
@@ -1676,6 +1762,7 @@
 	},
 	{
 		"id": 87,
+		"number": "087",
 		"name": {
 			"english": "Dewgong",
 			"french": "Lamantine"
@@ -1695,6 +1782,7 @@
 	},
 	{
 		"id": 88,
+		"number": "088",
 		"name": {
 			"english": "Grimer",
 			"french": "Tadmorv"
@@ -1714,6 +1802,7 @@
 	},
 	{
 		"id": 89,
+		"number": "089",
 		"name": {
 			"english": "Muk",
 			"french": "Grotadmorv"
@@ -1733,6 +1822,7 @@
 	},
 	{
 		"id": 90,
+		"number": "090",
 		"name": {
 			"english": "Shellder",
 			"french": "Kokiyas"
@@ -1752,6 +1842,7 @@
 	},
 	{
 		"id": 91,
+		"number": "091",
 		"name": {
 			"english": "Cloyster",
 			"french": "Crustabri"
@@ -1771,6 +1862,7 @@
 	},
 	{
 		"id": 92,
+		"number": "092",
 		"name": {
 			"english": "Gastly",
 			"french": "Fantominus"
@@ -1790,6 +1882,7 @@
 	},
 	{
 		"id": 93,
+		"number": "093",
 		"name": {
 			"english": "Haunter",
 			"french": "Spectrum"
@@ -1809,6 +1902,7 @@
 	},
 	{
 		"id": 94,
+		"number": "094",
 		"name": {
 			"english": "Gengar",
 			"french": "Ectoplasma"
@@ -1828,6 +1922,7 @@
 	},
 	{
 		"id": 95,
+		"number": "095",
 		"name": {
 			"english": "Onix",
 			"french": "Onix"
@@ -1846,7 +1941,88 @@
 		}
 	},
 	{
+		"id": 96,
+		"number": "096",
+		"name": {
+			"english": "Drowzee",
+			"french": "Soporifik"
+		},
+		"image": "assets/images/pokemon/96.png",
+		"type": [
+			"Psychic"
+		],
+		"base": {
+			"HP": 60,
+			"Attack": 48,
+			"Defense": 45,
+			"Sp. Attack": 43,
+			"Sp. Defense": 90,
+			"Speed": 42
+		}
+	},
+	{
+		"id": 97,
+		"number": "097",
+		"name": {
+			"english": "Hypno",
+			"french": "Hypnomade"
+		},
+		"image": "assets/images/pokemon/97.png",
+		"type": [
+			"Psychic"
+		],
+		"base": {
+			"HP": 85,
+			"Attack": 73,
+			"Defense": 70,
+			"Sp. Attack": 73,
+			"Sp. Defense": 115,
+			"Speed": 67
+		}
+	},
+	{
+		"id": 98,
+		"number": "098",
+		"name": {
+			"english": "Krabby",
+			"french": "Krabby"
+		},
+		"image": "assets/images/pokemon/98.png",
+		"type": [
+			"Water"
+		],
+		"base": {
+			"HP": 30,
+			"Attack": 105,
+			"Defense": 90,
+			"Sp. Attack": 25,
+			"Sp. Defense": 25,
+			"Speed": 50
+		}
+	},
+	{
+		"id": 99,
+		"number": "099",
+		"name": {
+			"english": "Kingler",
+			"french": "Krabboss"
+		},
+		"image": "assets/images/pokemon/99.png",
+		"type": [
+			"Water"
+		],
+		"base": {
+			"HP": 55,
+			"Attack": 130,
+			"Defense": 115,
+			"Sp. Attack": 50,
+			"Sp. Defense": 50,
+			"Speed": 75
+		}
+	},
+	{
 		"id": 100,
+		"number": "100",
 		"name": {
 			"english": "Voltorb",
 			"french": "Voltorbe"
@@ -1866,6 +2042,7 @@
 	},
 	{
 		"id": 101,
+		"number": "101",
 		"name": {
 			"english": "Electrode",
 			"french": "Électrode"
@@ -1885,6 +2062,7 @@
 	},
 	{
 		"id": 102,
+		"number": "102",
 		"name": {
 			"english": "Exeggcute",
 			"french": "Noeunoeuf"
@@ -1904,6 +2082,7 @@
 	},
 	{
 		"id": 103,
+		"number": "103",
 		"name": {
 			"english": "Exeggutor",
 			"french": "Noadkoko"
@@ -1923,6 +2102,7 @@
 	},
 	{
 		"id": 104,
+		"number": "104",
 		"name": {
 			"english": "Cubone",
 			"french": "Osselait"
@@ -1942,6 +2122,7 @@
 	},
 	{
 		"id": 105,
+		"number": "105",
 		"name": {
 			"english": "Marowak",
 			"french": "Ossatueur"
@@ -1961,6 +2142,7 @@
 	},
 	{
 		"id": 106,
+		"number": "106",
 		"name": {
 			"english": "Hitmonlee",
 			"french": "Kicklee"
@@ -1980,6 +2162,7 @@
 	},
 	{
 		"id": 107,
+		"number": "107",
 		"name": {
 			"english": "Hitmonchan",
 			"french": "Tygnon"
@@ -1999,6 +2182,7 @@
 	},
 	{
 		"id": 108,
+		"number": "108",
 		"name": {
 			"english": "Lickitung",
 			"french": "Excelangue"
@@ -2018,6 +2202,7 @@
 	},
 	{
 		"id": 109,
+		"number": "109",
 		"name": {
 			"english": "Koffing",
 			"french": "Smogo"
@@ -2037,6 +2222,7 @@
 	},
 	{
 		"id": 110,
+		"number": "110",
 		"name": {
 			"english": "Weezing",
 			"french": "Smogogo"
@@ -2056,6 +2242,7 @@
 	},
 	{
 		"id": 111,
+		"number": "111",
 		"name": {
 			"english": "Rhyhorn",
 			"french": "Rhinocorne"
@@ -2075,6 +2262,7 @@
 	},
 	{
 		"id": 112,
+		"number": "112",
 		"name": {
 			"english": "Rhydon",
 			"french": "Rhinoféros"
@@ -2094,6 +2282,7 @@
 	},
 	{
 		"id": 113,
+		"number": "113",
 		"name": {
 			"english": "Chansey",
 			"french": "Leveinard"
@@ -2113,6 +2302,7 @@
 	},
 	{
 		"id": 114,
+		"number": "114",
 		"name": {
 			"english": "Tangela",
 			"french": "Saquedeneu"
@@ -2132,6 +2322,7 @@
 	},
 	{
 		"id": 115,
+		"number": "115",
 		"name": {
 			"english": "Kangaskhan",
 			"french": "Kangourex"
@@ -2151,6 +2342,7 @@
 	},
 	{
 		"id": 116,
+		"number": "116",
 		"name": {
 			"english": "Horsea",
 			"french": "Hypocéan"
@@ -2170,6 +2362,7 @@
 	},
 	{
 		"id": 117,
+		"number": "117",
 		"name": {
 			"english": "Seadra",
 			"french": "Hypocéan"
@@ -2189,6 +2382,7 @@
 	},
 	{
 		"id": 118,
+		"number": "118",
 		"name": {
 			"english": "Goldeen",
 			"french": "Poissirène"
@@ -2208,6 +2402,7 @@
 	},
 	{
 		"id": 119,
+		"number": "119",
 		"name": {
 			"english": "Seaking",
 			"french": "Poissoroy"
@@ -2227,6 +2422,7 @@
 	},
 	{
 		"id": 120,
+		"number": "120",
 		"name": {
 			"english": "Staryu",
 			"french": "Stari"
@@ -2246,6 +2442,7 @@
 	},
 	{
 		"id": 121,
+		"number": "121",
 		"name": {
 			"english": "Starmie",
 			"french": "Staross"
@@ -2266,6 +2463,7 @@
 	},
 	{
 		"id": 122,
+		"number": "122",
 		"name": {
 			"english": "Mr. Mime",
 			"french": "M. Mime"
@@ -2286,6 +2484,7 @@
 	},
 	{
 		"id": 123,
+		"number": "123",
 		"name": {
 			"english": "Scyther",
 			"french": "Insécateur"
@@ -2306,6 +2505,7 @@
 	},
 	{
 		"id": 124,
+		"number": "124",
 		"name": {
 			"english": "Jynx",
 			"french": "Lippoutou"
@@ -2326,6 +2526,7 @@
 	},
 	{
 		"id": 125,
+		"number": "125",
 		"name": {
 			"english": "Electabuzz",
 			"french": "Élektek"
@@ -2345,6 +2546,7 @@
 	},
 	{
 		"id": 126,
+		"number": "126",
 		"name": {
 			"english": "Magmar",
 			"french": "Magmar"
@@ -2364,6 +2566,7 @@
 	},
 	{
 		"id": 127,
+		"number": "127",
 		"name": {
 			"english": "Pinsir",
 			"french": "Scarabrute"
@@ -2383,6 +2586,7 @@
 	},
 	{
 		"id": 128,
+		"number": "128",
 		"name": {
 			"english": "Tauros",
 			"french": "Tauros"
@@ -2402,6 +2606,7 @@
 	},
 	{
 		"id": 129,
+		"number": "129",
 		"name": {
 			"english": "Magikarp",
 			"french": "Magicarpe"
@@ -2421,6 +2626,7 @@
 	},
 	{
 		"id": 130,
+		"number": "130",
 		"name": {
 			"english": "Gyarados",
 			"french": "Léviator"
@@ -2441,6 +2647,7 @@
 	},
 	{
 		"id": 131,
+		"number": "131",
 		"name": {
 			"english": "Lapras",
 			"french": "Lokhlass"
@@ -2461,6 +2668,7 @@
 	},
 	{
 		"id": 132,
+		"number": "132",
 		"name": {
 			"english": "Ditto",
 			"french": "Métamorph"
@@ -2480,6 +2688,7 @@
 	},
 	{
 		"id": 133,
+		"number": "133",
 		"name": {
 			"english": "Eevee",
 			"french": "Évoli"
@@ -2499,6 +2708,7 @@
 	},
 	{
 		"id": 134,
+		"number": "134",
 		"name": {
 			"english": "Vaporeon",
 			"french": "Aquali"
@@ -2518,6 +2728,7 @@
 	},
 	{
 		"id": 135,
+		"number": "135",
 		"name": {
 			"english": "Jolteon",
 			"french": "Voltali"
@@ -2537,6 +2748,7 @@
 	},
 	{
 		"id": 136,
+		"number": "136",
 		"name": {
 			"english": "Flareon",
 			"french": "Pyroli"
@@ -2556,6 +2768,7 @@
 	},
 	{
 		"id": 137,
+		"number": "137",
 		"name": {
 			"english": "Porygon",
 			"french": "Porygon"
@@ -2575,6 +2788,7 @@
 	},
 	{
 		"id": 138,
+		"number": "138",
 		"name": {
 			"english": "Omanyte",
 			"french": "Amonita"
@@ -2595,6 +2809,7 @@
 	},
 	{
 		"id": 139,
+		"number": "139",
 		"name": {
 			"english": "Omastar",
 			"french": "Amonistar"
@@ -2615,6 +2830,7 @@
 	},
 	{
 		"id": 140,
+		"number": "140",
 		"name": {
 			"english": "Kabuto",
 			"french": "Kabuto"
@@ -2635,6 +2851,7 @@
 	},
 	{
 		"id": 141,
+		"number": "141",
 		"name": {
 			"english": "Kabutops",
 			"french": "Kabutops"
@@ -2655,6 +2872,7 @@
 	},
 	{
 		"id": 142,
+		"number": "142",
 		"name": {
 			"english": "Aerodactyl",
 			"french": "Ptéra"
@@ -2675,6 +2893,7 @@
 	},
 	{
 		"id": 143,
+		"number": "143",
 		"name": {
 			"english": "Snorlax",
 			"french": "Ronflex"
@@ -2694,6 +2913,7 @@
 	},
 	{
 		"id": 144,
+		"number": "144",
 		"name": {
 			"english": "Articuno",
 			"french": "Artikodin"
@@ -2714,6 +2934,7 @@
 	},
 	{
 		"id": 145,
+		"number": "145",
 		"name": {
 			"english": "Zapdos",
 			"french": "Électhor"
@@ -2734,6 +2955,7 @@
 	},
 	{
 		"id": 146,
+		"number": "146",
 		"name": {
 			"english": "Moltres",
 			"french": "Sulfura"
@@ -2754,6 +2976,7 @@
 	},
 	{
 		"id": 147,
+		"number": "147",
 		"name": {
 			"english": "Dratini",
 			"french": "Minidraco"
@@ -2773,6 +2996,7 @@
 	},
 	{
 		"id": 148,
+		"number": "148",
 		"name": {
 			"english": "Dragonair",
 			"french": "Draco"
@@ -2792,6 +3016,7 @@
 	},
 	{
 		"id": 149,
+		"number": "149",
 		"name": {
 			"english": "Dragonite",
 			"french": "Dracolosse"
@@ -2812,6 +3037,7 @@
 	},
 	{
 		"id": 150,
+		"number": "150",
 		"name": {
 			"english": "Mewtwo",
 			"french": "Mewtwo"
@@ -2831,6 +3057,7 @@
 	},
 	{
 		"id": 151,
+		"number": "151",
 		"name": {
 			"english": "Mew",
 			"french": "Mew"

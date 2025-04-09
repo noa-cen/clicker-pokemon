@@ -26,6 +26,45 @@ export function openShop() {
         items.forEach(item => {
             const itemElement = createItem(item);
             shopModal.appendChild(itemElement);
+
+            const backpack = JSON.parse(localStorage.getItem("backpack")) || {};
+            const itemAlreadyPurchased = backpack.hasOwnProperty(item.name);
+
+            if (itemAlreadyPurchased && item.quantity === 1) {
+                itemElement.classList.add("disabled");
+                itemElement.style.pointerEvents = "none";
+            }
+
+            itemElement.addEventListener("click", () => {
+                const currentPokedollars = parseInt(localStorage.getItem("pokedollars")) || 0;
+            
+                if (item.cost > currentPokedollars) {
+                    const clickSound = new Audio("assets/sounds/error.mp3");
+                    clickSound.play();
+                    return;
+                }
+
+                if (item.cost <= currentPokedollars) {
+                    const clickSound = new Audio("assets/sounds/item.mp3");
+                    clickSound.play();
+                    
+                    const backpack = JSON.parse(localStorage.getItem("backpack")) || {};
+                    if (backpack[item.name]) {
+                        backpack[item.name]++;
+                    } else {
+                        backpack[item.name] = 1;
+                    }
+                    localStorage.setItem("backpack", JSON.stringify(backpack));
+            
+                    const newPokedollars = currentPokedollars - item.cost;
+                    let counter = document.getElementById("pokedollars");
+                    counter.textContent = `Pokédollars: ${newPokedollars}₽`;
+                    localStorage.setItem("pokedollars", newPokedollars);
+            
+                    console.log("Backpack:", JSON.parse(localStorage.getItem("backpack")));
+                    console.log("Pokedollars:", newPokedollars);
+                }
+            });            
         });
     });
 
