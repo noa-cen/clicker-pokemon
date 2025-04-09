@@ -1,3 +1,5 @@
+import { itemsFinder } from './backpack.js';
+
 const top = document.querySelector(".top");
 const message = document.querySelector(".message");
 const bottom = document.querySelector(".bottom");
@@ -61,8 +63,9 @@ export function openShop() {
                     counter.textContent = `Pokédollars: ${newPokedollars}₽`;
                     localStorage.setItem("pokedollars", newPokedollars);
             
-                    console.log("Backpack:", JSON.parse(localStorage.getItem("backpack")));
-                    console.log("Pokedollars:", newPokedollars);
+                    if (item.name === "items finder") {
+                        itemsFinder();
+                    }
                 }
             });            
         });

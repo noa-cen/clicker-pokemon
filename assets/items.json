@@ -23,14 +23,6 @@
     "quantity": 0
 },
 {
-    "id": 4,
-    "name": "masterball",
-    "image": "assets/images/shop/masterball-1.png",
-    "cost": "",
-    "description": "captures any Pokemon (only one exists)",
-    "quantity": 1
-},
-{
     "id": 5,
     "name": "leaf stone",
     "image": "assets/images/shop/leafStone.png",
@@ -79,14 +71,6 @@
     "quantity": 0
 },
 {
-    "id": 11,
-    "name": "bike voucher",
-    "image": "assets/images/shop/bikeVoucher.png",
-    "cost": "",
-    "description": "free bike",
-    "quantity": 1
-},
-{
     "id": 12,
     "name": "bicycle",
     "image": "assets/images/shop/bicycle.png",
@@ -98,9 +82,25 @@
     "id": 13,
     "name": "items finder",
     "image": "assets/images/shop/itemsFinder.png",
-    "cost": "10000",
+    "cost": "10",
     "description": "reveals hidden items",
-    "quantity": 1
+    "quantity": 1,
+    "items": [
+        {
+            "id": 1,
+            "name": "pokeball"
+        },
+        {
+            "id": 4,
+            "name": "masterball",
+            "image": "assets/images/shop/masterball-1.png"
+        },
+        {
+            "id": 11,
+            "name": "bike voucher",
+            "image": "assets/images/shop/bikeVoucher.png"
+        }
+    ]
 },
 {
     "id": 14,

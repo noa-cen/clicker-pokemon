@@ -64,3 +64,27 @@ function createItem(item) {
 
     return itemContainer;
 }
+
+export function itemsFinder() {
+    const backpack = JSON.parse(localStorage.getItem("backpack")) || {};
+
+    if (backpack["items finder"]) {
+        setInterval(() => {
+            const randomChoice = Math.random() < 0.8;
+
+            if (randomChoice) {
+                const currentPokedollars = parseInt(localStorage.getItem("pokedollars")) || 0;
+                const newPokedollars = currentPokedollars + 1;
+                localStorage.setItem("pokedollars", newPokedollars);
+                let counter = document.getElementById("pokedollars");
+                counter.textContent = `Pokédollars: ${newPokedollars}₽`;
+            } else {
+                const itemsFinder = getItems().find(item => item.name === "items finder");
+                const randomItem = itemsFinder.items[Math.floor(Math.random() * itemsFinder.items.length)];
+
+                backpack[randomItem.name] = backpack[randomItem.name] ? backpack[randomItem.name] + 1 : 1;
+                localStorage.setItem("backpack", JSON.stringify(backpack));
+            }
+        }, 10000);
+    }
+}
