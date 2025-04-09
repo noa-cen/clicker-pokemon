@@ -19,7 +19,7 @@ export function openShop() {
     shopModal.classList.add("modal");
     shopModal.classList.add("box");
     const pokeshop = document.createElement("h2");
-    pokeshop.textContent = "pokeshop";
+    pokeshop.textContent = "pokéshop";
     shopModal.appendChild(pokeshop);
 
     getItems().then(items => {

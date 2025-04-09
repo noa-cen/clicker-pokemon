@@ -11,7 +11,7 @@ export function openPokedex() {
     pokedexModal.classList.add("box");
 
     const pokedex = document.createElement("h2");
-    pokedex.textContent = "pokedex";
+    pokedex.textContent = "pokédex";
     pokedexModal.appendChild(pokedex);
 
     getPokemon().then(pokemons => {

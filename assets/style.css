@@ -187,10 +187,10 @@ h1 {
 
 .modal {
     position: fixed;
-    top: 8px;
+    top: 24px;
     left: 8px;
     width: calc(100% - 16px);
-    height: calc(100% - 16px);
+    height: calc(100% - 56px);
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -200,10 +200,39 @@ h1 {
     z-index: 1000;
 }
 
+.playerModal {
+    position: fixed;
+    top: 24px;
+    left: 8px;
+    width: calc(100% - 16px);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    z-index: 1000;
+    padding: 8px;
+}
+
+.playerInfo {
+    margin-top: 16px;
+    font-size: 16px;
+}
+
+.reset {
+    font-size: 16px;
+    border: 6px double red;
+    color: red;
+    padding: 2px 8px;
+    border-radius: 3px;
+    margin: 32px auto 0;
+}
+
 .close-modal {
     position: fixed;
-    top: 3px;
-    right: 5px;
+    top: 24px;
+    right: 10px;
     background-color: transparent;
     color: black;
     border: none;

@@ -2,7 +2,7 @@ import { showStarterChoice, rules } from './pokemon.js';
 import { openPokedex } from './pokedex.js';
 import { openShop } from './shop.js';
 import { openBackpack } from './backpack.js';
-import { ash } from './ash.js';
+import { playerInfo } from './ash.js';
 
 const top = document.querySelector(".top");
 const message = document.querySelector(".message");
@@ -111,7 +111,7 @@ function displayMenu(message) {
     pokedex.addEventListener('click', openPokedex);
     shop.addEventListener('click', openShop);
     backpack.addEventListener('click', openBackpack);
-    ash.addEventListener('click', ash);
+    ash.addEventListener('click', playerInfo);
 }
 
 function animatePokedollar() {

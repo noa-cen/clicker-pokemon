@@ -1,34 +1,45 @@
 const gameContainer = document.querySelector(".game-container");
 
-export function ash() {
-    const backpackModal = document.createElement("section");
-    backpackModal.classList.add("modal");
-    backpackModal.classList.add("box");
+export function playerInfo() {
+    const playerModal = document.createElement("section");
+    playerModal.classList.add("playerModal");
+    playerModal.classList.add("box");
 
     const playerName = localStorage.getItem("playerName");
-    const myBag = document.createElement("h2");
-    myBag.textContent = `${playerName}'s bag`;
-    backpackModal.appendChild(myBag);
+    const name = document.createElement("h2");
+    name.textContent = playerName;
+    playerModal.appendChild(name);
 
-    const backpack = JSON.parse(localStorage.getItem("backpack")) || {};
+    const currentPokedollars = localStorage.getItem("pokedollars");
+    const counter = document.createElement("p");
+    counter.classList.add("playerInfo");
+    counter.textContent = `Pokédollars: ${currentPokedollars}₽`;
+    playerModal.appendChild(counter);
 
-    getItems().then(items => {
-        items.forEach(item => {
-            if (backpack.hasOwnProperty(item.name)) {
-                const itemElement = createItem(item);
-                backpackModal.appendChild(itemElement);
-            }
-        });
-    });
+    let pokemonsCaptured = JSON.parse(localStorage.getItem("pokemons")) || [];
+    const pokemonCount = pokemonsCaptured.length;
+    const pokedex = document.createElement("p");
+    pokedex.classList.add("playerInfo");
+    pokedex.textContent = `Pokédex: ${pokemonCount}`;
+    playerModal.appendChild(pokedex);
+
+    const resetAll = document.createElement("button");
+    resetAll.textContent = "reset all";
+    resetAll.classList.add("reset");
+    resetAll.addEventListener("click", () => {
+        localStorage.clear();
+        location.reload();
+    })
+    playerModal.appendChild(resetAll);
 
     const closeButton = document.createElement("button");
     closeButton.textContent = "X";
     closeButton.classList.add("close-modal");
-    backpackModal.appendChild(closeButton);
+    playerModal.appendChild(closeButton);
 
     closeButton.addEventListener("click", () => {
-        backpackModal.remove();
+        playerModal.remove();
     });
 
-    gameContainer.appendChild(backpackModal);
+    gameContainer.appendChild(playerModal);
 }
