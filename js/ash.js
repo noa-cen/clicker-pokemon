@@ -13,14 +13,14 @@ export function playerInfo() {
     const currentPokedollars = localStorage.getItem("pokedollars");
     const counter = document.createElement("p");
     counter.classList.add("playerInfo");
-    counter.textContent = `Pokédollars: ${currentPokedollars}₽`;
+    counter.textContent = `pokédollars: ${currentPokedollars}₽`;
     playerModal.appendChild(counter);
 
     let pokemonsCaptured = JSON.parse(localStorage.getItem("pokemons")) || [];
     const pokemonCount = pokemonsCaptured.length;
     const pokedex = document.createElement("p");
     pokedex.classList.add("playerInfo");
-    pokedex.textContent = `Pokédex: ${pokemonCount}`;
+    pokedex.textContent = `pokédex: ${pokemonCount}`;
     playerModal.appendChild(pokedex);
 
     const resetAll = document.createElement("button");

@@ -73,7 +73,7 @@ export function itemsFinder() {
 
     if (backpack["items finder"]) {
         setInterval(() => {
-            const randomChoice = Math.random() < 0.9;
+            const randomChoice = Math.random() < 0.99;
 
             if (randomChoice) {
                 const currentPokedollars = parseInt(localStorage.getItem("pokedollars")) || 0;
@@ -91,6 +91,6 @@ export function itemsFinder() {
                 backpack[randomItem.name] = backpack[randomItem.name] ? backpack[randomItem.name] + 1 : 1;
                 localStorage.setItem("backpack", JSON.stringify(backpack));
             }
-        }, 10000);
+        }, 1000);
     }
 }
