@@ -10,6 +10,10 @@ export function openPokedex() {
     pokedexModal.classList.add("modal");
     pokedexModal.classList.add("box");
 
+    const pokedex = document.createElement("h2");
+    pokedex.textContent = "pokedex";
+    pokedexModal.appendChild(pokedex);
+
     getPokemon().then(pokemons => {
         pokemons.forEach(pokemon => {
             const pokemonWrapper = document.createElement("article");

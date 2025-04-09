@@ -165,26 +165,23 @@ h1 {
         display: flex;
         flex-direction: column;
         font-size: 10px;
+    }
 
-        .itemHeader {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
+    .itemHeader {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 70svw;
+    }
 
-        .itemHeader h3 {
-            font-size: 12px;
-        }
+    .itemHeader h3 {
+        font-size: 12px;
+    }
 
-        .cost {
-            font-size: 14px;
-            min-width: 50px;
-            text-align: right;
-        }
-
-        .itemDescription {
-            width: 70svw;
-        }
+    .cost {
+        font-size: 14px;
+        min-width: 50px;
+        text-align: right;
     }
 }
 

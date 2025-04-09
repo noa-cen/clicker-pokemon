@@ -3,7 +3,7 @@ const message = document.querySelector(".message");
 const bottom = document.querySelector(".bottom");
 const gameContainer = document.querySelector(".game-container");
 
-async function getItems() {
+export async function getItems() {
     try {
         const response = await fetch('assets/items.json');
         const items = await response.json();

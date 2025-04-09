@@ -1,8 +1,6 @@
-import { getItems } from './shop.js';
-
 const gameContainer = document.querySelector(".game-container");
 
-export function openBackpack() {
+export function ash() {
     const backpackModal = document.createElement("section");
     backpackModal.classList.add("modal");
     backpackModal.classList.add("box");
@@ -33,34 +31,4 @@ export function openBackpack() {
     });
 
     gameContainer.appendChild(backpackModal);
-}
-
-function createItem(item) {
-    const backpack = JSON.parse(localStorage.getItem("backpack")) || {};
-
-    const itemContainer = document.createElement("section");
-    itemContainer.classList.add("itemContainer");
-
-    const itemImage = document.createElement("img");
-    itemImage.classList.add("itemImage");
-    itemImage.src = item.image;
-    itemImage.alt = item.name;
-    itemImage.id = item.name;
-
-    const itemName = document.createElement("h3");
-    itemName.textContent = item.name;
-    const itemQuantity = document.createElement("p");
-    itemQuantity.textContent = `${backpack[item.name]}`;
-    itemQuantity.classList.add("cost");
-
-    const itemHeader = document.createElement("article");
-    itemHeader.classList.add("itemHeader");
-    
-    itemHeader.appendChild(itemName);
-    itemHeader.appendChild(itemQuantity);
-
-    itemContainer.appendChild(itemImage);
-    itemContainer.appendChild(itemHeader);
-
-    return itemContainer;
 }
