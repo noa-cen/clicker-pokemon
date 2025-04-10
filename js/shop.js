@@ -1,5 +1,3 @@
-import { itemsFinder } from './backpack.js';
-
 const top = document.querySelector(".top");
 const message = document.querySelector(".message");
 const bottom = document.querySelector(".bottom");
@@ -63,10 +61,6 @@ export function openShop() {
                         if (item.quantity === 1) {
                             itemElement.classList.add("disabled");
                             itemElement.style.pointerEvents = "none";
-                        }
-                
-                        if (item.name === "items finder") {
-                            itemsFinder();
                         }
                     }
                 });  

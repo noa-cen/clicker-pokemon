@@ -26,10 +26,26 @@ export function playerInfo() {
     const resetAll = document.createElement("button");
     resetAll.textContent = "reset all";
     resetAll.classList.add("reset");
+
     resetAll.addEventListener("click", () => {
-        localStorage.clear();
-        location.reload();
-    })
+        const blackOverlay = document.createElement("div");
+        blackOverlay.id = "blackOverlay";
+        document.body.appendChild(blackOverlay);
+
+        const clickSound = new Audio("assets/sounds/gameOver.mp3");
+
+        clickSound.play().then(() => {
+            setTimeout(() => {
+                blackOverlay.style.opacity = 1;
+            }, 0);
+
+            clickSound.addEventListener("ended", () => {
+                localStorage.clear();
+                location.reload();
+            });
+        });
+    });
+
     playerModal.appendChild(resetAll);
 
     const closeButton = document.createElement("button");

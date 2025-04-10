@@ -46,17 +46,33 @@ export function showStarterChoice() {
             containerStarter.appendChild(element);
 
             element.addEventListener("click", () => {
-                let pokemonsCaptured = JSON.parse(localStorage.getItem("pokemons")) || [];
-            
-                if (!pokemonsCaptured.includes(pokemon.id)) {
-                    pokemonsCaptured.push(pokemon.id);
-                    localStorage.setItem("pokemons", JSON.stringify(pokemonsCaptured));
-            
-                    element.src = `assets/images/pokemon/color/${pokemon.id}.png`;
+                let pokemondSound;
+                
+                if (pokemon.name.english === "Bulbasaur") {
+                    pokemondSound = "assets/sounds/bulbasaur.mp3";
+                } else if (pokemon.name.english === "Charmander") {
+                    pokemondSound = "assets/sounds/charmander.mp3";
+                } else if (pokemon.name.english === "Squirtle") {
+                    pokemondSound = "assets/sounds/squirtle.mp3";
                 }
             
-                rules(pokemon.id);
-            });                     
+                const clickSound = new Audio(pokemondSound);
+            
+                clickSound.addEventListener("ended", () => {
+                    let pokemonsCaptured = JSON.parse(localStorage.getItem("pokemons")) || [];
+                
+                    if (!pokemonsCaptured.includes(pokemon.id)) {
+                        pokemonsCaptured.push(pokemon.id);
+                        localStorage.setItem("pokemons", JSON.stringify(pokemonsCaptured));
+                
+                        element.src = `assets/images/pokemon/color/${pokemon.id}.png`;
+                    }
+                
+                    rules(pokemon.id);
+                });
+            
+                clickSound.play();
+            });                               
         });
     });
 }

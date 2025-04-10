@@ -1,7 +1,7 @@
 import { showStarterChoice, rules } from './pokemon.js';
 import { openPokedex } from './pokedex.js';
 import { openShop } from './shop.js';
-import { openBackpack, itemsFinder } from './backpack.js';
+import { openBackpack, findItems } from './backpack.js';
 import { playerInfo } from './ash.js';
 
 const top = document.querySelector(".top");
@@ -263,11 +263,15 @@ export function play(pokemonClicker) {
             top.appendChild(counter);
             displayMenu(message);
             firstClick = false;
+
+            const itemsFinderActive = JSON.parse(localStorage.getItem("itemsFinderActive"));
+            if (itemsFinderActive) {
+                findItems();
+            }
         }
 
         animatePokedollar();
     });
-    itemsFinder();
 }
 
 startGame();
