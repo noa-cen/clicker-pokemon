@@ -131,11 +131,15 @@ function displayMenu(message) {
     });
 }
 
-export function animatePokedollar() {
+export function animatePokedollar(item = "pokedollar") {
+    const imageSrc = item === "pokedollar" ? "assets/images/pokedollar.png" : item.image;
+    const altText = item === "pokedollar" ? "Pokédollar" : item.name;
+    const classItem = item === "pokedollar" ? "pokedollar-img" : "item-img";
+
     const pokedollarImg = document.createElement("img");
-    pokedollarImg.src = "assets/images/pokedollar.png";
-    pokedollarImg.alt = "Pokédollar";
-    pokedollarImg.classList.add("pokedollar-img");
+    pokedollarImg.src = imageSrc;
+    pokedollarImg.alt = altText;
+    pokedollarImg.classList.add(classItem);
 
     pokedollarImg.style.position = "absolute";
     const randomLeft = Math.random() * (245 - 30) + 30;
@@ -233,8 +237,6 @@ function playMusic() {
 
     top.appendChild(mediaPlayer);
 }
-playMusic();
-
 
 export function play(pokemonClicker) {
     const counter = document.createElement("p");
@@ -269,3 +271,4 @@ export function play(pokemonClicker) {
 }
 
 startGame();
+playMusic();

@@ -145,6 +145,10 @@ h1 {
     width: 30px;
 }
 
+.item-img {
+    width: 60px;
+}
+
 .ash, .backpack, .shop {
     margin-top: 16px;
     margin-left: 3px;
