@@ -31,78 +31,110 @@ export function createPokemonElement(pokemon, className = "pokemon") {
     return pokemonElement;
 }
 
-export function showStarterChoice() {
-    document.querySelector("h1").style.display = "none";
+export function evolutionPokemon(ashElement, pokemonElement) {
+    let expNivel = parseInt(localStorage.getItem("expNivel")) || 0;
+    const currentPokemon = document.getElementById(pokemonElement.id);
 
-    getPokemon().then(pokemons => {
-        const containerStarter = document.createElement("section");
-        containerStarter.classList.add("containerStarter");
-        bottom.appendChild(containerStarter);
+    if (expNivel >= 100) {
+        const pokemonName = pokemonElement.alt;
+        getPokemon().then(pokemons => {
+            const foundPokemon = pokemons.find(p => p.name.english === pokemonName);
+            if (foundPokemon) {
+                const pokemonId = foundPokemon.id;
 
-        const starters = ["Bulbasaur", "Charmander", "Squirtle"];
-        starters.forEach(name => {
-            const pokemon = pokemons.find(p => p.name.english === name);
-            const element = createPokemonElement(pokemon);
-            containerStarter.appendChild(element);
+                function evolution() {
+                    const newPokemonId = pokemonId + 1;
+                    currentPokemon.remove();
 
-            element.addEventListener("click", () => {
-                let pokemondSound;
-                
-                if (pokemon.name.english === "Bulbasaur") {
-                    pokemondSound = "assets/sounds/bulbasaur.mp3";
-                } else if (pokemon.name.english === "Charmander") {
-                    pokemondSound = "assets/sounds/charmander.mp3";
-                } else if (pokemon.name.english === "Squirtle") {
-                    pokemondSound = "assets/sounds/squirtle.mp3";
+                    let pokemonsCaptured = JSON.parse(localStorage.getItem("pokemons")) || []; 
+                    pokemonsCaptured.push(newPokemonId);
+                    localStorage.setItem("pokemons", JSON.stringify(pokemonsCaptured));
+
+                    const newPokemon = pokemons.find(p => p.id === newPokemonId);
+                    const newPokemonElement = createPokemonElement(newPokemon);
+                    localStorage.setItem("clickerId", newPokemonId);
+
+                    bottom.appendChild(newPokemonElement);
+
+                    localStorage.removeItem("expNivel");
+                    play(ashElement, newPokemonElement);
                 }
-            
-                const clickSound = new Audio(pokemondSound);
-            
-                clickSound.addEventListener("ended", () => {
-                    let pokemonsCaptured = JSON.parse(localStorage.getItem("pokemons")) || [];
-                
-                    if (!pokemonsCaptured.includes(pokemon.id)) {
-                        pokemonsCaptured.push(pokemon.id);
-                        localStorage.setItem("pokemons", JSON.stringify(pokemonsCaptured));
-                
-                        element.src = `assets/images/pokemon/color/${pokemon.id}.png`;
-                    }
-                
-                    rules(pokemon.id);
-                });
-            
-                clickSound.play();
-            });                               
+
+                switch (pokemonId) {
+                    case 1:
+                    case 2:
+                    case 4:
+                    case 5:
+                    case 7:
+                    case 8:
+                    case 10:
+                    case 11:
+                    case 13:
+                    case 14:
+                    case 16:
+                    case 17:
+                    case 19:
+                    case 21:
+                    case 23:
+                    case 25: // Pikachu thunder stone
+                    case 27:
+                    case 29:
+                    case 30: // Nidorina moon stone
+                    case 32:
+                    case 33: // Nidorino moon stone
+                    case 35: // Clefairy moon stone
+                    case 37: // Vulpix fire stone
+                    case 39: // Jigglypuff moon stone
+                    case 41:
+                    case 43:
+                    case 44: // Gloom leaf stone
+                    case 46:
+                    case 48:
+                    case 50:
+                    case 52:
+                    case 54:
+                    case 56:
+                    case 58: // Growlithe fire stone
+                    case 60:
+                    case 61: // Poliwhirl water stone
+                    case 63:
+                    case 64:
+                    case 66:
+                    case 67:
+                    case 69:
+                    case 70: // Weepinbell leaf stone
+                    case 72:
+                    case 74:
+                    case 75:
+                    case 77:
+                    case 79:
+                    case 81:
+                    case 84:
+                    case 86:
+                    case 88:
+                    case 90: // Shellder water stone
+                    case 92:
+                    case 93:
+                    case 96:
+                    case 98:
+                    case 100:
+                    case 102: // Exeggcute leaf stone
+                    case 104:
+                    case 109:
+                    case 111:
+                    case 116:
+                    case 118:
+                    case 120: // Staryu water stone
+                    case 129:
+                    case 133: // Eevee thunder stone - water stone - fire stone
+                    case 138:
+                    case 140:
+                    case 147:
+                    case 148:
+                        evolution();
+                        break;
+                }
+            }
         });
-    });
-}
-
-export function rules(pokemon) {
-    document.querySelector("h1").style.display = "none";
-    let hello = document.getElementById("hello");
-    if (hello) {
-        hello.remove();
     }
-
-    getPokemon().then(pokemons => {
-        const chosenPokemon = pokemons.find(p => p.id === Number(pokemon));
-
-        const starters = document.querySelectorAll(".pokemon");
-        starters.forEach(p => p.remove());
-
-        const chosenElement = createPokemonElement(chosenPokemon);
-        bottom.appendChild(chosenElement);
-
-        let rulesMessage = document.createElement("p");
-        rulesMessage.classList.add("box");
-        rulesMessage.id = "rulesMessage";
-        rulesMessage.innerHTML = `
-            Click on ${chosenPokemon.name.english} to gain Pokédollars. 
-            Keep going to unlock surprises.<br><br>
-            Ready? Let's go!
-        `;
-        message.appendChild(rulesMessage);
-
-        play(chosenElement);
-    });
 }

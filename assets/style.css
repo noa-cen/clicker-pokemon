@@ -54,7 +54,7 @@ body {
 .message {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: flex-end;
     justify-content: space-between;
 }
 
@@ -81,6 +81,41 @@ h1 {
     max-width: 100%;
     display: flex;
     flex-direction: column;
+}
+
+#rulesMessage {
+    position: relative;
+    bottom: 100px;
+}
+
+.expPoke {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 85%;
+    margin-top: 48px;
+}
+
+.pokemonName {
+    font-size: 16px;
+    margin-top: 16px;
+}
+
+.expContainer {
+    width: 100%;
+    height: 20px;
+    background-color: #FFFFFF;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-top: 4px;
+}
+
+.expBar {
+    width: 0;
+    height: 16px;
+    background-color: green;
+    border-radius: 3px;
 }
 
 .inputContainer {
@@ -113,11 +148,18 @@ h1 {
 .professor {
     height: 180px;
     margin: 0 auto;
+    position: relative;
+    bottom: 30px;
 }
 
-.pokemon {
+.pokemon, .ash {
     width: 100px;
-    margin: 0 auto;
+}
+
+.ash {
+    position: relative;
+    bottom: 50px;
+    margin-left: 32px;
 }
 
 .pokemonWrapper {
@@ -149,15 +191,15 @@ h1 {
     width: 60px;
 }
 
-.ash, .backpack, .shop {
+.player, .backpack, .shop {
     margin-top: 16px;
-    margin-left: 3px;
+    margin-right: 3px;
     width: 45px;
 }
 
 .pokedex {
     margin-top: 10px;
-    margin-left: 9px;
+    margin-right: 9px;
     height: 50px;
 }
 
@@ -250,7 +292,6 @@ h1 {
     transition: opacity 1.5s ease;
     z-index: 1000;
 }
-
 
 .close-modal {
     position: fixed;

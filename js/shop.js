@@ -42,7 +42,7 @@ export function openShop() {
                         clickSound.play();
                         return;
                     } else {
-                        const clickSound = new Audio("assets/sounds/item.mp3");
+                        const clickSound = new Audio("assets/sounds/buyItem.mp3");
                         clickSound.play();
                         
                         const backpack = JSON.parse(localStorage.getItem("backpack")) || {};

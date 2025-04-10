@@ -51,7 +51,7 @@
     "name": "moon stone",
     "image": "assets/images/shop/moonStone.png",
     "cost": "2100",
-    "description": "used to evolve Nidorino, Nidorina, Clefairy and Jigglypuff",
+    "description": "used to evolve Nidorina, Nidorino, Clefairy and Jigglypuff",
     "quantity": 0
 },
 {
@@ -59,7 +59,7 @@
     "name": "fire stone",
     "image": "assets/images/shop/fireStone.png",
     "cost": "2100",
-    "description": "use to evolve Growlithe, Vulpix and Eevee",
+    "description": "use to evolve Vulpix, Growlithe and Eevee",
     "quantity": 0
 },
 {
@@ -67,7 +67,7 @@
     "name": "rare candy",
     "image": "assets/images/shop/rareCandy.png",
     "cost": "2100",
-    "description": "level gain",
+    "description": "experience gain",
     "quantity": 0
 },
 {

@@ -22,7 +22,7 @@ export async function findItems() {
     
             const counter = document.getElementById("pokedollars");
             if (counter) {
-                counter.textContent = `Pokédollars: ${newPokedollars}₽`;
+                counter.textContent = `${newPokedollars}₽`;
             }
     
             const clickSound = new Audio("assets/sounds/money.mp3");
@@ -57,7 +57,7 @@ export async function findItems() {
     
                 localStorage.setItem("backpack", JSON.stringify(backpack));
             }
-            const itemSound = new Audio("assets/sounds/success.mp3");
+            const itemSound = new Audio("assets/sounds/gainItem.mp3");
             itemSound.play().catch(() => {});
             animatePokedollar(randomItem);
             }
