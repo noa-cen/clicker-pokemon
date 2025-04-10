@@ -1,3 +1,5 @@
+import { playSound } from "./game.js";
+
 const top = document.querySelector(".top");
 const message = document.querySelector(".message");
 const bottom = document.querySelector(".bottom");
@@ -38,12 +40,10 @@ export function openShop() {
                     const currentPokedollars = parseInt(localStorage.getItem("pokedollars")) || 0;
                 
                     if (item.cost > currentPokedollars) {
-                        const clickSound = new Audio("assets/sounds/error.mp3");
-                        clickSound.play();
+                        playSound("assets/sounds/error.mp3");
                         return;
                     } else {
-                        const clickSound = new Audio("assets/sounds/buyItem.mp3");
-                        clickSound.play();
+                        playSound("assets/sounds/buyItem.mp3");
                         
                         const backpack = JSON.parse(localStorage.getItem("backpack")) || {};
                         if (backpack[item.name]) {
@@ -74,8 +74,7 @@ export function openShop() {
     shopModal.appendChild(closeButton);
 
     closeButton.addEventListener("click", () => {
-        const clickSound = new Audio("assets/sounds/click.mp3");
-        clickSound.play();
+        playSound("assets/sounds/click.mp3");
         shopModal.remove();
     });
 

@@ -59,6 +59,7 @@ function askName() {
     const btnSubmit = document.querySelector(".btnSubmit");
 
     btnSubmit.addEventListener("click", function() {
+        playSound("assets/sounds/click.mp3");
         const playerName = inputName.value;
         localStorage.setItem("playerName", playerName);
         chooseStarter(playerName);
@@ -198,23 +199,19 @@ function displayMenu(message) {
     message.appendChild(player);
 
     pokedex.addEventListener('click', () => {
-        const clickSound = new Audio("assets/sounds/click.mp3");
-        clickSound.play();
+        playSound("assets/sounds/click.mp3");
         openPokedex();
     });
     shop.addEventListener('click', () => {
-        const clickSound = new Audio("assets/sounds/click.mp3");
-        clickSound.play();
+        playSound("assets/sounds/click.mp3");
         openShop();
     });
     backpack.addEventListener('click', () => {
-        const clickSound = new Audio("assets/sounds/click.mp3");
-        clickSound.play();
+        playSound("assets/sounds/click.mp3");
         openBackpack();
     });
     player.addEventListener('click', () => {
-        const clickSound = new Audio("assets/sounds/click.mp3");
-        clickSound.play();
+        playSound("assets/sounds/click.mp3");
         playerInfo();
     });
 }
@@ -255,15 +252,19 @@ function playMusic() {
     backwardBtn.innerHTML = '<i class="fa-solid fa-backward"></i>';
     backwardBtn.classList.add("mediaPlayerBtn");
     const playPauseBtn = document.createElement("p");
-    playPauseBtn.innerHTML = '<i class="fa-solid fa-volume-xmark"></i>';
+    playPauseBtn.innerHTML = '<i class="fa-solid fa-play"></i>';
     playPauseBtn.classList.add("mediaPlayerBtn");
     const forwardBtn = document.createElement("p");
     forwardBtn.innerHTML = '<i class="fa-solid fa-forward"></i>';
     forwardBtn.classList.add("mediaPlayerBtn");
+    const muteBtn = document.createElement("p");
+    muteBtn.innerHTML = '<i class="fa-solid fa-volume-high"></i>';
+    muteBtn.classList.add("mediaPlayerBtn");
 
     mediaPlayer.appendChild(backwardBtn);
     mediaPlayer.appendChild(playPauseBtn);
     mediaPlayer.appendChild(forwardBtn);
+    mediaPlayer.appendChild(muteBtn);
 
     const playlist = [
         "assets/sounds/01 Opening (part 1).mp3",
@@ -286,54 +287,72 @@ function playMusic() {
 
     let currentTrack = 0;
     let isPlaying = false;
-    let music = new Audio(playlist[currentTrack]);
+    let isMuted = JSON.parse(localStorage.getItem("mute")) || false;
 
-    function playPreviousTrack() {
+    let music = new Audio(playlist[currentTrack]);
+    music.volume = isMuted ? 0 : 1;
+
+    function updateMuteIcon() {
+        muteBtn.innerHTML = isMuted
+            ? '<i class="fa-solid fa-volume-xmark"></i>'
+            : '<i class="fa-solid fa-volume-high"></i>';
+    }
+
+    function playTrack(index) {
         if (music) {
             music.pause();
-            music.currentTime = 0;
         }
-
-        currentTrack = (currentTrack - 1) % playlist.length;
+        currentTrack = (index + playlist.length) % playlist.length;
         music = new Audio(playlist[currentTrack]);
+        music.volume = isMuted ? 0 : 1;
+        music.addEventListener("ended", playNextTrack);
         music.play();
+        isPlaying = true;
+        playPauseBtn.innerHTML = '<i class="fa-solid fa-pause"></i>';
+    }
+
+    function playPreviousTrack() {
+        playTrack(currentTrack - 1);
     }
 
     function playNextTrack() {
-        if (music) {
-            music.pause();
-            music.currentTime = 0;
-        }
-        
-        currentTrack = (currentTrack + 1) % playlist.length;
-        music = new Audio(playlist[currentTrack]);
-        music.addEventListener("ended", playNextTrack);
-        music.play();
+        playTrack(currentTrack + 1);
     }
 
-    backwardBtn.addEventListener("click", () => {
-        playPreviousTrack();
-    });
+    backwardBtn.addEventListener("click", playPreviousTrack);
+    forwardBtn.addEventListener("click", playNextTrack);
 
     playPauseBtn.addEventListener("click", () => {
         if (isPlaying) {
             music.pause();
             isPlaying = false;
-            playPauseBtn.innerHTML = '<i class="fa-solid fa-volume-xmark"></i>';
+            playPauseBtn.innerHTML = '<i class="fa-solid fa-play"></i>';
         } else {
             music.play();
             isPlaying = true;
-            playPauseBtn.innerHTML = '<i class="fa-solid fa-volume-high"></i>';
-
-            music.addEventListener("ended", playNextTrack);
+            playPauseBtn.innerHTML = '<i class="fa-solid fa-pause"></i>';
         }
     });
 
-    forwardBtn.addEventListener("click", () => {
-        playNextTrack();
+    muteBtn.addEventListener("click", () => {
+        isMuted = !isMuted;
+        localStorage.setItem("mute", JSON.stringify(isMuted));
+        music.volume = isMuted ? 0 : 1;
+        updateMuteIcon();
     });
 
+    updateMuteIcon();
+    
     top.appendChild(mediaPlayer);
+}
+
+export function playSound(src, volume = 1) {
+    const isMuted = JSON.parse(localStorage.getItem("mute")) || false;
+    if (!isMuted) {
+        const audio = new Audio(src);
+        audio.volume = volume;
+        audio.play().catch(() => {});
+    }
 }
 
 export function play(ashElement, pokemonElement) {
@@ -378,8 +397,7 @@ export function play(ashElement, pokemonElement) {
         if (rulesMessage) {
             rulesMessage.remove();
         }
-        const clickSound = new Audio("assets/sounds/money.mp3");
-        clickSound.play();
+        playSound("assets/sounds/money.mp3");
 
         let expNivel = parseInt(localStorage.getItem("expNivel")) || 0;
         updateExpBar();
@@ -409,8 +427,7 @@ export function play(ashElement, pokemonElement) {
         if (rulesMessage) {
             rulesMessage.remove();
         }
-        const clickSound = new Audio("assets/sounds/exp.mp3");
-        clickSound.play();
+        playSound("assets/sounds/exp.mp3");
 
         let pokedollars = parseInt(localStorage.getItem("pokedollars")) || 0;
         counter.textContent = `${pokedollars}₽`;

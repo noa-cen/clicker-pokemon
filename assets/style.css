@@ -329,8 +329,12 @@ h1 {
     align-items: center;
     justify-content: center;
     font-size: 16px;
-    margin: 0 4px;
+    margin-right: 1px;
     cursor: pointer;
+}
+
+.mediaPlayerBtn:last-child {
+    margin-left: 10px;
 }
 
 .mediaPlayerBtn i {

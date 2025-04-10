@@ -1,3 +1,5 @@
+import { playSound } from './game.js';
+
 const gameContainer = document.querySelector(".game-container");
 
 export function playerInfo() {
@@ -54,8 +56,7 @@ export function playerInfo() {
     playerModal.appendChild(closeButton);
 
     closeButton.addEventListener("click", () => {
-        const clickSound = new Audio("assets/sounds/click.mp3");
-        clickSound.play();
+        playSound("assets/sounds/click.mp3");
         playerModal.remove();
     });
 

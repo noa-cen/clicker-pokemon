@@ -1,3 +1,4 @@
+import { playSound } from './game.js';
 import { getPokemon, createPokemonElement } from './pokemon.js';
 
 const top = document.querySelector(".top");
@@ -42,8 +43,7 @@ export function openPokedex() {
     pokedexModal.appendChild(closeButton);
 
     closeButton.addEventListener("click", () => {
-        const clickSound = new Audio("assets/sounds/click.mp3");
-        clickSound.play();
+        playSound("assets/sounds/click.mp3");
         pokedexModal.remove();
     });
 

@@ -1,5 +1,5 @@
 import { getItems } from './shop.js';
-import { animatePokedollar } from './game.js';
+import { playSound, animatePokedollar } from './game.js';
 
 const gameContainer = document.querySelector(".game-container");
 
@@ -25,8 +25,7 @@ export async function findItems() {
                 counter.textContent = `${newPokedollars}₽`;
             }
     
-            const clickSound = new Audio("assets/sounds/money.mp3");
-            clickSound.play().catch(() => {});
+            playSound("assets/sounds/money.mp3");
             animatePokedollar();
             } else {
             const itemsFinder = items.find(item => item.name === "items finder");
@@ -57,8 +56,7 @@ export async function findItems() {
     
                 localStorage.setItem("backpack", JSON.stringify(backpack));
             }
-            const itemSound = new Audio("assets/sounds/gainItem.mp3");
-            itemSound.play().catch(() => {});
+            playSound("assets/sounds/gainItem.mp3");
             animatePokedollar(randomItem);
             }
         }, 1000);
@@ -106,8 +104,7 @@ export async function openBackpack() {
     backpackModal.appendChild(closeButton);
 
     closeButton.addEventListener("click", () => {
-        const clickSound = new Audio("assets/sounds/click.mp3");
-        clickSound.play();
+        playSound("assets/sounds/click.mp3");
         backpackModal.remove();
     });
 
