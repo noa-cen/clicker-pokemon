@@ -1,5 +1,6 @@
 import { getItems } from './shop.js';
-import { animatePokedollar } from './game.js';
+import { animatePokedollar, updateExpBar } from './game.js';
+import { evolutionPokemon } from './pokemon.js';
 import { playSound } from './music.js';
 
 const gameContainer = document.querySelector(".game-container");
@@ -64,6 +65,19 @@ export async function findItems() {
     }
 }
 
+export function gainExp() {
+    window.multiExpInterval = setInterval(() => {
+        const expBar = document.querySelector(".expBar");
+        let expNivel = parseInt(localStorage.getItem("expNivel")) || 0;
+        if (expNivel < 100) {
+            expNivel++;
+            localStorage.setItem("expNivel", expNivel);
+            playSound("assets/sounds/exp.mp3");
+            updateExpBar(expNivel, expBar);
+        }
+    }, 5000);
+}
+
 export async function openBackpack() {
     const backpackModal = document.createElement("section");
     backpackModal.classList.add("modal", "box");
@@ -120,7 +134,7 @@ export async function openBackpack() {
             itemsFinderActive = !itemsFinderActive;
             localStorage.setItem("itemsFinderActive", JSON.stringify(itemsFinderActive));
 
-            const clickSound = new Audio(itemsFinderActive ? "assets/sounds/itemsFinder.mp3" : "assets/sounds/error.mp3");
+            const clickSound = new Audio(itemsFinderActive ? "assets/sounds/activated.mp3" : "assets/sounds/error.mp3");
             clickSound.play();
 
             if (itemsFinderActive) {
@@ -128,6 +142,28 @@ export async function openBackpack() {
             } else {
                 clearInterval(window.itemsFinderInterval);
                 window.itemsFinderInterval = null;
+            }
+        });
+    }
+
+    const multiExpElement = document.getElementById("multi-exp");
+    if (multiExpElement && !multiExpElement.dataset.listenerAttached) {
+        multiExpElement.dataset.listenerAttached = "true";
+
+        let multiExpActive = JSON.parse(localStorage.getItem("multiExpActive")) || false;
+
+        multiExpElement.addEventListener("click", () => {
+            multiExpActive = !multiExpActive;
+            localStorage.setItem("multiExpActive", JSON.stringify(multiExpActive));
+
+            const clickSound = new Audio(multiExpActive ? "assets/sounds/activated.mp3" : "assets/sounds/error.mp3");
+            clickSound.play();
+
+            if (multiExpActive) {
+                gainExp();
+            } else {
+                clearInterval(window.multiExpInterval);
+                window.multiExpInterval = null;
             }
         });
     }

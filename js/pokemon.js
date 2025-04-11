@@ -212,10 +212,10 @@ function animatedEvolution(pokemonId, newPokemonId, onComplete) {
                 setTimeout(() => {
                     evolutionContainer.remove();
                     if (onComplete) onComplete();
+                    window.location.reload();
                 }, 3000);
             }
         }
-
         flicker();
     });
 }

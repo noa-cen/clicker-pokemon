@@ -1,7 +1,7 @@
 import { getPokemon, createPokemonElement, evolutionPokemon } from './pokemon.js';
 import { openPokedex } from './pokedex.js';
 import { openShop } from './shop.js';
-import { openBackpack, findItems } from './backpack.js';
+import { openBackpack, findItems, gainExp } from './backpack.js';
 import { playerInfo } from './ash.js';
 import { playMusic, playSound } from './music.js';
 
@@ -328,6 +328,11 @@ function pokemonPlay(ashElement, pokemonElement, counter, expBar, expPoke, first
             }
 
             firstClick = false;
+
+            const multiExpActive = JSON.parse(localStorage.getItem("multiExpActive"));
+            if (multiExpActive) {
+                gainExp();
+            }
         }
 
         evolutionPokemon(ashElement, pokemonElement, expBar);

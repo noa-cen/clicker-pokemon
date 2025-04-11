@@ -72,10 +72,10 @@
 },
 {
     "id": 10,
-    "name": "bicycle",
-    "image": "assets/images/shop/bicycle.png",
-    "cost": "1000000",
-    "description": "travel at double speed",
+    "name": "pokeflute",
+    "image": "assets/images/shop/pokeflute.png",
+    "cost": "5000",
+    "description": "wakes up a random Pokemon",
     "quantity": 1
 },
 {
@@ -115,18 +115,18 @@
 },
 {
     "id": 12,
-    "name": "pokeflute",
-    "image": "assets/images/shop/pokeflute.png",
-    "cost": "5000",
-    "description": "wakes up Snorlax",
+    "name": "multi-exp",
+    "image": "assets/images/shop/multi-exp.png",
+    "cost": "50",
+    "description": "automatic experience gain",
     "quantity": 1
 },
 {
     "id": 13,
-    "name": "multi-exp",
-    "image": "assets/images/shop/multi-exp.png",
-    "cost": "5000",
-    "description": "automatic experience gain",
+    "name": "bicycle",
+    "image": "assets/images/shop/bicycle.png",
+    "cost": "100000000",
+    "description": "travel at double speed",
     "quantity": 1
 }
 ]
