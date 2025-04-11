@@ -1,4 +1,4 @@
-import { playSound } from "./game.js";
+import { playSound } from './music.js';
 
 const top = document.querySelector(".top");
 const message = document.querySelector(".message");
@@ -18,8 +18,7 @@ export async function getItems() {
 
 export function openShop() {
     const shopModal = document.createElement("section");
-    shopModal.classList.add("modal");
-    shopModal.classList.add("box");
+    shopModal.classList.add("modal", "box");
     const pokeshop = document.createElement("h2");
     pokeshop.textContent = "pokéshop";
     shopModal.appendChild(pokeshop);

@@ -1,8 +1,10 @@
 import { play } from './game.js';
+import { playSound } from './music.js';
 
 const top = document.querySelector(".top");
 const message = document.querySelector(".message");
 const bottom = document.querySelector(".bottom");
+const gameContainer = document.querySelector(".game-container");
 
 export async function getPokemon() {
     try {
@@ -41,23 +43,31 @@ export function evolutionPokemon(ashElement, pokemonElement) {
             const foundPokemon = pokemons.find(p => p.name.english === pokemonName);
             if (foundPokemon) {
                 const pokemonId = foundPokemon.id;
+                const newPokemonId = pokemonId + 1;
 
-                function evolution() {
-                    const newPokemonId = pokemonId + 1;
+                function evolution(pokemonId, newPokemonId) {
+                    animatedEvolution(pokemonId, newPokemonId, () => {
+                        finishEvolution(newPokemonId);
+                    });
+                }               
+                
+                function finishEvolution(newPokemonId) {
                     currentPokemon.remove();
-
+                
                     let pokemonsCaptured = JSON.parse(localStorage.getItem("pokemons")) || []; 
                     pokemonsCaptured.push(newPokemonId);
                     localStorage.setItem("pokemons", JSON.stringify(pokemonsCaptured));
-
+                
                     const newPokemon = pokemons.find(p => p.id === newPokemonId);
                     const newPokemonElement = createPokemonElement(newPokemon);
                     localStorage.setItem("clickerId", newPokemonId);
-
+                
                     bottom.appendChild(newPokemonElement);
-
-                    localStorage.removeItem("expNivel");
-                    play(ashElement, newPokemonElement);
+                
+                    let firstClick = true;
+                    localStorage.setItem("expNivel", 0);
+                    let ashPlayed = true;
+                    play(ashElement, newPokemonElement, firstClick);
                 }
 
                 switch (pokemonId) {
@@ -131,10 +141,76 @@ export function evolutionPokemon(ashElement, pokemonElement) {
                     case 140:
                     case 147:
                     case 148:
-                        evolution();
+                        evolution(pokemonId, newPokemonId);
                         break;
                 }
             }
         });
     }
+}
+
+function animatedEvolution(pokemonId, newPokemonId, onComplete) {
+    getPokemon().then(pokemons => {
+        const currentPokemon = pokemons.find(p => p.id === pokemonId);
+        const evolvedPokemon = pokemons.find(p => p.id === newPokemonId);
+
+        const evolutionContainer = document.createElement("section");
+        evolutionContainer.classList.add("modal", "evolutionContainer");
+
+        const evolutionName = document.createElement("h2");
+        evolutionName.textContent = `What? ${currentPokemon.name.english} is evolving!`;
+        evolutionName.classList.add("box");
+        evolutionContainer.appendChild(evolutionName);
+
+        const evolutionImgContainer = document.createElement("article");
+        evolutionImgContainer.classList.add("evolution-images");
+
+        const currentImg = document.createElement("img");
+        currentImg.src = `assets/images/pokemon/color/${currentPokemon.id}.png`;
+        currentImg.classList.add("evolving", "current");
+
+        const newImg = document.createElement("img");
+        newImg.src = `assets/images/pokemon/color/${evolvedPokemon.id}.png`;
+        newImg.classList.add("evolving", "new");
+        newImg.style.opacity = 0;
+
+        evolutionImgContainer.appendChild(currentImg);
+        evolutionImgContainer.appendChild(newImg);
+        evolutionContainer.appendChild(evolutionImgContainer);
+        gameContainer.appendChild(evolutionContainer);
+
+        playSound("assets/sounds/evolution.mp3");
+
+        const flickerTimings = [400, 500, 600, 700, 800, 900, 1000, 1100, 1200]; 
+
+        let i = 0;
+        function flicker() {
+            if (i < flickerTimings.length) {
+                currentImg.style.opacity = 1;
+                newImg.style.opacity = 0;
+
+                setTimeout(() => {
+                    currentImg.style.opacity = 0;
+                    newImg.style.opacity = 1;
+
+                    setTimeout(() => {
+                        i++;
+                        flicker();
+                    }, 100);
+                }, flickerTimings[i]);
+            } else {
+                currentImg.style.opacity = 0;
+                newImg.style.opacity = 1;
+                evolutionName.textContent = `${currentPokemon.name.english} evolved 
+                into ${evolvedPokemon.name.english}!`;
+
+                setTimeout(() => {
+                    evolutionContainer.remove();
+                    if (onComplete) onComplete();
+                }, 3000);
+            }
+        }
+
+        flicker();
+    });
 }

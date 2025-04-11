@@ -3,11 +3,15 @@ import { openPokedex } from './pokedex.js';
 import { openShop } from './shop.js';
 import { openBackpack, findItems } from './backpack.js';
 import { playerInfo } from './ash.js';
+import { playMusic, playSound } from './music.js';
 
 const top = document.querySelector(".top");
 const message = document.querySelector(".message");
 const bottom = document.querySelector(".bottom");
 const gameContainer = document.querySelector(".game-container");
+let isMenuDisplayed = false;
+let firstClick = true;
+let ashPlayed = false;
 
 function startGame() {
     const pokemons = JSON.parse(localStorage.getItem("pokemons") || "[]");
@@ -154,7 +158,7 @@ function rules() {
         bottom.appendChild(ashElement);
         bottom.appendChild(chosenElement);
 
-        let rulesMessage = document.createElement("p");
+        const rulesMessage = document.createElement("p");
         rulesMessage.classList.add("box");
         rulesMessage.id = "rulesMessage";
         rulesMessage.innerHTML = `
@@ -244,121 +248,101 @@ export function animatePokedollar(item = "pokedollar") {
     }, 500);
 }
 
-function playMusic() {
-    const mediaPlayer = document.createElement("section");
-    mediaPlayer.classList.add("mediaPlayer");
-
-    const backwardBtn = document.createElement("p");
-    backwardBtn.innerHTML = '<i class="fa-solid fa-backward"></i>';
-    backwardBtn.classList.add("mediaPlayerBtn");
-    const playPauseBtn = document.createElement("p");
-    playPauseBtn.innerHTML = '<i class="fa-solid fa-play"></i>';
-    playPauseBtn.classList.add("mediaPlayerBtn");
-    const forwardBtn = document.createElement("p");
-    forwardBtn.innerHTML = '<i class="fa-solid fa-forward"></i>';
-    forwardBtn.classList.add("mediaPlayerBtn");
-    const muteBtn = document.createElement("p");
-    muteBtn.innerHTML = '<i class="fa-solid fa-volume-high"></i>';
-    muteBtn.classList.add("mediaPlayerBtn");
-
-    mediaPlayer.appendChild(backwardBtn);
-    mediaPlayer.appendChild(playPauseBtn);
-    mediaPlayer.appendChild(forwardBtn);
-    mediaPlayer.appendChild(muteBtn);
-
-    const playlist = [
-        "assets/sounds/01 Opening (part 1).mp3",
-        "assets/sounds/02 Opening (part 2).mp3",
-        "assets/sounds/03 To Bill's Origin ~ From Cerulean.mp3",
-        "assets/sounds/04 Pallet Town's Theme.mp3",
-        "assets/sounds/05 Pokemon Center.mp3",
-        "assets/sounds/06 Pokemon Gym.mp3",
-        "assets/sounds/07 Pewter City's Theme.mp3",
-        "assets/sounds/08 Cerulean City's Theme.mp3",
-        "assets/sounds/09 Celadon City's Theme.mp3",
-        "assets/sounds/10 Cinnabar Island's Theme.mp3",
-        "assets/sounds/11 Vermilion City's Theme.mp3",
-        "assets/sounds/12 Lavender Town's Theme.mp3",
-        "assets/sounds/18 The Road to Viridian City ~ from Pallet.mp3",
-        "assets/sounds/19 The Road to Cerulean ~ from Mt. Moon.mp3",
-        "assets/sounds/20 The Road to Lavender Town ~ from Vermilion.mp3",
-        "assets/sounds/21 The Last Road.mp3"
-    ];
-
-    let currentTrack = 0;
-    let isPlaying = false;
-    let isMuted = JSON.parse(localStorage.getItem("mute")) || false;
-
-    let music = new Audio(playlist[currentTrack]);
-    music.volume = isMuted ? 0 : 1;
-
-    function updateMuteIcon() {
-        muteBtn.innerHTML = isMuted
-            ? '<i class="fa-solid fa-volume-xmark"></i>'
-            : '<i class="fa-solid fa-volume-high"></i>';
-    }
-
-    function playTrack(index) {
-        if (music) {
-            music.pause();
-        }
-        currentTrack = (index + playlist.length) % playlist.length;
-        music = new Audio(playlist[currentTrack]);
-        music.volume = isMuted ? 0 : 1;
-        music.addEventListener("ended", playNextTrack);
-        music.play();
-        isPlaying = true;
-        playPauseBtn.innerHTML = '<i class="fa-solid fa-pause"></i>';
-    }
-
-    function playPreviousTrack() {
-        playTrack(currentTrack - 1);
-    }
-
-    function playNextTrack() {
-        playTrack(currentTrack + 1);
-    }
-
-    backwardBtn.addEventListener("click", playPreviousTrack);
-    forwardBtn.addEventListener("click", playNextTrack);
-
-    playPauseBtn.addEventListener("click", () => {
-        if (isPlaying) {
-            music.pause();
-            isPlaying = false;
-            playPauseBtn.innerHTML = '<i class="fa-solid fa-play"></i>';
-        } else {
-            music.play();
-            isPlaying = true;
-            playPauseBtn.innerHTML = '<i class="fa-solid fa-pause"></i>';
-        }
-    });
-
-    muteBtn.addEventListener("click", () => {
-        isMuted = !isMuted;
-        localStorage.setItem("mute", JSON.stringify(isMuted));
-        music.volume = isMuted ? 0 : 1;
-        updateMuteIcon();
-    });
-
-    updateMuteIcon();
-    
-    top.appendChild(mediaPlayer);
+export function updateExpBar(expNivel, expBar) {
+    const maxExp = 100;
+    const expPercentage = (expNivel / maxExp) * 100;
+    expBar.style.width = `${Math.min(expPercentage, 100)}%`;
+    localStorage.setItem("expNivel", expNivel);
 }
 
-export function playSound(src, volume = 1) {
-    const isMuted = JSON.parse(localStorage.getItem("mute")) || false;
-    if (!isMuted) {
-        const audio = new Audio(src);
-        audio.volume = volume;
-        audio.play().catch(() => {});
+function ashPlay(ashElement, counter, expBar, expPoke, firstClick) {        
+    ashElement.addEventListener("click", () => {
+        const rulesMessage = document.getElementById("rulesMessage");
+        if (rulesMessage) {
+            rulesMessage.remove();
+        }
+        playSound("assets/sounds/money.mp3");
+
+        let expNivel = parseInt(localStorage.getItem("expNivel")) || 0;
+        updateExpBar(expNivel, expBar);
+
+        let pokedollars = parseInt(localStorage.getItem("pokedollars")) || 0;
+
+        pokedollars += 1;
+
+        counter.textContent = `${pokedollars}₽`;
+        localStorage.setItem("pokedollars", pokedollars);
+
+        if (firstClick) {
+            top.appendChild(expPoke);
+
+            if (!isMenuDisplayed) {
+                displayMenu(message);
+                isMenuDisplayed = true;
+            }
+            
+            firstClick = false;
+
+            const itemsFinderActive = JSON.parse(localStorage.getItem("itemsFinderActive"));
+            if (itemsFinderActive) {
+                findItems();
+            }
+        }
+
+        animatePokedollar();
+    });
+}
+
+function pokemonPlay(ashElement, pokemonElement, counter, expBar, expPoke, firstClick) {
+    const menuExists =
+    document.getElementById("shop") &&
+    document.getElementById("backpack") &&
+    document.getElementById("pokedex") &&
+    document.getElementById("player");
+
+    if (menuExists) {
+        isMenuDisplayed = true;
     }
+
+    pokemonElement.addEventListener("click", () => {
+        const rulesMessage = document.getElementById("rulesMessage");
+        if (rulesMessage) {
+            rulesMessage.remove();
+        }
+        playSound("assets/sounds/exp.mp3");
+
+        let pokedollars = parseInt(localStorage.getItem("pokedollars")) || 0;
+        if (counter) { 
+            counter.textContent = `${pokedollars}₽`;
+        }
+
+        let expNivel = parseInt(localStorage.getItem("expNivel")) || 0;
+        expNivel++;
+        updateExpBar(expNivel, expBar);
+
+        if (firstClick) {
+            top.appendChild(expPoke);
+
+            if (!isMenuDisplayed && !menuExists) {
+                displayMenu(message);
+                isMenuDisplayed = true;
+            }
+
+            firstClick = false;
+        }
+
+        evolutionPokemon(ashElement, pokemonElement, expBar);
+    });
 }
 
 export function play(ashElement, pokemonElement) {
+    const oldExpPoke = document.querySelector(".expPoke");
+    if (oldExpPoke) {
+        oldExpPoke.remove();
+    }
+
     const expPoke = document.createElement("section");
-    expPoke.classList.add("box");
-    expPoke.classList.add("expPoke");
+    expPoke.classList.add("box", "expPoke");
 
     const counter = document.createElement("p");
     counter.id = "pokedollars";
@@ -381,68 +365,11 @@ export function play(ashElement, pokemonElement) {
     expPoke.appendChild(counter);
     expPoke.appendChild(pokemonName);
     expPoke.appendChild(expContainer);
-
-    let expNivel = parseInt(localStorage.getItem("expNivel")) || 0;
-    const maxExp = 100;
-    const updateExpBar = () => {
-        const expPercentage = (expNivel / maxExp) * 100;
-        expBar.style.width = `${Math.min(expPercentage, 100)}%`;
-        localStorage.setItem("expNivel", expNivel);
-    };
-
-    let firstClick = true;
-
-    ashElement.addEventListener("click", () => {
-        const rulesMessage = document.getElementById("rulesMessage");
-        if (rulesMessage) {
-            rulesMessage.remove();
-        }
-        playSound("assets/sounds/money.mp3");
-
-        let expNivel = parseInt(localStorage.getItem("expNivel")) || 0;
-        updateExpBar();
-
-        let pokedollars = parseInt(localStorage.getItem("pokedollars")) || 0;
-        counter.textContent = `${pokedollars}₽`;
-        pokedollars++;
-        counter.textContent = `${pokedollars}₽`;
-        localStorage.setItem("pokedollars", pokedollars);
-
-        if (firstClick) {
-            top.appendChild(expPoke);
-            displayMenu(message);
-            firstClick = false;
-
-            const itemsFinderActive = JSON.parse(localStorage.getItem("itemsFinderActive"));
-            if (itemsFinderActive) {
-                findItems();
-            }
-        }
-
-        animatePokedollar();
-    });
-
-    pokemonElement.addEventListener("click", () => {
-        const rulesMessage = document.getElementById("rulesMessage");
-        if (rulesMessage) {
-            rulesMessage.remove();
-        }
-        playSound("assets/sounds/exp.mp3");
-
-        let pokedollars = parseInt(localStorage.getItem("pokedollars")) || 0;
-        counter.textContent = `${pokedollars}₽`;
-
-        expNivel++;
-        updateExpBar();
-
-        if (firstClick) {
-            top.appendChild(expPoke);
-            displayMenu(message);
-            firstClick = false;
-        }
-
-        evolutionPokemon(ashElement, pokemonElement);
-    });
+    
+    if (!ashPlayed) {
+        ashPlay(ashElement, counter, expBar, expPoke, firstClick);
+    }
+    pokemonPlay(ashElement, pokemonElement, counter, expBar, expPoke, firstClick);
 }
 
 startGame();

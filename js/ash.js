@@ -1,18 +1,17 @@
-import { playSound } from './game.js';
+import { playSound } from './music.js';
 
 const gameContainer = document.querySelector(".game-container");
 
 export function playerInfo() {
     const playerModal = document.createElement("section");
-    playerModal.classList.add("playerModal");
-    playerModal.classList.add("box");
+    playerModal.classList.add("playerModal", "box");
 
     const playerName = localStorage.getItem("playerName");
     const name = document.createElement("h2");
     name.textContent = playerName;
     playerModal.appendChild(name);
 
-    const currentPokedollars = localStorage.getItem("pokedollars");
+    const currentPokedollars = localStorage.getItem("pokedollars")|| 0;;
     const counter = document.createElement("p");
     counter.classList.add("playerInfo");
     counter.textContent = `pokédollars: ${currentPokedollars}₽`;

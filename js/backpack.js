@@ -1,5 +1,6 @@
 import { getItems } from './shop.js';
-import { playSound, animatePokedollar } from './game.js';
+import { animatePokedollar } from './game.js';
+import { playSound } from './music.js';
 
 const gameContainer = document.querySelector(".game-container");
 
@@ -65,8 +66,7 @@ export async function findItems() {
 
 export async function openBackpack() {
     const backpackModal = document.createElement("section");
-    backpackModal.classList.add("modal");
-    backpackModal.classList.add("box");
+    backpackModal.classList.add("modal", "box");
 
     const playerName = localStorage.getItem("playerName");
     const myBag = document.createElement("h2");

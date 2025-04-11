@@ -1,4 +1,4 @@
-import { playSound } from './game.js';
+import { playSound } from './music.js';
 import { getPokemon, createPokemonElement } from './pokemon.js';
 
 const top = document.querySelector(".top");
@@ -8,8 +8,7 @@ const gameContainer = document.querySelector(".game-container");
 
 export function openPokedex() {
     const pokedexModal = document.createElement("section");
-    pokedexModal.classList.add("modal");
-    pokedexModal.classList.add("box");
+    pokedexModal.classList.add("modal", "box");
 
     const pokedex = document.createElement("h2");
     pokedex.textContent = "pokédex";
