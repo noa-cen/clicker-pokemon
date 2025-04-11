@@ -66,7 +66,6 @@ export function evolutionPokemon(ashElement, pokemonElement) {
                 
                     let firstClick = true;
                     localStorage.setItem("expNivel", 0);
-                    let ashPlayed = true;
                     play(ashElement, newPokemonElement, firstClick);
                 }
 
@@ -86,33 +85,23 @@ export function evolutionPokemon(ashElement, pokemonElement) {
                     case 19:
                     case 21:
                     case 23:
-                    case 25: // Pikachu thunder stone
                     case 27:
                     case 29:
-                    case 30: // Nidorina moon stone
                     case 32:
-                    case 33: // Nidorino moon stone
-                    case 35: // Clefairy moon stone
-                    case 37: // Vulpix fire stone
-                    case 39: // Jigglypuff moon stone
                     case 41:
                     case 43:
-                    case 44: // Gloom leaf stone
                     case 46:
                     case 48:
                     case 50:
                     case 52:
                     case 54:
                     case 56:
-                    case 58: // Growlithe fire stone
                     case 60:
-                    case 61: // Poliwhirl water stone
                     case 63:
                     case 64:
                     case 66:
                     case 67:
                     case 69:
-                    case 70: // Weepinbell leaf stone
                     case 72:
                     case 74:
                     case 75:
@@ -122,27 +111,43 @@ export function evolutionPokemon(ashElement, pokemonElement) {
                     case 84:
                     case 86:
                     case 88:
-                    case 90: // Shellder water stone
                     case 92:
                     case 93:
                     case 96:
                     case 98:
                     case 100:
-                    case 102: // Exeggcute leaf stone
                     case 104:
                     case 109:
                     case 111:
                     case 116:
                     case 118:
-                    case 120: // Staryu water stone
                     case 129:
-                    case 133: // Eevee thunder stone - water stone - fire stone
                     case 138:
                     case 140:
                     case 147:
                     case 148:
                         evolution(pokemonId, newPokemonId);
                         break;
+                    case 25: // Pikachu thunder stone
+
+                    case 30: // Nidorina moon stone
+                    case 33: // Nidorino moon stone
+                    case 35: // Clefairy moon stone
+                    case 39: // Jigglypuff moon stone
+
+                    case 37: // Vulpix fire stone
+                    case 58: // Growlithe fire stone
+
+                    case 44: // Gloom leaf stone
+                    case 70: // Weepinbell leaf stone
+                    case 102: // Exeggcute leaf stone
+
+                    case 61: // Poliwhirl water stone
+                    case 90: // Shellder water stone
+                    case 120: // Staryu water stone
+
+                    case 133: // Eevee thunder stone - water stone - fire stone
+
                 }
             }
         });

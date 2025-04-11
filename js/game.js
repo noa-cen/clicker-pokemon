@@ -11,7 +11,6 @@ const bottom = document.querySelector(".bottom");
 const gameContainer = document.querySelector(".game-container");
 let isMenuDisplayed = false;
 let firstClick = true;
-let ashPlayed = false;
 
 function startGame() {
     const pokemons = JSON.parse(localStorage.getItem("pokemons") || "[]");
@@ -366,9 +365,7 @@ export function play(ashElement, pokemonElement) {
     expPoke.appendChild(pokemonName);
     expPoke.appendChild(expContainer);
     
-    if (!ashPlayed) {
-        ashPlay(ashElement, counter, expBar, expPoke, firstClick);
-    }
+    ashPlay(ashElement, counter, expBar, expPoke, firstClick);
     pokemonPlay(ashElement, pokemonElement, counter, expBar, expPoke, firstClick);
 }
 
