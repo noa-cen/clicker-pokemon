@@ -244,7 +244,7 @@ export function animatePokedollar(item = "pokedollar") {
 
     setTimeout(() => {
         pokedollarImg.remove();
-    }, 500);
+    }, 1000);
 }
 
 export function updateExpBar(expNivel, expBar) {
@@ -267,7 +267,11 @@ function ashPlay(ashElement, counter, expBar, expPoke, firstClick) {
 
         let pokedollars = parseInt(localStorage.getItem("pokedollars")) || 0;
 
-        pokedollars += 1;
+        if (JSON.parse(localStorage.getItem("doubleSpeed")) === true) {
+            pokedollars += 2;
+        } else {
+            pokedollars++;
+        }
 
         counter.textContent = `${pokedollars}₽`;
         localStorage.setItem("pokedollars", pokedollars);
@@ -316,7 +320,13 @@ function pokemonPlay(ashElement, pokemonElement, counter, expBar, expPoke, first
         }
 
         let expNivel = parseInt(localStorage.getItem("expNivel")) || 0;
-        expNivel++;
+
+        if (JSON.parse(localStorage.getItem("doubleSpeed")) === true) {
+            expNivel += 2;
+        } else {
+            expNivel++;
+        }
+
         updateExpBar(expNivel, expBar);
 
         if (firstClick) {

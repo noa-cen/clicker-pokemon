@@ -1,7 +1,7 @@
 import { getItems } from './shop.js';
-import { animatePokedollar, updateExpBar } from './game.js';
-import { evolutionPokemon } from './pokemon.js';
-import { playSound } from './music.js';
+import { animatePokedollar, play, updateExpBar } from './game.js';
+import { getPokemon, createPokemonElement } from './pokemon.js';
+import { playSound, pauseAllSounds } from './music.js';
 
 const gameContainer = document.querySelector(".game-container");
 
@@ -12,54 +12,53 @@ export async function findItems() {
     const hasItemsFinder = backpack && backpack["items finder"];
   
     if (!window.itemsFinderInterval && hasItemsFinder) {
-        window.itemsFinderInterval = setInterval(() => {
+        window.itemsFinderInterval = setInterval(() => {  
+        const randomChoice = Math.random() < 0.99;
         const backpack = JSON.parse(localStorage.getItem("backpack")) || {};
   
-        const randomChoice = Math.random() < 0.99;
-  
-        if (randomChoice) {
-            const currentPokedollars = parseInt(localStorage.getItem("pokedollars")) || 0;
-            const newPokedollars = currentPokedollars + 1;
-            localStorage.setItem("pokedollars", newPokedollars);
-    
-            const counter = document.getElementById("pokedollars");
-            if (counter) {
-                counter.textContent = `${newPokedollars}₽`;
-            }
-    
-            playSound("assets/sounds/money.mp3");
-            animatePokedollar();
-            } else {
-            const itemsFinder = items.find(item => item.name === "items finder");
-            const randomItemId = Math.floor(Math.random() * itemsFinder.items.length);
-            let randomItem = itemsFinder.items[randomItemId];
-    
-            if (randomItem.name === "masterball" || randomItem.name === "bike voucher") {
-                if (backpack[randomItem.name]) {
-                randomItem = null;
-                return;
-                } else {
-                backpack[randomItem.name] = 1;
-                localStorage.setItem("backpack", JSON.stringify(backpack));
-                }
-            } else if (randomItem.name === "nugget") {
+            if (randomChoice) {
                 const currentPokedollars = parseInt(localStorage.getItem("pokedollars")) || 0;
-                const newPokedollars = currentPokedollars + 5000;
+                const newPokedollars = currentPokedollars + 1;
                 localStorage.setItem("pokedollars", newPokedollars);
-    
+        
                 const counter = document.getElementById("pokedollars");
                 if (counter) {
-                counter.textContent = `Pokédollars: ${newPokedollars}₽`;
+                    counter.textContent = `${newPokedollars}₽`;
                 }
+        
+                playSound("assets/sounds/money.mp3");
+                animatePokedollar();
             } else {
-                backpack[randomItem.name] = backpack[randomItem.name]
-                ? backpack[randomItem.name] + 1
-                : 1;
-    
-                localStorage.setItem("backpack", JSON.stringify(backpack));
-            }
-            playSound("assets/sounds/gainItem.mp3");
-            animatePokedollar(randomItem);
+                const backpack = JSON.parse(localStorage.getItem("backpack")) || {};
+                const itemsFinder = items.find(item => item.name === "items finder");
+                const randomItemId = Math.floor(Math.random() * itemsFinder.items.length);
+                let randomItem = itemsFinder.items[randomItemId];
+
+                if (randomItem.name === "bike voucher" && backpack["bicycle"]) {
+                    return;
+                } else if (randomItem.name === "masterball" || randomItem.name === "bike voucher") {
+                    if (!backpack.hasOwnProperty(randomItem.name)) {
+                        backpack[randomItem.name] = 1;
+                        localStorage.setItem("backpack", JSON.stringify(backpack));
+                    } else {
+                        return;
+                    }
+                } else if (randomItem.name === "nugget") {
+                    const currentPokedollars = parseInt(localStorage.getItem("pokedollars"));
+                    const newPokedollars = currentPokedollars + 5000;
+                    localStorage.setItem("pokedollars", newPokedollars);
+        
+                    const counter = document.getElementById("pokedollars");
+                    if (counter) {
+                        counter.textContent = `${newPokedollars}₽`;
+                    }
+                } else {
+                    backpack[randomItem.name] = backpack[randomItem.name] ? backpack[randomItem.name] + 1 : 1;
+                    localStorage.setItem("backpack", JSON.stringify(backpack));
+                }
+
+                playSound("assets/sounds/gainItem.mp3");
+                animatePokedollar(randomItem);
             }
         }, 1000);
     }
@@ -76,6 +75,51 @@ export function gainExp() {
             updateExpBar(expNivel, expBar);
         }
     }, 5000);
+}
+
+function rareCandy() {
+    const expBar = document.querySelector(".expBar");
+    let expNivel = parseInt(localStorage.getItem("expNivel")) || 0;
+    if (expNivel < 100) {
+        expNivel = expNivel + 10;
+        localStorage.setItem("expNivel", expNivel);
+        playSound("assets/sounds/levelUp.mp3");
+        updateExpBar(expNivel, expBar);
+    }
+}
+
+function pokeflute() {
+    pauseAllSounds();
+
+    const listPokemonId = [1, 4, 7, 10, 13, 16, 19, 21, 23, 25, 27, 29, 32, 35, 37, 39, 41, 43, 46, 48, 50, 52, 54, 56, 58, 60, 63, 66, 69, 72, 74, 77, 79, 81, 83, 84, 86, 88, 90, 92, 95, 96, 98, 100, 102, 104, 106, 107, 108, 109, 111, 113, 114, 115, 116, 118, 120, 122, 123, 124, 125, 126, 127, 128, 129, 131, 132, 133, 137, 138, 140, 142, 143, 144, 145, 146, 147, 150];
+    const randomId = Math.floor(Math.random() * listPokemonId.length);
+    const pokemonId = listPokemonId[randomId];
+
+    getPokemon().then(pokemons => {
+        const pokemon = pokemons.find(p => p.id === pokemonId);
+
+        const wildPokemonContainer = document.createElement("section");
+        wildPokemonContainer.classList.add("wildPokemonContainer");
+
+        const wildPokemonText = document.createElement("h3");
+        wildPokemonText.classList.add("box", "wildPokemonText");
+        wildPokemonText.textContent = `Wild ${pokemon.name.english} appeared!`;
+
+        const wildPokemon = createPokemonElement(pokemon, "wildPokemon");
+        wildPokemon.src = `assets/images/pokemon/color/${pokemon.id}.png`;
+
+        const ashBack = document.createElement("img");
+        ashBack.src = "assets/images/ashBack.png";
+        ashBack.alt = "Ash fighting";
+        ashBack.id = "ashBack";
+        ashBack.classList.add("ashBack");
+
+        wildPokemonContainer.appendChild(wildPokemon);
+        wildPokemonContainer.appendChild(ashBack);
+        wildPokemonContainer.appendChild(wildPokemonText);
+
+        gameContainer.appendChild(wildPokemonContainer);
+    });
 }
 
 export async function openBackpack() {
@@ -165,6 +209,67 @@ export async function openBackpack() {
                 clearInterval(window.multiExpInterval);
                 window.multiExpInterval = null;
             }
+        });
+    }
+
+    const rareCandyElement = document.getElementById("rare candy");
+    if (rareCandyElement) {
+        rareCandyElement.addEventListener("click", () => {
+            const backpack = JSON.parse(localStorage.getItem("backpack"));
+            let rareCandyQuantity = backpack["rare candy"];
+            rareCandyQuantity--;
+    
+            if (rareCandyQuantity === 0) {
+                delete backpack["rare candy"];
+            } else {
+                backpack["rare candy"] = rareCandyQuantity;
+            }
+    
+            localStorage.setItem("backpack", JSON.stringify(backpack));
+            rareCandy();
+            backpackModal.remove();
+        });
+    }
+
+    const bicycleElement = document.getElementById("bicycle");
+    if (bicycleElement) {
+        bicycleElement.addEventListener("click", () => {
+            let doubleSpeed = JSON.parse(localStorage.getItem("doubleSpeed"));
+
+            if (doubleSpeed === null) {
+                doubleSpeed = false;
+            }
+    
+            if (doubleSpeed) {
+                localStorage.setItem("doubleSpeed", JSON.stringify(false));
+                playSound("assets/sounds/error.mp3");
+            } else {
+                localStorage.setItem("doubleSpeed", JSON.stringify(true));
+                playSound("assets/sounds/activated.mp3");
+            }
+        });
+    }
+
+    const pokefluteElement = document.getElementById("pokeflute");
+    if (pokefluteElement) {
+        pokefluteElement.addEventListener("click", () => {
+            const blackOverlayPokeflute = document.createElement("div");
+            blackOverlayPokeflute.id = "blackOverlayPokeflute";
+            gameContainer.appendChild(blackOverlayPokeflute);
+
+            const battle = new Audio("assets/sounds/battle VS Wild Pokemon.mp3");
+            battle.loop = true;
+            battle.play().catch(() => {});
+
+            battle.play().then(() => {
+                setTimeout(() => {
+                    blackOverlayPokeflute.classList.add("expandSpiral");
+                }, 0);
+    
+                blackOverlayPokeflute.addEventListener("animationend", () => {
+                    pokeflute();
+                });
+            });
         });
     }
 }

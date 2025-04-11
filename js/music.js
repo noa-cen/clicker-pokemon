@@ -1,4 +1,5 @@
 const top = document.querySelector(".top");
+let activeSounds = [];
 
 export function playMusic() {
     const mediaPlayer = document.createElement("section");
@@ -108,5 +109,21 @@ export function playSound(src, volume = 1) {
         const audio = new Audio(src);
         audio.volume = volume;
         audio.play().catch(() => {});
+
+        if (!activeSounds.includes(audio)) {
+            activeSounds.push(audio);
+        }
     }
+}
+
+export function pauseAllSounds() {
+    activeSounds.forEach(audio => audio.pause());
+}
+
+export function resumeAllSounds() {
+    activeSounds.forEach(audio => {
+        if (audio.paused) {
+            audio.play().catch(() => {});
+        }
+    });
 }

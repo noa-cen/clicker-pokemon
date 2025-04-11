@@ -27,7 +27,7 @@
     "name": "leaf stone",
     "image": "assets/images/shop/leafStone.png",
     "cost": "2100",
-    "description": "used to evolve Gloom, Weepinbell and Exeggcute",
+    "description": "used to evolve some Pokemon",
     "quantity": 0
 },
 {
@@ -35,7 +35,7 @@
     "name": "thunder stone",
     "image": "assets/images/shop/thunderStone.png",
     "cost": "2100",
-    "description": "used to evolve Pikachu and Eevee",
+    "description": "used to evolve some Pokemon",
     "quantity": 0
 },
 {
@@ -43,7 +43,7 @@
     "name": "water stone",
     "image": "assets/images/shop/waterStone.png",
     "cost": "2100",
-    "description": "used to evolve Poliwhirl, Shellder, Staryu and Eeve",
+    "description": "used to evolve some Pokemon",
     "quantity": 0
 },
 {
@@ -51,7 +51,7 @@
     "name": "moon stone",
     "image": "assets/images/shop/moonStone.png",
     "cost": "2100",
-    "description": "used to evolve Nidorina, Nidorino, Clefairy and Jigglypuff",
+    "description": "used to evolve some Pokemon",
     "quantity": 0
 },
 {
@@ -59,7 +59,7 @@
     "name": "fire stone",
     "image": "assets/images/shop/fireStone.png",
     "cost": "2100",
-    "description": "use to evolve Vulpix, Growlithe and Eevee",
+    "description": "use to evolve some Pokemon",
     "quantity": 0
 },
 {
@@ -75,8 +75,8 @@
     "name": "pokeflute",
     "image": "assets/images/shop/pokeflute.png",
     "cost": "5000",
-    "description": "wakes up a random Pokemon",
-    "quantity": 1
+    "description": "wakes up a Pokemon",
+    "quantity": 0
 },
 {
     "id": 11,
@@ -87,27 +87,27 @@
     "quantity": 1,
     "items": [
         {
-            "id": 1,
+            "id": 14,
             "name": "pokeball",
             "image": "assets/images/shop/pokeball-1.png"
         },
         {
-            "id": 2,
+            "id": 15,
             "name": "masterball",
             "image": "assets/images/shop/masterball-1.png"
         },
         {
-            "id": 3,
+            "id": 16,
             "name": "rare candy",
             "image": "assets/images/shop/rareCandy.png"
         },
         {
-            "id": 4,
+            "id": 17,
             "name": "bike voucher",
             "image": "assets/images/shop/bikeVoucher.png"
         },
         {
-            "id": 5,
+            "id": 18,
             "name": "nugget",
             "image": "assets/images/shop/nugget.png"
         }

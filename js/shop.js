@@ -37,14 +37,23 @@ export function openShop() {
             } else {
                 itemElement.addEventListener("click", () => {
                     const currentPokedollars = parseInt(localStorage.getItem("pokedollars")) || 0;
+                    const backpack = JSON.parse(localStorage.getItem("backpack")) || {};
                 
-                    if (item.cost > currentPokedollars) {
+                    if (item.name === "bicycle" && backpack["bike voucher"]) {
+                        playSound("assets/sounds/buyItem.mp3");
+                        backpack["bicycle"] = 1;
+                        delete backpack["bike voucher"];
+                        localStorage.setItem("backpack", JSON.stringify(backpack));
+
+                        const bicycle = document.getElementById("bicycle");
+                        bicycle.classList.add("disabled");
+                        bicycle.style.pointerEvents = "none";
+                    } else if (item.cost > currentPokedollars) {
                         playSound("assets/sounds/error.mp3");
                         return;
                     } else {
                         playSound("assets/sounds/buyItem.mp3");
                         
-                        const backpack = JSON.parse(localStorage.getItem("backpack")) || {};
                         if (backpack[item.name]) {
                             backpack[item.name]++;
                         } else {
@@ -54,7 +63,7 @@ export function openShop() {
                 
                         const newPokedollars = currentPokedollars - item.cost;
                         let counter = document.getElementById("pokedollars");
-                        counter.textContent = `Pokédollars: ${newPokedollars}₽`;
+                        counter.textContent = `${newPokedollars}₽`;
                         localStorage.setItem("pokedollars", newPokedollars);
 
                         if (item.quantity === 1) {
