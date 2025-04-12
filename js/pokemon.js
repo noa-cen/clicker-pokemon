@@ -33,6 +33,10 @@ export function createPokemonElement(pokemon, className = "pokemon") {
     return pokemonElement;
 }
 
+export function evolutionStone() {
+    return;
+}
+
 export function evolutionPokemon(pokemonElement) {
     let expNivel = parseInt(localStorage.getItem("expNivel")) || 0;
     const currentPokemon = document.getElementById(pokemonElement.id);
@@ -45,11 +49,11 @@ export function evolutionPokemon(pokemonElement) {
                 const pokemonId = foundPokemon.id;
                 const newPokemonId = pokemonId + 1;
 
-                function evolution(pokemonId, newPokemonId) {
+                function evolution() {
                     animatedEvolution(pokemonId, newPokemonId, () => {
                         finishEvolution(newPokemonId);
                     });
-                }               
+                }
                 
                 function finishEvolution(newPokemonId) {
                     currentPokemon.remove();
@@ -131,25 +135,21 @@ export function evolutionPokemon(pokemonElement) {
                         evolution(pokemonId, newPokemonId);
                         break;
                     case 25: // Pikachu thunder stone
-
                     case 30: // Nidorina moon stone
                     case 33: // Nidorino moon stone
                     case 35: // Clefairy moon stone
                     case 39: // Jigglypuff moon stone
-
                     case 37: // Vulpix fire stone
                     case 58: // Growlithe fire stone
-
                     case 44: // Gloom leaf stone
                     case 70: // Weepinbell leaf stone
                     case 102: // Exeggcute leaf stone
-
                     case 61: // Poliwhirl water stone
                     case 90: // Shellder water stone
                     case 120: // Staryu water stone
-
                     case 133: // Eevee thunder stone - water stone - fire stone
-
+                        evolutionStone();
+                        break;
                     default:
                         playSound("assets/sounds/levelUp.mp3");
                 }

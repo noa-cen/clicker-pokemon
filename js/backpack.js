@@ -1,7 +1,7 @@
 import { getItems } from './shop.js';
-import { animatePokedollar, play, updateExpBar } from './game.js';
-import { getPokemon, createPokemonElement } from './pokemon.js';
-import { playSound, pauseAllSounds, resumeAllSounds } from './music.js';
+import { animatePokedollar, updateExpBar } from './game.js';
+import { getPokemon, createPokemonElement, evolutionStone } from './pokemon.js';
+import { playSound, pauseAllSounds } from './music.js';
 
 const gameContainer = document.querySelector(".game-container");
 
@@ -453,8 +453,8 @@ export async function openBackpack() {
             } else {
                 backpack["rare candy"] = rareCandyQuantity;
             }
-    
             localStorage.setItem("backpack", JSON.stringify(backpack));
+
             rareCandy();
             backpackModal.remove();
         });
@@ -510,6 +510,126 @@ export async function openBackpack() {
                     pokeflute(battle);
                 });
             });
+        });
+    }
+
+    const leafStone = document.getElementById("leaf stone");
+    if (leafStone) {
+        leafStone.addEventListener("click", () => {
+            const pokemonId = parseInt(localStorage.getItem("clickerId"));
+            const listIdLeaf = [44, 70, 102];
+            if (listIdLeaf.includes(pokemonId)) {
+                const backpack = JSON.parse(localStorage.getItem("backpack"));
+                let leafStoneQuantity = backpack["leaf stone"];
+                leafStoneQuantity--;
+                if (leafStoneQuantity === 0) {
+                    delete backpack["leaf stone"];
+                } else {
+                    backpack["leaf stone"] = leafStoneQuantity;
+                }
+                localStorage.setItem("backpack", JSON.stringify(backpack));
+
+                evolutionStone();
+                backpackModal.remove();
+            } else {
+                playSound("assets/sounds/error.mp3");
+            }
+        });
+    }
+
+    const thunderStone = document.getElementById("thunder stone");
+    if (thunderStone) {
+        thunderStone.addEventListener("click", () => {
+            const pokemonId = parseInt(localStorage.getItem("clickerId"));
+            const listIdThunder = [25, 133];
+            if (listIdThunder.includes(pokemonId)) {
+                const backpack = JSON.parse(localStorage.getItem("backpack"));
+                let thunderStoneQuantity = backpack["thunder stone"];
+                thunderStoneQuantity--;
+                if (thunderStoneQuantity === 0) {
+                    delete backpack["thunder stone"];
+                } else {
+                    backpack["thunder stone"] = thunderStoneQuantity;
+                }
+                localStorage.setItem("backpack", JSON.stringify(backpack));
+
+                evolutionStone();
+                backpackModal.remove();
+            } else {
+                playSound("assets/sounds/error.mp3");
+            }
+        });
+    }
+
+    const waterStone = document.getElementById("water stone");
+    if (waterStone) {
+        waterStone.addEventListener("click", () => {
+            const pokemonId = parseInt(localStorage.getItem("clickerId"));
+            const listIdWater = [61, 90, 120, 133];
+            if (listIdWater.includes(pokemonId)) {
+                const backpack = JSON.parse(localStorage.getItem("backpack"));
+                let waterStoneQuantity = backpack["water stone"];
+                waterStoneQuantity--;
+                if (waterStoneQuantity === 0) {
+                    delete backpack["water stone"];
+                } else {
+                    backpack["water stone"] = waterStoneQuantity;
+                }
+                localStorage.setItem("backpack", JSON.stringify(backpack));
+
+                evolutionStone();
+                backpackModal.remove();
+            } else {
+                playSound("assets/sounds/error.mp3");
+            }
+        });
+    }
+
+    const moonStone = document.getElementById("moon stone");
+    if (moonStone) {
+        moonStone.addEventListener("click", () => {
+            const pokemonId = parseInt(localStorage.getItem("clickerId"));
+            const listIdMoon = [30, 33, 35, 39];
+            if (listIdMoon.includes(pokemonId)) {
+                const backpack = JSON.parse(localStorage.getItem("backpack"));
+                let moonStoneQuantity = backpack["moon stone"];
+                moonStoneQuantity--;
+                if (moonStoneQuantity === 0) {
+                    delete backpack["moon stone"];
+                } else {
+                    backpack["moon stone"] = moonStoneQuantity;
+                }
+                localStorage.setItem("backpack", JSON.stringify(backpack));
+
+                evolutionStone();
+                backpackModal.remove();
+            } else {
+                playSound("assets/sounds/error.mp3");
+            }
+        });
+    }
+
+    const fireStone = document.getElementById("fire stone");
+    if (fireStone) {
+        fireStone.addEventListener("click", () => {
+            const pokemonId = parseInt(localStorage.getItem("clickerId"));
+            const listIdFire = [37, 58, 133];
+            if (listIdFire.includes(pokemonId)) {
+                const backpack = JSON.parse(localStorage.getItem("backpack"));
+                let fireStoneQuantity = backpack["fire stone"];
+                fireStoneQuantity--;
+                if (fireStoneQuantity === 0) {
+                    delete backpack["fire stone"];
+                } else {
+                    backpack["fire stone"] = fireStoneQuantity;
+                }
+                localStorage.setItem("backpack", JSON.stringify(backpack));
+
+                evolutionStone();
+                backpackModal.remove();
+            } else {
+                playSound("assets/sounds/error.mp3");
+            }
         });
     }
 }
