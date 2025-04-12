@@ -25,11 +25,22 @@ export function openPokedex() {
             const pokedexInfo = document.createElement("article");
             pokedexInfo.classList.add("pokedexInfo");
             const name = document.createElement("p");
-            name.textContent = `${pokemon.number}: ${pokemon.name.english}`;
+
+            if (pokemon.id === 151) {
+                name.textContent = `${pokemon.number}: ???`;
+            } else {
+                name.textContent = `${pokemon.number}: ${pokemon.name.english}`;
+            }
+
             name.classList.add("name");
             const type = document.createElement("p");
-            type.textContent = `type: ${pokemon.type}`;
-
+            
+            if (pokemon.id === 151) {
+                type.textContent = "type: ???";
+            } else {
+                type.textContent = `type: ${pokemon.type}`;
+            }
+            
             pokedexInfo.appendChild(name);
             pokedexInfo.appendChild(type);
             pokemonWrapper.appendChild(element);

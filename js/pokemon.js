@@ -25,10 +25,7 @@ export function createPokemonElement(pokemon, className = "pokemon") {
     pokemonElement.classList.add(className);
     pokemonElement.alt = pokemon.name.english;
     pokemonElement.id = `${pokemon.name.english.toLowerCase()}`;
-
-    pokemonElement.src = hasPokemon
-        ? `assets/images/pokemon/color/${pokemon.id}.png`
-        : pokemon.image;
+    pokemonElement.src = hasPokemon ? `assets/images/pokemon/color/${pokemon.id}.png` : pokemon.image;
 
     return pokemonElement;
 }
