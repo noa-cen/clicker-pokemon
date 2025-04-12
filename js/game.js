@@ -8,7 +8,6 @@ import { playMusic, playSound } from './music.js';
 const top = document.querySelector(".top");
 const message = document.querySelector(".message");
 const bottom = document.querySelector(".bottom");
-const gameContainer = document.querySelector(".game-container");
 let isMenuDisplayed = false;
 let firstClick = true;
 
@@ -168,7 +167,7 @@ function rules() {
         `;
         message.appendChild(rulesMessage);
 
-        play(ashElement, chosenElement);
+        play(chosenElement);
     });
 }
 
@@ -247,14 +246,21 @@ export function animatePokedollar(item = "pokedollar") {
     }, 1000);
 }
 
-export function updateExpBar(expNivel, expBar) {
+export function updateExpBar() {
+    const expBar = document.querySelector(".expBar");
+    let expNivel = parseInt(localStorage.getItem("expNivel")) || 0;
+
     const maxExp = 100;
     const expPercentage = (expNivel / maxExp) * 100;
-    expBar.style.width = `${Math.min(expPercentage, 100)}%`;
+    if (expBar) {
+        expBar.style.width = `${Math.min(expPercentage, 100)}%`;
+    }
     localStorage.setItem("expNivel", expNivel);
 }
 
-function ashPlay(ashElement, counter, expBar, expPoke, firstClick) {        
+function ashPlay(counter, expPoke) {  
+    const ashElement = document.getElementById("ash");
+    
     ashElement.addEventListener("click", () => {
         const rulesMessage = document.getElementById("rulesMessage");
         if (rulesMessage) {
@@ -262,8 +268,7 @@ function ashPlay(ashElement, counter, expBar, expPoke, firstClick) {
         }
         playSound("assets/sounds/money.mp3");
 
-        let expNivel = parseInt(localStorage.getItem("expNivel")) || 0;
-        updateExpBar(expNivel, expBar);
+        updateExpBar();
 
         let pokedollars = parseInt(localStorage.getItem("pokedollars")) || 0;
 
@@ -300,7 +305,7 @@ function ashPlay(ashElement, counter, expBar, expPoke, firstClick) {
     });
 }
 
-function pokemonPlay(ashElement, pokemonElement, counter, expBar, expPoke, firstClick) {
+export function pokemonPlay(pokemonElement, counter, expPoke) {
     const menuExists =
     document.getElementById("shop") &&
     document.getElementById("backpack") &&
@@ -330,11 +335,12 @@ function pokemonPlay(ashElement, pokemonElement, counter, expBar, expPoke, first
                 expNivel++;
             }
 
+            localStorage.setItem("expNivel", expNivel);
+            updateExpBar();
+
             if (expNivel < 100) {
                 playSound("assets/sounds/exp.mp3");
             }
-
-            updateExpBar(expNivel, expBar);
         }
 
         if (firstClick) {
@@ -357,11 +363,11 @@ function pokemonPlay(ashElement, pokemonElement, counter, expBar, expPoke, first
             }
         }
 
-        evolutionPokemon(ashElement, pokemonElement, expBar);
+        evolutionPokemon(pokemonElement);
     });
 }
 
-export function play(ashElement, pokemonElement) {
+export function play(pokemonElement) {
     const oldExpPoke = document.querySelector(".expPoke");
     if (oldExpPoke) {
         oldExpPoke.remove();
@@ -387,13 +393,17 @@ export function play(ashElement, pokemonElement) {
     const expBar = document.createElement("article");
     expBar.classList.add("expBar");
     expContainer.appendChild(expBar);
+    const expNivel = parseInt(localStorage.getItem("expNivel")) || 0;
+    const maxExp = 100;
+    const expPercentage = (expNivel / maxExp) * 100;
+    expBar.style.width = `${Math.min(expPercentage, 100)}%`;
 
     expPoke.appendChild(counter);
     expPoke.appendChild(pokemonName);
     expPoke.appendChild(expContainer);
     
-    ashPlay(ashElement, counter, expBar, expPoke, firstClick);
-    pokemonPlay(ashElement, pokemonElement, counter, expBar, expPoke, firstClick);
+    ashPlay(counter, expPoke);
+    pokemonPlay(pokemonElement, counter, expPoke);
 }
 
 startGame();

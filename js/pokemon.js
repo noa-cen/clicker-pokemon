@@ -1,4 +1,4 @@
-import { play } from './game.js';
+import { play, updateExpBar } from './game.js';
 import { playSound } from './music.js';
 
 const top = document.querySelector(".top");
@@ -33,7 +33,7 @@ export function createPokemonElement(pokemon, className = "pokemon") {
     return pokemonElement;
 }
 
-export function evolutionPokemon(ashElement, pokemonElement) {
+export function evolutionPokemon(pokemonElement) {
     let expNivel = parseInt(localStorage.getItem("expNivel")) || 0;
     const currentPokemon = document.getElementById(pokemonElement.id);
 
@@ -66,9 +66,9 @@ export function evolutionPokemon(ashElement, pokemonElement) {
                 
                     bottom.appendChild(newPokemonElement);
                 
-                    let firstClick = true;
                     localStorage.setItem("expNivel", 0);
-                    play(ashElement, newPokemonElement, firstClick);
+                    updateExpBar();
+                    play(newPokemonElement);
                 }
 
                 switch (pokemonId) {

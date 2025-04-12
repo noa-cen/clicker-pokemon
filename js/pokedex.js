@@ -1,3 +1,4 @@
+import { pokemonPlay,updateExpBar } from './game.js';
 import { playSound } from './music.js';
 import { getPokemon, createPokemonElement } from './pokemon.js';
 
@@ -9,6 +10,7 @@ const gameContainer = document.querySelector(".game-container");
 export function openPokedex() {
     const pokedexModal = document.createElement("section");
     pokedexModal.classList.add("modal", "box");
+    pokedexModal.id = "pokedexModal";
 
     const pokedex = document.createElement("h2");
     pokedex.textContent = "pokédex";
@@ -33,6 +35,14 @@ export function openPokedex() {
             pokemonWrapper.appendChild(element);
             pokemonWrapper.appendChild(pokedexInfo);
             pokedexModal.appendChild(pokemonWrapper);
+
+            let pokemonsCaptured = JSON.parse(localStorage.getItem("pokemons")) || [];
+            const pokemonId = pokemon.id;
+            if (pokemonsCaptured.includes(pokemonId)) {
+                element.addEventListener("click", () => {
+                    changePokemon(pokemonId);
+                });
+            }
         });
     });
 
@@ -47,4 +57,24 @@ export function openPokedex() {
     });
 
     gameContainer.appendChild(pokedexModal);
+}
+
+function changePokemon(pokemonId) {
+    localStorage.setItem("clickerId", pokemonId);
+    const currentPokemon = document.querySelector(".pokemon");
+    currentPokemon.remove();
+
+    getPokemon().then(pokemons => {
+        const newPokemon = pokemons.find(p => p.id === pokemonId);
+        const newPokemonElement = createPokemonElement(newPokemon);
+        bottom.appendChild(newPokemonElement);
+        const pokemonName = document.querySelector(".pokemonName");
+        pokemonName.textContent = newPokemon.name.english;
+        pokemonPlay(newPokemonElement);
+    });
+
+    const pokedexModal = document.getElementById("pokedexModal");
+    pokedexModal.remove();
+    localStorage.setItem("expNivel", 0);
+    updateExpBar();
 }

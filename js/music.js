@@ -38,8 +38,7 @@ export function playMusic() {
         "assets/sounds/12 Lavender Town's Theme.mp3",
         "assets/sounds/18 The Road to Viridian City ~ from Pallet.mp3",
         "assets/sounds/19 The Road to Cerulean ~ from Mt. Moon.mp3",
-        "assets/sounds/20 The Road to Lavender Town ~ from Vermilion.mp3",
-        "assets/sounds/21 The Last Road.mp3"
+        "assets/sounds/20 The Road to Lavender Town ~ from Vermilion.mp3"
     ];
 
     let currentTrack = 0;
