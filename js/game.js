@@ -290,6 +290,10 @@ function ashPlay(ashElement, counter, expBar, expPoke, firstClick) {
             if (itemsFinderActive) {
                 findItems();
             }
+            const multiExpActive = JSON.parse(localStorage.getItem("multiExpActive"));
+            if (multiExpActive) {
+                gainExp();
+            }
         }
 
         animatePokedollar();
@@ -312,7 +316,6 @@ function pokemonPlay(ashElement, pokemonElement, counter, expBar, expPoke, first
         if (rulesMessage) {
             rulesMessage.remove();
         }
-        playSound("assets/sounds/exp.mp3");
 
         let pokedollars = parseInt(localStorage.getItem("pokedollars")) || 0;
         if (counter) { 
@@ -320,14 +323,19 @@ function pokemonPlay(ashElement, pokemonElement, counter, expBar, expPoke, first
         }
 
         let expNivel = parseInt(localStorage.getItem("expNivel")) || 0;
+        if (expNivel <= 100) {
+            if (JSON.parse(localStorage.getItem("doubleSpeed")) === true) {
+                expNivel += 2;
+            } else {
+                expNivel++;
+            }
 
-        if (JSON.parse(localStorage.getItem("doubleSpeed")) === true) {
-            expNivel += 2;
-        } else {
-            expNivel++;
+            if (expNivel < 100) {
+                playSound("assets/sounds/exp.mp3");
+            }
+
+            updateExpBar(expNivel, expBar);
         }
-
-        updateExpBar(expNivel, expBar);
 
         if (firstClick) {
             top.appendChild(expPoke);
@@ -339,6 +347,10 @@ function pokemonPlay(ashElement, pokemonElement, counter, expBar, expPoke, first
 
             firstClick = false;
 
+            const itemsFinderActive = JSON.parse(localStorage.getItem("itemsFinderActive"));
+            if (itemsFinderActive) {
+                findItems();
+            }
             const multiExpActive = JSON.parse(localStorage.getItem("multiExpActive"));
             if (multiExpActive) {
                 gainExp();

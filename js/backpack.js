@@ -1,7 +1,7 @@
 import { getItems } from './shop.js';
 import { animatePokedollar, play, updateExpBar } from './game.js';
 import { getPokemon, createPokemonElement } from './pokemon.js';
-import { playSound, pauseAllSounds } from './music.js';
+import { playSound, pauseAllSounds, resumeAllSounds } from './music.js';
 
 const gameContainer = document.querySelector(".game-container");
 
@@ -88,7 +88,17 @@ function rareCandy() {
     }
 }
 
-function pokeflute() {
+function createBall(ball) {
+    const ballElement = document.createElement("img");
+    ballElement.classList.add("itemImage");
+    ballElement.src = `assets/images/shop/${ball}-1.png`;
+    ballElement.alt = ball;
+    ballElement.id = ball;
+
+    return ballElement;
+}
+
+function pokeflute(battle) {
     pauseAllSounds();
 
     const listPokemonId = [1, 4, 7, 10, 13, 16, 19, 21, 23, 25, 27, 29, 32, 35, 37, 39, 41, 43, 46, 48, 50, 52, 54, 56, 58, 60, 63, 66, 69, 72, 74, 77, 79, 81, 83, 84, 86, 88, 90, 92, 95, 96, 98, 100, 102, 104, 106, 107, 108, 109, 111, 113, 114, 115, 116, 118, 120, 122, 123, 124, 125, 126, 127, 128, 129, 131, 132, 133, 137, 138, 140, 142, 143, 144, 145, 146, 147, 150];
@@ -119,7 +129,226 @@ function pokeflute() {
         wildPokemonContainer.appendChild(wildPokemonText);
 
         gameContainer.appendChild(wildPokemonContainer);
+
+        setTimeout(() => {
+            wildPokemonText.remove();
+            const capturePokemonContainer = document.createElement("section");
+            capturePokemonContainer.classList.add("box", "capturePokemonContainer");
+
+            const ballsContainer = document.createElement("article");
+            ballsContainer.classList.add("ballsContainer");
+
+            const backpack = JSON.parse(localStorage.getItem("backpack"));
+
+            const pokeballInfo = document.createElement("article");
+            pokeballInfo.classList.add("ballInfo");
+            const pokeball = createBall("pokeball");
+            let pokeballQuantity = backpack["pokeball"] ?? 0;
+            const pokeballQuantityElement = document.createElement("p");
+            pokeballQuantityElement.id = "pokeballQuantityElement";
+            pokeballQuantityElement.textContent = `x ${pokeballQuantity}`;
+            pokeballInfo.appendChild(pokeball);
+            pokeballInfo.appendChild(pokeballQuantityElement);
+
+            const greatballInfo = document.createElement("article");
+            greatballInfo.classList.add("ballInfo");
+            const greatball = createBall("greatball");
+            let greatballQuantity = backpack["greatball"] ?? 0;
+            const greatballQuantityElement = document.createElement("p");
+            greatballQuantityElement.id = "greatballQuantityElement";
+            greatballQuantityElement.textContent = `x ${greatballQuantity}`;
+            greatballInfo.appendChild(greatball);
+            greatballInfo.appendChild(greatballQuantityElement);
+
+            const ultraballInfo = document.createElement("article");
+            ultraballInfo.classList.add("ballInfo");
+            const ultraball = createBall("ultraball");
+            let ultraballQuantity = backpack["ultraball"] ?? 0;
+            const ultraballQuantityElement = document.createElement("p");
+            ultraballQuantityElement.id = "ultraballQuantityElement";
+            ultraballQuantityElement.textContent = `x ${ultraballQuantity}`;
+            ultraballInfo.appendChild(ultraball);
+            ultraballInfo.appendChild(ultraballQuantityElement);
+
+            const masterballInfo = document.createElement("article");
+            masterballInfo.classList.add("ballInfo");
+            const masterball = createBall("masterball");
+            let masterballQuantity = backpack["masterball"] ?? 0;
+            const masterballQuantityElement = document.createElement("p");
+            masterballQuantityElement.id = "masterballQuantityElement";
+            masterballQuantityElement.textContent = `x ${masterballQuantity}`;
+            masterballInfo.appendChild(masterball);
+            masterballInfo.appendChild(masterballQuantityElement);
+
+            ballsContainer.appendChild(pokeballInfo);
+            ballsContainer.appendChild(greatballInfo);
+            ballsContainer.appendChild(ultraballInfo);
+            ballsContainer.appendChild(masterballInfo);
+            
+            const run = document.createElement("p");
+            run.id = "run";
+            run.textContent = "RUN";
+
+            capturePokemonContainer.appendChild(ballsContainer);
+            capturePokemonContainer.appendChild(run);
+            
+            wildPokemonContainer.appendChild(capturePokemonContainer);
+
+            capturePokemon(battle);
+
+            run.addEventListener("click", () => {
+                battle.pause();
+                battle.currentTime = 0;
+                battle.src = "";
+                battle.load();
+                battle = null;
+                blackOverlayPokeflute.remove();
+                wildPokemonContainer.remove();
+            });
+        }, 3000);
     });
+}
+
+function capturePokemon(battle) {
+    const backpack = JSON.parse(localStorage.getItem("backpack"));
+
+    const pokeball = document.getElementById("pokeball");
+    let pokeballQuantity = backpack["pokeball"] ?? 0;
+    const pokeballQuantityElement = document.getElementById("pokeballQuantityElement");
+
+    if (pokeball) {
+        pokeball.addEventListener("click", () => {
+            if (pokeballQuantity === 0) {
+                return;
+            } else {
+                pokeballQuantity--;
+                pokeballQuantityElement.textContent = `x ${pokeballQuantity}`;
+                backpack["pokeball"] = pokeballQuantity;
+                localStorage.setItem("backpack", JSON.stringify(backpack));
+                animatedCapture("pokeball", battle);
+            }
+        });
+    }
+
+    const greatball = document.getElementById("greatball");
+    let greatballQuantity = backpack["greatball"] ?? 0;
+    const greatballQuantityElement = document.getElementById("greatballQuantityElement");
+
+    if (greatball) {
+        greatball.addEventListener("click", () => {
+            if (greatballQuantity === 0) {
+                return;
+            } else {
+                greatballQuantity--;
+                greatballQuantityElement.textContent = `x ${greatballQuantity}`;
+                backpack["greatball"] = greatballQuantity;
+                localStorage.setItem("backpack", JSON.stringify(backpack));
+                animatedCapture("greatball", battle);
+            }
+        });
+    }
+
+    const ultraball = document.getElementById("ultraball");
+    let ultraballQuantity = backpack["ultraball"] ?? 0;
+    const ultraballQuantityElement = document.getElementById("ultraballQuantityElement");
+
+    if (ultraball) {
+        ultraball.addEventListener("click", () => {
+            if (ultraballQuantity === 0) {
+                return;
+            } else {
+                ultraballQuantity--;
+                ultraballQuantityElement.textContent = `x ${ultraballQuantity}`;
+                backpack["ultraball"] = ultraballQuantity;
+                localStorage.setItem("backpack", JSON.stringify(backpack));
+                animatedCapture("ultraball", battle);
+            }
+        });
+    }
+
+    const masterball = document.getElementById("masterball");
+    let masterballQuantity = backpack["masterball"] ?? 0;
+    const masterballQuantityElement = document.getElementById("masterballQuantityElement");
+
+    if (masterball) {
+        masterball.addEventListener("click", () => {
+            if (masterballQuantity === 0) {
+                return;
+            } else {
+                masterballQuantity--;
+                masterballQuantityElement.textContent = `x ${masterballQuantity}`;
+                backpack["masterball"] = masterballQuantity;
+                localStorage.setItem("backpack", JSON.stringify(backpack));
+                animatedCapture("masterball", battle);
+            }
+        });
+    }
+}
+
+function animatedCapture(ball, battle) {
+    let captureRate;
+    switch (ball) {
+        case "pokeball":
+            captureRate = 0.25;
+            break;
+        case "greatball":
+            captureRate = 0.5;
+            break;
+        case "ultraball":
+            captureRate = 0.75;
+            break;
+        case "masterball":
+            captureRate = 1;
+    }
+
+    const wildPokemonElement = document.querySelector(".wildPokemon");
+    const pokemonName = wildPokemonElement.alt;
+    const ballImg = document.createElement("img");
+    ballImg.src = `assets/images/shop/${ball}-1.png`;
+    ballImg.classList.add("wildPokemon", "ballImg");
+
+    wildPokemonElement.replaceWith(ballImg);
+
+    setTimeout(() => {
+        ballImg.style.transform = "translateY(-20px)";
+    }, 100);
+    setTimeout(() => {
+        ballImg.style.transform = "translateY(0)";
+    }, 400);
+
+    setTimeout(() => {
+        const wildPokemonContainer = document.querySelector(".wildPokemonContainer");
+        const blackOverlayPokeflute = document.getElementById("blackOverlayPokeflute");
+        const capture = Math.random() < captureRate;
+
+        if (capture) {
+            getPokemon().then(pokemons => {
+                const pokemonCaptured = pokemons.find(p => p.name.english === pokemonName);
+                const pokemonCapturedId = pokemonCaptured.id;
+                let pokemonsCaptured = JSON.parse(localStorage.getItem("pokemons")) || [];
+                if (!pokemonsCaptured.includes(pokemonCapturedId)) {
+                    pokemonsCaptured.push(pokemonCapturedId);
+                    localStorage.setItem("pokemons", JSON.stringify(pokemonsCaptured));
+                }
+            });
+
+            battle.pause();
+            battle.currentTime = 0;
+            battle.src = "";
+            battle.load();
+            battle = null;
+
+            const captureSound = new Audio("assets/sounds/pokemon-capture.mp3");
+            captureSound.addEventListener("ended", () => {
+                blackOverlayPokeflute.remove();
+                wildPokemonContainer.remove();
+            });
+        
+            captureSound.play().catch(() => {});
+        } else {
+            ballImg.replaceWith(wildPokemonElement);
+        }
+    }, 1500);
 }
 
 export async function openBackpack() {
@@ -178,7 +407,7 @@ export async function openBackpack() {
             itemsFinderActive = !itemsFinderActive;
             localStorage.setItem("itemsFinderActive", JSON.stringify(itemsFinderActive));
 
-            const clickSound = new Audio(itemsFinderActive ? "assets/sounds/activated.mp3" : "assets/sounds/error.mp3");
+            const clickSound = new Audio(itemsFinderActive ? "assets/sounds/activated.mp3" : "assets/sounds/deactivated.mp3");
             clickSound.play();
 
             if (itemsFinderActive) {
@@ -200,7 +429,7 @@ export async function openBackpack() {
             multiExpActive = !multiExpActive;
             localStorage.setItem("multiExpActive", JSON.stringify(multiExpActive));
 
-            const clickSound = new Audio(multiExpActive ? "assets/sounds/activated.mp3" : "assets/sounds/error.mp3");
+            const clickSound = new Audio(multiExpActive ? "assets/sounds/activated.mp3" : "assets/sounds/deactivated.mp3");
             clickSound.play();
 
             if (multiExpActive) {
@@ -242,7 +471,7 @@ export async function openBackpack() {
     
             if (doubleSpeed) {
                 localStorage.setItem("doubleSpeed", JSON.stringify(false));
-                playSound("assets/sounds/error.mp3");
+                playSound("assets/sounds/deactivated.mp3");
             } else {
                 localStorage.setItem("doubleSpeed", JSON.stringify(true));
                 playSound("assets/sounds/activated.mp3");
@@ -253,11 +482,21 @@ export async function openBackpack() {
     const pokefluteElement = document.getElementById("pokeflute");
     if (pokefluteElement) {
         pokefluteElement.addEventListener("click", () => {
+            const backpack = JSON.parse(localStorage.getItem("backpack"));
+            let pokefluteQuantity = backpack["pokeflute"];
+            pokefluteQuantity--;
+            if (pokefluteQuantity === 0) {
+                delete backpack["pokeflute"];
+            } else {
+                backpack["pokeflute"] = pokefluteQuantity;
+            }
+            localStorage.setItem("backpack", JSON.stringify(backpack));
+
             const blackOverlayPokeflute = document.createElement("div");
             blackOverlayPokeflute.id = "blackOverlayPokeflute";
             gameContainer.appendChild(blackOverlayPokeflute);
 
-            const battle = new Audio("assets/sounds/battle VS Wild Pokemon.mp3");
+            let battle = new Audio("assets/sounds/battle VS Wild Pokemon.mp3");
             battle.loop = true;
             battle.play().catch(() => {});
 
@@ -267,7 +506,8 @@ export async function openBackpack() {
                 }, 0);
     
                 blackOverlayPokeflute.addEventListener("animationend", () => {
-                    pokeflute();
+                    backpackModal.remove();
+                    pokeflute(battle);
                 });
             });
         });

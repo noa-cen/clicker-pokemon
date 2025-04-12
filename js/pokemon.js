@@ -18,7 +18,7 @@ export async function getPokemon() {
 }
 
 export function createPokemonElement(pokemon, className = "pokemon") {
-    const pokemonsCaptured = JSON.parse(localStorage.getItem("pokemons")) || [];
+    let pokemonsCaptured = JSON.parse(localStorage.getItem("pokemons")) || [];
     const hasPokemon = pokemonsCaptured.includes(pokemon.id);
 
     const pokemonElement = document.createElement("img");
@@ -55,8 +55,10 @@ export function evolutionPokemon(ashElement, pokemonElement) {
                     currentPokemon.remove();
                 
                     let pokemonsCaptured = JSON.parse(localStorage.getItem("pokemons")) || []; 
-                    pokemonsCaptured.push(newPokemonId);
-                    localStorage.setItem("pokemons", JSON.stringify(pokemonsCaptured));
+                    if (!pokemonsCaptured.includes(newPokemonId)) {
+                        pokemonsCaptured.push(newPokemonId);
+                        localStorage.setItem("pokemons", JSON.stringify(pokemonsCaptured));
+                    }
                 
                     const newPokemon = pokemons.find(p => p.id === newPokemonId);
                     const newPokemonElement = createPokemonElement(newPokemon);
@@ -148,6 +150,8 @@ export function evolutionPokemon(ashElement, pokemonElement) {
 
                     case 133: // Eevee thunder stone - water stone - fire stone
 
+                    default:
+                        playSound("assets/sounds/levelUp.mp3");
                 }
             }
         });
