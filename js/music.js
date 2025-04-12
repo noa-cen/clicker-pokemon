@@ -102,16 +102,30 @@ export function playMusic() {
     top.appendChild(mediaPlayer);
 }
 
+const audioCache = new Map();
+const maxInstancesPerSound = 5;
+
 export function playSound(src, volume = 1) {
     const isMuted = JSON.parse(localStorage.getItem("mute")) || false;
-    if (!isMuted) {
-        const audio = new Audio(src);
-        audio.volume = volume;
-        audio.play().catch(() => {});
+    if (isMuted) return;
 
-        if (!activeSounds.includes(audio)) {
-            activeSounds.push(audio);
-        }
+    if (!audioCache.has(src)) {
+        audioCache.set(src, []);
+    }
+
+    const pool = audioCache.get(src);
+
+    let audio = pool.find(a => a.ended || a.paused);
+
+    if (!audio && pool.length < maxInstancesPerSound) {
+        audio = new Audio(src);
+        pool.push(audio);
+    }
+
+    if (audio) {
+        audio.volume = volume;
+        audio.currentTime = 0;
+        audio.play().catch(() => {});
     }
 }
 

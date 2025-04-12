@@ -363,7 +363,7 @@ export function pokemonPlay(pokemonElement, counter, expPoke) {
             }
         }
 
-        evolutionPokemon(pokemonElement);
+        evolutionPokemon();
     });
 }
 

@@ -1,6 +1,6 @@
 import { getItems } from './shop.js';
 import { animatePokedollar, updateExpBar } from './game.js';
-import { getPokemon, createPokemonElement, evolutionStone } from './pokemon.js';
+import { getPokemon, createPokemonElement, evolutionPokemon } from './pokemon.js';
 import { playSound, pauseAllSounds } from './music.js';
 
 const gameContainer = document.querySelector(".game-container");
@@ -223,7 +223,12 @@ function capturePokemon(battle) {
             } else {
                 pokeballQuantity--;
                 pokeballQuantityElement.textContent = `x ${pokeballQuantity}`;
-                backpack["pokeball"] = pokeballQuantity;
+
+                if (pokeballQuantity === 0) {
+                    delete backpack["pokeball"];
+                } else {
+                    backpack["pokeball"] = pokeballQuantity;
+                }
                 localStorage.setItem("backpack", JSON.stringify(backpack));
                 animatedCapture("pokeball", battle);
             }
@@ -241,7 +246,12 @@ function capturePokemon(battle) {
             } else {
                 greatballQuantity--;
                 greatballQuantityElement.textContent = `x ${greatballQuantity}`;
-                backpack["greatball"] = greatballQuantity;
+
+                if (greatballQuantity === 0) {
+                    delete backpack["greatball"];
+                } else {
+                    backpack["greatball"] = greatballQuantity;
+                }
                 localStorage.setItem("backpack", JSON.stringify(backpack));
                 animatedCapture("greatball", battle);
             }
@@ -259,7 +269,12 @@ function capturePokemon(battle) {
             } else {
                 ultraballQuantity--;
                 ultraballQuantityElement.textContent = `x ${ultraballQuantity}`;
-                backpack["ultraball"] = ultraballQuantity;
+
+                if (ultraballQuantity === 0) {
+                    delete backpack["ultraball"];
+                } else {
+                    backpack["ultraball"] = ultraballQuantity;
+                }
                 localStorage.setItem("backpack", JSON.stringify(backpack));
                 animatedCapture("ultraball", battle);
             }
@@ -277,7 +292,12 @@ function capturePokemon(battle) {
             } else {
                 masterballQuantity--;
                 masterballQuantityElement.textContent = `x ${masterballQuantity}`;
-                backpack["masterball"] = masterballQuantity;
+
+                if (masterballQuantity === 0) {
+                    delete backpack["masterball"];
+                } else {
+                    backpack["masterball"] = masterballQuantity;
+                }
                 localStorage.setItem("backpack", JSON.stringify(backpack));
                 animatedCapture("masterball", battle);
             }
@@ -309,12 +329,17 @@ function animatedCapture(ball, battle) {
 
     wildPokemonElement.replaceWith(ballImg);
 
-    setTimeout(() => {
-        ballImg.style.transform = "translateY(-20px)";
-    }, 100);
-    setTimeout(() => {
-        ballImg.style.transform = "translateY(0)";
-    }, 400);
+    ballImg.animate([
+        { transform: 'translateX(-30px)' },
+        { transform: 'translateX(30px)' },
+        { transform: 'translateX(-20px)' },
+        { transform: 'translateX(20px)' },
+        { transform: 'translateX(-10px)' },
+        { transform: 'translateX(10px)' },
+    ], {
+        duration: 800,
+        easing: 'ease',
+    });
 
     setTimeout(() => {
         const wildPokemonContainer = document.querySelector(".wildPokemonContainer");
@@ -529,7 +554,9 @@ export async function openBackpack() {
                 }
                 localStorage.setItem("backpack", JSON.stringify(backpack));
 
-                evolutionStone();
+                playSound("assets/sounds/stoneActivated.mp3");
+                localStorage.setItem("leafStone", JSON.stringify(true));
+                evolutionPokemon();
                 backpackModal.remove();
             } else {
                 playSound("assets/sounds/error.mp3");
@@ -553,7 +580,8 @@ export async function openBackpack() {
                 }
                 localStorage.setItem("backpack", JSON.stringify(backpack));
 
-                evolutionStone();
+                playSound("assets/sounds/stoneActivated.mp3");
+                localStorage.setItem("thunderStone", JSON.stringify(true));
                 backpackModal.remove();
             } else {
                 playSound("assets/sounds/error.mp3");
@@ -577,7 +605,9 @@ export async function openBackpack() {
                 }
                 localStorage.setItem("backpack", JSON.stringify(backpack));
 
-                evolutionStone();
+                playSound("assets/sounds/stoneActivated.mp3");
+                localStorage.setItem("waterStone", JSON.stringify(true));
+                evolutionPokemon();
                 backpackModal.remove();
             } else {
                 playSound("assets/sounds/error.mp3");
@@ -601,7 +631,9 @@ export async function openBackpack() {
                 }
                 localStorage.setItem("backpack", JSON.stringify(backpack));
 
-                evolutionStone();
+                playSound("assets/sounds/stoneActivated.mp3");
+                localStorage.setItem("moonStone", JSON.stringify(true));
+                evolutionPokemon();
                 backpackModal.remove();
             } else {
                 playSound("assets/sounds/error.mp3");
@@ -625,7 +657,9 @@ export async function openBackpack() {
                 }
                 localStorage.setItem("backpack", JSON.stringify(backpack));
 
-                evolutionStone();
+                playSound("assets/sounds/stoneActivated.mp3");
+                localStorage.setItem("fireStone", JSON.stringify(true));
+                evolutionPokemon();
                 backpackModal.remove();
             } else {
                 playSound("assets/sounds/error.mp3");

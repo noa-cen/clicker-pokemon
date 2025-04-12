@@ -33,128 +33,206 @@ export function createPokemonElement(pokemon, className = "pokemon") {
     return pokemonElement;
 }
 
-export function evolutionStone() {
-    return;
+function evolution() {
+    const currentPokemonId = parseInt(localStorage.getItem("clickerId"));
+    const newPokemonId = currentPokemonId + 1;
+    animatedEvolution(currentPokemonId, newPokemonId, () => {
+        finishEvolution(newPokemonId);
+    });
 }
 
-export function evolutionPokemon(pokemonElement) {
+function finishEvolution(newPokemonId) {
+    const currentPokemon = document.querySelector(".pokemon");
+    if (currentPokemon) {
+        currentPokemon.remove();
+    }
+
+    let pokemonsCaptured = JSON.parse(localStorage.getItem("pokemons")) || []; 
+    if (!pokemonsCaptured.includes(newPokemonId)) {
+        pokemonsCaptured.push(newPokemonId);
+        localStorage.setItem("pokemons", JSON.stringify(pokemonsCaptured));
+    }
+
+    getPokemon().then(pokemons => {
+        const newPokemon = pokemons.find(p => p.id === newPokemonId);
+        console.log(newPokemon);
+        const newPokemonElement = createPokemonElement(newPokemon);
+        localStorage.setItem("clickerId", newPokemonId);
+        bottom.appendChild(newPokemonElement);
+        play(newPokemonElement);
+    });
+
+    localStorage.setItem("expNivel", 0);
+    updateExpBar();
+}
+
+export function evolutionStone() {
+    const leafStone = JSON.parse(localStorage.getItem("leafStone"));
+    const thunderStone = JSON.parse(localStorage.getItem("thunderStone"));
+    const waterStone = JSON.parse(localStorage.getItem("waterStone"));
+    const moonStone = JSON.parse(localStorage.getItem("moonStone"));
+    const fireStone = JSON.parse(localStorage.getItem("fireStone"));
+
+    if (leafStone) {
+        localStorage.setItem("leafStone", JSON.stringify(false));
+        
+        const currentPokemonId = parseInt(localStorage.getItem("clickerId"));
+        const newPokemonId = currentPokemonId + 1;
+        animatedEvolution(currentPokemonId, newPokemonId, () => {
+            finishEvolution(newPokemonId);
+        });
+    } else if (thunderStone) {
+        localStorage.setItem("thunderStone", JSON.stringify(false));
+        
+        const currentPokemonId = parseInt(localStorage.getItem("clickerId"));
+        const newPokemonId = currentPokemonId + 1;
+        animatedEvolution(currentPokemonId, newPokemonId, () => {
+            finishEvolution(newPokemonId);
+        });
+    } else if (waterStone) {
+        localStorage.setItem("waterStone", JSON.stringify(false));
+        
+        const currentPokemonId = parseInt(localStorage.getItem("clickerId"));
+        const newPokemonId = currentPokemonId + 1;
+        animatedEvolution(currentPokemonId, newPokemonId, () => {
+            finishEvolution(newPokemonId);
+        });
+    } else if (moonStone) {
+        localStorage.setItem("moonStone", JSON.stringify(false));
+        
+        const currentPokemonId = parseInt(localStorage.getItem("clickerId"));
+        const newPokemonId = currentPokemonId + 1;
+        animatedEvolution(currentPokemonId, newPokemonId, () => {
+            finishEvolution(newPokemonId);
+        });
+    } else if (fireStone) {
+        localStorage.setItem("fireStone", JSON.stringify(false));
+        
+        const currentPokemonId = parseInt(localStorage.getItem("clickerId"));
+        const newPokemonId = currentPokemonId + 1;
+        animatedEvolution(currentPokemonId, newPokemonId, () => {
+            finishEvolution(newPokemonId);
+        });
+    }
+}
+
+export function evolutionEevee() {
+    const thunderStone = JSON.parse(localStorage.getItem("thunderStone"));
+    const waterStone = JSON.parse(localStorage.getItem("waterStone"));
+    const fireStone = JSON.parse(localStorage.getItem("fireStone"));
+
+     if (thunderStone) {
+        localStorage.setItem("thunderStone", JSON.stringify(false));
+        
+        const currentPokemonId = parseInt(localStorage.getItem("clickerId"));
+        const newPokemonId = currentPokemonId + 2;
+        animatedEvolution(currentPokemonId, newPokemonId, () => {
+            finishEvolution(newPokemonId);
+        });
+    } else if (waterStone) {
+        localStorage.setItem("waterStone", JSON.stringify(false));
+        
+        const currentPokemonId = parseInt(localStorage.getItem("clickerId"));
+        const newPokemonId = currentPokemonId + 1;
+        animatedEvolution(currentPokemonId, newPokemonId, () => {
+            finishEvolution(newPokemonId);
+        });
+    } else if (fireStone) {
+        localStorage.setItem("fireStone", JSON.stringify(false));
+        
+        const currentPokemonId = parseInt(localStorage.getItem("clickerId"));
+        const newPokemonId = currentPokemonId + 3;
+        animatedEvolution(currentPokemonId, newPokemonId, () => {
+            finishEvolution(newPokemonId);
+        });
+    }
+}
+
+export function evolutionPokemon() {
     let expNivel = parseInt(localStorage.getItem("expNivel")) || 0;
-    const currentPokemon = document.getElementById(pokemonElement.id);
+    const currentPokemonId = parseInt(localStorage.getItem("clickerId"));
 
     if (expNivel >= 100) {
-        const pokemonName = pokemonElement.alt;
-        getPokemon().then(pokemons => {
-            const foundPokemon = pokemons.find(p => p.name.english === pokemonName);
-            if (foundPokemon) {
-                const pokemonId = foundPokemon.id;
-                const newPokemonId = pokemonId + 1;
-
-                function evolution() {
-                    animatedEvolution(pokemonId, newPokemonId, () => {
-                        finishEvolution(newPokemonId);
-                    });
-                }
-                
-                function finishEvolution(newPokemonId) {
-                    currentPokemon.remove();
-                
-                    let pokemonsCaptured = JSON.parse(localStorage.getItem("pokemons")) || []; 
-                    if (!pokemonsCaptured.includes(newPokemonId)) {
-                        pokemonsCaptured.push(newPokemonId);
-                        localStorage.setItem("pokemons", JSON.stringify(pokemonsCaptured));
-                    }
-                
-                    const newPokemon = pokemons.find(p => p.id === newPokemonId);
-                    const newPokemonElement = createPokemonElement(newPokemon);
-                    localStorage.setItem("clickerId", newPokemonId);
-                
-                    bottom.appendChild(newPokemonElement);
-                
-                    localStorage.setItem("expNivel", 0);
-                    updateExpBar();
-                    play(newPokemonElement);
-                }
-
-                switch (pokemonId) {
-                    case 1:
-                    case 2:
-                    case 4:
-                    case 5:
-                    case 7:
-                    case 8:
-                    case 10:
-                    case 11:
-                    case 13:
-                    case 14:
-                    case 16:
-                    case 17:
-                    case 19:
-                    case 21:
-                    case 23:
-                    case 27:
-                    case 29:
-                    case 32:
-                    case 41:
-                    case 43:
-                    case 46:
-                    case 48:
-                    case 50:
-                    case 52:
-                    case 54:
-                    case 56:
-                    case 60:
-                    case 63:
-                    case 64:
-                    case 66:
-                    case 67:
-                    case 69:
-                    case 72:
-                    case 74:
-                    case 75:
-                    case 77:
-                    case 79:
-                    case 81:
-                    case 84:
-                    case 86:
-                    case 88:
-                    case 92:
-                    case 93:
-                    case 96:
-                    case 98:
-                    case 100:
-                    case 104:
-                    case 109:
-                    case 111:
-                    case 116:
-                    case 118:
-                    case 129:
-                    case 138:
-                    case 140:
-                    case 147:
-                    case 148:
-                        evolution(pokemonId, newPokemonId);
-                        break;
-                    case 25: // Pikachu thunder stone
-                    case 30: // Nidorina moon stone
-                    case 33: // Nidorino moon stone
-                    case 35: // Clefairy moon stone
-                    case 39: // Jigglypuff moon stone
-                    case 37: // Vulpix fire stone
-                    case 58: // Growlithe fire stone
-                    case 44: // Gloom leaf stone
-                    case 70: // Weepinbell leaf stone
-                    case 102: // Exeggcute leaf stone
-                    case 61: // Poliwhirl water stone
-                    case 90: // Shellder water stone
-                    case 120: // Staryu water stone
-                    case 133: // Eevee thunder stone - water stone - fire stone
-                        evolutionStone();
-                        break;
-                    default:
-                        playSound("assets/sounds/levelUp.mp3");
-                }
-            }
-        });
+        switch (currentPokemonId) {
+            case 1:
+            case 2:
+            case 4:
+            case 5:
+            case 7:
+            case 8:
+            case 10:
+            case 11:
+            case 13:
+            case 14:
+            case 16:
+            case 17:
+            case 19:
+            case 21:
+            case 23:
+            case 27:
+            case 29:
+            case 32:
+            case 41:
+            case 43:
+            case 46:
+            case 48:
+            case 50:
+            case 52:
+            case 54:
+            case 56:
+            case 60:
+            case 63:
+            case 64:
+            case 66:
+            case 67:
+            case 69:
+            case 72:
+            case 74:
+            case 75:
+            case 77:
+            case 79:
+            case 81:
+            case 84:
+            case 86:
+            case 88:
+            case 92:
+            case 93:
+            case 96:
+            case 98:
+            case 100:
+            case 104:
+            case 109:
+            case 111:
+            case 116:
+            case 118:
+            case 129:
+            case 138:
+            case 140:
+            case 147:
+            case 148:
+                evolution();
+                break;
+            case 25: // Pikachu thunder stone
+            case 30: // Nidorina moon stone
+            case 33: // Nidorino moon stone
+            case 35: // Clefairy moon stone
+            case 39: // Jigglypuff moon stone
+            case 37: // Vulpix fire stone
+            case 58: // Growlithe fire stone
+            case 44: // Gloom leaf stone
+            case 70: // Weepinbell leaf stone
+            case 102: // Exeggcute leaf stone
+            case 61: // Poliwhirl water stone
+            case 90: // Shellder water stone
+            case 120: // Staryu water stone
+                evolutionStone();
+                break;
+            case 133: // Eevee thunder stone - water stone - fire stone
+                evolutionEevee();
+                break;
+            default:
+                playSound("assets/sounds/levelUp.mp3");
+        }
     }
 }
 
