@@ -253,7 +253,7 @@ h1 {
     top: 20px;
     right: 8px;
     width: calc(100% - 16px);
-    height: calc(100% - 56px);
+    height: calc(80% - 40px);
     display: flex;
     flex-direction: column;
     justify-content: flex-start;

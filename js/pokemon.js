@@ -160,10 +160,10 @@ export function evolutionPokemon() {
         const waterStoneEvolution = [61, 90, 120];
         const eeveeId = 133;
 
-        if (expNivel >= 100) {
+        if (expNivel === 100) {
             if (levelEvolution.includes(currentPokemonId)) {
                 evolution();
-                pokedollars += JSON.parse(localStorage.getItem("doubleSpeed")) ? 2000 : 1000;
+                pokedollars += JSON.parse(localStorage.getItem("doubleSpeed")) ? 4000 : 2000;
             } else if (
                 thunderStoneEvolution.includes(currentPokemonId) ||
                 moonStoneEvolution.includes(currentPokemonId) ||

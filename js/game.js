@@ -257,6 +257,7 @@ export function updateExpBar() {
     const expBar = document.querySelector(".expBar");
     let expNivel = parseInt(localStorage.getItem("expNivel")) || 0;
     let playerLevel = JSON.parse(localStorage.getItem("playerLevel"));
+    let doubleSpeed = JSON.parse(localStorage.getItem("doubleSpeed"));
 
     const expByLevel = [
         { level: 10, exp: 100 },
@@ -275,8 +276,13 @@ export function updateExpBar() {
     let maxExp = 100;
     for (let i = 0; i < expByLevel.length; i++) {
         if (playerLevel <= expByLevel[i].level) {
-            maxExp = expByLevel[i].exp;
+            if (doubleSpeed) {
+                maxExp = expByLevel[i].exp * 2;
             break;
+            } else {
+                maxExp = expByLevel[i].exp;
+                break;
+            }
         }
     }
 
@@ -287,7 +293,6 @@ export function updateExpBar() {
 
     localStorage.setItem("expNivel", expNivel);
 }
-
 
 function ashPlay(counter, expPoke) {  
     const ashElement = document.getElementById("ash");
