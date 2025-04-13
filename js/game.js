@@ -5,6 +5,7 @@ import { openBackpack, findItems, gainExp } from './backpack.js';
 import { playerInfo } from './ash.js';
 import { playMusic, playSound } from './music.js';
 
+const gameContainer = document.querySelector(".game-container");
 const top = document.querySelector(".top");
 const message = document.querySelector(".message");
 const bottom = document.querySelector(".bottom");
@@ -172,34 +173,39 @@ function rules() {
     });
 }
 
-function displayMenu(message) {
+function displayMenu() {
+    const menu = document.createElement("section");
+    menu.classList.add("menu");
+
     const shop = document.createElement("img");
     shop.classList.add("shop");
     shop.src = "assets/images/shop.png";
     shop.alt = "shop";
     shop.id = "shop";
-    message.appendChild(shop);
+    menu.appendChild(shop);
 
     const backpack = document.createElement("img");
     backpack.classList.add("backpack");
     backpack.src = "assets/images/backpack.png";
     backpack.alt = "backpack";
     backpack.id = "backpack";
-    message.appendChild(backpack);
+    menu.appendChild(backpack);
 
     const pokedex = document.createElement("img");
     pokedex.classList.add("pokedex");
     pokedex.src = "assets/images/pokedex.png";
     pokedex.alt = "pokedex";
     pokedex.id = "pokedex";
-    message.appendChild(pokedex);
+    menu.appendChild(pokedex);
 
     const player = document.createElement("img");
     player.classList.add("player");
     player.src = "assets/images/player.png";
     player.alt = "player";
     player.id = "player";
-    message.appendChild(player);
+    menu.appendChild(player);
+
+    gameContainer.appendChild(menu);
 
     pokedex.addEventListener('click', () => {
         playSound("assets/sounds/click.mp3");
@@ -230,8 +236,8 @@ export function animatePokedollar(item = "pokedollar") {
     pokedollarImg.classList.add(classItem);
 
     pokedollarImg.style.position = "absolute";
-    const randomLeft = Math.random() * (245 - 30) + 30;
-    pokedollarImg.style.left = `${randomLeft}px`;
+    const randomLeft = (Math.random() * 30 - 15) + "%"; 
+    pokedollarImg.style.left = `calc(50% + ${randomLeft})`;
     pokedollarImg.style.top = `75px`;
     pokedollarImg.style.transform = "translateY(-75px)";
     pokedollarImg.style.transition = "transform 0.5s ease, opacity 0.5s ease";
@@ -286,7 +292,7 @@ function ashPlay(counter, expPoke) {
             top.appendChild(expPoke);
 
             if (!isMenuDisplayed) {
-                displayMenu(message);
+                displayMenu();
                 isMenuDisplayed = true;
             }
             
@@ -348,7 +354,7 @@ export function pokemonPlay(pokemonElement, counter, expPoke) {
             top.appendChild(expPoke);
 
             if (!isMenuDisplayed && !menuExists) {
-                displayMenu(message);
+                displayMenu();
                 isMenuDisplayed = true;
             }
 

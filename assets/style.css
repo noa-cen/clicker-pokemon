@@ -10,11 +10,6 @@
     font-family: "Pokemon";
 }
 
-:root {
-    --bleu-pokemon: #2F68B1;
-    --jaune-pokemon: #FFCC01;
-}
-
 @font-face {
     font-family: Pokemon;
     src: url("fonts/Pokemon Classic.ttf");
@@ -72,6 +67,51 @@ h1 {
     width: 100%;
 }
 
+.inputContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 8px 8px 0 8px;
+
+    .input {
+        background-color: #F8F8F8;
+        border: 2px solid black;
+        border-radius: 2px;
+        color: black;
+        width: 100%;
+        padding: 0 8px;
+    }
+
+    .btnSubmit {
+        display: flex;
+        align-items: center;
+        margin-left: 4px;
+        border: 2px solid black;
+        background-color: #ced4da;
+        padding: 4px;
+        border-radius: 2px;
+        max-height: 24px;
+    }
+}
+
+.professor {
+    height: 180px;
+    margin: 0 auto;
+    position: relative;
+    bottom: 30px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+}
+
 .box {
     background-color: #FFFFFF;
     border: 6px double black;
@@ -116,40 +156,6 @@ h1 {
     height: 16px;
     background-color: green;
     border-radius: 3px;
-}
-
-.inputContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 8px 8px 0 8px;
-
-    .input {
-        background-color: #F8F8F8;
-        border: 2px solid black;
-        border-radius: 2px;
-        color: black;
-        width: 100%;
-        padding: 0 8px;
-    }
-
-    .btnSubmit {
-        display: flex;
-        align-items: center;
-        margin-left: 4px;
-        border: 2px solid black;
-        background-color: #ced4da;
-        padding: 4px;
-        border-radius: 2px;
-        max-height: 24px;
-    }
-}
-
-.professor {
-    height: 180px;
-    margin: 0 auto;
-    position: relative;
-    bottom: 30px;
 }
 
 .pokemon, .ash {
@@ -240,7 +246,7 @@ h1 {
 .modal {
     position: fixed;
     top: 20px;
-    left: 8px;
+    right: 8px;
     width: calc(100% - 16px);
     height: calc(100% - 56px);
     display: flex;
@@ -252,9 +258,35 @@ h1 {
     z-index: 1000;
 }
 
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.close-modal {
+    position: absolute;
+    top: 0;
+    right: 5px;
+    background-color: transparent;
+    color: black;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
 .evolutionContainer {
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     background-image: url("images/evolution-background.avif");
     background-position: 50% 40%;
     background-size: cover;
@@ -262,9 +294,19 @@ h1 {
     background-attachment: fixed;
     padding: 8px;
     display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    z-index: 1000;
     position: fixed;
     top: 0;
     left: 0;
+}
+
+.evolutionName {
+    margin: 24px auto 0;
 }
 
 .evolution-images {
@@ -274,7 +316,7 @@ h1 {
 
 .evolving {
     position: absolute;
-    bottom: 200px;
+    bottom: 180px;
     left: 50%;
     transform: translateX(-50%);
     transition: opacity 0.2s ease;
@@ -293,18 +335,7 @@ h1 {
 }
 
 .playerModal {
-    position: fixed;
-    top: 20px;
-    left: 8px;
-    width: calc(100% - 16px);
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    overflow-x: hidden;
-    overflow-y: scroll;
-    z-index: 1000;
-    padding: 8px;
+    height: 300px;
 }
 
 .playerInfo {
@@ -331,18 +362,6 @@ h1 {
     opacity: 0;
     transition: opacity 1.5s ease;
     z-index: 1000;
-}
-
-.close-modal {
-    position: fixed;
-    top: 24px;
-    right: 10px;
-    background-color: transparent;
-    color: black;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    font-size: 18px;
 }
 
 .disabled {
@@ -475,4 +494,51 @@ h1 {
     margin-top: 50px;
     width: 100px;
     transition: 0.3s ease-in-out; 
+}
+
+@media (min-width: 425px) {
+    .bottom {
+        justify-content: center;
+    }
+
+    .modal {
+        transform: translateX(50%);
+        max-width: 400px;
+        right: 208px;
+    }
+
+    .itemContainer {
+        .itemHeader {
+            width: 300px;
+        }
+    }
+
+    .close-modal {
+        position: fixed;
+        top: 0;
+        right: 0;
+    }
+
+    .wildPokemonContainer {
+        padding: 40px 16px;
+    }
+
+    .capturePokemonContainer {
+        padding: 0 8px;
+    }
+}
+
+@media (min-width: 728px) {
+    .expPoke {
+        width: 500px;
+    }
+
+    .pokemon, .ash {
+        width: 120px;
+    }
+
+    .ash {
+        bottom: 60px;
+    }
+    
 }

@@ -14,6 +14,9 @@ export async function getItems() {
 }
 
 export function openShop() {
+    const overlay = document.createElement("div");
+    overlay.classList.add("modal-overlay");
+
     const shopModal = document.createElement("section");
     shopModal.classList.add("modal", "box");
     const pokeshop = document.createElement("h2");
@@ -80,10 +83,17 @@ export function openShop() {
 
     closeButton.addEventListener("click", () => {
         playSound("assets/sounds/click.mp3");
-        shopModal.remove();
+        overlay.remove();
     });
 
-    gameContainer.appendChild(shopModal);
+    overlay.addEventListener("click", (e) => {
+        if (e.target === overlay) {
+            overlay.remove();
+        }
+    });
+
+    overlay.appendChild(shopModal);
+    gameContainer.appendChild(overlay);
 }
 
 function createItem(item) {

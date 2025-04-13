@@ -385,48 +385,69 @@ function capturePokemon(battle) {
 }
 
 function animatedCapture(ball, battle) {
-    let captureRate;
-    switch (ball) {
-        case "pokeball":
-            captureRate = 0.25;
-            break;
-        case "greatball":
-            captureRate = 0.5;
-            break;
-        case "ultraball":
-            captureRate = 0.75;
-            break;
-        case "masterball":
-            captureRate = 1;
-    }
-
     const wildPokemonElement = document.querySelector(".wildPokemon");
     const pokemonName = wildPokemonElement.alt;
     const ballImg = document.createElement("img");
     ballImg.src = `assets/images/shop/${ball}-1.png`;
     ballImg.classList.add("wildPokemon", "ballImg");
 
-    wildPokemonElement.replaceWith(ballImg);
+    let pokemondId;
+    getPokemon().then(pokemons => {
+        const pokemon = pokemons.find(p => p.name.english === pokemonName);
+        pokemondId = pokemon.id;
 
-    ballImg.animate([
-        { transform: 'translateX(-30px)' },
-        { transform: 'translateX(30px)' },
-        { transform: 'translateX(-20px)' },
-        { transform: 'translateX(20px)' },
-        { transform: 'translateX(-10px)' },
-        { transform: 'translateX(10px)' },
-    ], {
-        duration: 800,
-        easing: 'ease',
-    });
+        let captureRate;
 
-    setTimeout(() => {
-        const wildPokemonContainer = document.querySelector(".wildPokemonContainer");
-        const blackOverlayPokeflute = document.getElementById("blackOverlayPokeflute");
-        const capture = Math.random() < captureRate;
+        if (pokemondId === 151) {
+            switch (ball) {
+                case "pokeball":
+                    captureRate = 0;
+                    break;
+                case "greatball":
+                    captureRate = 0;
+                    break;
+                case "ultraball":
+                    captureRate = 0;
+                    break;
+                case "masterball":
+                    captureRate = 1;
+            }
+        } else {
+            switch (ball) {
+                case "pokeball":
+                    captureRate = 0.25;
+                    break;
+                case "greatball":
+                    captureRate = 0.5;
+                    break;
+                case "ultraball":
+                    captureRate = 0.75;
+                    break;
+                case "masterball":
+                    captureRate = 1;
+            }
+        }
 
-        if (capture) {
-            getPokemon().then(pokemons => {
+        wildPokemonElement.replaceWith(ballImg);
+
+        ballImg.animate([
+            { transform: 'translateX(-30px)' },
+            { transform: 'translateX(30px)' },
+            { transform: 'translateX(-20px)' },
+            { transform: 'translateX(20px)' },
+            { transform: 'translateX(-10px)' },
+            { transform: 'translateX(10px)' },
+        ], {
+            duration: 800,
+            easing: 'ease',
+        });
+
+        setTimeout(() => {
+            const wildPokemonContainer = document.querySelector(".wildPokemonContainer");
+            const blackOverlayPokeflute = document.getElementById("blackOverlayPokeflute");
+            const capture = Math.random() < captureRate;
+
+            if (capture) {
                 const pokemonCaptured = pokemons.find(p => p.name.english === pokemonName);
                 const pokemonCapturedId = pokemonCaptured.id;
                 let pokemonsCaptured = JSON.parse(localStorage.getItem("pokemons")) || [];
@@ -434,46 +455,49 @@ function animatedCapture(ball, battle) {
                     pokemonsCaptured.push(pokemonCapturedId);
                     localStorage.setItem("pokemons", JSON.stringify(pokemonsCaptured));
                 }
-            });
 
-            if (battle) {
-                battle.pause();
-                battle.currentTime = 0;
-                battle.src = "";
-                battle.load();
-                battle = null;
+                if (battle) {
+                    battle.pause();
+                    battle.currentTime = 0;
+                    battle.src = "";
+                    battle.load();
+                    battle = null;
+                }
+
+                const ballsContainer = document.querySelector(".ballsContainer");
+                const run = document.getElementById("run");
+                ballsContainer.remove();
+                run.remove();
+
+                const captureMessage = document.createElement("p");
+                captureMessage.textContent = `All right, ${pokemonName} was caught!`;
+                const capturePokemonContainer = document.querySelector(".capturePokemonContainer");
+                capturePokemonContainer.appendChild(captureMessage);
+
+                let pokedollars = parseInt(localStorage.getItem("pokedollars")) || 0;
+                const counter = document.getElementById("pokedollars");
+                pokedollars += JSON.parse(localStorage.getItem("doubleSpeed")) ? 1000 : 500;
+                counter.textContent = `${pokedollars}₽`;
+                localStorage.setItem("pokedollars", pokedollars);
+
+                playSound("assets/sounds/pokemon-capture.mp3");
+
+                setTimeout(() => {
+                    resumeIntervals();
+                    blackOverlayPokeflute.remove();
+                    wildPokemonContainer.remove();
+                }, 3000); 
+            } else {
+                ballImg.replaceWith(wildPokemonElement);
             }
-
-            const ballsContainer = document.querySelector(".ballsContainer");
-            const run = document.getElementById("run");
-            ballsContainer.remove();
-            run.remove();
-
-            const captureMessage = document.createElement("p");
-            captureMessage.textContent = `All right, ${pokemonName} was caught!`;
-            const capturePokemonContainer = document.querySelector(".capturePokemonContainer");
-            capturePokemonContainer.appendChild(captureMessage);
-
-            let pokedollars = parseInt(localStorage.getItem("pokedollars")) || 0;
-            const counter = document.getElementById("pokedollars");
-            pokedollars += JSON.parse(localStorage.getItem("doubleSpeed")) ? 1000 : 500;
-            counter.textContent = `${pokedollars}₽`;
-            localStorage.setItem("pokedollars", pokedollars);
-
-            playSound("assets/sounds/pokemon-capture.mp3");
-
-            setTimeout(() => {
-                resumeIntervals();
-                blackOverlayPokeflute.remove();
-                wildPokemonContainer.remove();
-            }, 3000); 
-        } else {
-            ballImg.replaceWith(wildPokemonElement);
-        }
-    }, 1500);
+        }, 1500);
+    });
 }
 
 export async function openBackpack() {
+    const overlay = document.createElement("div");
+    overlay.classList.add("modal-overlay");
+    
     const backpackModal = document.createElement("section");
     backpackModal.classList.add("modal", "box");
 
@@ -514,10 +538,17 @@ export async function openBackpack() {
 
     closeButton.addEventListener("click", () => {
         playSound("assets/sounds/click.mp3");
-        backpackModal.remove();
+        overlay.remove();
     });
 
-    gameContainer.appendChild(backpackModal);
+    overlay.addEventListener("click", (e) => {
+        if (e.target === overlay) {
+            overlay.remove();
+        }
+    });
+
+    overlay.appendChild(backpackModal);
+    gameContainer.appendChild(overlay);
 
     const itemsFinderElement = document.getElementById("items finder");
     if (itemsFinderElement && !itemsFinderElement.dataset.listenerAttached) {

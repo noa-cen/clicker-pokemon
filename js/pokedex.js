@@ -6,6 +6,9 @@ const bottom = document.querySelector(".bottom");
 const gameContainer = document.querySelector(".game-container");
 
 export function openPokedex() {
+    const overlay = document.createElement("div");
+    overlay.classList.add("modal-overlay");
+
     const pokedexModal = document.createElement("section");
     pokedexModal.classList.add("modal", "box");
     pokedexModal.id = "pokedexModal";
@@ -62,10 +65,17 @@ export function openPokedex() {
 
     closeButton.addEventListener("click", () => {
         playSound("assets/sounds/click.mp3");
-        pokedexModal.remove();
+        overlay.remove();
     });
 
-    gameContainer.appendChild(pokedexModal);
+    overlay.addEventListener("click", (e) => {
+            if (e.target === overlay) {
+                overlay.remove();
+            }
+        });
+
+    overlay.appendChild(pokedexModal);
+    gameContainer.appendChild(overlay);
 }
 
 function changePokemon(pokemonId) {

@@ -195,11 +195,11 @@ function animatedEvolution(pokemonId, newPokemonId, onComplete) {
         const evolvedPokemon = pokemons.find(p => p.id === newPokemonId);
 
         const evolutionContainer = document.createElement("section");
-        evolutionContainer.classList.add("modal", "evolutionContainer");
+        evolutionContainer.classList.add("evolutionContainer");
 
         const evolutionName = document.createElement("h2");
         evolutionName.textContent = `What? ${currentPokemon.name.english} is evolving!`;
-        evolutionName.classList.add("box");
+        evolutionName.classList.add("box", "evolutionName");
         evolutionContainer.appendChild(evolutionName);
 
         const evolutionImgContainer = document.createElement("article");

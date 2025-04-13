@@ -3,8 +3,11 @@ import { playSound } from './music.js';
 const gameContainer = document.querySelector(".game-container");
 
 export function playerInfo() {
+    const overlay = document.createElement("div");
+    overlay.classList.add("modal-overlay");
+
     const playerModal = document.createElement("section");
-    playerModal.classList.add("playerModal", "box");
+    playerModal.classList.add("modal", "playerModal", "box");
 
     const playerName = localStorage.getItem("playerName");
     const name = document.createElement("h2");
@@ -63,8 +66,15 @@ export function playerInfo() {
 
     closeButton.addEventListener("click", () => {
         playSound("assets/sounds/click.mp3");
-        playerModal.remove();
+        overlay.remove();
     });
 
-    gameContainer.appendChild(playerModal);
+    overlay.addEventListener("click", (e) => {
+        if (e.target === overlay) {
+            overlay.remove();
+        }
+    });
+
+    overlay.appendChild(playerModal);
+    gameContainer.appendChild(overlay);
 }
