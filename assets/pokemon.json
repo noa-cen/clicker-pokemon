@@ -7,8 +7,8 @@
 		},
 		"image": "assets/images/pokemon/1.png",
 		"type": [
-			"Grass",
-			"Poison"
+			"grass", 
+			" poison "
 		],
 		"base": {
 			"HP": 45,
@@ -28,8 +28,8 @@
 		},
 		"image": "assets/images/pokemon/2.png",
 		"type": [
-			"Grass",
-			"Poison"
+			"grass",
+			" poison "
 		],
 		"base": {
 			"HP": 60,
@@ -49,8 +49,8 @@
 		},
 		"image": "assets/images/pokemon/3.png",
 		"type": [
-			"Grass",
-			"Poison"
+			"grass",
+			" poison "
 		],
 		"base": {
 			"HP": 80,
@@ -70,7 +70,7 @@
 		},
 		"image": "assets/images/pokemon/4.png",
 		"type": [
-			"Fire"
+			"fire "
 		],
 		"base": {
 			"HP": 39,
@@ -90,7 +90,7 @@
 		},
 		"image": "assets/images/pokemon/5.png",
 		"type": [
-			"Fire"
+			"fire "
 		],
 		"base": {
 			"HP": 58,
@@ -110,8 +110,8 @@
 		},
 		"image": "assets/images/pokemon/6.png",
 		"type": [
-			"Fire",
-			"Flying"
+			"fire",
+			" flying "
 		],
 		"base": {
 			"HP": 78,
@@ -131,7 +131,7 @@
 		},
 		"image": "assets/images/pokemon/7.png",
 		"type": [
-			"Water"
+			"water "
 		],
 		"base": {
 			"HP": 44,
@@ -151,7 +151,7 @@
 		},
 		"image": "assets/images/pokemon/8.png",
 		"type": [
-			"Water"
+			"water "
 		],
 		"base": {
 			"HP": 59,
@@ -171,7 +171,7 @@
 		},
 		"image": "assets/images/pokemon/9.png",
 		"type": [
-			"Water"
+			"water "
 		],
 		"base": {
 			"HP": 79,
@@ -191,7 +191,7 @@
 		},
 		"image": "assets/images/pokemon/10.png",
 		"type": [
-			"Bug"
+			"bug "
 		],
 		"base": {
 			"HP": 45,
@@ -211,7 +211,7 @@
 		},
 		"image": "assets/images/pokemon/11.png",
 		"type": [
-			"Bug"
+			"bug "
 		],
 		"base": {
 			"HP": 50,
@@ -231,8 +231,8 @@
 		},
 		"image": "assets/images/pokemon/12.png",
 		"type": [
-			"Bug",
-			"Flying"
+			"bug",
+			" flying "
 		],
 		"base": {
 			"HP": 60,
@@ -252,8 +252,8 @@
 		},
 		"image": "assets/images/pokemon/13.png",
 		"type": [
-			"Bug",
-			"Poison"
+			"bug",
+			" poison "
 		],
 		"base": {
 			"HP": 40,
@@ -273,8 +273,8 @@
 		},
 		"image": "assets/images/pokemon/14.png",
 		"type": [
-			"Bug",
-			"Poison"
+			"bug",
+			" poison "
 		],
 		"base": {
 			"HP": 45,
@@ -294,8 +294,8 @@
 		},
 		"image": "assets/images/pokemon/15.png",
 		"type": [
-			"Bug",
-			"Poison"
+			"bug",
+			" poison "
 		],
 		"base": {
 			"HP": 65,
@@ -315,8 +315,8 @@
 		},
 		"image": "assets/images/pokemon/16.png",
 		"type": [
-			"Normal",
-			"Flying"
+			"normal",
+			" flying "
 		],
 		"base": {
 			"HP": 40,
@@ -336,8 +336,8 @@
 		},
 		"image": "assets/images/pokemon/17.png",
 		"type": [
-			"Normal",
-			"Flying"
+			"normal",
+			" flying "
 		],
 		"base": {
 			"HP": 63,
@@ -357,8 +357,8 @@
 		},
 		"image": "assets/images/pokemon/18.png",
 		"type": [
-			"Normal",
-			"Flying"
+			"normal",
+			" flying "
 		],
 		"base": {
 			"HP": 83,
@@ -378,7 +378,7 @@
 		},
 		"image": "assets/images/pokemon/19.png",
 		"type": [
-			"Normal"
+			"normal "
 		],
 		"base": {
 			"HP": 30,
@@ -398,7 +398,7 @@
 		},
 		"image": "assets/images/pokemon/20.png",
 		"type": [
-			"Normal"
+			"normal "
 		],
 		"base": {
 			"HP": 55,
@@ -418,8 +418,8 @@
 		},
 		"image": "assets/images/pokemon/21.png",
 		"type": [
-			"Normal",
-			"Flying"
+			"normal",
+			" flying "
 		],
 		"base": {
 			"HP": 40,
@@ -439,8 +439,8 @@
 		},
 		"image": "assets/images/pokemon/22.png",
 		"type": [
-			"Normal",
-			"Flying"
+			"normal",
+			" flying "
 		],
 		"base": {
 			"HP": 65,
@@ -460,7 +460,7 @@
 		},
 		"image": "assets/images/pokemon/23.png",
 		"type": [
-			"Poison"
+			"poison "
 		],
 		"base": {
 			"HP": 35,
@@ -480,7 +480,7 @@
 		},
 		"image": "assets/images/pokemon/24.png",
 		"type": [
-			"Poison"
+			"poison "
 		],
 		"base": {
 			"HP": 60,
@@ -500,7 +500,7 @@
 		},
 		"image": "assets/images/pokemon/25.png",
 		"type": [
-			"Electric"
+			"electric "
 		],
 		"base": {
 			"HP": 35,
@@ -520,7 +520,7 @@
 		},
 		"image": "assets/images/pokemon/26.png",
 		"type": [
-			"Electric"
+			"electric "
 		],
 		"base": {
 			"HP": 60,
@@ -540,7 +540,7 @@
 		},
 		"image": "assets/images/pokemon/27.png",
 		"type": [
-			"Ground"
+			"ground "
 		],
 		"base": {
 			"HP": 50,
@@ -560,7 +560,7 @@
 		},
 		"image": "assets/images/pokemon/28.png",
 		"type": [
-			"Ground"
+			"ground "
 		],
 		"base": {
 			"HP": 75,
@@ -580,7 +580,7 @@
 		},
 		"image": "assets/images/pokemon/29.png",
 		"type": [
-			"Poison"
+			"poison "
 		],
 		"base": {
 			"HP": 55,
@@ -600,7 +600,7 @@
 		},
 		"image": "assets/images/pokemon/30.png",
 		"type": [
-			"Poison"
+			"poison "
 		],
 		"base": {
 			"HP": 70,
@@ -620,8 +620,8 @@
 		},
 		"image": "assets/images/pokemon/31.png",
 		"type": [
-			"Poison",
-			"Ground"
+			"poison",
+			" ground "
 		],
 		"base": {
 			"HP": 90,
@@ -641,7 +641,7 @@
 		},
 		"image": "assets/images/pokemon/32.png",
 		"type": [
-			"Poison"
+			"poison "
 		],
 		"base": {
 			"HP": 46,
@@ -661,7 +661,7 @@
 		},
 		"image": "assets/images/pokemon/33.png",
 		"type": [
-			"Poison"
+			"poison "
 		],
 		"base": {
 			"HP": 61,
@@ -681,8 +681,8 @@
 		},
 		"image": "assets/images/pokemon/34.png",
 		"type": [
-			"Poison",
-			"Ground"
+			"poison",
+			" ground "
 		],
 		"base": {
 			"HP": 81,
@@ -702,7 +702,7 @@
 		},
 		"image": "assets/images/pokemon/35.png",
 		"type": [
-			"Fairy"
+			"fairy "
 		],
 		"base": {
 			"HP": 70,
@@ -722,7 +722,7 @@
 		},
 		"image": "assets/images/pokemon/36.png",
 		"type": [
-			"Fairy"
+			"fairy "
 		],
 		"base": {
 			"HP": 95,
@@ -742,7 +742,7 @@
 		},
 		"image": "assets/images/pokemon/37.png",
 		"type": [
-			"Fire"
+			"fire "
 		],
 		"base": {
 			"HP": 38,
@@ -762,7 +762,7 @@
 		},
 		"image": "assets/images/pokemon/38.png",
 		"type": [
-			"Fire"
+			"fire "
 		],
 		"base": {
 			"HP": 73,
@@ -782,8 +782,8 @@
 		},
 		"image": "assets/images/pokemon/39.png",
 		"type": [
-			"Normal",
-			"Fairy"
+			"normal",
+			" fairy "
 		],
 		"base": {
 			"HP": 115,
@@ -803,8 +803,8 @@
 		},
 		"image": "assets/images/pokemon/40.png",
 		"type": [
-			"Normal",
-			"Fairy"
+			"normal",
+			" fairy "
 		],
 		"base": {
 			"HP": 140,
@@ -824,8 +824,8 @@
 		},
 		"image": "assets/images/pokemon/41.png",
 		"type": [
-			"Poison",
-			"Flying"
+			"poison",
+			" flying "
 		],
 		"base": {
 			"HP": 40,
@@ -845,8 +845,8 @@
 		},
 		"image": "assets/images/pokemon/42.png",
 		"type": [
-			"Poison",
-			"Flying"
+			"poison",
+			" flying "
 		],
 		"base": {
 			"HP": 75,
@@ -866,8 +866,8 @@
 		},
 		"image": "assets/images/pokemon/43.png",
 		"type": [
-			"Grass",
-			"Poison"
+			"grass",
+			" poison "
 		],
 		"base": {
 			"HP": 45,
@@ -887,8 +887,8 @@
 		},
 		"image": "assets/images/pokemon/44.png",
 		"type": [
-			"Grass",
-			"Poison"
+			"grass",
+			" poison "
 		],
 		"base": {
 			"HP": 60,
@@ -908,8 +908,8 @@
 		},
 		"image": "assets/images/pokemon/45.png",
 		"type": [
-			"Grass",
-			"Poison"
+			"grass",
+			" poison "
 		],
 		"base": {
 			"HP": 75,
@@ -929,8 +929,8 @@
 		},
 		"image": "assets/images/pokemon/46.png",
 		"type": [
-			"Bug",
-			"Grass"
+			"bug",
+			" grass "
 		],
 		"base": {
 			"HP": 35,
@@ -950,8 +950,8 @@
 		},
 		"image": "assets/images/pokemon/47.png",
 		"type": [
-			"Bug",
-			"Grass"
+			"bug",
+			" grass "
 		],
 		"base": {
 			"HP": 60,
@@ -971,8 +971,8 @@
 		},
 		"image": "assets/images/pokemon/48.png",
 		"type": [
-			"Bug",
-			"Poison"
+			"bug",
+			" poison "
 		],
 		"base": {
 			"HP": 60,
@@ -992,8 +992,8 @@
 		},
 		"image": "assets/images/pokemon/49.png",
 		"type": [
-			"Bug",
-			"Poison"
+			"bug",
+			" poison "
 		],
 		"base": {
 			"HP": 70,
@@ -1013,7 +1013,7 @@
 		},
 		"image": "assets/images/pokemon/50.png",
 		"type": [
-			"Ground"
+			"ground "
 		],
 		"base": {
 			"HP": 10,
@@ -1033,7 +1033,7 @@
 		},
 		"image": "assets/images/pokemon/51.png",
 		"type": [
-			"Ground"
+			"ground "
 		],
 		"base": {
 			"HP": 35,
@@ -1053,7 +1053,7 @@
 		},
 		"image": "assets/images/pokemon/52.png",
 		"type": [
-			"Normal"
+			"normal "
 		],
 		"base": {
 			"HP": 40,
@@ -1073,7 +1073,7 @@
 		},
 		"image": "assets/images/pokemon/53.png",
 		"type": [
-			"Normal"
+			"normal "
 		],
 		"base": {
 			"HP": 65,
@@ -1093,7 +1093,7 @@
 		},
 		"image": "assets/images/pokemon/54.png",
 		"type": [
-			"Water"
+			"water "
 		],
 		"base": {
 			"HP": 50,
@@ -1113,7 +1113,7 @@
 		},
 		"image": "assets/images/pokemon/55.png",
 		"type": [
-			"Water"
+			"water "
 		],
 		"base": {
 			"HP": 80,
@@ -1133,7 +1133,7 @@
 		},
 		"image": "assets/images/pokemon/56.png",
 		"type": [
-			"Fighting"
+			"fighting "
 		],
 		"base": {
 			"HP": 40,
@@ -1153,7 +1153,7 @@
 		},
 		"image": "assets/images/pokemon/57.png",
 		"type": [
-			"Fighting"
+			"fighting "
 		],
 		"base": {
 			"HP": 65,
@@ -1173,7 +1173,7 @@
 		},
 		"image": "assets/images/pokemon/58.png",
 		"type": [
-			"Fire"
+			"fire "
 		],
 		"base": {
 			"HP": 55,
@@ -1193,7 +1193,7 @@
 		},
 		"image": "assets/images/pokemon/59.png",
 		"type": [
-			"Fire"
+			"fire "
 		],
 		"base": {
 			"HP": 90,
@@ -1213,7 +1213,7 @@
 		},
 		"image": "assets/images/pokemon/60.png",
 		"type": [
-			"Water"
+			"water "
 		],
 		"base": {
 			"HP": 40,
@@ -1233,7 +1233,7 @@
 		},
 		"image": "assets/images/pokemon/61.png",
 		"type": [
-			"Water"
+			"water "
 		],
 		"base": {
 			"HP": 65,
@@ -1253,8 +1253,8 @@
 		},
 		"image": "assets/images/pokemon/62.png",
 		"type": [
-			"Water",
-			"Fighting"
+			"water",
+			" fighting "
 		],
 		"base": {
 			"HP": 90,
@@ -1274,7 +1274,7 @@
 		},
 		"image": "assets/images/pokemon/63.png",
 		"type": [
-			"Psychic"
+			"psychic "
 		],
 		"base": {
 			"HP": 25,
@@ -1294,7 +1294,7 @@
 		},
 		"image": "assets/images/pokemon/64.png",
 		"type": [
-			"Psychic"
+			"psychic "
 		],
 		"base": {
 			"HP": 40,
@@ -1314,7 +1314,7 @@
 		},
 		"image": "assets/images/pokemon/65.png",
 		"type": [
-			"Psychic"
+			"psychic "
 		],
 		"base": {
 			"HP": 55,
@@ -1334,7 +1334,7 @@
 		},
 		"image": "assets/images/pokemon/66.png",
 		"type": [
-			"Fighting"
+			"fighting "
 		],
 		"base": {
 			"HP": 70,
@@ -1354,7 +1354,7 @@
 		},
 		"image": "assets/images/pokemon/67.png",
 		"type": [
-			"Fighting"
+			"fighting "
 		],
 		"base": {
 			"HP": 80,
@@ -1374,7 +1374,7 @@
 		},
 		"image": "assets/images/pokemon/68.png",
 		"type": [
-			"Fighting"
+			"fighting "
 		],
 		"base": {
 			"HP": 90,
@@ -1394,8 +1394,8 @@
 		},
 		"image": "assets/images/pokemon/69.png",
 		"type": [
-			"Grass",
-			"Poison"
+			"grass",
+			" poison "
 		],
 		"base": {
 			"HP": 50,
@@ -1415,8 +1415,8 @@
 		},
 		"image": "assets/images/pokemon/70.png",
 		"type": [
-			"Grass",
-			"Poison"
+			"grass",
+			" poison "
 		],
 		"base": {
 			"HP": 65,
@@ -1436,8 +1436,8 @@
 		},
 		"image": "assets/images/pokemon/71.png",
 		"type": [
-			"Grass",
-			"Poison"
+			"grass",
+			" poison "
 		],
 		"base": {
 			"HP": 80,
@@ -1457,8 +1457,8 @@
 		},
 		"image": "assets/images/pokemon/72.png",
 		"type": [
-			"Water",
-			"Poison"
+			"water",
+			" poison "
 		],
 		"base": {
 			"HP": 40,
@@ -1478,8 +1478,8 @@
 		},
 		"image": "assets/images/pokemon/73.png",
 		"type": [
-			"Water",
-			"Poison"
+			"water",
+			" poison "
 		],
 		"base": {
 			"HP": 80,
@@ -1499,8 +1499,8 @@
 		},
 		"image": "assets/images/pokemon/74.png",
 		"type": [
-			"Rock",
-			"Ground"
+			"rock",
+			" ground "
 		],
 		"base": {
 			"HP": 40,
@@ -1520,8 +1520,8 @@
 		},
 		"image": "assets/images/pokemon/75.png",
 		"type": [
-			"Rock",
-			"Ground"
+			"rock",
+			" ground "
 		],
 		"base": {
 			"HP": 55,
@@ -1541,8 +1541,8 @@
 		},
 		"image": "assets/images/pokemon/76.png",
 		"type": [
-			"Rock",
-			"Ground"
+			"rock",
+			" ground "
 		],
 		"base": {
 			"HP": 80,
@@ -1562,7 +1562,7 @@
 		},
 		"image": "assets/images/pokemon/77.png",
 		"type": [
-			"Fire"
+			"fire "
 		],
 		"base": {
 			"HP": 50,
@@ -1582,7 +1582,7 @@
 		},
 		"image": "assets/images/pokemon/78.png",
 		"type": [
-			"Fire"
+			"fire "
 		],
 		"base": {
 			"HP": 65,
@@ -1602,8 +1602,8 @@
 		},
 		"image": "assets/images/pokemon/79.png",
 		"type": [
-			"Water",
-			"Psychic"
+			"water",
+			" psychic "
 		],
 		"base": {
 			"HP": 90,
@@ -1623,8 +1623,8 @@
 		},
 		"image": "assets/images/pokemon/80.png",
 		"type": [
-			"Water",
-			"Psychic"
+			"water",
+			" psychic "
 		],
 		"base": {
 			"HP": 95,
@@ -1644,8 +1644,8 @@
 		},
 		"image": "assets/images/pokemon/81.png",
 		"type": [
-			"Electric",
-			"Steel"
+			"electric",
+			" steel "
 		],
 		"base": {
 			"HP": 25,
@@ -1665,8 +1665,8 @@
 		},
 		"image": "assets/images/pokemon/82.png",
 		"type": [
-			"Electric",
-			"Steel"
+			"electric",
+			" steel "
 		],
 		"base": {
 			"HP": 50,
@@ -1686,8 +1686,8 @@
 		},
 		"image": "assets/images/pokemon/83.png",
 		"type": [
-			"Normal",
-			"Flying"
+			"normal",
+			" flying "
 		],
 		"base": {
 			"HP": 52,
@@ -1707,8 +1707,8 @@
 		},
 		"image": "assets/images/pokemon/84.png",
 		"type": [
-			"Normal",
-			"Flying"
+			"normal",
+			" flying "
 		],
 		"base": {
 			"HP": 35,
@@ -1728,8 +1728,8 @@
 		},
 		"image": "assets/images/pokemon/85.png",
 		"type": [
-			"Normal",
-			"Flying"
+			"normal",
+			" flying "
 		],
 		"base": {
 			"HP": 60,
@@ -1749,7 +1749,7 @@
 		},
 		"image": "assets/images/pokemon/86.png",
 		"type": [
-			"Water"
+			"water "
 			],
 		"base": {
 			"HP": 65,
@@ -1769,7 +1769,7 @@
 		},
 		"image": "assets/images/pokemon/87.png",
 		"type": [
-			"Water", "Ice"
+			"water", " ice "
 			],
 		"base": {
 			"HP": 90,
@@ -1789,7 +1789,7 @@
 		},
 		"image": "assets/images/pokemon/88.png",
 		"type": [
-			"Poison"
+			"poison "
 			],
 		"base": {
 			"HP": 80,
@@ -1809,7 +1809,7 @@
 		},
 		"image": "assets/images/pokemon/89.png",
 		"type": [
-			"Poison"
+			"poison "
 			],
 		"base": {
 			"HP": 105,
@@ -1829,7 +1829,7 @@
 		},
 		"image": "assets/images/pokemon/90.png",
 		"type": [
-			"Water"
+			"water "
 			],
 		"base": {
 			"HP": 30,
@@ -1849,7 +1849,7 @@
 		},
 		"image": "assets/images/pokemon/91.png",
 		"type": [
-			"Water", "Ice"
+			"water", " ice "
 			],
 		"base": {
 			"HP": 50,
@@ -1869,7 +1869,7 @@
 		},
 		"image": "assets/images/pokemon/92.png",
 		"type": [
-			"Ghost", "Poison"
+			"ghost", " poison "
 			],
 		"base": {
 			"HP": 30,
@@ -1889,7 +1889,7 @@
 		},
 		"image": "assets/images/pokemon/93.png",
 		"type": [
-			"Ghost", "Poison"
+			"ghost", " poison "
 			],
 		"base": {
 			"HP": 45,
@@ -1909,7 +1909,7 @@
 		},
 		"image": "assets/images/pokemon/94.png",
 		"type": [
-			"Ghost", "Poison"
+			"ghost", " poison "
 			],
 		"base": {
 			"HP": 60,
@@ -1929,7 +1929,7 @@
 		},
 		"image": "assets/images/pokemon/95.png",
 		"type": [
-			"Rock", "Ground"
+			"rock", " ground "
 			],
 		"base": {
 			"HP": 35,
@@ -1949,7 +1949,7 @@
 		},
 		"image": "assets/images/pokemon/96.png",
 		"type": [
-			"Psychic"
+			"psychic "
 		],
 		"base": {
 			"HP": 60,
@@ -1969,7 +1969,7 @@
 		},
 		"image": "assets/images/pokemon/97.png",
 		"type": [
-			"Psychic"
+			"psychic "
 		],
 		"base": {
 			"HP": 85,
@@ -1989,7 +1989,7 @@
 		},
 		"image": "assets/images/pokemon/98.png",
 		"type": [
-			"Water"
+			"water "
 		],
 		"base": {
 			"HP": 30,
@@ -2009,7 +2009,7 @@
 		},
 		"image": "assets/images/pokemon/99.png",
 		"type": [
-			"Water"
+			"water "
 		],
 		"base": {
 			"HP": 55,
@@ -2029,7 +2029,7 @@
 		},
 		"image": "assets/images/pokemon/100.png",
 		"type": [
-			"Electric"
+			"electric "
 			],
 		"base": {
 			"HP": 40,
@@ -2049,7 +2049,7 @@
 		},
 		"image": "assets/images/pokemon/101.png",
 		"type": [
-			"Electric"
+			"electric "
 			],
 		"base": {
 			"HP": 60,
@@ -2069,7 +2069,7 @@
 		},
 		"image": "assets/images/pokemon/102.png",
 		"type": [
-			"Grass", "Psychic"
+			"grass", " psychic "
 			],
 		"base": {
 			"HP": 60,
@@ -2089,7 +2089,7 @@
 		},
 		"image": "assets/images/pokemon/103.png",
 		"type": [
-			"Grass", "Psychic"
+			"grass", " psychic "
 			],
 		"base": {
 			"HP": 95,
@@ -2109,7 +2109,7 @@
 		},
 		"image": "assets/images/pokemon/104.png",
 		"type": [
-			"Ground"
+			"ground "
 			],
 		"base": {
 			"HP": 50,
@@ -2129,7 +2129,7 @@
 		},
 		"image": "assets/images/pokemon/105.png",
 		"type": [
-			"Ground"
+			"ground "
 			],
 		"base": {
 			"HP": 60,
@@ -2149,7 +2149,7 @@
 		},
 		"image": "assets/images/pokemon/106.png",
 		"type": [
-			"Fighting"
+			"fighting "
 			],
 		"base": {
 			"HP": 50,
@@ -2169,7 +2169,7 @@
 		},
 		"image": "assets/images/pokemon/107.png",
 		"type": [
-			"Fighting"
+			"fighting "
 			],
 		"base": {
 			"HP": 50,
@@ -2189,7 +2189,7 @@
 		},
 		"image": "assets/images/pokemon/108.png",
 		"type": [
-			"Normal"
+			"normal "
 			],
 		"base": {
 			"HP": 90,
@@ -2209,7 +2209,7 @@
 		},
 		"image": "assets/images/pokemon/109.png",
 		"type": [
-			"Poison"
+			"poison "
 			],
 		"base": {
 			"HP": 40,
@@ -2229,7 +2229,7 @@
 		},
 		"image": "assets/images/pokemon/110.png",
 		"type": [
-			"Poison"
+			"poison "
 			],
 		"base": {
 			"HP": 65,
@@ -2249,7 +2249,7 @@
 		},
 		"image": "assets/images/pokemon/111.png",
 		"type": [
-			"Ground", "Rock"
+			"ground", " rock "
 			],
 		"base": {
 			"HP": 80,
@@ -2269,7 +2269,7 @@
 		},
 		"image": "assets/images/pokemon/112.png",
 		"type": [
-			"Ground", "Rock"
+			"ground", " rock "
 			],
 		"base": {
 			"HP": 105,
@@ -2289,7 +2289,7 @@
 		},
 		"image": "assets/images/pokemon/113.png",
 		"type": [
-			"Normal"
+			"normal "
 			],
 		"base": {
 			"HP": 250,
@@ -2309,7 +2309,7 @@
 		},
 		"image": "assets/images/pokemon/114.png",
 		"type": [
-			"Grass"
+			"grass "
 			],
 		"base": {
 			"HP": 65,
@@ -2329,7 +2329,7 @@
 		},
 		"image": "assets/images/pokemon/115.png",
 		"type": [
-			"Normal"
+			"normal "
 			],
 		"base": {
 			"HP": 105,
@@ -2349,7 +2349,7 @@
 		},
 		"image": "assets/images/pokemon/116.png",
 		"type": [
-			"Water"
+			"water "
 		],
 		"base": {
 			"HP": 30,
@@ -2369,7 +2369,7 @@
 		},
 		"image": "assets/images/pokemon/117.png",
 		"type": [
-			"Water"
+			"water "
 		],
 		"base": {
 			"HP": 55,
@@ -2389,7 +2389,7 @@
 		},
 		"image": "assets/images/pokemon/118.png",
 		"type": [
-			"Water"
+			"water "
 		],
 		"base": {
 			"HP": 45,
@@ -2409,7 +2409,7 @@
 		},
 		"image": "assets/images/pokemon/119.png",
 		"type": [
-			"Water"
+			"water "
 		],
 		"base": {
 			"HP": 80,
@@ -2429,7 +2429,7 @@
 		},
 		"image": "assets/images/pokemon/120.png",
 		"type": [
-			"Water"
+			"water "
 		],
 		"base": {
 			"HP": 30,
@@ -2449,8 +2449,8 @@
 		},
 		"image": "assets/images/pokemon/121.png",
 		"type": [
-			"Water",
-			"Psychic"
+			"water",
+			" psychic "
 		],
 		"base": {
 			"HP": 60,
@@ -2470,8 +2470,8 @@
 		},
 		"image": "assets/images/pokemon/122.png",
 		"type": [
-			"Psychic",
-			"Fairy"
+			"psychic",
+			" fairy "
 		],
 		"base": {
 			"HP": 40,
@@ -2491,8 +2491,8 @@
 		},
 		"image": "assets/images/pokemon/123.png",
 		"type": [
-			"Bug",
-			"Flying"
+			"bug",
+			" flying "
 		],
 		"base": {
 			"HP": 70,
@@ -2512,8 +2512,8 @@
 		},
 		"image": "assets/images/pokemon/124.png",
 		"type": [
-			"Ice",
-			"Psychic"
+			"ice",
+			" psychic "
 		],
 		"base": {
 			"HP": 65,
@@ -2533,7 +2533,7 @@
 		},
 		"image": "assets/images/pokemon/125.png",
 		"type": [
-			"Electric"
+			"electric "
 		],
 		"base": {
 			"HP": 65,
@@ -2553,7 +2553,7 @@
 		},
 		"image": "assets/images/pokemon/126.png",
 		"type": [
-			"Fire"
+			"fire "
 		],
 		"base": {
 			"HP": 65,
@@ -2573,7 +2573,7 @@
 		},
 		"image": "assets/images/pokemon/127.png",
 		"type": [
-			"Bug"
+			"bug "
 		],
 		"base": {
 			"HP": 65,
@@ -2593,7 +2593,7 @@
 		},
 		"image": "assets/images/pokemon/128.png",
 		"type": [
-			"Normal"
+			"normal "
 		],
 		"base": {
 			"HP": 75,
@@ -2613,7 +2613,7 @@
 		},
 		"image": "assets/images/pokemon/129.png",
 		"type": [
-			"Water"
+			"water "
 		],
 		"base": {
 			"HP": 20,
@@ -2633,8 +2633,8 @@
 		},
 		"image": "assets/images/pokemon/130.png",
 		"type": [
-			"Water",
-			"Flying"
+			"water",
+			" flying "
 		],
 		"base": {
 			"HP": 95,
@@ -2654,8 +2654,8 @@
 		},
 		"image": "assets/images/pokemon/131.png",
 		"type": [
-			"Water",
-			"Ice"
+			"water",
+			" ice "
 		],
 		"base": {
 			"HP": 130,
@@ -2675,7 +2675,7 @@
 		},
 		"image": "assets/images/pokemon/132.png",
 		"type": [
-			"Normal"
+			"normal "
 		],
 		"base": {
 			"HP": 48,
@@ -2695,7 +2695,7 @@
 		},
 		"image": "assets/images/pokemon/133.png",
 		"type": [
-			"Normal"
+			"normal "
 		],
 		"base": {
 			"HP": 55,
@@ -2715,7 +2715,7 @@
 		},
 		"image": "assets/images/pokemon/134.png",
 		"type": [
-			"Water"
+			"water "
 		],
 		"base": {
 			"HP": 130,
@@ -2735,7 +2735,7 @@
 		},
 		"image": "assets/images/pokemon/135.png",
 		"type": [
-			"Electric"
+			"electric "
 		],
 		"base": {
 			"HP": 65,
@@ -2755,7 +2755,7 @@
 		},
 		"image": "assets/images/pokemon/136.png",
 		"type": [
-			"Fire"
+			"fire "
 		],
 		"base": {
 			"HP": 65,
@@ -2775,7 +2775,7 @@
 		},
 		"image": "assets/images/pokemon/137.png",
 		"type": [
-			"Normal"
+			"normal "
 		],
 		"base": {
 			"HP": 65,
@@ -2795,8 +2795,8 @@
 		},
 		"image": "assets/images/pokemon/138.png",
 		"type": [
-			"Rock",
-			"Water"
+			"rock",
+			" water "
 		],
 		"base": {
 			"HP": 35,
@@ -2816,8 +2816,8 @@
 		},
 		"image": "assets/images/pokemon/139.png",
 		"type": [
-			"Rock",
-			"Water"
+			"rock",
+			" water "
 		],
 		"base": {
 			"HP": 70,
@@ -2837,8 +2837,8 @@
 		},
 		"image": "assets/images/pokemon/140.png",
 		"type": [
-			"Rock",
-			"Water"
+			"rock",
+			" water "
 		],
 		"base": {
 			"HP": 30,
@@ -2858,8 +2858,8 @@
 		},
 		"image": "assets/images/pokemon/141.png",
 		"type": [
-			"Rock",
-			"Water"
+			"rock",
+			" water "
 		],
 		"base": {
 			"HP": 60,
@@ -2879,8 +2879,8 @@
 		},
 		"image": "assets/images/pokemon/142.png",
 		"type": [
-			"Rock",
-			"Flying"
+			"rock",
+			" flying "
 		],
 		"base": {
 			"HP": 80,
@@ -2900,7 +2900,7 @@
 		},
 		"image": "assets/images/pokemon/143.png",
 		"type": [
-			"Normal"
+			"normal "
 		],
 		"base": {
 			"HP": 160,
@@ -2920,8 +2920,8 @@
 		},
 		"image": "assets/images/pokemon/144.png",
 		"type": [
-			"Ice",
-			"Flying"
+			"ice",
+			" flying "
 		],
 		"base": {
 			"HP": 90,
@@ -2941,8 +2941,8 @@
 		},
 		"image": "assets/images/pokemon/145.png",
 		"type": [
-			"Electric",
-			"Flying"
+			"electric",
+			" flying "
 		],
 		"base": {
 			"HP": 90,
@@ -2962,8 +2962,8 @@
 		},
 		"image": "assets/images/pokemon/146.png",
 		"type": [
-			"Fire",
-			"Flying"
+			"fire",
+			" flying "
 		],
 		"base": {
 			"HP": 90,
@@ -2983,7 +2983,7 @@
 		},
 		"image": "assets/images/pokemon/147.png",
 		"type": [
-			"Dragon"
+			"dragon "
 		],
 		"base": {
 			"HP": 41,
@@ -2998,12 +2998,12 @@
 		"id": 148,
 		"number": "148",
 		"name": {
-			"english": "Dragonair",
+			"english": "dragon air",
 			"french": "Draco"
 		},
 		"image": "assets/images/pokemon/148.png",
 		"type": [
-			"Dragon"
+			"dragon "
 		],
 		"base": {
 			"HP": 61,
@@ -3018,13 +3018,13 @@
 		"id": 149,
 		"number": "149",
 		"name": {
-			"english": "Dragonite",
+			"english": "dragon ite",
 			"french": "Dracolosse"
 		},
 		"image": "assets/images/pokemon/149.png",
 		"type": [
-			"Dragon",
-			"Flying"
+			"dragon",
+			" flying "
 		],
 		"base": {
 			"HP": 91,
@@ -3044,7 +3044,7 @@
 		},
 		"image": "assets/images/pokemon/150.png",
 		"type": [
-			"Psychic"
+			"psychic "
 		],
 		"base": {
 			"HP": 106,
@@ -3064,7 +3064,7 @@
 		},
 		"image": "assets/images/pokemon/151.png",
 		"type": [
-			"Psychic"
+			"psychic "
 		],
 		"base": {
 			"HP": 100,

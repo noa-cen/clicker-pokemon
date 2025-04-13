@@ -2,7 +2,7 @@
     "id": 1,
     "name": "pokeball",
     "image": "assets/images/shop/pokeball-1.png",
-    "cost": "10",
+    "cost": "200",
     "description": "capture low-level Pokemon",
     "quantity": 0
 },
@@ -10,7 +10,7 @@
     "id": 2,
     "name": "greatball",
     "image": "assets/images/shop/greatball-1.png",
-    "cost": "6",
+    "cost": "600",
     "description": "capture medium level Pokemon",
     "quantity": 0
 },
@@ -82,7 +82,7 @@
     "id": 11,
     "name": "items finder",
     "image": "assets/images/shop/itemsFinder.png",
-    "cost": "10",
+    "cost": "5000",
     "description": "reveals hidden items",
     "quantity": 1,
     "items": [
@@ -114,13 +114,13 @@
             "id": 18,
             "name": "greatball",
             "image": "assets/images/shop/greatball-1.png",
-            "weight": 20
+            "weight": 22.5
         },
         {
             "id": 19,
             "name": "ultraball",
             "image": "assets/images/shop/ultraball-1.png",
-            "weight": 12.5
+            "weight": 10
         },
         {
             "id": 20,
@@ -134,7 +134,7 @@
     "id": 12,
     "name": "multi-exp",
     "image": "assets/images/shop/multi-exp.png",
-    "cost": "50",
+    "cost": "5000",
     "description": "automatic experience gain",
     "quantity": 1
 },
