@@ -400,6 +400,12 @@ function animatedCapture(ball, battle) {
             const capturePokemonContainer = document.querySelector(".capturePokemonContainer");
             capturePokemonContainer.appendChild(captureMessage);
 
+            let pokedollars = parseInt(localStorage.getItem("pokedollars")) || 0;
+            const counter = document.getElementById("pokedollars");
+            pokedollars += JSON.parse(localStorage.getItem("doubleSpeed")) ? 1000 : 500;
+            counter.textContent = `${pokedollars}₽`;
+            localStorage.setItem("pokedollars", pokedollars);
+
             playSound("assets/sounds/pokemon-capture.mp3");
 
             setTimeout(() => {
