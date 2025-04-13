@@ -82,7 +82,7 @@ export function gainExp() {
     }, 5000);
 }
 
-function pauseIntervals() {
+export function pauseIntervals() {
     if (window.itemsFinderInterval) {
         clearInterval(window.itemsFinderInterval);
         window.itemsFinderInterval = null;
@@ -93,11 +93,10 @@ function pauseIntervals() {
     }
 }
 
-function resumeIntervals() {
+export function resumeIntervals() {
     findItems();
     gainExp();
 }
-
 
 function rareCandy() {
     const expBar = document.querySelector(".expBar");

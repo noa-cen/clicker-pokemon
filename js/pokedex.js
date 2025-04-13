@@ -1,9 +1,7 @@
-import { pokemonPlay,updateExpBar } from './game.js';
+import { pokemonPlay, updateExpBar } from './game.js';
 import { playSound } from './music.js';
 import { getPokemon, createPokemonElement } from './pokemon.js';
 
-const top = document.querySelector(".top");
-const message = document.querySelector(".message");
 const bottom = document.querySelector(".bottom");
 const gameContainer = document.querySelector(".game-container");
 

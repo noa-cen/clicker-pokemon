@@ -1,8 +1,5 @@
 import { playSound } from './music.js';
 
-const top = document.querySelector(".top");
-const message = document.querySelector(".message");
-const bottom = document.querySelector(".bottom");
 const gameContainer = document.querySelector(".game-container");
 
 export async function getItems() {

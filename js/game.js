@@ -368,7 +368,7 @@ export function pokemonPlay(pokemonElement, counter, expPoke) {
     });
 }
 
-export function play(pokemonElement, firstClick) {
+export function play(pokemonElement) {
     const oldExpPoke = document.querySelector(".expPoke");
     if (oldExpPoke) {
         oldExpPoke.remove();

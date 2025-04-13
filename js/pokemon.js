@@ -1,8 +1,7 @@
 import { play, updateExpBar } from './game.js';
 import { playSound } from './music.js';
+import { pauseIntervals, resumeIntervals } from './backpack.js';
 
-const top = document.querySelector(".top");
-const message = document.querySelector(".message");
 const bottom = document.querySelector(".bottom");
 const gameContainer = document.querySelector(".game-container");
 
@@ -147,92 +146,50 @@ export function evolutionEevee() {
 export function evolutionPokemon() {
     let expNivel = parseInt(localStorage.getItem("expNivel")) || 0;
     const currentPokemonId = parseInt(localStorage.getItem("clickerId"));
+    let pokedollars = parseInt(localStorage.getItem("pokedollars")) || 0;
+    const counter = document.getElementById("pokedollars");
 
     if (expNivel >= 100) {
-        switch (currentPokemonId) {
-            case 1:
-            case 2:
-            case 4:
-            case 5:
-            case 7:
-            case 8:
-            case 10:
-            case 11:
-            case 13:
-            case 14:
-            case 16:
-            case 17:
-            case 19:
-            case 21:
-            case 23:
-            case 27:
-            case 29:
-            case 32:
-            case 41:
-            case 43:
-            case 46:
-            case 48:
-            case 50:
-            case 52:
-            case 54:
-            case 56:
-            case 60:
-            case 63:
-            case 64:
-            case 66:
-            case 67:
-            case 69:
-            case 72:
-            case 74:
-            case 75:
-            case 77:
-            case 79:
-            case 81:
-            case 84:
-            case 86:
-            case 88:
-            case 92:
-            case 93:
-            case 96:
-            case 98:
-            case 100:
-            case 104:
-            case 109:
-            case 111:
-            case 116:
-            case 118:
-            case 129:
-            case 138:
-            case 140:
-            case 147:
-            case 148:
+        const levelEvolution = [1, 2, 4, 5, 7, 8, 10, 11, 13, 14, 16, 17, 19, 21, 23, 27, 29, 32, 
+            41, 43, 46, 48, 50,52, 54, 56, 60, 63, 64, 66, 67, 69, 72, 74, 75, 77, 79, 81, 84, 86, 
+            88, 92, 93, 96, 98, 100, 104, 109, 111, 116, 118, 129, 138, 140, 147, 148];        
+        const thunderStoneEvolution = [25];
+        const moonStoneEvolution = [30, 33, 35, 39];
+        const fireStoneEvolution = [37, 58];
+        const leafStoneEvolution = [44, 70, 102];
+        const waterStoneEvolution = [61, 90, 120];
+        const eeveeId = 133;
+
+        if (expNivel >= 100) {
+            if (levelEvolution.includes(currentPokemonId)) {
                 evolution();
-                break;
-            case 25: // Pikachu thunder stone
-            case 30: // Nidorina moon stone
-            case 33: // Nidorino moon stone
-            case 35: // Clefairy moon stone
-            case 39: // Jigglypuff moon stone
-            case 37: // Vulpix fire stone
-            case 58: // Growlithe fire stone
-            case 44: // Gloom leaf stone
-            case 70: // Weepinbell leaf stone
-            case 102: // Exeggcute leaf stone
-            case 61: // Poliwhirl water stone
-            case 90: // Shellder water stone
-            case 120: // Staryu water stone
+                pokedollars += JSON.parse(localStorage.getItem("doubleSpeed")) ? 2000 : 1000;
+            } else if (
+                thunderStoneEvolution.includes(currentPokemonId) ||
+                moonStoneEvolution.includes(currentPokemonId) ||
+                fireStoneEvolution.includes(currentPokemonId) ||
+                leafStoneEvolution.includes(currentPokemonId) ||
+                waterStoneEvolution.includes(currentPokemonId)
+            ) {
                 evolutionStone();
-                break;
-            case 133: // Eevee thunder stone - water stone - fire stone
+                pokedollars += JSON.parse(localStorage.getItem("doubleSpeed")) ? 5000 : 2500;
+            } else if (currentPokemonId === eeveeId) {
                 evolutionEevee();
-                break;
-            default:
+                pokedollars += JSON.parse(localStorage.getItem("doubleSpeed")) ? 5000 : 2500;
+            } else {
                 playSound("assets/sounds/levelUp.mp3");
+                pokedollars += JSON.parse(localStorage.getItem("doubleSpeed")) ? 2000 : 1000;
+            }
+        
+            counter.textContent = `${pokedollars}₽`;
+            localStorage.setItem("pokedollars", pokedollars);
         }
     }
 }
 
 function animatedEvolution(pokemonId, newPokemonId, onComplete) {
+    pauseIntervals();
+
     getPokemon().then(pokemons => {
         const currentPokemon = pokemons.find(p => p.id === pokemonId);
         const evolvedPokemon = pokemons.find(p => p.id === newPokemonId);
@@ -288,6 +245,7 @@ function animatedEvolution(pokemonId, newPokemonId, onComplete) {
                 into ${evolvedPokemon.name.english}!`;
 
                 setTimeout(() => {
+                    resumeIntervals();
                     evolutionContainer.remove();
                     if (onComplete) onComplete();
                     window.location.reload();
