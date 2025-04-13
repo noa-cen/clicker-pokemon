@@ -92,8 +92,8 @@ function changePokemon(pokemonId) {
         pokemonPlay(newPokemonElement);
     });
 
-    const pokedexModal = document.getElementById("pokedexModal");
-    pokedexModal.remove();
+    const overlay = document.querySelector(".modal-overlay");
+    overlay.remove();
     localStorage.setItem("expNivel", 0);
     updateExpBar();
 }

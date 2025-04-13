@@ -497,7 +497,7 @@ function animatedCapture(ball, battle) {
 export async function openBackpack() {
     const overlay = document.createElement("div");
     overlay.classList.add("modal-overlay");
-    
+
     const backpackModal = document.createElement("section");
     backpackModal.classList.add("modal", "box");
 
@@ -607,7 +607,7 @@ export async function openBackpack() {
             localStorage.setItem("backpack", JSON.stringify(backpack));
 
             rareCandy();
-            backpackModal.remove();
+            overlay.remove();
         });
     }
 
@@ -659,7 +659,7 @@ export async function openBackpack() {
             }, 0);
 
             blackOverlayPokeflute.addEventListener("animationend", () => {
-                backpackModal.remove();
+                overlay.remove();
                 pokeflute(battle);
             });
         });
@@ -684,7 +684,7 @@ export async function openBackpack() {
                 playSoundThen("assets/sounds/stoneActivated.mp3", () => {
                     localStorage.setItem("leafStone", JSON.stringify(true));
                     evolutionPokemon();
-                    backpackModal.remove();
+                    overlay.remove();
                 });
             } else {
                 playSound("assets/sounds/error.mp3");
@@ -711,7 +711,7 @@ export async function openBackpack() {
                 playSoundThen("assets/sounds/stoneActivated.mp3", () => {
                     localStorage.setItem("leafStone", JSON.stringify(true));
                     evolutionPokemon();
-                    backpackModal.remove();
+                    overlay.remove();
                 });
             } else {
                 playSound("assets/sounds/error.mp3");
@@ -738,7 +738,7 @@ export async function openBackpack() {
                 playSoundThen("assets/sounds/stoneActivated.mp3", () => {
                     localStorage.setItem("leafStone", JSON.stringify(true));
                     evolutionPokemon();
-                    backpackModal.remove();
+                    overlay.remove();
                 });
             } else {
                 playSound("assets/sounds/error.mp3");
@@ -765,7 +765,7 @@ export async function openBackpack() {
                 playSoundThen("assets/sounds/stoneActivated.mp3", () => {
                     localStorage.setItem("leafStone", JSON.stringify(true));
                     evolutionPokemon();
-                    backpackModal.remove();
+                    overlay.remove();
                 });
             } else {
                 playSound("assets/sounds/error.mp3");
@@ -792,7 +792,7 @@ export async function openBackpack() {
                 playSoundThen("assets/sounds/stoneActivated.mp3", () => {
                     localStorage.setItem("leafStone", JSON.stringify(true));
                     evolutionPokemon();
-                    backpackModal.remove();
+                    overlay.remove();
                 });
             } else {
                 playSound("assets/sounds/error.mp3");

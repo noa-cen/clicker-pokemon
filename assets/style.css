@@ -126,6 +126,7 @@ h1 {
 #rulesMessage {
     position: relative;
     bottom: 100px;
+    margin: 0 auto;
 }
 
 .expPoke {
@@ -468,7 +469,8 @@ h1 {
 }
 
 .wildPokemonText {
-    text-align: center;
+    justify-content: space-between;
+    align-items: center;
     height: 100px;
 }
 
@@ -541,4 +543,34 @@ h1 {
         bottom: 60px;
     }
     
+    .wildPokemonContainer {
+        padding: 56px;
+    }
+
+    .capturePokemonContainer {
+        padding: 0 40px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .player, .backpack, .shop {
+        width: 55px;
+    }
+    
+    .pokedex {
+        margin-right: 13px;
+        height: 55px;
+    }
+
+    .wildPokemonContainer {
+        padding: 64px 144px;
+    }
+
+    .ashBack {
+        margin-top: 48px;
+    }
+
+    .evolving {
+        bottom: 200px;
+    }
 }
