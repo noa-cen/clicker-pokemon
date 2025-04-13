@@ -18,11 +18,18 @@ export function playerInfo() {
     playerModal.appendChild(counter);
 
     let pokemonsCaptured = JSON.parse(localStorage.getItem("pokemons")) || [];
-    const pokemonCount = pokemonsCaptured.length;
+    const pokemonCount = pokemonsCaptured.length || 1;
     const pokedex = document.createElement("p");
     pokedex.classList.add("playerInfo");
     pokedex.textContent = `pokédex: ${pokemonCount}`;
     playerModal.appendChild(pokedex);
+
+    const playerLevelValue = Math.floor((pokemonCount / 151) * 100);
+    const playerLevel = document.createElement("p");
+    playerLevel.classList.add("playerInfo");
+    playerLevel.textContent = `level: ${playerLevelValue}`;
+    localStorage.setItem("playerLevel", playerLevelValue);
+    playerModal.appendChild(playerLevel);
 
     const resetAll = document.createElement("button");
     resetAll.textContent = "reset all";

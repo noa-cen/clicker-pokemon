@@ -90,13 +90,13 @@
             "id": 14,
             "name": "masterball",
             "image": "assets/images/shop/masterball-1.png",
-            "weight": 5
+            "weight": 2
         },
         {
             "id": 15,
             "name": "bike voucher",
             "image": "assets/images/shop/bikeVoucher.png",
-            "weight": 5
+            "weight": 8
         },
         {
             "id": 16,

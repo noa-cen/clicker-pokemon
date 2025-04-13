@@ -133,7 +133,50 @@ function createBall(ball) {
 function pokeflute(battle) {
     pauseIntervals();
 
-    const listPokemonId = [1, 4, 7, 10, 13, 16, 19, 21, 23, 25, 27, 29, 32, 35, 37, 39, 41, 43, 46, 48, 50, 52, 54, 56, 58, 60, 63, 66, 69, 72, 74, 77, 79, 81, 83, 84, 86, 88, 90, 92, 95, 96, 98, 100, 102, 104, 106, 107, 108, 109, 111, 113, 114, 115, 116, 118, 120, 122, 123, 124, 125, 126, 127, 128, 129, 131, 132, 133, 137, 138, 140, 142, 143, 144, 145, 146, 147, 150];
+    let playerLevel = JSON.parse(localStorage.getItem("playerLevel"));
+    let listPokemonId = [];
+
+    if (playerLevel <= 10) {
+        listPokemonId = [10, 13, 16, 19, 21, 23, 41]; // max 20 pokemons
+    } else if (playerLevel > 10 && playerLevel <= 20) {
+        listPokemonId = [10, 13, 16, 19, 21, 23, 41, 25, 27, 29, 32, 43, 46, 50]; // max 39 pokemons
+    } else if (playerLevel > 20 && playerLevel <= 30) {
+        listPokemonId = [10, 13, 16, 19, 21, 23, 41, 25, 27, 29, 32, 37, 39, 43, 46, 50, 35, 39, 48, 
+            52, 54, 56, 58, ]; // max 57 pokemons
+    } else if (playerLevel > 30 && playerLevel <= 40) {
+        listPokemonId = [10, 13, 16, 19, 21, 23, 41, 25, 27, 29, 32, 37, 39, 43, 46, 50, 35, 39, 48, 
+            52, 54, 56, 58, 1, 4, 7, 60, 63, 66, 69]; // max 71 pokemons
+    } else if (playerLevel > 40 && playerLevel <= 50) {
+        listPokemonId = [10, 13, 16, 19, 21, 23, 41, 25, 27, 29, 32, 37, 39, 43, 46, 50, 35, 39, 48, 
+            52, 54, 56, 58, 1, 4, 7, 60, 63, 66, 69, 72, 74, 77, 79, 81, 83, 84]; // max 85 pokemons
+    } else if (playerLevel > 50 && playerLevel <= 60) {
+        listPokemonId = [10, 13, 16, 19, 21, 23, 41, 25, 27, 29, 32, 37, 39, 43, 46, 50, 35, 39, 48, 
+            52, 54, 56, 58, 1, 4, 7, 60, 63, 66, 69, 72, 74, 77, 79, 81, 83, 84, 86, 88, 90, 92, 95, 96, 
+            98, 100]; // max 101 pokemons
+    } else if (playerLevel > 60 && playerLevel <= 70) {
+        listPokemonId = [10, 13, 16, 19, 21, 23, 41, 25, 27, 29, 32, 37, 39, 43, 46, 50, 35, 39, 48, 
+            52, 54, 56, 58, 1, 4, 7, 60, 63, 66, 69, 72, 74, 77, 79, 81, 83, 84, 86, 88, 90, 92, 95, 96, 
+            98, 100, 102, 104, 106, 107, 108, 109, 111, 113, 114, 115, 116, 118]; // max 119 pokemons
+    } else if (playerLevel > 70 && playerLevel <= 80) {
+        listPokemonId = [10, 13, 16, 19, 21, 23, 41, 25, 27, 29, 32, 37, 39, 43, 46, 50, 35, 39, 48, 
+            52, 54, 56, 58, 1, 4, 7, 60, 63, 66, 69, 72, 74, 77, 79, 81, 83, 84, 86, 88, 90, 92, 95, 96, 
+            98, 100, 102, 104, 106, 107, 108, 109, 111, 113, 114, 115, 116, 118, 120, 122, 123, 124, 125, 
+            125, 127, 128, 129, 133]; // max 134 pokemons
+    } else if (playerLevel > 80 && playerLevel <= 90) {
+        listPokemonId = [10, 13, 16, 19, 21, 23, 41, 25, 27, 29, 32, 37, 39, 43, 46, 50, 35, 39, 48, 
+            52, 54, 56, 58, 1, 4, 7, 60, 63, 66, 69, 72, 74, 77, 79, 81, 83, 84, 86, 88, 90, 92, 95, 96, 
+            98, 100, 102, 104, 106, 107, 108, 109, 111, 113, 114, 115, 116, 118, 120, 122, 123, 124, 125, 
+            125, 127, 128, 129, 133, 131, 132, 137, 138, 140, 142, 143]; // max 143 pokemons
+    } else if (playerLevel > 90 && playerLevel <= 99) {
+        listPokemonId = [10, 13, 16, 19, 21, 23, 41, 25, 27, 29, 32, 37, 39, 43, 46, 50, 35, 39, 48, 
+            52, 54, 56, 58, 1, 4, 7, 60, 63, 66, 69, 72, 74, 77, 79, 81, 83, 84, 86, 88, 90, 92, 95, 96, 
+            98, 100, 102, 104, 106, 107, 108, 109, 111, 113, 114, 115, 116, 118, 120, 122, 123, 124, 125, 
+            125, 127, 128, 129, 131, 132, 133, 137, 138, 140, 142, 143, 144, 145, 146, 147, 
+            150]; // max 150 pokemons
+    } else if (playerLevel === 99) {
+        listPokemonId = [151]; // Mew
+    }
+    
     const randomId = Math.floor(Math.random() * listPokemonId.length);
     const pokemonId = listPokemonId[randomId];
 
@@ -574,7 +617,7 @@ export async function openBackpack() {
             gameContainer.appendChild(blackOverlayPokeflute);
 
 
-            const battle = playSound("assets/sounds/battle VS Wild Pokemon.mp3", 1, true);
+            const battle = playSound("assets/sounds/battle.mp3", 1, true);
             if (battle) {
                 battle.loop = true;
                 battle.play().catch(() => {});
