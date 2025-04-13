@@ -88,28 +88,45 @@
     "items": [
         {
             "id": 14,
-            "name": "pokeball",
-            "image": "assets/images/shop/pokeball-1.png"
+            "name": "masterball",
+            "image": "assets/images/shop/masterball-1.png",
+            "weight": 5
         },
         {
             "id": 15,
-            "name": "masterball",
-            "image": "assets/images/shop/masterball-1.png"
+            "name": "bike voucher",
+            "image": "assets/images/shop/bikeVoucher.png",
+            "weight": 5
         },
         {
             "id": 16,
-            "name": "rare candy",
-            "image": "assets/images/shop/rareCandy.png"
+            "name": "nugget",
+            "image": "assets/images/shop/nugget.png",
+            "weight": 12.5
         },
         {
             "id": 17,
-            "name": "bike voucher",
-            "image": "assets/images/shop/bikeVoucher.png"
+            "name": "pokeball",
+            "image": "assets/images/shop/pokeball-1.png",
+            "weight": 30
         },
         {
             "id": 18,
-            "name": "nugget",
-            "image": "assets/images/shop/nugget.png"
+            "name": "greatball",
+            "image": "assets/images/shop/greatball-1.png",
+            "weight": 20
+        },
+        {
+            "id": 19,
+            "name": "ultraball",
+            "image": "assets/images/shop/ultraball-1.png",
+            "weight": 12.5
+        },
+        {
+            "id": 20,
+            "name": "rare candy",
+            "image": "assets/images/shop/rareCandy.png",
+            "weight": 15
         }
     ]
 },

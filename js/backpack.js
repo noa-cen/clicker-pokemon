@@ -13,8 +13,7 @@ export async function findItems() {
   
     if (!window.itemsFinderInterval && hasItemsFinder) {
         window.itemsFinderInterval = setInterval(() => {  
-        const randomChoice = Math.random() < 0.99;
-        const backpack = JSON.parse(localStorage.getItem("backpack")) || {};
+        const randomChoice = Math.random() < 0.9;
   
             if (randomChoice) {
                 const currentPokedollars = parseInt(localStorage.getItem("pokedollars")) || 0;
@@ -36,8 +35,20 @@ export async function findItems() {
             } else {
                 const backpack = JSON.parse(localStorage.getItem("backpack")) || {};
                 const itemsFinder = items.find(item => item.name === "items finder");
-                const randomItemId = Math.floor(Math.random() * itemsFinder.items.length);
-                let randomItem = itemsFinder.items[randomItemId];
+
+                function getRandomWeightedItem(items) {
+                    const totalWeight = items.reduce((sum, item) => sum + item.weight, 0);
+                    let random = Math.random() * totalWeight;
+                
+                    for (const item of items) {
+                        if (random < item.weight) {
+                            return item;
+                        }
+                        random -= item.weight;
+                    }
+                }
+            
+                let randomItem = getRandomWeightedItem(itemsFinder.items);
 
                 if (randomItem.name === "bike voucher" && backpack["bicycle"]) {
                     return;
