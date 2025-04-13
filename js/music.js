@@ -47,6 +47,9 @@ export function playMusic() {
 
     let music = new Audio(playlist[currentTrack]);
     music.volume = isMuted ? 0 : 1;
+    if (!activeSounds.includes(music)) {
+        activeSounds.push(music);
+    }
 
     function updateMuteIcon() {
         muteBtn.innerHTML = isMuted
@@ -61,6 +64,10 @@ export function playMusic() {
         currentTrack = (index + playlist.length) % playlist.length;
         music = new Audio(playlist[currentTrack]);
         music.volume = isMuted ? 0 : 1;
+        if (!activeSounds.includes(music)) {
+            activeSounds.push(music);
+        }
+
         music.addEventListener("ended", playNextTrack);
         music.play();
         isPlaying = true;
@@ -105,7 +112,7 @@ export function playMusic() {
 const audioCache = new Map();
 const maxInstancesPerSound = 5;
 
-export function playSound(src, volume = 1) {
+export function playSound(src, volume = 1, forceNew = false) {
     const isMuted = JSON.parse(localStorage.getItem("mute")) || false;
     if (isMuted) return;
 
@@ -115,7 +122,9 @@ export function playSound(src, volume = 1) {
 
     const pool = audioCache.get(src);
 
-    let audio = pool.find(a => a.ended || a.paused);
+    let audio = forceNew
+        ? new Audio(src)
+        : pool.find(a => a.ended || a.paused);
 
     if (!audio && pool.length < maxInstancesPerSound) {
         audio = new Audio(src);
@@ -126,17 +135,22 @@ export function playSound(src, volume = 1) {
         audio.volume = volume;
         audio.currentTime = 0;
         audio.play().catch(() => {});
-    }
-}
-
-export function pauseAllSounds() {
-    activeSounds.forEach(audio => audio.pause());
-}
-
-export function resumeAllSounds() {
-    activeSounds.forEach(audio => {
-        if (audio.paused) {
-            audio.play().catch(() => {});
+        if (!pool.includes(audio)) {
+            pool.push(audio);
         }
-    });
+        if (!activeSounds.includes(audio)) {
+            activeSounds.push(audio);
+        }
+    }
+
+    return audio;
+}
+
+export function playSoundThen(src, callback, volume = 1) {
+    const audio = playSound(src, volume);
+    if (audio) {
+        audio.addEventListener("ended", callback);
+    } else {
+        callback();
+    }
 }

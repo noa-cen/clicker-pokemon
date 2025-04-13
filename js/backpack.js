@@ -1,7 +1,7 @@
 import { getItems } from './shop.js';
 import { animatePokedollar, updateExpBar } from './game.js';
 import { getPokemon, createPokemonElement, evolutionPokemon } from './pokemon.js';
-import { playSound, pauseAllSounds } from './music.js';
+import { playSound, playSoundThen } from './music.js';
 
 const gameContainer = document.querySelector(".game-container");
 
@@ -18,7 +18,12 @@ export async function findItems() {
   
             if (randomChoice) {
                 const currentPokedollars = parseInt(localStorage.getItem("pokedollars")) || 0;
-                const newPokedollars = currentPokedollars + 1;
+                let newPokedollars;
+                if (JSON.parse(localStorage.getItem("doubleSpeed")) === true) {
+                    newPokedollars = currentPokedollars + 2;
+                } else {
+                    newPokedollars = currentPokedollars + 1;
+                }
                 localStorage.setItem("pokedollars", newPokedollars);
         
                 const counter = document.getElementById("pokedollars");
@@ -77,6 +82,23 @@ export function gainExp() {
     }, 5000);
 }
 
+function pauseIntervals() {
+    if (window.itemsFinderInterval) {
+        clearInterval(window.itemsFinderInterval);
+        window.itemsFinderInterval = null;
+    }
+    if (window.multiExpInterval) {
+        clearInterval(window.multiExpInterval);
+        window.multiExpInterval = null;
+    }
+}
+
+function resumeIntervals() {
+    findItems();
+    gainExp();
+}
+
+
 function rareCandy() {
     const expBar = document.querySelector(".expBar");
     let expNivel = parseInt(localStorage.getItem("expNivel")) || 0;
@@ -99,7 +121,7 @@ function createBall(ball) {
 }
 
 function pokeflute(battle) {
-    pauseAllSounds();
+    pauseIntervals();
 
     const listPokemonId = [1, 4, 7, 10, 13, 16, 19, 21, 23, 25, 27, 29, 32, 35, 37, 39, 41, 43, 46, 48, 50, 52, 54, 56, 58, 60, 63, 66, 69, 72, 74, 77, 79, 81, 83, 84, 86, 88, 90, 92, 95, 96, 98, 100, 102, 104, 106, 107, 108, 109, 111, 113, 114, 115, 116, 118, 120, 122, 123, 124, 125, 126, 127, 128, 129, 131, 132, 133, 137, 138, 140, 142, 143, 144, 145, 146, 147, 150];
     const randomId = Math.floor(Math.random() * listPokemonId.length);
@@ -197,11 +219,15 @@ function pokeflute(battle) {
             capturePokemon(battle);
 
             run.addEventListener("click", () => {
-                battle.pause();
-                battle.currentTime = 0;
-                battle.src = "";
-                battle.load();
-                battle = null;
+                if (battle) {
+                    battle.pause();
+                    battle.currentTime = 0;
+                    battle.src = "";
+                    battle.load();
+                    battle = null;
+                }
+
+                resumeIntervals();
                 blackOverlayPokeflute.remove();
                 wildPokemonContainer.remove();
             });
@@ -357,19 +383,31 @@ function animatedCapture(ball, battle) {
                 }
             });
 
-            battle.pause();
-            battle.currentTime = 0;
-            battle.src = "";
-            battle.load();
-            battle = null;
+            if (battle) {
+                battle.pause();
+                battle.currentTime = 0;
+                battle.src = "";
+                battle.load();
+                battle = null;
+            }
 
-            const captureSound = new Audio("assets/sounds/pokemon-capture.mp3");
-            captureSound.addEventListener("ended", () => {
+            const ballsContainer = document.querySelector(".ballsContainer");
+            const run = document.getElementById("run");
+            ballsContainer.remove();
+            run.remove();
+
+            const captureMessage = document.createElement("p");
+            captureMessage.textContent = `All right, ${pokemonName} was caught!`;
+            const capturePokemonContainer = document.querySelector(".capturePokemonContainer");
+            capturePokemonContainer.appendChild(captureMessage);
+
+            playSound("assets/sounds/pokemon-capture.mp3");
+
+            setTimeout(() => {
+                resumeIntervals();
                 blackOverlayPokeflute.remove();
                 wildPokemonContainer.remove();
-            });
-        
-            captureSound.play().catch(() => {});
+            }, 3000); 
         } else {
             ballImg.replaceWith(wildPokemonElement);
         }
@@ -432,8 +470,7 @@ export async function openBackpack() {
             itemsFinderActive = !itemsFinderActive;
             localStorage.setItem("itemsFinderActive", JSON.stringify(itemsFinderActive));
 
-            const clickSound = new Audio(itemsFinderActive ? "assets/sounds/activated.mp3" : "assets/sounds/deactivated.mp3");
-            clickSound.play();
+            playSound(itemsFinderActive ? "assets/sounds/activated.mp3" : "assets/sounds/deactivated.mp3");
 
             if (itemsFinderActive) {
                 findItems();
@@ -454,8 +491,7 @@ export async function openBackpack() {
             multiExpActive = !multiExpActive;
             localStorage.setItem("multiExpActive", JSON.stringify(multiExpActive));
 
-            const clickSound = new Audio(multiExpActive ? "assets/sounds/activated.mp3" : "assets/sounds/deactivated.mp3");
-            clickSound.play();
+            playSound(multiExpActive ? "assets/sounds/activated.mp3" : "assets/sounds/deactivated.mp3");
 
             if (multiExpActive) {
                 gainExp();
@@ -517,23 +553,24 @@ export async function openBackpack() {
             }
             localStorage.setItem("backpack", JSON.stringify(backpack));
 
-            const blackOverlayPokeflute = document.createElement("div");
+            const blackOverlayPokeflute = document.createElement("section");
             blackOverlayPokeflute.id = "blackOverlayPokeflute";
             gameContainer.appendChild(blackOverlayPokeflute);
 
-            let battle = new Audio("assets/sounds/battle VS Wild Pokemon.mp3");
-            battle.loop = true;
-            battle.play().catch(() => {});
 
-            battle.play().then(() => {
-                setTimeout(() => {
-                    blackOverlayPokeflute.classList.add("expandSpiral");
-                }, 0);
-    
-                blackOverlayPokeflute.addEventListener("animationend", () => {
-                    backpackModal.remove();
-                    pokeflute(battle);
-                });
+            const battle = playSound("assets/sounds/battle VS Wild Pokemon.mp3", 1, true);
+            if (battle) {
+                battle.loop = true;
+                battle.play().catch(() => {});
+            }
+
+            setTimeout(() => {
+                blackOverlayPokeflute.classList.add("expandSpiral");
+            }, 0);
+
+            blackOverlayPokeflute.addEventListener("animationend", () => {
+                backpackModal.remove();
+                pokeflute(battle);
             });
         });
     }
@@ -554,10 +591,11 @@ export async function openBackpack() {
                 }
                 localStorage.setItem("backpack", JSON.stringify(backpack));
 
-                playSound("assets/sounds/stoneActivated.mp3");
-                localStorage.setItem("leafStone", JSON.stringify(true));
-                evolutionPokemon();
-                backpackModal.remove();
+                playSoundThen("assets/sounds/stoneActivated.mp3", () => {
+                    localStorage.setItem("leafStone", JSON.stringify(true));
+                    evolutionPokemon();
+                    backpackModal.remove();
+                });
             } else {
                 playSound("assets/sounds/error.mp3");
             }
@@ -580,9 +618,11 @@ export async function openBackpack() {
                 }
                 localStorage.setItem("backpack", JSON.stringify(backpack));
 
-                playSound("assets/sounds/stoneActivated.mp3");
-                localStorage.setItem("thunderStone", JSON.stringify(true));
-                backpackModal.remove();
+                playSoundThen("assets/sounds/stoneActivated.mp3", () => {
+                    localStorage.setItem("leafStone", JSON.stringify(true));
+                    evolutionPokemon();
+                    backpackModal.remove();
+                });
             } else {
                 playSound("assets/sounds/error.mp3");
             }
@@ -605,10 +645,11 @@ export async function openBackpack() {
                 }
                 localStorage.setItem("backpack", JSON.stringify(backpack));
 
-                playSound("assets/sounds/stoneActivated.mp3");
-                localStorage.setItem("waterStone", JSON.stringify(true));
-                evolutionPokemon();
-                backpackModal.remove();
+                playSoundThen("assets/sounds/stoneActivated.mp3", () => {
+                    localStorage.setItem("leafStone", JSON.stringify(true));
+                    evolutionPokemon();
+                    backpackModal.remove();
+                });
             } else {
                 playSound("assets/sounds/error.mp3");
             }
@@ -631,10 +672,11 @@ export async function openBackpack() {
                 }
                 localStorage.setItem("backpack", JSON.stringify(backpack));
 
-                playSound("assets/sounds/stoneActivated.mp3");
-                localStorage.setItem("moonStone", JSON.stringify(true));
-                evolutionPokemon();
-                backpackModal.remove();
+                playSoundThen("assets/sounds/stoneActivated.mp3", () => {
+                    localStorage.setItem("leafStone", JSON.stringify(true));
+                    evolutionPokemon();
+                    backpackModal.remove();
+                });
             } else {
                 playSound("assets/sounds/error.mp3");
             }
@@ -657,10 +699,11 @@ export async function openBackpack() {
                 }
                 localStorage.setItem("backpack", JSON.stringify(backpack));
 
-                playSound("assets/sounds/stoneActivated.mp3");
-                localStorage.setItem("fireStone", JSON.stringify(true));
-                evolutionPokemon();
-                backpackModal.remove();
+                playSoundThen("assets/sounds/stoneActivated.mp3", () => {
+                    localStorage.setItem("leafStone", JSON.stringify(true));
+                    evolutionPokemon();
+                    backpackModal.remove();
+                });
             } else {
                 playSound("assets/sounds/error.mp3");
             }

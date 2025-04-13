@@ -450,12 +450,14 @@ h1 {
 
 .wildPokemonText {
     text-align: center;
+    height: 100px;
 }
 
 .capturePokemonContainer {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    height: 100px;
 }
 
 .ballsContainer {

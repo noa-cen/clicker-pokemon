@@ -95,6 +95,7 @@ function showStarterChoice() {
         starters.forEach(name => {
             const pokemon = pokemons.find(p => p.name.english === name);
             const element = createPokemonElement(pokemon);
+            element.src = `assets/images/pokemon/color/${pokemon.id}.png`;
             containerStarter.appendChild(element);
 
             element.addEventListener("click", () => {
@@ -367,7 +368,7 @@ export function pokemonPlay(pokemonElement, counter, expPoke) {
     });
 }
 
-export function play(pokemonElement) {
+export function play(pokemonElement, firstClick) {
     const oldExpPoke = document.querySelector(".expPoke");
     if (oldExpPoke) {
         oldExpPoke.remove();

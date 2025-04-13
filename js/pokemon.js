@@ -52,7 +52,6 @@ function finishEvolution(newPokemonId) {
 
     getPokemon().then(pokemons => {
         const newPokemon = pokemons.find(p => p.id === newPokemonId);
-        console.log(newPokemon);
         const newPokemonElement = createPokemonElement(newPokemon);
         localStorage.setItem("clickerId", newPokemonId);
         bottom.appendChild(newPokemonElement);
