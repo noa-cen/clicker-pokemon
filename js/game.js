@@ -256,41 +256,12 @@ export function animatePokedollar(item = "pokedollar") {
 export function updateExpBar() {
     const expBar = document.querySelector(".expBar");
     let expNivel = parseInt(localStorage.getItem("expNivel")) || 0;
-    let playerLevel = JSON.parse(localStorage.getItem("playerLevel"));
-    let doubleSpeed = JSON.parse(localStorage.getItem("doubleSpeed"));
 
-    const expByLevel = [
-        { level: 10, exp: 100 },
-        { level: 20, exp: 110 },
-        { level: 30, exp: 130 },
-        { level: 40, exp: 150 },
-        { level: 50, exp: 170 },
-        { level: 60, exp: 200 },
-        { level: 70, exp: 230 },
-        { level: 80, exp: 270 },
-        { level: 90, exp: 310 },
-        { level: 98, exp: 350 },
-        { level: 99, exp: 400 },
-    ];
-
-    let maxExp = 100;
-    for (let i = 0; i < expByLevel.length; i++) {
-        if (playerLevel <= expByLevel[i].level) {
-            if (doubleSpeed) {
-                maxExp = expByLevel[i].exp * 2;
-            break;
-            } else {
-                maxExp = expByLevel[i].exp;
-                break;
-            }
-        }
-    }
-
+    const maxExp = 100;
     const expPercentage = (expNivel / maxExp) * 100;
     if (expBar) {
         expBar.style.width = `${Math.min(expPercentage, 100)}%`;
     }
-
     localStorage.setItem("expNivel", expNivel);
 }
 

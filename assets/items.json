@@ -18,7 +18,7 @@
     "id": 3,
     "name": "ultraball",
     "image": "assets/images/shop/ultraball-1.png",
-    "cost": "1.200",
+    "cost": "1200",
     "description": "capture high-level Pokemon",
     "quantity": 0
 },
@@ -26,7 +26,7 @@
     "id": 4,
     "name": "leaf stone",
     "image": "assets/images/shop/leafStone.png",
-    "cost": "2.100",
+    "cost": "2100",
     "description": "used to evolve some Pokemon",
     "quantity": 0
 },
@@ -34,7 +34,7 @@
     "id": 5,
     "name": "thunder stone",
     "image": "assets/images/shop/thunderStone.png",
-    "cost": "2.100",
+    "cost": "2100",
     "description": "used to evolve some Pokemon",
     "quantity": 0
 },
@@ -42,7 +42,7 @@
     "id": 6,
     "name": "water stone",
     "image": "assets/images/shop/waterStone.png",
-    "cost": "2.100",
+    "cost": "2100",
     "description": "used to evolve some Pokemon",
     "quantity": 0
 },
@@ -50,7 +50,7 @@
     "id": 7,
     "name": "moon stone",
     "image": "assets/images/shop/moonStone.png",
-    "cost": "2.100",
+    "cost": "2100",
     "description": "used to evolve some Pokemon",
     "quantity": 0
 },
@@ -58,7 +58,7 @@
     "id": 8,
     "name": "fire stone",
     "image": "assets/images/shop/fireStone.png",
-    "cost": "2.100",
+    "cost": "2100",
     "description": "use to evolve some Pokemon",
     "quantity": 0
 },
@@ -66,7 +66,7 @@
     "id": 9,
     "name": "rare candy",
     "image": "assets/images/shop/rareCandy.png",
-    "cost": "2.100",
+    "cost": "2100",
     "description": "experience gain",
     "quantity": 0
 },
@@ -74,7 +74,7 @@
     "id": 10,
     "name": "multi-exp",
     "image": "assets/images/shop/multi-exp.png",
-    "cost": "4.000",
+    "cost": "4000",
     "description": "automatic experience gain",
     "quantity": 1
 },
@@ -82,7 +82,7 @@
     "id": 11,
     "name": "pokeflute",
     "image": "assets/images/shop/pokeflute.png",
-    "cost": "5.000",
+    "cost": "5000",
     "description": "wakes up a Pokemon",
     "quantity": 0
 },
@@ -90,7 +90,7 @@
     "id": 12,
     "name": "items finder",
     "image": "assets/images/shop/itemsFinder.png",
-    "cost": "10.000",
+    "cost": "10000",
     "description": "reveals hidden items",
     "quantity": 1,
     "items": [
@@ -142,7 +142,7 @@
     "id": 13,
     "name": "bicycle",
     "image": "assets/images/shop/bicycle.png",
-    "cost": "1.000.000",
+    "cost": "1000000",
     "description": "travel at double speed",
     "quantity": 1
 }
