@@ -98,7 +98,7 @@
             "id": 14,
             "name": "masterball",
             "image": "assets/images/shop/masterball-1.png",
-            "weight": 2
+            "weight": 1
         },
         {
             "id": 15,
@@ -122,7 +122,7 @@
             "id": 18,
             "name": "greatball",
             "image": "assets/images/shop/greatball-1.png",
-            "weight": 22.5
+            "weight": 23.5
         },
         {
             "id": 19,

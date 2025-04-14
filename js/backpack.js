@@ -38,14 +38,18 @@ export async function findItems() {
 
                 function getRandomWeightedItem(items) {
                     const totalWeight = items.reduce((sum, item) => sum + item.weight, 0);
-                    let random = Math.random() * totalWeight;
-                
+                    const random = Math.random() * totalWeight;
+                    let cumulativeWeight = 0;
+                    
                     for (const item of items) {
-                        if (random < item.weight) {
+                        cumulativeWeight += item.weight;
+                        
+                        // If the cumulative weight exceeds the random number, select this item
+                        if (random <= cumulativeWeight) {
                             return item;
                         }
-                        random -= item.weight;
                     }
+                    return items[items.length - 1];
                 }
             
                 let randomItem = getRandomWeightedItem(itemsFinder.items);
