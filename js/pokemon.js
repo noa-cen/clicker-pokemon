@@ -67,6 +67,7 @@ export function evolutionStone() {
     const waterStone = JSON.parse(localStorage.getItem("waterStone"));
     const moonStone = JSON.parse(localStorage.getItem("moonStone"));
     const fireStone = JSON.parse(localStorage.getItem("fireStone"));
+    let pokedollars = parseInt(localStorage.getItem("pokedollars")) || 0;
 
     if (leafStone) {
         localStorage.setItem("leafStone", JSON.stringify(false));
@@ -74,6 +75,7 @@ export function evolutionStone() {
         const currentPokemonId = parseInt(localStorage.getItem("clickerId"));
         const newPokemonId = currentPokemonId + 1;
         animatedEvolution(currentPokemonId, newPokemonId, () => {
+            pokedollars += JSON.parse(localStorage.getItem("doubleSpeed")) ? 5000 : 2500;
             finishEvolution(newPokemonId);
         });
     } else if (thunderStone) {
@@ -82,6 +84,7 @@ export function evolutionStone() {
         const currentPokemonId = parseInt(localStorage.getItem("clickerId"));
         const newPokemonId = currentPokemonId + 1;
         animatedEvolution(currentPokemonId, newPokemonId, () => {
+            pokedollars += JSON.parse(localStorage.getItem("doubleSpeed")) ? 5000 : 2500;
             finishEvolution(newPokemonId);
         });
     } else if (waterStone) {
@@ -90,6 +93,7 @@ export function evolutionStone() {
         const currentPokemonId = parseInt(localStorage.getItem("clickerId"));
         const newPokemonId = currentPokemonId + 1;
         animatedEvolution(currentPokemonId, newPokemonId, () => {
+            pokedollars += JSON.parse(localStorage.getItem("doubleSpeed")) ? 5000 : 2500;
             finishEvolution(newPokemonId);
         });
     } else if (moonStone) {
@@ -97,7 +101,9 @@ export function evolutionStone() {
         
         const currentPokemonId = parseInt(localStorage.getItem("clickerId"));
         const newPokemonId = currentPokemonId + 1;
+
         animatedEvolution(currentPokemonId, newPokemonId, () => {
+            pokedollars += JSON.parse(localStorage.getItem("doubleSpeed")) ? 5000 : 2500;
             finishEvolution(newPokemonId);
         });
     } else if (fireStone) {
@@ -106,6 +112,7 @@ export function evolutionStone() {
         const currentPokemonId = parseInt(localStorage.getItem("clickerId"));
         const newPokemonId = currentPokemonId + 1;
         animatedEvolution(currentPokemonId, newPokemonId, () => {
+            pokedollars += JSON.parse(localStorage.getItem("doubleSpeed")) ? 5000 : 2500;
             finishEvolution(newPokemonId);
         });
     }
@@ -122,6 +129,7 @@ export function evolutionEevee() {
         const currentPokemonId = parseInt(localStorage.getItem("clickerId"));
         const newPokemonId = currentPokemonId + 2;
         animatedEvolution(currentPokemonId, newPokemonId, () => {
+            pokedollars += JSON.parse(localStorage.getItem("doubleSpeed")) ? 5000 : 2500;
             finishEvolution(newPokemonId);
         });
     } else if (waterStone) {
@@ -130,6 +138,7 @@ export function evolutionEevee() {
         const currentPokemonId = parseInt(localStorage.getItem("clickerId"));
         const newPokemonId = currentPokemonId + 1;
         animatedEvolution(currentPokemonId, newPokemonId, () => {
+            pokedollars += JSON.parse(localStorage.getItem("doubleSpeed")) ? 5000 : 2500;
             finishEvolution(newPokemonId);
         });
     } else if (fireStone) {
@@ -138,6 +147,7 @@ export function evolutionEevee() {
         const currentPokemonId = parseInt(localStorage.getItem("clickerId"));
         const newPokemonId = currentPokemonId + 3;
         animatedEvolution(currentPokemonId, newPokemonId, () => {
+            pokedollars += JSON.parse(localStorage.getItem("doubleSpeed")) ? 5000 : 2500;
             finishEvolution(newPokemonId);
         });
     }
@@ -176,13 +186,11 @@ export function evolutionPokemon() {
             waterStoneEvolution.includes(currentPokemonId)
         ) {
             evolutionStone();
-            pokedollars += JSON.parse(localStorage.getItem("doubleSpeed")) ? 5000 : 2500;
         } else if (currentPokemonId === eeveeId) {
             evolutionEevee();
-            pokedollars += JSON.parse(localStorage.getItem("doubleSpeed")) ? 5000 : 2500;
         } else if (noEvolution.includes(currentPokemonId) && expNivel === 100) {
             playSound("assets/sounds/levelUp.mp3");
-                pokedollars += JSON.parse(localStorage.getItem("doubleSpeed")) ? 2000 : 1000;
+            pokedollars += JSON.parse(localStorage.getItem("doubleSpeed")) ? 2000 : 1000;
         }
     
         counter.textContent = `${pokedollars}₽`;
