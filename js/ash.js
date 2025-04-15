@@ -1,4 +1,5 @@
 import { playSound } from './music.js';
+import { pauseIntervals } from './backpack.js';
 
 const gameContainer = document.querySelector(".game-container");
 
@@ -51,6 +52,7 @@ export function playerInfo() {
             }, 0);
 
             clickSound.addEventListener("ended", () => {
+                pauseIntervals();
                 localStorage.clear();
                 location.reload();
             });

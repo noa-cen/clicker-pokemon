@@ -100,17 +100,17 @@ function showStarterChoice() {
             containerStarter.appendChild(element);
 
             element.addEventListener("click", () => {
-                let pokemondSound;
+                let pokemondCall;
                 
                 if (pokemon.name.english === "Bulbasaur") {
-                    pokemondSound = "assets/sounds/bulbasaur.mp3";
+                    pokemondCall = "assets/sounds/pokemon's call/bulbasaur.mp3";
                 } else if (pokemon.name.english === "Charmander") {
-                    pokemondSound = "assets/sounds/charmander.mp3";
+                    pokemondCall = "assets/sounds/pokemon's call/charmander.mp3";
                 } else if (pokemon.name.english === "Squirtle") {
-                    pokemondSound = "assets/sounds/squirtle.mp3";
+                    pokemondCall = "assets/sounds/pokemon's call/squirtle.mp3";
                 }
             
-                const clickSound = new Audio(pokemondSound);
+                const clickSound = new Audio(pokemondCall);
             
                 clickSound.addEventListener("ended", () => {
                     let pokemonsCaptured = JSON.parse(localStorage.getItem("pokemons")) || [];
@@ -162,7 +162,7 @@ function rules() {
         rulesMessage.classList.add("box");
         rulesMessage.id = "rulesMessage";
         rulesMessage.innerHTML = `
-            Click on ${chosenPokemon.name.english} to gain exp and on ${playerName} to gain 
+            Click on ${chosenPokemon.name.english} to gain experience and on ${playerName} to gain 
             pokédollars.<br>
             Keep going to unlock surprises.<br><br>
             Ready? Let's go!
@@ -273,7 +273,7 @@ function ashPlay(counter, expPoke) {
         if (rulesMessage) {
             rulesMessage.remove();
         }
-        playSound("assets/sounds/money.mp3");
+        playSound("assets/sounds/money.mp3", 0.6);
 
         updateExpBar();
 
@@ -346,7 +346,7 @@ export function pokemonPlay(pokemonElement, counter, expPoke) {
             updateExpBar();
 
             if (expNivel < 100) {
-                playSound("assets/sounds/exp.mp3");
+                playSound("assets/sounds/exp.mp3", 0.2);
             }
         }
 

@@ -3,7 +3,7 @@
     "name": "pokeball",
     "image": "assets/images/shop/pokeball-1.png",
     "cost": "200",
-    "description": "capture low-level Pokemon",
+    "description": "capture low-level Pokémon",
     "quantity": 0
 },
 {
@@ -11,7 +11,7 @@
     "name": "greatball",
     "image": "assets/images/shop/greatball-1.png",
     "cost": "600",
-    "description": "capture medium level Pokemon",
+    "description": "capture medium-level Pokémon",
     "quantity": 0
 },
 {
@@ -19,7 +19,7 @@
     "name": "ultraball",
     "image": "assets/images/shop/ultraball-1.png",
     "cost": "1200",
-    "description": "capture high-level Pokemon",
+    "description": "capture high-level Pokémon",
     "quantity": 0
 },
 {
@@ -27,7 +27,7 @@
     "name": "leaf stone",
     "image": "assets/images/shop/leafStone.png",
     "cost": "2100",
-    "description": "used to evolve some Pokemon",
+    "description": "used to evolve some Pokémon",
     "quantity": 0
 },
 {
@@ -35,7 +35,7 @@
     "name": "thunder stone",
     "image": "assets/images/shop/thunderStone.png",
     "cost": "2100",
-    "description": "used to evolve some Pokemon",
+    "description": "used to evolve some Pokémon",
     "quantity": 0
 },
 {
@@ -43,7 +43,7 @@
     "name": "water stone",
     "image": "assets/images/shop/waterStone.png",
     "cost": "2100",
-    "description": "used to evolve some Pokemon",
+    "description": "used to evolve some Pokémon",
     "quantity": 0
 },
 {
@@ -51,7 +51,7 @@
     "name": "moon stone",
     "image": "assets/images/shop/moonStone.png",
     "cost": "2100",
-    "description": "used to evolve some Pokemon",
+    "description": "used to evolve some Pokémon",
     "quantity": 0
 },
 {
@@ -59,7 +59,7 @@
     "name": "fire stone",
     "image": "assets/images/shop/fireStone.png",
     "cost": "2100",
-    "description": "use to evolve some Pokemon",
+    "description": "used to evolve some Pokémon",
     "quantity": 0
 },
 {
@@ -83,12 +83,12 @@
     "name": "pokeflute",
     "image": "assets/images/shop/pokeflute.png",
     "cost": "5000",
-    "description": "wakes up a Pokemon",
+    "description": "wakes up a Pokémon",
     "quantity": 0
 },
 {
     "id": 12,
-    "name": "items finder",
+    "name": "itemFinder",
     "image": "assets/images/shop/itemsFinder.png",
     "cost": "10000",
     "description": "reveals hidden items",

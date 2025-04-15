@@ -9,11 +9,11 @@ export async function findItems() {
     const items = await getItems();
 
     const backpack = JSON.parse(localStorage.getItem("backpack")) || {};
-    const hasItemsFinder = backpack && backpack["items finder"];
+    const hasItemsFinder = backpack && backpack["itemFinder"];
   
     if (!window.itemsFinderInterval && hasItemsFinder) {
         window.itemsFinderInterval = setInterval(() => {  
-        const randomChoice = Math.random() < 0.9;
+        const randomChoice = Math.random() < 0.95;
   
             if (randomChoice) {
                 const currentPokedollars = parseInt(localStorage.getItem("pokedollars")) || 0;
@@ -30,11 +30,11 @@ export async function findItems() {
                     counter.textContent = `${newPokedollars}₽`;
                 }
         
-                playSound("assets/sounds/money.mp3");
+                playSound("assets/sounds/money.mp3", 0.6);
                 animatePokedollar();
             } else {
                 const backpack = JSON.parse(localStorage.getItem("backpack")) || {};
-                const itemsFinder = items.find(item => item.name === "items finder");
+                const itemsFinder = items.find(item => item.name === "itemFinder");
 
                 function getRandomWeightedItem(items) {
                     const totalWeight = items.reduce((sum, item) => sum + item.weight, 0);
@@ -77,7 +77,7 @@ export async function findItems() {
                     localStorage.setItem("backpack", JSON.stringify(backpack));
                 }
 
-                playSound("assets/sounds/gainItem.mp3");
+                playSound("assets/sounds/gainItem.mp3", 0.2);
                 animatePokedollar(randomItem);
             }
         }, 1000);
@@ -91,7 +91,7 @@ export function gainExp() {
         if (expNivel < 100) {
             expNivel++;
             localStorage.setItem("expNivel", expNivel);
-            playSound("assets/sounds/exp.mp3");
+            playSound("assets/sounds/exp.mp3", 0.2);
             updateExpBar(expNivel, expBar);
         }
     }, 5000);
@@ -514,7 +514,7 @@ export async function openBackpack() {
     const itemNames = Object.keys(backpack);
     
     const items = await getItems();
-    const itemsFinder = items.find(i => i.name === "items finder");
+    const itemsFinder = items.find(i => i.name === "itemFinder");
     
     for (const itemName of itemNames) {
         let item = items.find(i => i.name === itemName);
@@ -554,7 +554,7 @@ export async function openBackpack() {
     overlay.appendChild(backpackModal);
     gameContainer.appendChild(overlay);
 
-    const itemsFinderElement = document.getElementById("items finder");
+    const itemsFinderElement = document.getElementById("itemFinder");
     if (itemsFinderElement && !itemsFinderElement.dataset.listenerAttached) {
         itemsFinderElement.dataset.listenerAttached = "true";
 
@@ -564,7 +564,7 @@ export async function openBackpack() {
             itemsFinderActive = !itemsFinderActive;
             localStorage.setItem("itemsFinderActive", JSON.stringify(itemsFinderActive));
 
-            playSound(itemsFinderActive ? "assets/sounds/activated.mp3" : "assets/sounds/deactivated.mp3");
+            playSound(itemsFinderActive ? "assets/sounds/activated.mp3" : "assets/sounds/deactivated.mp3", 0.5);
 
             if (itemsFinderActive) {
                 findItems();
@@ -585,7 +585,7 @@ export async function openBackpack() {
             multiExpActive = !multiExpActive;
             localStorage.setItem("multiExpActive", JSON.stringify(multiExpActive));
 
-            playSound(multiExpActive ? "assets/sounds/activated.mp3" : "assets/sounds/deactivated.mp3");
+            playSound(multiExpActive ? "assets/sounds/activated.mp3" : "assets/sounds/deactivated.mp3", 0.5);
 
             if (multiExpActive) {
                 gainExp();
@@ -626,10 +626,10 @@ export async function openBackpack() {
     
             if (doubleSpeed) {
                 localStorage.setItem("doubleSpeed", JSON.stringify(false));
-                playSound("assets/sounds/deactivated.mp3");
+                playSound("assets/sounds/deactivated.mp3", 0.5);
             } else {
                 localStorage.setItem("doubleSpeed", JSON.stringify(true));
-                playSound("assets/sounds/activated.mp3");
+                playSound("assets/sounds/activated.mp3", 0.5);
             }
         });
     }
@@ -818,7 +818,7 @@ async function createItem(item, itemsFinderParam) {
     if (item.name === "masterball" || item.name === "bike voucher") {
         if (!itemsFinderParam) {
             const items = await getItems();
-            itemsFinderParam = items.find(i => i.name === "items finder");
+            itemsFinderParam = items.find(i => i.name === "itemFinder");
         }
 
         if (itemsFinderParam && itemsFinderParam.items) {

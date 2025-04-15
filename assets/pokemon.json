@@ -10,14 +10,7 @@
 			"grass", 
 			" poison "
 		],
-		"base": {
-			"HP": 45,
-			"Attack": 49,
-			"Defense": 49,
-			"Sp. Attack": 65,
-			"Sp. Defense": 65,
-			"Speed": 45
-		}
+		"call": "assets/sounds/pokemon's call/bulbasaur.mp3"
 	},
 	{
 		"id": 2,
@@ -31,7 +24,7 @@
 			"grass",
 			" poison "
 		],
-		"base": {
+		"call": {
 			"HP": 60,
 			"Attack": 62,
 			"Defense": 63,
@@ -52,7 +45,7 @@
 			"grass",
 			" poison "
 		],
-		"base": {
+		"call": {
 			"HP": 80,
 			"Attack": 82,
 			"Defense": 83,
@@ -72,14 +65,7 @@
 		"type": [
 			"fire "
 		],
-		"base": {
-			"HP": 39,
-			"Attack": 52,
-			"Defense": 43,
-			"Sp. Attack": 60,
-			"Sp. Defense": 50,
-			"Speed": 65
-		}
+		"call": "assets/sounds/pokemon's call/charmander.mp3"
 	},
 	{
 		"id": 5,
@@ -92,7 +78,7 @@
 		"type": [
 			"fire "
 		],
-		"base": {
+		"call": {
 			"HP": 58,
 			"Attack": 64,
 			"Defense": 58,
@@ -113,7 +99,7 @@
 			"fire",
 			" flying "
 		],
-		"base": {
+		"call": {
 			"HP": 78,
 			"Attack": 84,
 			"Defense": 78,
@@ -133,14 +119,7 @@
 		"type": [
 			"water "
 		],
-		"base": {
-			"HP": 44,
-			"Attack": 48,
-			"Defense": 65,
-			"Sp. Attack": 50,
-			"Sp. Defense": 64,
-			"Speed": 43
-		}
+		"call": "assets/sounds/pokemon's call/squirtle.mp3"
 	},
 	{
 		"id": 8,
@@ -153,7 +132,7 @@
 		"type": [
 			"water "
 		],
-		"base": {
+		"call": {
 			"HP": 59,
 			"Attack": 63,
 			"Defense": 80,
@@ -173,7 +152,7 @@
 		"type": [
 			"water "
 		],
-		"base": {
+		"call": {
 			"HP": 79,
 			"Attack": 83,
 			"Defense": 100,
@@ -193,7 +172,7 @@
 		"type": [
 			"bug "
 		],
-		"base": {
+		"call": {
 			"HP": 45,
 			"Attack": 30,
 			"Defense": 35,
@@ -213,7 +192,7 @@
 		"type": [
 			"bug "
 		],
-		"base": {
+		"call": {
 			"HP": 50,
 			"Attack": 20,
 			"Defense": 55,
@@ -234,7 +213,7 @@
 			"bug",
 			" flying "
 		],
-		"base": {
+		"call": {
 			"HP": 60,
 			"Attack": 45,
 			"Defense": 50,
@@ -255,7 +234,7 @@
 			"bug",
 			" poison "
 		],
-		"base": {
+		"call": {
 			"HP": 40,
 			"Attack": 35,
 			"Defense": 30,
@@ -276,7 +255,7 @@
 			"bug",
 			" poison "
 		],
-		"base": {
+		"call": {
 			"HP": 45,
 			"Attack": 25,
 			"Defense": 50,
@@ -297,7 +276,7 @@
 			"bug",
 			" poison "
 		],
-		"base": {
+		"call": {
 			"HP": 65,
 			"Attack": 90,
 			"Defense": 40,
@@ -318,7 +297,7 @@
 			"normal",
 			" flying "
 		],
-		"base": {
+		"call": {
 			"HP": 40,
 			"Attack": 45,
 			"Defense": 40,
@@ -339,7 +318,7 @@
 			"normal",
 			" flying "
 		],
-		"base": {
+		"call": {
 			"HP": 63,
 			"Attack": 60,
 			"Defense": 55,
@@ -360,7 +339,7 @@
 			"normal",
 			" flying "
 		],
-		"base": {
+		"call": {
 			"HP": 83,
 			"Attack": 80,
 			"Defense": 75,
@@ -380,7 +359,7 @@
 		"type": [
 			"normal "
 		],
-		"base": {
+		"call": {
 			"HP": 30,
 			"Attack": 56,
 			"Defense": 35,
@@ -400,7 +379,7 @@
 		"type": [
 			"normal "
 		],
-		"base": {
+		"call": {
 			"HP": 55,
 			"Attack": 81,
 			"Defense": 60,
@@ -421,7 +400,7 @@
 			"normal",
 			" flying "
 		],
-		"base": {
+		"call": {
 			"HP": 40,
 			"Attack": 60,
 			"Defense": 30,
@@ -442,7 +421,7 @@
 			"normal",
 			" flying "
 		],
-		"base": {
+		"call": {
 			"HP": 65,
 			"Attack": 90,
 			"Defense": 65,
@@ -462,7 +441,7 @@
 		"type": [
 			"poison "
 		],
-		"base": {
+		"call": {
 			"HP": 35,
 			"Attack": 60,
 			"Defense": 44,
@@ -482,7 +461,7 @@
 		"type": [
 			"poison "
 		],
-		"base": {
+		"call": {
 			"HP": 60,
 			"Attack": 95,
 			"Defense": 69,
@@ -502,7 +481,7 @@
 		"type": [
 			"electric "
 		],
-		"base": {
+		"call": {
 			"HP": 35,
 			"Attack": 55,
 			"Defense": 40,
@@ -522,7 +501,7 @@
 		"type": [
 			"electric "
 		],
-		"base": {
+		"call": {
 			"HP": 60,
 			"Attack": 90,
 			"Defense": 55,
@@ -542,7 +521,7 @@
 		"type": [
 			"ground "
 		],
-		"base": {
+		"call": {
 			"HP": 50,
 			"Attack": 75,
 			"Defense": 85,
@@ -562,7 +541,7 @@
 		"type": [
 			"ground "
 		],
-		"base": {
+		"call": {
 			"HP": 75,
 			"Attack": 100,
 			"Defense": 110,
@@ -582,7 +561,7 @@
 		"type": [
 			"poison "
 		],
-		"base": {
+		"call": {
 			"HP": 55,
 			"Attack": 47,
 			"Defense": 52,
@@ -602,7 +581,7 @@
 		"type": [
 			"poison "
 		],
-		"base": {
+		"call": {
 			"HP": 70,
 			"Attack": 62,
 			"Defense": 67,
@@ -623,7 +602,7 @@
 			"poison",
 			" ground "
 		],
-		"base": {
+		"call": {
 			"HP": 90,
 			"Attack": 92,
 			"Defense": 87,
@@ -643,7 +622,7 @@
 		"type": [
 			"poison "
 		],
-		"base": {
+		"call": {
 			"HP": 46,
 			"Attack": 57,
 			"Defense": 40,
@@ -663,7 +642,7 @@
 		"type": [
 			"poison "
 		],
-		"base": {
+		"call": {
 			"HP": 61,
 			"Attack": 72,
 			"Defense": 57,
@@ -684,7 +663,7 @@
 			"poison",
 			" ground "
 		],
-		"base": {
+		"call": {
 			"HP": 81,
 			"Attack": 102,
 			"Defense": 77,
@@ -704,7 +683,7 @@
 		"type": [
 			"fairy "
 		],
-		"base": {
+		"call": {
 			"HP": 70,
 			"Attack": 45,
 			"Defense": 48,
@@ -724,7 +703,7 @@
 		"type": [
 			"fairy "
 		],
-		"base": {
+		"call": {
 			"HP": 95,
 			"Attack": 70,
 			"Defense": 73,
@@ -744,7 +723,7 @@
 		"type": [
 			"fire "
 		],
-		"base": {
+		"call": {
 			"HP": 38,
 			"Attack": 41,
 			"Defense": 40,
@@ -764,7 +743,7 @@
 		"type": [
 			"fire "
 		],
-		"base": {
+		"call": {
 			"HP": 73,
 			"Attack": 76,
 			"Defense": 75,
@@ -785,7 +764,7 @@
 			"normal",
 			" fairy "
 		],
-		"base": {
+		"call": {
 			"HP": 115,
 			"Attack": 45,
 			"Defense": 20,
@@ -806,7 +785,7 @@
 			"normal",
 			" fairy "
 		],
-		"base": {
+		"call": {
 			"HP": 140,
 			"Attack": 70,
 			"Defense": 45,
@@ -827,7 +806,7 @@
 			"poison",
 			" flying "
 		],
-		"base": {
+		"call": {
 			"HP": 40,
 			"Attack": 45,
 			"Defense": 35,
@@ -848,7 +827,7 @@
 			"poison",
 			" flying "
 		],
-		"base": {
+		"call": {
 			"HP": 75,
 			"Attack": 80,
 			"Defense": 70,
@@ -869,7 +848,7 @@
 			"grass",
 			" poison "
 		],
-		"base": {
+		"call": {
 			"HP": 45,
 			"Attack": 50,
 			"Defense": 55,
@@ -890,7 +869,7 @@
 			"grass",
 			" poison "
 		],
-		"base": {
+		"call": {
 			"HP": 60,
 			"Attack": 65,
 			"Defense": 70,
@@ -911,7 +890,7 @@
 			"grass",
 			" poison "
 		],
-		"base": {
+		"call": {
 			"HP": 75,
 			"Attack": 80,
 			"Defense": 85,
@@ -932,7 +911,7 @@
 			"bug",
 			" grass "
 		],
-		"base": {
+		"call": {
 			"HP": 35,
 			"Attack": 70,
 			"Defense": 55,
@@ -953,7 +932,7 @@
 			"bug",
 			" grass "
 		],
-		"base": {
+		"call": {
 			"HP": 60,
 			"Attack": 95,
 			"Defense": 80,
@@ -974,7 +953,7 @@
 			"bug",
 			" poison "
 		],
-		"base": {
+		"call": {
 			"HP": 60,
 			"Attack": 55,
 			"Defense": 50,
@@ -995,7 +974,7 @@
 			"bug",
 			" poison "
 		],
-		"base": {
+		"call": {
 			"HP": 70,
 			"Attack": 65,
 			"Defense": 60,
@@ -1015,7 +994,7 @@
 		"type": [
 			"ground "
 		],
-		"base": {
+		"call": {
 			"HP": 10,
 			"Attack": 55,
 			"Defense": 25,
@@ -1035,7 +1014,7 @@
 		"type": [
 			"ground "
 		],
-		"base": {
+		"call": {
 			"HP": 35,
 			"Attack": 100,
 			"Defense": 50,
@@ -1055,7 +1034,7 @@
 		"type": [
 			"normal "
 		],
-		"base": {
+		"call": {
 			"HP": 40,
 			"Attack": 45,
 			"Defense": 35,
@@ -1075,7 +1054,7 @@
 		"type": [
 			"normal "
 		],
-		"base": {
+		"call": {
 			"HP": 65,
 			"Attack": 70,
 			"Defense": 60,
@@ -1095,7 +1074,7 @@
 		"type": [
 			"water "
 		],
-		"base": {
+		"call": {
 			"HP": 50,
 			"Attack": 52,
 			"Defense": 48,
@@ -1115,7 +1094,7 @@
 		"type": [
 			"water "
 		],
-		"base": {
+		"call": {
 			"HP": 80,
 			"Attack": 82,
 			"Defense": 78,
@@ -1135,7 +1114,7 @@
 		"type": [
 			"fighting "
 		],
-		"base": {
+		"call": {
 			"HP": 40,
 			"Attack": 80,
 			"Defense": 35,
@@ -1155,7 +1134,7 @@
 		"type": [
 			"fighting "
 		],
-		"base": {
+		"call": {
 			"HP": 65,
 			"Attack": 105,
 			"Defense": 60,
@@ -1175,7 +1154,7 @@
 		"type": [
 			"fire "
 		],
-		"base": {
+		"call": {
 			"HP": 55,
 			"Attack": 70,
 			"Defense": 45,
@@ -1195,7 +1174,7 @@
 		"type": [
 			"fire "
 		],
-		"base": {
+		"call": {
 			"HP": 90,
 			"Attack": 110,
 			"Defense": 80,
@@ -1215,7 +1194,7 @@
 		"type": [
 			"water "
 		],
-		"base": {
+		"call": {
 			"HP": 40,
 			"Attack": 50,
 			"Defense": 40,
@@ -1235,7 +1214,7 @@
 		"type": [
 			"water "
 		],
-		"base": {
+		"call": {
 			"HP": 65,
 			"Attack": 65,
 			"Defense": 65,
@@ -1256,7 +1235,7 @@
 			"water",
 			" fighting "
 		],
-		"base": {
+		"call": {
 			"HP": 90,
 			"Attack": 95,
 			"Defense": 95,
@@ -1276,7 +1255,7 @@
 		"type": [
 			"psychic "
 		],
-		"base": {
+		"call": {
 			"HP": 25,
 			"Attack": 20,
 			"Defense": 15,
@@ -1296,7 +1275,7 @@
 		"type": [
 			"psychic "
 		],
-		"base": {
+		"call": {
 			"HP": 40,
 			"Attack": 35,
 			"Defense": 30,
@@ -1316,7 +1295,7 @@
 		"type": [
 			"psychic "
 		],
-		"base": {
+		"call": {
 			"HP": 55,
 			"Attack": 50,
 			"Defense": 45,
@@ -1336,7 +1315,7 @@
 		"type": [
 			"fighting "
 		],
-		"base": {
+		"call": {
 			"HP": 70,
 			"Attack": 80,
 			"Defense": 50,
@@ -1356,7 +1335,7 @@
 		"type": [
 			"fighting "
 		],
-		"base": {
+		"call": {
 			"HP": 80,
 			"Attack": 100,
 			"Defense": 70,
@@ -1376,7 +1355,7 @@
 		"type": [
 			"fighting "
 		],
-		"base": {
+		"call": {
 			"HP": 90,
 			"Attack": 130,
 			"Defense": 80,
@@ -1397,7 +1376,7 @@
 			"grass",
 			" poison "
 		],
-		"base": {
+		"call": {
 			"HP": 50,
 			"Attack": 75,
 			"Defense": 35,
@@ -1418,7 +1397,7 @@
 			"grass",
 			" poison "
 		],
-		"base": {
+		"call": {
 			"HP": 65,
 			"Attack": 90,
 			"Defense": 50,
@@ -1439,7 +1418,7 @@
 			"grass",
 			" poison "
 		],
-		"base": {
+		"call": {
 			"HP": 80,
 			"Attack": 105,
 			"Defense": 65,
@@ -1460,7 +1439,7 @@
 			"water",
 			" poison "
 		],
-		"base": {
+		"call": {
 			"HP": 40,
 			"Attack": 40,
 			"Defense": 35,
@@ -1481,7 +1460,7 @@
 			"water",
 			" poison "
 		],
-		"base": {
+		"call": {
 			"HP": 80,
 			"Attack": 70,
 			"Defense": 65,
@@ -1502,7 +1481,7 @@
 			"rock",
 			" ground "
 		],
-		"base": {
+		"call": {
 			"HP": 40,
 			"Attack": 80,
 			"Defense": 100,
@@ -1523,7 +1502,7 @@
 			"rock",
 			" ground "
 		],
-		"base": {
+		"call": {
 			"HP": 55,
 			"Attack": 95,
 			"Defense": 115,
@@ -1544,7 +1523,7 @@
 			"rock",
 			" ground "
 		],
-		"base": {
+		"call": {
 			"HP": 80,
 			"Attack": 120,
 			"Defense": 130,
@@ -1564,7 +1543,7 @@
 		"type": [
 			"fire "
 		],
-		"base": {
+		"call": {
 			"HP": 50,
 			"Attack": 85,
 			"Defense": 55,
@@ -1584,7 +1563,7 @@
 		"type": [
 			"fire "
 		],
-		"base": {
+		"call": {
 			"HP": 65,
 			"Attack": 100,
 			"Defense": 70,
@@ -1605,7 +1584,7 @@
 			"water",
 			" psychic "
 		],
-		"base": {
+		"call": {
 			"HP": 90,
 			"Attack": 65,
 			"Defense": 65,
@@ -1626,7 +1605,7 @@
 			"water",
 			" psychic "
 		],
-		"base": {
+		"call": {
 			"HP": 95,
 			"Attack": 75,
 			"Defense": 110,
@@ -1647,7 +1626,7 @@
 			"electric",
 			" steel "
 		],
-		"base": {
+		"call": {
 			"HP": 25,
 			"Attack": 35,
 			"Defense": 70,
@@ -1668,7 +1647,7 @@
 			"electric",
 			" steel "
 		],
-		"base": {
+		"call": {
 			"HP": 50,
 			"Attack": 60,
 			"Defense": 95,
@@ -1689,7 +1668,7 @@
 			"normal",
 			" flying "
 		],
-		"base": {
+		"call": {
 			"HP": 52,
 			"Attack": 90,
 			"Defense": 55,
@@ -1710,7 +1689,7 @@
 			"normal",
 			" flying "
 		],
-		"base": {
+		"call": {
 			"HP": 35,
 			"Attack": 85,
 			"Defense": 45,
@@ -1731,7 +1710,7 @@
 			"normal",
 			" flying "
 		],
-		"base": {
+		"call": {
 			"HP": 60,
 			"Attack": 110,
 			"Defense": 70,
@@ -1751,7 +1730,7 @@
 		"type": [
 			"water "
 			],
-		"base": {
+		"call": {
 			"HP": 65,
 			"Attack": 45,
 			"Defense": 55,
@@ -1771,7 +1750,7 @@
 		"type": [
 			"water", " ice "
 			],
-		"base": {
+		"call": {
 			"HP": 90,
 			"Attack": 70,
 			"Defense": 80,
@@ -1791,7 +1770,7 @@
 		"type": [
 			"poison "
 			],
-		"base": {
+		"call": {
 			"HP": 80,
 			"Attack": 80,
 			"Defense": 50,
@@ -1811,7 +1790,7 @@
 		"type": [
 			"poison "
 			],
-		"base": {
+		"call": {
 			"HP": 105,
 			"Attack": 105,
 			"Defense": 75,
@@ -1831,7 +1810,7 @@
 		"type": [
 			"water "
 			],
-		"base": {
+		"call": {
 			"HP": 30,
 			"Attack": 65,
 			"Defense": 100,
@@ -1851,7 +1830,7 @@
 		"type": [
 			"water", " ice "
 			],
-		"base": {
+		"call": {
 			"HP": 50,
 			"Attack": 95,
 			"Defense": 180,
@@ -1871,7 +1850,7 @@
 		"type": [
 			"ghost", " poison "
 			],
-		"base": {
+		"call": {
 			"HP": 30,
 			"Attack": 35,
 			"Defense": 30,
@@ -1891,7 +1870,7 @@
 		"type": [
 			"ghost", " poison "
 			],
-		"base": {
+		"call": {
 			"HP": 45,
 			"Attack": 50,
 			"Defense": 45,
@@ -1911,7 +1890,7 @@
 		"type": [
 			"ghost", " poison "
 			],
-		"base": {
+		"call": {
 			"HP": 60,
 			"Attack": 65,
 			"Defense": 60,
@@ -1931,7 +1910,7 @@
 		"type": [
 			"rock", " ground "
 			],
-		"base": {
+		"call": {
 			"HP": 35,
 			"Attack": 45,
 			"Defense": 160,
@@ -1951,7 +1930,7 @@
 		"type": [
 			"psychic "
 		],
-		"base": {
+		"call": {
 			"HP": 60,
 			"Attack": 48,
 			"Defense": 45,
@@ -1971,7 +1950,7 @@
 		"type": [
 			"psychic "
 		],
-		"base": {
+		"call": {
 			"HP": 85,
 			"Attack": 73,
 			"Defense": 70,
@@ -1991,7 +1970,7 @@
 		"type": [
 			"water "
 		],
-		"base": {
+		"call": {
 			"HP": 30,
 			"Attack": 105,
 			"Defense": 90,
@@ -2011,7 +1990,7 @@
 		"type": [
 			"water "
 		],
-		"base": {
+		"call": {
 			"HP": 55,
 			"Attack": 130,
 			"Defense": 115,
@@ -2031,7 +2010,7 @@
 		"type": [
 			"electric "
 			],
-		"base": {
+		"call": {
 			"HP": 40,
 			"Attack": 30,
 			"Defense": 50,
@@ -2051,7 +2030,7 @@
 		"type": [
 			"electric "
 			],
-		"base": {
+		"call": {
 			"HP": 60,
 			"Attack": 50,
 			"Defense": 70,
@@ -2071,7 +2050,7 @@
 		"type": [
 			"grass", " psychic "
 			],
-		"base": {
+		"call": {
 			"HP": 60,
 			"Attack": 40,
 			"Defense": 80,
@@ -2091,7 +2070,7 @@
 		"type": [
 			"grass", " psychic "
 			],
-		"base": {
+		"call": {
 			"HP": 95,
 			"Attack": 95,
 			"Defense": 85,
@@ -2111,7 +2090,7 @@
 		"type": [
 			"ground "
 			],
-		"base": {
+		"call": {
 			"HP": 50,
 			"Attack": 50,
 			"Defense": 95,
@@ -2131,7 +2110,7 @@
 		"type": [
 			"ground "
 			],
-		"base": {
+		"call": {
 			"HP": 60,
 			"Attack": 80,
 			"Defense": 110,
@@ -2151,7 +2130,7 @@
 		"type": [
 			"fighting "
 			],
-		"base": {
+		"call": {
 			"HP": 50,
 			"Attack": 120,
 			"Defense": 53,
@@ -2171,7 +2150,7 @@
 		"type": [
 			"fighting "
 			],
-		"base": {
+		"call": {
 			"HP": 50,
 			"Attack": 105,
 			"Defense": 79,
@@ -2191,7 +2170,7 @@
 		"type": [
 			"normal "
 			],
-		"base": {
+		"call": {
 			"HP": 90,
 			"Attack": 55,
 			"Defense": 75,
@@ -2211,7 +2190,7 @@
 		"type": [
 			"poison "
 			],
-		"base": {
+		"call": {
 			"HP": 40,
 			"Attack": 65,
 			"Defense": 95,
@@ -2231,7 +2210,7 @@
 		"type": [
 			"poison "
 			],
-		"base": {
+		"call": {
 			"HP": 65,
 			"Attack": 90,
 			"Defense": 120,
@@ -2251,7 +2230,7 @@
 		"type": [
 			"ground", " rock "
 			],
-		"base": {
+		"call": {
 			"HP": 80,
 			"Attack": 85,
 			"Defense": 95,
@@ -2271,7 +2250,7 @@
 		"type": [
 			"ground", " rock "
 			],
-		"base": {
+		"call": {
 			"HP": 105,
 			"Attack": 130,
 			"Defense": 120,
@@ -2291,7 +2270,7 @@
 		"type": [
 			"normal "
 			],
-		"base": {
+		"call": {
 			"HP": 250,
 			"Attack": 5,
 			"Defense": 5,
@@ -2311,7 +2290,7 @@
 		"type": [
 			"grass "
 			],
-		"base": {
+		"call": {
 			"HP": 65,
 			"Attack": 55,
 			"Defense": 115,
@@ -2331,7 +2310,7 @@
 		"type": [
 			"normal "
 			],
-		"base": {
+		"call": {
 			"HP": 105,
 			"Attack": 95,
 			"Defense": 80,
@@ -2351,7 +2330,7 @@
 		"type": [
 			"water "
 		],
-		"base": {
+		"call": {
 			"HP": 30,
 			"Attack": 40,
 			"Defense": 70,
@@ -2371,7 +2350,7 @@
 		"type": [
 			"water "
 		],
-		"base": {
+		"call": {
 			"HP": 55,
 			"Attack": 65,
 			"Defense": 95,
@@ -2391,7 +2370,7 @@
 		"type": [
 			"water "
 		],
-		"base": {
+		"call": {
 			"HP": 45,
 			"Attack": 67,
 			"Defense": 60,
@@ -2411,7 +2390,7 @@
 		"type": [
 			"water "
 		],
-		"base": {
+		"call": {
 			"HP": 80,
 			"Attack": 92,
 			"Defense": 65,
@@ -2431,7 +2410,7 @@
 		"type": [
 			"water "
 		],
-		"base": {
+		"call": {
 			"HP": 30,
 			"Attack": 45,
 			"Defense": 35,
@@ -2452,7 +2431,7 @@
 			"water",
 			" psychic "
 		],
-		"base": {
+		"call": {
 			"HP": 60,
 			"Attack": 75,
 			"Defense": 85,
@@ -2473,7 +2452,7 @@
 			"psychic",
 			" fairy "
 		],
-		"base": {
+		"call": {
 			"HP": 40,
 			"Attack": 45,
 			"Defense": 65,
@@ -2494,7 +2473,7 @@
 			"bug",
 			" flying "
 		],
-		"base": {
+		"call": {
 			"HP": 70,
 			"Attack": 110,
 			"Defense": 80,
@@ -2515,7 +2494,7 @@
 			"ice",
 			" psychic "
 		],
-		"base": {
+		"call": {
 			"HP": 65,
 			"Attack": 50,
 			"Defense": 35,
@@ -2535,7 +2514,7 @@
 		"type": [
 			"electric "
 		],
-		"base": {
+		"call": {
 			"HP": 65,
 			"Attack": 83,
 			"Defense": 57,
@@ -2555,7 +2534,7 @@
 		"type": [
 			"fire "
 		],
-		"base": {
+		"call": {
 			"HP": 65,
 			"Attack": 95,
 			"Defense": 57,
@@ -2575,7 +2554,7 @@
 		"type": [
 			"bug "
 		],
-		"base": {
+		"call": {
 			"HP": 65,
 			"Attack": 125,
 			"Defense": 100,
@@ -2595,7 +2574,7 @@
 		"type": [
 			"normal "
 		],
-		"base": {
+		"call": {
 			"HP": 75,
 			"Attack": 100,
 			"Defense": 95,
@@ -2615,7 +2594,7 @@
 		"type": [
 			"water "
 		],
-		"base": {
+		"call": {
 			"HP": 20,
 			"Attack": 10,
 			"Defense": 55,
@@ -2636,7 +2615,7 @@
 			"water",
 			" flying "
 		],
-		"base": {
+		"call": {
 			"HP": 95,
 			"Attack": 125,
 			"Defense": 79,
@@ -2657,7 +2636,7 @@
 			"water",
 			" ice "
 		],
-		"base": {
+		"call": {
 			"HP": 130,
 			"Attack": 85,
 			"Defense": 80,
@@ -2677,7 +2656,7 @@
 		"type": [
 			"normal "
 		],
-		"base": {
+		"call": {
 			"HP": 48,
 			"Attack": 48,
 			"Defense": 48,
@@ -2697,7 +2676,7 @@
 		"type": [
 			"normal "
 		],
-		"base": {
+		"call": {
 			"HP": 55,
 			"Attack": 55,
 			"Defense": 50,
@@ -2717,7 +2696,7 @@
 		"type": [
 			"water "
 		],
-		"base": {
+		"call": {
 			"HP": 130,
 			"Attack": 65,
 			"Defense": 60,
@@ -2737,7 +2716,7 @@
 		"type": [
 			"electric "
 		],
-		"base": {
+		"call": {
 			"HP": 65,
 			"Attack": 65,
 			"Defense": 60,
@@ -2757,7 +2736,7 @@
 		"type": [
 			"fire "
 		],
-		"base": {
+		"call": {
 			"HP": 65,
 			"Attack": 130,
 			"Defense": 60,
@@ -2777,7 +2756,7 @@
 		"type": [
 			"normal "
 		],
-		"base": {
+		"call": {
 			"HP": 65,
 			"Attack": 60,
 			"Defense": 70,
@@ -2798,7 +2777,7 @@
 			"rock",
 			" water "
 		],
-		"base": {
+		"call": {
 			"HP": 35,
 			"Attack": 40,
 			"Defense": 100,
@@ -2819,7 +2798,7 @@
 			"rock",
 			" water "
 		],
-		"base": {
+		"call": {
 			"HP": 70,
 			"Attack": 60,
 			"Defense": 125,
@@ -2840,7 +2819,7 @@
 			"rock",
 			" water "
 		],
-		"base": {
+		"call": {
 			"HP": 30,
 			"Attack": 80,
 			"Defense": 90,
@@ -2861,7 +2840,7 @@
 			"rock",
 			" water "
 		],
-		"base": {
+		"call": {
 			"HP": 60,
 			"Attack": 115,
 			"Defense": 105,
@@ -2882,7 +2861,7 @@
 			"rock",
 			" flying "
 		],
-		"base": {
+		"call": {
 			"HP": 80,
 			"Attack": 105,
 			"Defense": 65,
@@ -2902,7 +2881,7 @@
 		"type": [
 			"normal "
 		],
-		"base": {
+		"call": {
 			"HP": 160,
 			"Attack": 110,
 			"Defense": 65,
@@ -2923,7 +2902,7 @@
 			"ice",
 			" flying "
 		],
-		"base": {
+		"call": {
 			"HP": 90,
 			"Attack": 85,
 			"Defense": 100,
@@ -2944,7 +2923,7 @@
 			"electric",
 			" flying "
 		],
-		"base": {
+		"call": {
 			"HP": 90,
 			"Attack": 90,
 			"Defense": 85,
@@ -2965,7 +2944,7 @@
 			"fire",
 			" flying "
 		],
-		"base": {
+		"call": {
 			"HP": 90,
 			"Attack": 100,
 			"Defense": 90,
@@ -2985,7 +2964,7 @@
 		"type": [
 			"dragon "
 		],
-		"base": {
+		"call": {
 			"HP": 41,
 			"Attack": 64,
 			"Defense": 45,
@@ -3005,7 +2984,7 @@
 		"type": [
 			"dragon "
 		],
-		"base": {
+		"call": {
 			"HP": 61,
 			"Attack": 84,
 			"Defense": 65,
@@ -3026,7 +3005,7 @@
 			"dragon",
 			" flying "
 		],
-		"base": {
+		"call": {
 			"HP": 91,
 			"Attack": 134,
 			"Defense": 95,
@@ -3046,7 +3025,7 @@
 		"type": [
 			"psychic "
 		],
-		"base": {
+		"call": {
 			"HP": 106,
 			"Attack": 110,
 			"Defense": 90,
@@ -3066,7 +3045,7 @@
 		"type": [
 			"psychic "
 		],
-		"base": {
+		"call": {
 			"HP": 100,
 			"Attack": 100,
 			"Defense": 100,
