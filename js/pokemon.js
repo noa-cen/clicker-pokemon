@@ -159,6 +159,11 @@ export function evolutionPokemon() {
         const leafStoneEvolution = [44, 70, 102];
         const waterStoneEvolution = [61, 90, 120];
         const eeveeId = 133;
+        const noEvolution = [3, 6, 9, 12, 15, 18, 20, 22, 24, 26, 28, 31, 34, 36, 38, 40, 42, 45, 
+            47, 49, 51, 53, 55, 57, 59, 62, 65, 68, 71, 73, 76, 78, 80, 82, 85, 87, 89, 91, 94, 95, 
+            97, 99, 101, 103, 105, 106, 107, 108, 110, 112, 113, 114, 115, 117, 119, 121, 122, 123, 
+            124, 125, 126, 127, 128, 130, 131, 132, 134, 135, 136, 137, 139, 141, 142, 143, 144, 145, 
+            146, 149, 150, 151];
 
         if (levelEvolution.includes(currentPokemonId)) {
             evolution();
@@ -175,9 +180,7 @@ export function evolutionPokemon() {
         } else if (currentPokemonId === eeveeId) {
             evolutionEevee();
             pokedollars += JSON.parse(localStorage.getItem("doubleSpeed")) ? 5000 : 2500;
-        }
-        
-        if (expNivel === 100) {
+        } else if (noEvolution.includes(currentPokemonId) && expNivel === 100) {
             playSound("assets/sounds/levelUp.mp3");
                 pokedollars += JSON.parse(localStorage.getItem("doubleSpeed")) ? 2000 : 1000;
         }
