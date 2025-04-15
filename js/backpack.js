@@ -1,5 +1,5 @@
 import { getItems } from './shop.js';
-import { animatePokedollar, updateExpBar } from './game.js';
+import { animatePokedollar, updateExpBar, finishGame } from './game.js';
 import { getPokemon, createPokemonElement, evolutionPokemon } from './pokemon.js';
 import { playSound, playSoundThen } from './music.js';
 
@@ -109,8 +109,12 @@ export function pauseIntervals() {
 }
 
 export function resumeIntervals() {
-    findItems();
-    gainExp();
+    const backpack = JSON.parse(localStorage.getItem("backpack")) || {};
+    if (backpack["itemFinder"]) {
+        findItems();
+    } else if (backpack["multi-exp"]) {
+        gainExp();
+    }
 }
 
 function rareCandy() {
@@ -484,6 +488,9 @@ function animatedCapture(ball, battle) {
                 playSound("assets/sounds/pokemon-capture.mp3");
 
                 setTimeout(() => {
+                    if (pokemonCapturedId === 151) {
+                        finishGame();
+                    }
                     resumeIntervals();
                     blackOverlayPokeflute.remove();
                     wildPokemonContainer.remove();

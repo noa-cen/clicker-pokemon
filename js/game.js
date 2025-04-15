@@ -403,5 +403,26 @@ export function play(pokemonElement) {
     pokemonPlay(pokemonElement, counter, expPoke);
 }
 
+export function finishGame() {
+    const background = document.createElement("section");
+    background.classList.add("modal-overlay");
+
+    const video = document.createElement("video");
+    video.classList.add("video");
+    video.alt = "video of opening theme Pokémon";
+
+    video.src = "assets/images/Pokémon_OpeningTheme.mp4";
+    video.controls = true;
+    video.autoplay = true;
+
+    background.appendChild(video);
+    gameContainer.appendChild(background);
+
+    setTimeout(() => {
+        background.remove();
+        video.remove();
+    }, 61000);
+}
+
 startGame();
 playMusic();

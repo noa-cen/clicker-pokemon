@@ -502,6 +502,13 @@ h1 {
     transition: 0.3s ease-in-out; 
 }
 
+.video {
+    position: relative;
+    height: auto;
+    width: 100vw;
+    z-index: 1000;
+}
+
 @media (min-width: 425px) {
     .bottom {
         justify-content: center;
