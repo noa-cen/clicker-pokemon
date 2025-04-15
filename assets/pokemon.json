@@ -9,8 +9,7 @@
 		"type": [
 			"grass", 
 			" poison "
-		],
-		"call": "assets/sounds/pokemon's call/bulbasaur.mp3"
+		]
 	},
 	{
 		"id": 2,
@@ -23,15 +22,7 @@
 		"type": [
 			"grass",
 			" poison "
-		],
-		"call": {
-			"HP": 60,
-			"Attack": 62,
-			"Defense": 63,
-			"Sp. Attack": 80,
-			"Sp. Defense": 80,
-			"Speed": 60
-		}
+		]
 	},
 	{
 		"id": 3,
@@ -44,15 +35,7 @@
 		"type": [
 			"grass",
 			" poison "
-		],
-		"call": {
-			"HP": 80,
-			"Attack": 82,
-			"Defense": 83,
-			"Sp. Attack": 100,
-			"Sp. Defense": 100,
-			"Speed": 80
-		}
+		]
 	},
 	{
 		"id": 4,
@@ -64,8 +47,7 @@
 		"image": "assets/images/pokemon/4.png",
 		"type": [
 			"fire "
-		],
-		"call": "assets/sounds/pokemon's call/charmander.mp3"
+		]
 	},
 	{
 		"id": 5,
@@ -98,15 +80,7 @@
 		"type": [
 			"fire",
 			" flying "
-		],
-		"call": {
-			"HP": 78,
-			"Attack": 84,
-			"Defense": 78,
-			"Sp. Attack": 109,
-			"Sp. Defense": 85,
-			"Speed": 100
-		}
+		]
 	},
 	{
 		"id": 7,
@@ -118,8 +92,7 @@
 		"image": "assets/images/pokemon/7.png",
 		"type": [
 			"water "
-		],
-		"call": "assets/sounds/pokemon's call/squirtle.mp3"
+		]
 	},
 	{
 		"id": 8,
@@ -131,15 +104,7 @@
 		"image": "assets/images/pokemon/8.png",
 		"type": [
 			"water "
-		],
-		"call": {
-			"HP": 59,
-			"Attack": 63,
-			"Defense": 80,
-			"Sp. Attack": 65,
-			"Sp. Defense": 80,
-			"Speed": 58
-		}
+		]
 	},
 	{
 		"id": 9,
@@ -151,15 +116,7 @@
 		"image": "assets/images/pokemon/9.png",
 		"type": [
 			"water "
-		],
-		"call": {
-			"HP": 79,
-			"Attack": 83,
-			"Defense": 100,
-			"Sp. Attack": 85,
-			"Sp. Defense": 105,
-			"Speed": 78
-		}
+		]
 	},
 	{
 		"id": 10,
@@ -171,15 +128,7 @@
 		"image": "assets/images/pokemon/10.png",
 		"type": [
 			"bug "
-		],
-		"call": {
-			"HP": 45,
-			"Attack": 30,
-			"Defense": 35,
-			"Sp. Attack": 20,
-			"Sp. Defense": 20,
-			"Speed": 45
-		}
+		]
 	},
 	{
 		"id": 11,
@@ -191,15 +140,7 @@
 		"image": "assets/images/pokemon/11.png",
 		"type": [
 			"bug "
-		],
-		"call": {
-			"HP": 50,
-			"Attack": 20,
-			"Defense": 55,
-			"Sp. Attack": 25,
-			"Sp. Defense": 25,
-			"Speed": 30
-		}
+		]
 	},
 	{
 		"id": 12,
@@ -212,15 +153,7 @@
 		"type": [
 			"bug",
 			" flying "
-		],
-		"call": {
-			"HP": 60,
-			"Attack": 45,
-			"Defense": 50,
-			"Sp. Attack": 90,
-			"Sp. Defense": 80,
-			"Speed": 70
-		}
+		]
 	},
 	{
 		"id": 13,
@@ -233,15 +166,7 @@
 		"type": [
 			"bug",
 			" poison "
-		],
-		"call": {
-			"HP": 40,
-			"Attack": 35,
-			"Defense": 30,
-			"Sp. Attack": 20,
-			"Sp. Defense": 20,
-			"Speed": 50
-		}
+		]
 	},
 	{
 		"id": 14,
@@ -254,15 +179,7 @@
 		"type": [
 			"bug",
 			" poison "
-		],
-		"call": {
-			"HP": 45,
-			"Attack": 25,
-			"Defense": 50,
-			"Sp. Attack": 25,
-			"Sp. Defense": 25,
-			"Speed": 35
-		}
+		]
 	},
 	{
 		"id": 15,
@@ -275,15 +192,7 @@
 		"type": [
 			"bug",
 			" poison "
-		],
-		"call": {
-			"HP": 65,
-			"Attack": 90,
-			"Defense": 40,
-			"Sp. Attack": 45,
-			"Sp. Defense": 80,
-			"Speed": 75
-		}
+		]
 		},
 		{
 		"id": 16,
@@ -296,15 +205,7 @@
 		"type": [
 			"normal",
 			" flying "
-		],
-		"call": {
-			"HP": 40,
-			"Attack": 45,
-			"Defense": 40,
-			"Sp. Attack": 35,
-			"Sp. Defense": 35,
-			"Speed": 56
-		}
+		]
 		},
 		{
 		"id": 17,
@@ -317,15 +218,7 @@
 		"type": [
 			"normal",
 			" flying "
-		],
-		"call": {
-			"HP": 63,
-			"Attack": 60,
-			"Defense": 55,
-			"Sp. Attack": 50,
-			"Sp. Defense": 50,
-			"Speed": 71
-		}
+		]
 		},
 		{
 		"id": 18,
@@ -338,15 +231,7 @@
 		"type": [
 			"normal",
 			" flying "
-		],
-		"call": {
-			"HP": 83,
-			"Attack": 80,
-			"Defense": 75,
-			"Sp. Attack": 70,
-			"Sp. Defense": 70,
-			"Speed": 101
-		}
+		]
 		},
 		{
 		"id": 19,
@@ -358,15 +243,7 @@
 		"image": "assets/images/pokemon/19.png",
 		"type": [
 			"normal "
-		],
-		"call": {
-			"HP": 30,
-			"Attack": 56,
-			"Defense": 35,
-			"Sp. Attack": 25,
-			"Sp. Defense": 35,
-			"Speed": 72
-		}
+		]
 		},
 		{
 		"id": 20,
@@ -378,15 +255,7 @@
 		"image": "assets/images/pokemon/20.png",
 		"type": [
 			"normal "
-		],
-		"call": {
-			"HP": 55,
-			"Attack": 81,
-			"Defense": 60,
-			"Sp. Attack": 50,
-			"Sp. Defense": 70,
-			"Speed": 97
-		}
+		]
 		},
 		{
 		"id": 21,
@@ -399,15 +268,7 @@
 		"type": [
 			"normal",
 			" flying "
-		],
-		"call": {
-			"HP": 40,
-			"Attack": 60,
-			"Defense": 30,
-			"Sp. Attack": 31,
-			"Sp. Defense": 31,
-			"Speed": 70
-		}
+		]
 		},
 		{
 		"id": 22,
@@ -420,15 +281,7 @@
 		"type": [
 			"normal",
 			" flying "
-		],
-		"call": {
-			"HP": 65,
-			"Attack": 90,
-			"Defense": 65,
-			"Sp. Attack": 61,
-			"Sp. Defense": 61,
-			"Speed": 100
-		}
+		]
 		},
 		{
 		"id": 23,
@@ -440,15 +293,7 @@
 		"image": "assets/images/pokemon/23.png",
 		"type": [
 			"poison "
-		],
-		"call": {
-			"HP": 35,
-			"Attack": 60,
-			"Defense": 44,
-			"Sp. Attack": 40,
-			"Sp. Defense": 54,
-			"Speed": 55
-		}
+		]
 		},
 		{
 		"id": 24,
@@ -460,15 +305,7 @@
 		"image": "assets/images/pokemon/24.png",
 		"type": [
 			"poison "
-		],
-		"call": {
-			"HP": 60,
-			"Attack": 95,
-			"Defense": 69,
-			"Sp. Attack": 65,
-			"Sp. Defense": 79,
-			"Speed": 80
-		}
+		]
 	},
 	{
 		"id": 25,
@@ -480,15 +317,7 @@
 		"image": "assets/images/pokemon/25.png",
 		"type": [
 			"electric "
-		],
-		"call": {
-			"HP": 35,
-			"Attack": 55,
-			"Defense": 40,
-			"Sp. Attack": 50,
-			"Sp. Defense": 50,
-			"Speed": 90
-		}
+		]
 	},
 	{
 		"id": 26,
@@ -500,15 +329,7 @@
 		"image": "assets/images/pokemon/26.png",
 		"type": [
 			"electric "
-		],
-		"call": {
-			"HP": 60,
-			"Attack": 90,
-			"Defense": 55,
-			"Sp. Attack": 90,
-			"Sp. Defense": 80,
-			"Speed": 110
-		}
+		]
 	},
 	{
 		"id": 27,
@@ -520,15 +341,7 @@
 		"image": "assets/images/pokemon/27.png",
 		"type": [
 			"ground "
-		],
-		"call": {
-			"HP": 50,
-			"Attack": 75,
-			"Defense": 85,
-			"Sp. Attack": 20,
-			"Sp. Defense": 30,
-			"Speed": 40
-		}
+		]
 	},
 	{
 		"id": 28,
@@ -540,15 +353,7 @@
 		"image": "assets/images/pokemon/28.png",
 		"type": [
 			"ground "
-		],
-		"call": {
-			"HP": 75,
-			"Attack": 100,
-			"Defense": 110,
-			"Sp. Attack": 45,
-			"Sp. Defense": 55,
-			"Speed": 65
-		}
+		]
 	},
 	{
 		"id": 29,
@@ -560,15 +365,7 @@
 		"image": "assets/images/pokemon/29.png",
 		"type": [
 			"poison "
-		],
-		"call": {
-			"HP": 55,
-			"Attack": 47,
-			"Defense": 52,
-			"Sp. Attack": 40,
-			"Sp. Defense": 40,
-			"Speed": 41
-		}
+		]
 	},
 	{
 		"id": 30,
@@ -580,15 +377,7 @@
 		"image": "assets/images/pokemon/30.png",
 		"type": [
 			"poison "
-		],
-		"call": {
-			"HP": 70,
-			"Attack": 62,
-			"Defense": 67,
-			"Sp. Attack": 55,
-			"Sp. Defense": 55,
-			"Speed": 56
-		}
+		]
 	},
 	{
 		"id": 31,
@@ -601,15 +390,7 @@
 		"type": [
 			"poison",
 			" ground "
-		],
-		"call": {
-			"HP": 90,
-			"Attack": 92,
-			"Defense": 87,
-			"Sp. Attack": 75,
-			"Sp. Defense": 85,
-			"Speed": 76
-		}
+		]
 	},
 	{
 		"id": 32,
@@ -621,15 +402,7 @@
 		"image": "assets/images/pokemon/32.png",
 		"type": [
 			"poison "
-		],
-		"call": {
-			"HP": 46,
-			"Attack": 57,
-			"Defense": 40,
-			"Sp. Attack": 40,
-			"Sp. Defense": 40,
-			"Speed": 50
-		}
+		]
 	},
 	{
 		"id": 33,
@@ -641,15 +414,7 @@
 		"image": "assets/images/pokemon/33.png",
 		"type": [
 			"poison "
-		],
-		"call": {
-			"HP": 61,
-			"Attack": 72,
-			"Defense": 57,
-			"Sp. Attack": 55,
-			"Sp. Defense": 55,
-			"Speed": 65
-		}
+		]
 	},
 	{
 		"id": 34,
@@ -662,15 +427,7 @@
 		"type": [
 			"poison",
 			" ground "
-		],
-		"call": {
-			"HP": 81,
-			"Attack": 102,
-			"Defense": 77,
-			"Sp. Attack": 85,
-			"Sp. Defense": 75,
-			"Speed": 85
-		}
+		]
 	},
 	{
 		"id": 35,
@@ -682,15 +439,7 @@
 		"image": "assets/images/pokemon/35.png",
 		"type": [
 			"fairy "
-		],
-		"call": {
-			"HP": 70,
-			"Attack": 45,
-			"Defense": 48,
-			"Sp. Attack": 60,
-			"Sp. Defense": 65,
-			"Speed": 35
-		}
+		]
 	},
 	{
 		"id": 36,
@@ -702,15 +451,7 @@
 		"image": "assets/images/pokemon/36.png",
 		"type": [
 			"fairy "
-		],
-		"call": {
-			"HP": 95,
-			"Attack": 70,
-			"Defense": 73,
-			"Sp. Attack": 95,
-			"Sp. Defense": 90,
-			"Speed": 60
-		}
+		]
 	},
 	{
 		"id": 37,
@@ -722,15 +463,7 @@
 		"image": "assets/images/pokemon/37.png",
 		"type": [
 			"fire "
-		],
-		"call": {
-			"HP": 38,
-			"Attack": 41,
-			"Defense": 40,
-			"Sp. Attack": 50,
-			"Sp. Defense": 65,
-			"Speed": 65
-		}
+		]
 	},
 	{
 		"id": 38,
@@ -742,15 +475,7 @@
 		"image": "assets/images/pokemon/38.png",
 		"type": [
 			"fire "
-		],
-		"call": {
-			"HP": 73,
-			"Attack": 76,
-			"Defense": 75,
-			"Sp. Attack": 81,
-			"Sp. Defense": 100,
-			"Speed": 100
-		}
+		]
 	},
 	{
 		"id": 39,
@@ -763,15 +488,7 @@
 		"type": [
 			"normal",
 			" fairy "
-		],
-		"call": {
-			"HP": 115,
-			"Attack": 45,
-			"Defense": 20,
-			"Sp. Attack": 45,
-			"Sp. Defense": 25,
-			"Speed": 20
-		}
+		]
 	},
 	{
 		"id": 40,
@@ -784,15 +501,7 @@
 		"type": [
 			"normal",
 			" fairy "
-		],
-		"call": {
-			"HP": 140,
-			"Attack": 70,
-			"Defense": 45,
-			"Sp. Attack": 85,
-			"Sp. Defense": 50,
-			"Speed": 45
-		}
+		]
 	},
 	{
 		"id": 41,
@@ -805,15 +514,7 @@
 		"type": [
 			"poison",
 			" flying "
-		],
-		"call": {
-			"HP": 40,
-			"Attack": 45,
-			"Defense": 35,
-			"Sp. Attack": 30,
-			"Sp. Defense": 40,
-			"Speed": 55
-		}
+		]
 	},
 	{
 		"id": 42,
@@ -826,15 +527,7 @@
 		"type": [
 			"poison",
 			" flying "
-		],
-		"call": {
-			"HP": 75,
-			"Attack": 80,
-			"Defense": 70,
-			"Sp. Attack": 65,
-			"Sp. Defense": 75,
-			"Speed": 90
-		}
+		]
 	},
 	{
 		"id": 43,
@@ -847,15 +540,7 @@
 		"type": [
 			"grass",
 			" poison "
-		],
-		"call": {
-			"HP": 45,
-			"Attack": 50,
-			"Defense": 55,
-			"Sp. Attack": 75,
-			"Sp. Defense": 65,
-			"Speed": 30
-		}
+		]
 	},
 	{
 		"id": 44,
@@ -868,15 +553,7 @@
 		"type": [
 			"grass",
 			" poison "
-		],
-		"call": {
-			"HP": 60,
-			"Attack": 65,
-			"Defense": 70,
-			"Sp. Attack": 85,
-			"Sp. Defense": 75,
-			"Speed": 40
-		}
+		]
 	},
 	{
 		"id": 45,
@@ -889,15 +566,7 @@
 		"type": [
 			"grass",
 			" poison "
-		],
-		"call": {
-			"HP": 75,
-			"Attack": 80,
-			"Defense": 85,
-			"Sp. Attack": 110,
-			"Sp. Defense": 90,
-			"Speed": 50
-		}
+		]
 	},
 	{
 		"id": 46,
@@ -910,15 +579,7 @@
 		"type": [
 			"bug",
 			" grass "
-		],
-		"call": {
-			"HP": 35,
-			"Attack": 70,
-			"Defense": 55,
-			"Sp. Attack": 45,
-			"Sp. Defense": 55,
-			"Speed": 25
-		}
+		]
 	},
 	{
 		"id": 47,
@@ -931,15 +592,7 @@
 		"type": [
 			"bug",
 			" grass "
-		],
-		"call": {
-			"HP": 60,
-			"Attack": 95,
-			"Defense": 80,
-			"Sp. Attack": 60,
-			"Sp. Defense": 80,
-			"Speed": 30
-		}
+		]
 	},
 	{
 		"id": 48,
@@ -952,15 +605,7 @@
 		"type": [
 			"bug",
 			" poison "
-		],
-		"call": {
-			"HP": 60,
-			"Attack": 55,
-			"Defense": 50,
-			"Sp. Attack": 40,
-			"Sp. Defense": 55,
-			"Speed": 45
-		}
+		]
 	},
 	{
 		"id": 49,
@@ -973,15 +618,7 @@
 		"type": [
 			"bug",
 			" poison "
-		],
-		"call": {
-			"HP": 70,
-			"Attack": 65,
-			"Defense": 60,
-			"Sp. Attack": 90,
-			"Sp. Defense": 75,
-			"Speed": 90
-		}
+		]
 	},
 	{
 		"id": 50,
@@ -993,15 +630,7 @@
 		"image": "assets/images/pokemon/50.png",
 		"type": [
 			"ground "
-		],
-		"call": {
-			"HP": 10,
-			"Attack": 55,
-			"Defense": 25,
-			"Sp. Attack": 35,
-			"Sp. Defense": 45,
-			"Speed": 95
-		}
+		]
 	},
 	{
 		"id": 51,
@@ -1013,15 +642,7 @@
 		"image": "assets/images/pokemon/51.png",
 		"type": [
 			"ground "
-		],
-		"call": {
-			"HP": 35,
-			"Attack": 100,
-			"Defense": 50,
-			"Sp. Attack": 50,
-			"Sp. Defense": 70,
-			"Speed": 120
-		}
+		]
 	},
 	{
 		"id": 52,
@@ -1033,15 +654,7 @@
 		"image": "assets/images/pokemon/52.png",
 		"type": [
 			"normal "
-		],
-		"call": {
-			"HP": 40,
-			"Attack": 45,
-			"Defense": 35,
-			"Sp. Attack": 40,
-			"Sp. Defense": 40,
-			"Speed": 90
-		}
+		]
 	},
 	{
 		"id": 53,
@@ -1053,15 +666,7 @@
 		"image": "assets/images/pokemon/53.png",
 		"type": [
 			"normal "
-		],
-		"call": {
-			"HP": 65,
-			"Attack": 70,
-			"Defense": 60,
-			"Sp. Attack": 65,
-			"Sp. Defense": 65,
-			"Speed": 115
-		}
+		]
 	},
 	{
 		"id": 54,
@@ -1073,15 +678,7 @@
 		"image": "assets/images/pokemon/54.png",
 		"type": [
 			"water "
-		],
-		"call": {
-			"HP": 50,
-			"Attack": 52,
-			"Defense": 48,
-			"Sp. Attack": 65,
-			"Sp. Defense": 50,
-			"Speed": 55
-		}
+		]
 	},
 	{
 		"id": 55,
@@ -1093,15 +690,7 @@
 		"image": "assets/images/pokemon/55.png",
 		"type": [
 			"water "
-		],
-		"call": {
-			"HP": 80,
-			"Attack": 82,
-			"Defense": 78,
-			"Sp. Attack": 95,
-			"Sp. Defense": 80,
-			"Speed": 85
-		}
+		]
 	},
 	{
 		"id": 56,
@@ -1113,15 +702,7 @@
 		"image": "assets/images/pokemon/56.png",
 		"type": [
 			"fighting "
-		],
-		"call": {
-			"HP": 40,
-			"Attack": 80,
-			"Defense": 35,
-			"Sp. Attack": 35,
-			"Sp. Defense": 45,
-			"Speed": 70
-		}
+		]
 	},
 	{
 		"id": 57,
@@ -1133,15 +714,7 @@
 		"image": "assets/images/pokemon/57.png",
 		"type": [
 			"fighting "
-		],
-		"call": {
-			"HP": 65,
-			"Attack": 105,
-			"Defense": 60,
-			"Sp. Attack": 60,
-			"Sp. Defense": 70,
-			"Speed": 95
-		}
+		]
 	},
 	{
 		"id": 58,
@@ -1153,15 +726,7 @@
 		"image": "assets/images/pokemon/58.png",
 		"type": [
 			"fire "
-		],
-		"call": {
-			"HP": 55,
-			"Attack": 70,
-			"Defense": 45,
-			"Sp. Attack": 70,
-			"Sp. Defense": 50,
-			"Speed": 60
-		}
+		]
 	},
 	{
 		"id": 59,
@@ -1173,15 +738,7 @@
 		"image": "assets/images/pokemon/59.png",
 		"type": [
 			"fire "
-		],
-		"call": {
-			"HP": 90,
-			"Attack": 110,
-			"Defense": 80,
-			"Sp. Attack": 100,
-			"Sp. Defense": 80,
-			"Speed": 95
-		}
+		]
 	},
 	{
 		"id": 60,
@@ -1193,15 +750,7 @@
 		"image": "assets/images/pokemon/60.png",
 		"type": [
 			"water "
-		],
-		"call": {
-			"HP": 40,
-			"Attack": 50,
-			"Defense": 40,
-			"Sp. Attack": 40,
-			"Sp. Defense": 40,
-			"Speed": 90
-		}
+		]
 	},
 	{
 		"id": 61,
@@ -1213,15 +762,7 @@
 		"image": "assets/images/pokemon/61.png",
 		"type": [
 			"water "
-		],
-		"call": {
-			"HP": 65,
-			"Attack": 65,
-			"Defense": 65,
-			"Sp. Attack": 50,
-			"Sp. Defense": 50,
-			"Speed": 90
-		}
+		]
 	},
 	{
 		"id": 62,
@@ -1234,15 +775,7 @@
 		"type": [
 			"water",
 			" fighting "
-		],
-		"call": {
-			"HP": 90,
-			"Attack": 95,
-			"Defense": 95,
-			"Sp. Attack": 70,
-			"Sp. Defense": 90,
-			"Speed": 70
-		}
+		]
 	},
 	{
 		"id": 63,
@@ -1254,15 +787,7 @@
 		"image": "assets/images/pokemon/63.png",
 		"type": [
 			"psychic "
-		],
-		"call": {
-			"HP": 25,
-			"Attack": 20,
-			"Defense": 15,
-			"Sp. Attack": 105,
-			"Sp. Defense": 55,
-			"Speed": 90
-		}
+		]
 	},
 	{
 		"id": 64,
@@ -1274,15 +799,7 @@
 		"image": "assets/images/pokemon/64.png",
 		"type": [
 			"psychic "
-		],
-		"call": {
-			"HP": 40,
-			"Attack": 35,
-			"Defense": 30,
-			"Sp. Attack": 120,
-			"Sp. Defense": 70,
-			"Speed": 105
-		}
+		]
 	},
 	{
 		"id": 65,
@@ -1294,15 +811,7 @@
 		"image": "assets/images/pokemon/65.png",
 		"type": [
 			"psychic "
-		],
-		"call": {
-			"HP": 55,
-			"Attack": 50,
-			"Defense": 45,
-			"Sp. Attack": 135,
-			"Sp. Defense": 95,
-			"Speed": 120
-		}
+		]
 	},
 	{
 		"id": 66,
@@ -1314,15 +823,7 @@
 		"image": "assets/images/pokemon/66.png",
 		"type": [
 			"fighting "
-		],
-		"call": {
-			"HP": 70,
-			"Attack": 80,
-			"Defense": 50,
-			"Sp. Attack": 35,
-			"Sp. Defense": 35,
-			"Speed": 35
-		}
+		]
 	},
 	{
 		"id": 67,
@@ -1334,15 +835,7 @@
 		"image": "assets/images/pokemon/67.png",
 		"type": [
 			"fighting "
-		],
-		"call": {
-			"HP": 80,
-			"Attack": 100,
-			"Defense": 70,
-			"Sp. Attack": 50,
-			"Sp. Defense": 60,
-			"Speed": 45
-		}
+		]
 	},
 	{
 		"id": 68,
@@ -1354,15 +847,7 @@
 		"image": "assets/images/pokemon/68.png",
 		"type": [
 			"fighting "
-		],
-		"call": {
-			"HP": 90,
-			"Attack": 130,
-			"Defense": 80,
-			"Sp. Attack": 65,
-			"Sp. Defense": 85,
-			"Speed": 55
-		}
+		]
 	},
 	{
 		"id": 69,
@@ -1375,15 +860,7 @@
 		"type": [
 			"grass",
 			" poison "
-		],
-		"call": {
-			"HP": 50,
-			"Attack": 75,
-			"Defense": 35,
-			"Sp. Attack": 70,
-			"Sp. Defense": 30,
-			"Speed": 40
-		}
+		]
 	},
 	{
 		"id": 70,
@@ -1396,15 +873,7 @@
 		"type": [
 			"grass",
 			" poison "
-		],
-		"call": {
-			"HP": 65,
-			"Attack": 90,
-			"Defense": 50,
-			"Sp. Attack": 85,
-			"Sp. Defense": 45,
-			"Speed": 55
-		}
+		]
 	},
 	{
 		"id": 71,
@@ -1417,15 +886,7 @@
 		"type": [
 			"grass",
 			" poison "
-		],
-		"call": {
-			"HP": 80,
-			"Attack": 105,
-			"Defense": 65,
-			"Sp. Attack": 100,
-			"Sp. Defense": 70,
-			"Speed": 70
-		}
+		]
 	},
 	{
 		"id": 72,
@@ -1438,15 +899,7 @@
 		"type": [
 			"water",
 			" poison "
-		],
-		"call": {
-			"HP": 40,
-			"Attack": 40,
-			"Defense": 35,
-			"Sp. Attack": 50,
-			"Sp. Defense": 100,
-			"Speed": 70
-		}
+		]
 	},
 	{
 		"id": 73,
@@ -1459,15 +912,7 @@
 		"type": [
 			"water",
 			" poison "
-		],
-		"call": {
-			"HP": 80,
-			"Attack": 70,
-			"Defense": 65,
-			"Sp. Attack": 80,
-			"Sp. Defense": 120,
-			"Speed": 100
-		}
+		]
 	},
 	{
 		"id": 74,
@@ -1480,15 +925,7 @@
 		"type": [
 			"rock",
 			" ground "
-		],
-		"call": {
-			"HP": 40,
-			"Attack": 80,
-			"Defense": 100,
-			"Sp. Attack": 30,
-			"Sp. Defense": 30,
-			"Speed": 20
-		}
+		]
 	},
 	{
 		"id": 75,
@@ -1501,15 +938,7 @@
 		"type": [
 			"rock",
 			" ground "
-		],
-		"call": {
-			"HP": 55,
-			"Attack": 95,
-			"Defense": 115,
-			"Sp. Attack": 45,
-			"Sp. Defense": 45,
-			"Speed": 35
-		}
+		]
 	},
 	{
 		"id": 76,
@@ -1522,15 +951,7 @@
 		"type": [
 			"rock",
 			" ground "
-		],
-		"call": {
-			"HP": 80,
-			"Attack": 120,
-			"Defense": 130,
-			"Sp. Attack": 55,
-			"Sp. Defense": 65,
-			"Speed": 45
-		}
+		]
 	},
 	{
 		"id": 77,
@@ -1542,15 +963,7 @@
 		"image": "assets/images/pokemon/77.png",
 		"type": [
 			"fire "
-		],
-		"call": {
-			"HP": 50,
-			"Attack": 85,
-			"Defense": 55,
-			"Sp. Attack": 65,
-			"Sp. Defense": 65,
-			"Speed": 90
-		}
+		]
 	},
 	{
 		"id": 78,
@@ -1562,15 +975,7 @@
 		"image": "assets/images/pokemon/78.png",
 		"type": [
 			"fire "
-		],
-		"call": {
-			"HP": 65,
-			"Attack": 100,
-			"Defense": 70,
-			"Sp. Attack": 80,
-			"Sp. Defense": 80,
-			"Speed": 105
-		}
+		]
 	},
 	{
 		"id": 79,
@@ -1583,15 +988,7 @@
 		"type": [
 			"water",
 			" psychic "
-		],
-		"call": {
-			"HP": 90,
-			"Attack": 65,
-			"Defense": 65,
-			"Sp. Attack": 40,
-			"Sp. Defense": 40,
-			"Speed": 15
-		}
+		]
 	},
 	{
 		"id": 80,
@@ -1604,15 +1001,7 @@
 		"type": [
 			"water",
 			" psychic "
-		],
-		"call": {
-			"HP": 95,
-			"Attack": 75,
-			"Defense": 110,
-			"Sp. Attack": 100,
-			"Sp. Defense": 80,
-			"Speed": 30
-		}
+		]
 	},
 	{
 		"id": 81,
@@ -1625,15 +1014,7 @@
 		"type": [
 			"electric",
 			" steel "
-		],
-		"call": {
-			"HP": 25,
-			"Attack": 35,
-			"Defense": 70,
-			"Sp. Attack": 95,
-			"Sp. Defense": 55,
-			"Speed": 45
-		}
+		]
 	},
 	{
 		"id": 82,
@@ -1646,15 +1027,7 @@
 		"type": [
 			"electric",
 			" steel "
-		],
-		"call": {
-			"HP": 50,
-			"Attack": 60,
-			"Defense": 95,
-			"Sp. Attack": 120,
-			"Sp. Defense": 70,
-			"Speed": 70
-		}
+		]
 	},
 	{
 		"id": 83,
@@ -1667,15 +1040,7 @@
 		"type": [
 			"normal",
 			" flying "
-		],
-		"call": {
-			"HP": 52,
-			"Attack": 90,
-			"Defense": 55,
-			"Sp. Attack": 58,
-			"Sp. Defense": 62,
-			"Speed": 60
-		}
+		]
 	},
 	{
 		"id": 84,
@@ -1688,15 +1053,7 @@
 		"type": [
 			"normal",
 			" flying "
-		],
-		"call": {
-			"HP": 35,
-			"Attack": 85,
-			"Defense": 45,
-			"Sp. Attack": 35,
-			"Sp. Defense": 35,
-			"Speed": 75
-		}
+		]
 	},
 	{
 		"id": 85,
@@ -1709,15 +1066,7 @@
 		"type": [
 			"normal",
 			" flying "
-		],
-		"call": {
-			"HP": 60,
-			"Attack": 110,
-			"Defense": 70,
-			"Sp. Attack": 60,
-			"Sp. Defense": 60,
-			"Speed": 110
-		}
+		]
 	},
 	{
 		"id": 86,
@@ -1729,15 +1078,7 @@
 		"image": "assets/images/pokemon/86.png",
 		"type": [
 			"water "
-			],
-		"call": {
-			"HP": 65,
-			"Attack": 45,
-			"Defense": 55,
-			"Sp. Attack": 45,
-			"Sp. Defense": 70,
-			"Speed": 45
-		}
+			]
 	},
 	{
 		"id": 87,
@@ -1749,15 +1090,7 @@
 		"image": "assets/images/pokemon/87.png",
 		"type": [
 			"water", " ice "
-			],
-		"call": {
-			"HP": 90,
-			"Attack": 70,
-			"Defense": 80,
-			"Sp. Attack": 70,
-			"Sp. Defense": 95,
-			"Speed": 70
-		}
+			]
 	},
 	{
 		"id": 88,
@@ -1769,15 +1102,7 @@
 		"image": "assets/images/pokemon/88.png",
 		"type": [
 			"poison "
-			],
-		"call": {
-			"HP": 80,
-			"Attack": 80,
-			"Defense": 50,
-			"Sp. Attack": 40,
-			"Sp. Defense": 50,
-			"Speed": 25
-		}
+			]
 	},
 	{
 		"id": 89,
@@ -1789,15 +1114,7 @@
 		"image": "assets/images/pokemon/89.png",
 		"type": [
 			"poison "
-			],
-		"call": {
-			"HP": 105,
-			"Attack": 105,
-			"Defense": 75,
-			"Sp. Attack": 65,
-			"Sp. Defense": 100,
-			"Speed": 50
-		}
+			]
 	},
 	{
 		"id": 90,
@@ -1809,15 +1126,7 @@
 		"image": "assets/images/pokemon/90.png",
 		"type": [
 			"water "
-			],
-		"call": {
-			"HP": 30,
-			"Attack": 65,
-			"Defense": 100,
-			"Sp. Attack": 45,
-			"Sp. Defense": 25,
-			"Speed": 40
-		}
+			]
 	},
 	{
 		"id": 91,
@@ -1829,15 +1138,7 @@
 		"image": "assets/images/pokemon/91.png",
 		"type": [
 			"water", " ice "
-			],
-		"call": {
-			"HP": 50,
-			"Attack": 95,
-			"Defense": 180,
-			"Sp. Attack": 85,
-			"Sp. Defense": 45,
-			"Speed": 70
-		}
+			]
 	},
 	{
 		"id": 92,
@@ -1849,15 +1150,7 @@
 		"image": "assets/images/pokemon/92.png",
 		"type": [
 			"ghost", " poison "
-			],
-		"call": {
-			"HP": 30,
-			"Attack": 35,
-			"Defense": 30,
-			"Sp. Attack": 100,
-			"Sp. Defense": 35,
-			"Speed": 80
-		}
+			]
 	},
 	{
 		"id": 93,
@@ -1869,15 +1162,7 @@
 		"image": "assets/images/pokemon/93.png",
 		"type": [
 			"ghost", " poison "
-			],
-		"call": {
-			"HP": 45,
-			"Attack": 50,
-			"Defense": 45,
-			"Sp. Attack": 115,
-			"Sp. Defense": 55,
-			"Speed": 95
-		}
+			]
 	},
 	{
 		"id": 94,
@@ -1889,15 +1174,7 @@
 		"image": "assets/images/pokemon/94.png",
 		"type": [
 			"ghost", " poison "
-			],
-		"call": {
-			"HP": 60,
-			"Attack": 65,
-			"Defense": 60,
-			"Sp. Attack": 130,
-			"Sp. Defense": 75,
-			"Speed": 110
-		}
+			]
 	},
 	{
 		"id": 95,
@@ -1909,15 +1186,7 @@
 		"image": "assets/images/pokemon/95.png",
 		"type": [
 			"rock", " ground "
-			],
-		"call": {
-			"HP": 35,
-			"Attack": 45,
-			"Defense": 160,
-			"Sp. Attack": 30,
-			"Sp. Defense": 45,
-			"Speed": 70
-		}
+			]
 	},
 	{
 		"id": 96,
@@ -1929,15 +1198,7 @@
 		"image": "assets/images/pokemon/96.png",
 		"type": [
 			"psychic "
-		],
-		"call": {
-			"HP": 60,
-			"Attack": 48,
-			"Defense": 45,
-			"Sp. Attack": 43,
-			"Sp. Defense": 90,
-			"Speed": 42
-		}
+		]
 	},
 	{
 		"id": 97,
@@ -1949,15 +1210,7 @@
 		"image": "assets/images/pokemon/97.png",
 		"type": [
 			"psychic "
-		],
-		"call": {
-			"HP": 85,
-			"Attack": 73,
-			"Defense": 70,
-			"Sp. Attack": 73,
-			"Sp. Defense": 115,
-			"Speed": 67
-		}
+		]
 	},
 	{
 		"id": 98,
@@ -1969,15 +1222,7 @@
 		"image": "assets/images/pokemon/98.png",
 		"type": [
 			"water "
-		],
-		"call": {
-			"HP": 30,
-			"Attack": 105,
-			"Defense": 90,
-			"Sp. Attack": 25,
-			"Sp. Defense": 25,
-			"Speed": 50
-		}
+		]
 	},
 	{
 		"id": 99,
@@ -1989,15 +1234,7 @@
 		"image": "assets/images/pokemon/99.png",
 		"type": [
 			"water "
-		],
-		"call": {
-			"HP": 55,
-			"Attack": 130,
-			"Defense": 115,
-			"Sp. Attack": 50,
-			"Sp. Defense": 50,
-			"Speed": 75
-		}
+		]
 	},
 	{
 		"id": 100,
@@ -2009,15 +1246,7 @@
 		"image": "assets/images/pokemon/100.png",
 		"type": [
 			"electric "
-			],
-		"call": {
-			"HP": 40,
-			"Attack": 30,
-			"Defense": 50,
-			"Sp. Attack": 55,
-			"Sp. Defense": 55,
-			"Speed": 100
-		}
+			]
 	},
 	{
 		"id": 101,
@@ -2029,15 +1258,7 @@
 		"image": "assets/images/pokemon/101.png",
 		"type": [
 			"electric "
-			],
-		"call": {
-			"HP": 60,
-			"Attack": 50,
-			"Defense": 70,
-			"Sp. Attack": 80,
-			"Sp. Defense": 80,
-			"Speed": 150
-		}
+			]
 	},
 	{
 		"id": 102,
@@ -2049,15 +1270,7 @@
 		"image": "assets/images/pokemon/102.png",
 		"type": [
 			"grass", " psychic "
-			],
-		"call": {
-			"HP": 60,
-			"Attack": 40,
-			"Defense": 80,
-			"Sp. Attack": 60,
-			"Sp. Defense": 45,
-			"Speed": 40
-		}
+			]
 	},
 	{
 		"id": 103,
@@ -2069,15 +1282,7 @@
 		"image": "assets/images/pokemon/103.png",
 		"type": [
 			"grass", " psychic "
-			],
-		"call": {
-			"HP": 95,
-			"Attack": 95,
-			"Defense": 85,
-			"Sp. Attack": 125,
-			"Sp. Defense": 75,
-			"Speed": 55
-		}
+			]
 	},
 	{
 		"id": 104,
@@ -2089,15 +1294,7 @@
 		"image": "assets/images/pokemon/104.png",
 		"type": [
 			"ground "
-			],
-		"call": {
-			"HP": 50,
-			"Attack": 50,
-			"Defense": 95,
-			"Sp. Attack": 40,
-			"Sp. Defense": 50,
-			"Speed": 35
-		}
+			]
 	},
 	{
 		"id": 105,
@@ -2109,15 +1306,7 @@
 		"image": "assets/images/pokemon/105.png",
 		"type": [
 			"ground "
-			],
-		"call": {
-			"HP": 60,
-			"Attack": 80,
-			"Defense": 110,
-			"Sp. Attack": 50,
-			"Sp. Defense": 80,
-			"Speed": 45
-		}
+			]
 	},
 	{
 		"id": 106,
@@ -2129,15 +1318,7 @@
 		"image": "assets/images/pokemon/106.png",
 		"type": [
 			"fighting "
-			],
-		"call": {
-			"HP": 50,
-			"Attack": 120,
-			"Defense": 53,
-			"Sp. Attack": 35,
-			"Sp. Defense": 110,
-			"Speed": 87
-		}
+			]
 	},
 	{
 		"id": 107,
@@ -2149,15 +1330,7 @@
 		"image": "assets/images/pokemon/107.png",
 		"type": [
 			"fighting "
-			],
-		"call": {
-			"HP": 50,
-			"Attack": 105,
-			"Defense": 79,
-			"Sp. Attack": 35,
-			"Sp. Defense": 110,
-			"Speed": 76
-		}
+			]
 	},
 	{
 		"id": 108,
@@ -2169,15 +1342,7 @@
 		"image": "assets/images/pokemon/108.png",
 		"type": [
 			"normal "
-			],
-		"call": {
-			"HP": 90,
-			"Attack": 55,
-			"Defense": 75,
-			"Sp. Attack": 60,
-			"Sp. Defense": 75,
-			"Speed": 30
-		}
+			]
 	},
 	{
 		"id": 109,
@@ -2189,15 +1354,7 @@
 		"image": "assets/images/pokemon/109.png",
 		"type": [
 			"poison "
-			],
-		"call": {
-			"HP": 40,
-			"Attack": 65,
-			"Defense": 95,
-			"Sp. Attack": 60,
-			"Sp. Defense": 45,
-			"Speed": 35
-		}
+			]
 	},
 	{
 		"id": 110,
@@ -2209,15 +1366,7 @@
 		"image": "assets/images/pokemon/110.png",
 		"type": [
 			"poison "
-			],
-		"call": {
-			"HP": 65,
-			"Attack": 90,
-			"Defense": 120,
-			"Sp. Attack": 85,
-			"Sp. Defense": 70,
-			"Speed": 60
-		}
+			]
 	},
 	{
 		"id": 111,
@@ -2229,15 +1378,7 @@
 		"image": "assets/images/pokemon/111.png",
 		"type": [
 			"ground", " rock "
-			],
-		"call": {
-			"HP": 80,
-			"Attack": 85,
-			"Defense": 95,
-			"Sp. Attack": 30,
-			"Sp. Defense": 30,
-			"Speed": 25
-		}
+			]
 	},
 	{
 		"id": 112,
@@ -2249,15 +1390,7 @@
 		"image": "assets/images/pokemon/112.png",
 		"type": [
 			"ground", " rock "
-			],
-		"call": {
-			"HP": 105,
-			"Attack": 130,
-			"Defense": 120,
-			"Sp. Attack": 45,
-			"Sp. Defense": 45,
-			"Speed": 40
-		}
+			]
 	},
 	{
 		"id": 113,
@@ -2269,15 +1402,7 @@
 		"image": "assets/images/pokemon/113.png",
 		"type": [
 			"normal "
-			],
-		"call": {
-			"HP": 250,
-			"Attack": 5,
-			"Defense": 5,
-			"Sp. Attack": 35,
-			"Sp. Defense": 105,
-			"Speed": 50
-		}
+			]
 	},
 	{
 		"id": 114,
@@ -2289,15 +1414,7 @@
 		"image": "assets/images/pokemon/114.png",
 		"type": [
 			"grass "
-			],
-		"call": {
-			"HP": 65,
-			"Attack": 55,
-			"Defense": 115,
-			"Sp. Attack": 100,
-			"Sp. Defense": 40,
-			"Speed": 60
-		}
+			]
 	},
 	{
 		"id": 115,
@@ -2309,15 +1426,7 @@
 		"image": "assets/images/pokemon/115.png",
 		"type": [
 			"normal "
-			],
-		"call": {
-			"HP": 105,
-			"Attack": 95,
-			"Defense": 80,
-			"Sp. Attack": 40,
-			"Sp. Defense": 80,
-			"Speed": 90
-		}
+			]
 	},
 	{
 		"id": 116,
@@ -2329,15 +1438,7 @@
 		"image": "assets/images/pokemon/116.png",
 		"type": [
 			"water "
-		],
-		"call": {
-			"HP": 30,
-			"Attack": 40,
-			"Defense": 70,
-			"Sp. Attack": 70,
-			"Sp. Defense": 25,
-			"Speed": 60
-		}
+		]
 	},
 	{
 		"id": 117,
@@ -2349,15 +1450,7 @@
 		"image": "assets/images/pokemon/117.png",
 		"type": [
 			"water "
-		],
-		"call": {
-			"HP": 55,
-			"Attack": 65,
-			"Defense": 95,
-			"Sp. Attack": 95,
-			"Sp. Defense": 45,
-			"Speed": 85
-		}
+		]
 	},
 	{
 		"id": 118,
@@ -2369,15 +1462,7 @@
 		"image": "assets/images/pokemon/118.png",
 		"type": [
 			"water "
-		],
-		"call": {
-			"HP": 45,
-			"Attack": 67,
-			"Defense": 60,
-			"Sp. Attack": 35,
-			"Sp. Defense": 50,
-			"Speed": 63
-		}
+		]
 	},
 	{
 		"id": 119,
@@ -2389,15 +1474,7 @@
 		"image": "assets/images/pokemon/119.png",
 		"type": [
 			"water "
-		],
-		"call": {
-			"HP": 80,
-			"Attack": 92,
-			"Defense": 65,
-			"Sp. Attack": 65,
-			"Sp. Defense": 80,
-			"Speed": 68
-		}
+		]
 	},
 	{
 		"id": 120,
@@ -2409,15 +1486,7 @@
 		"image": "assets/images/pokemon/120.png",
 		"type": [
 			"water "
-		],
-		"call": {
-			"HP": 30,
-			"Attack": 45,
-			"Defense": 35,
-			"Sp. Attack": 70,
-			"Sp. Defense": 70,
-			"Speed": 85
-		}
+		]
 	},
 	{
 		"id": 121,
@@ -2430,15 +1499,7 @@
 		"type": [
 			"water",
 			" psychic "
-		],
-		"call": {
-			"HP": 60,
-			"Attack": 75,
-			"Defense": 85,
-			"Sp. Attack": 100,
-			"Sp. Defense": 85,
-			"Speed": 115
-		}
+		]
 	},
 	{
 		"id": 122,
@@ -2451,15 +1512,7 @@
 		"type": [
 			"psychic",
 			" fairy "
-		],
-		"call": {
-			"HP": 40,
-			"Attack": 45,
-			"Defense": 65,
-			"Sp. Attack": 100,
-			"Sp. Defense": 120,
-			"Speed": 90
-		}
+		]
 	},
 	{
 		"id": 123,
@@ -2472,15 +1525,7 @@
 		"type": [
 			"bug",
 			" flying "
-		],
-		"call": {
-			"HP": 70,
-			"Attack": 110,
-			"Defense": 80,
-			"Sp. Attack": 55,
-			"Sp. Defense": 80,
-			"Speed": 105
-		}
+		]
 	},
 	{
 		"id": 124,
@@ -2493,15 +1538,7 @@
 		"type": [
 			"ice",
 			" psychic "
-		],
-		"call": {
-			"HP": 65,
-			"Attack": 50,
-			"Defense": 35,
-			"Sp. Attack": 115,
-			"Sp. Defense": 95,
-			"Speed": 95
-		}
+		]
 	},
 	{
 		"id": 125,
@@ -2513,15 +1550,7 @@
 		"image": "assets/images/pokemon/125.png",
 		"type": [
 			"electric "
-		],
-		"call": {
-			"HP": 65,
-			"Attack": 83,
-			"Defense": 57,
-			"Sp. Attack": 95,
-			"Sp. Defense": 85,
-			"Speed": 105
-		}
+		]
 	},
 	{
 		"id": 126,
@@ -2533,15 +1562,7 @@
 		"image": "assets/images/pokemon/126.png",
 		"type": [
 			"fire "
-		],
-		"call": {
-			"HP": 65,
-			"Attack": 95,
-			"Defense": 57,
-			"Sp. Attack": 100,
-			"Sp. Defense": 85,
-			"Speed": 93
-		}
+		]
 	},
 	{
 		"id": 127,
@@ -2553,15 +1574,7 @@
 		"image": "assets/images/pokemon/127.png",
 		"type": [
 			"bug "
-		],
-		"call": {
-			"HP": 65,
-			"Attack": 125,
-			"Defense": 100,
-			"Sp. Attack": 55,
-			"Sp. Defense": 70,
-			"Speed": 85
-		}
+		]
 	},
 	{
 		"id": 128,
@@ -2573,15 +1586,7 @@
 		"image": "assets/images/pokemon/128.png",
 		"type": [
 			"normal "
-		],
-		"call": {
-			"HP": 75,
-			"Attack": 100,
-			"Defense": 95,
-			"Sp. Attack": 40,
-			"Sp. Defense": 70,
-			"Speed": 110
-		}
+		]
 	},
 	{
 		"id": 129,
@@ -2593,15 +1598,7 @@
 		"image": "assets/images/pokemon/129.png",
 		"type": [
 			"water "
-		],
-		"call": {
-			"HP": 20,
-			"Attack": 10,
-			"Defense": 55,
-			"Sp. Attack": 15,
-			"Sp. Defense": 20,
-			"Speed": 80
-		}
+		]
 	},
 	{
 		"id": 130,
@@ -2614,15 +1611,7 @@
 		"type": [
 			"water",
 			" flying "
-		],
-		"call": {
-			"HP": 95,
-			"Attack": 125,
-			"Defense": 79,
-			"Sp. Attack": 60,
-			"Sp. Defense": 100,
-			"Speed": 81
-		}
+		]
 	},
 	{
 		"id": 131,
@@ -2635,15 +1624,7 @@
 		"type": [
 			"water",
 			" ice "
-		],
-		"call": {
-			"HP": 130,
-			"Attack": 85,
-			"Defense": 80,
-			"Sp. Attack": 85,
-			"Sp. Defense": 95,
-			"Speed": 60
-		}
+		]
 	},
 	{
 		"id": 132,
@@ -2655,15 +1636,7 @@
 		"image": "assets/images/pokemon/132.png",
 		"type": [
 			"normal "
-		],
-		"call": {
-			"HP": 48,
-			"Attack": 48,
-			"Defense": 48,
-			"Sp. Attack": 48,
-			"Sp. Defense": 48,
-			"Speed": 48
-		}
+		]
 	},
 	{
 		"id": 133,
@@ -2675,15 +1648,7 @@
 		"image": "assets/images/pokemon/133.png",
 		"type": [
 			"normal "
-		],
-		"call": {
-			"HP": 55,
-			"Attack": 55,
-			"Defense": 50,
-			"Sp. Attack": 45,
-			"Sp. Defense": 65,
-			"Speed": 55
-		}
+		]
 	},
 	{
 		"id": 134,
@@ -2695,15 +1660,7 @@
 		"image": "assets/images/pokemon/134.png",
 		"type": [
 			"water "
-		],
-		"call": {
-			"HP": 130,
-			"Attack": 65,
-			"Defense": 60,
-			"Sp. Attack": 110,
-			"Sp. Defense": 95,
-			"Speed": 65
-		}
+		]
 	},
 	{
 		"id": 135,
@@ -2715,15 +1672,7 @@
 		"image": "assets/images/pokemon/135.png",
 		"type": [
 			"electric "
-		],
-		"call": {
-			"HP": 65,
-			"Attack": 65,
-			"Defense": 60,
-			"Sp. Attack": 110,
-			"Sp. Defense": 95,
-			"Speed": 130
-		}
+		]
 	},
 	{
 		"id": 136,
@@ -2735,15 +1684,7 @@
 		"image": "assets/images/pokemon/136.png",
 		"type": [
 			"fire "
-		],
-		"call": {
-			"HP": 65,
-			"Attack": 130,
-			"Defense": 60,
-			"Sp. Attack": 95,
-			"Sp. Defense": 110,
-			"Speed": 65
-		}
+		]
 	},
 	{
 		"id": 137,
@@ -2755,15 +1696,7 @@
 		"image": "assets/images/pokemon/137.png",
 		"type": [
 			"normal "
-		],
-		"call": {
-			"HP": 65,
-			"Attack": 60,
-			"Defense": 70,
-			"Sp. Attack": 85,
-			"Sp. Defense": 75,
-			"Speed": 40
-		}
+		]
 	},
 	{
 		"id": 138,
@@ -2776,15 +1709,7 @@
 		"type": [
 			"rock",
 			" water "
-		],
-		"call": {
-			"HP": 35,
-			"Attack": 40,
-			"Defense": 100,
-			"Sp. Attack": 90,
-			"Sp. Defense": 55,
-			"Speed": 35
-		}
+		]
 	},
 	{
 		"id": 139,
@@ -2797,15 +1722,7 @@
 		"type": [
 			"rock",
 			" water "
-		],
-		"call": {
-			"HP": 70,
-			"Attack": 60,
-			"Defense": 125,
-			"Sp. Attack": 115,
-			"Sp. Defense": 70,
-			"Speed": 55
-		}
+		]
 	},
 	{
 		"id": 140,
@@ -2818,15 +1735,7 @@
 		"type": [
 			"rock",
 			" water "
-		],
-		"call": {
-			"HP": 30,
-			"Attack": 80,
-			"Defense": 90,
-			"Sp. Attack": 55,
-			"Sp. Defense": 45,
-			"Speed": 55
-		}
+		]
 	},
 	{
 		"id": 141,
@@ -2839,15 +1748,7 @@
 		"type": [
 			"rock",
 			" water "
-		],
-		"call": {
-			"HP": 60,
-			"Attack": 115,
-			"Defense": 105,
-			"Sp. Attack": 65,
-			"Sp. Defense": 70,
-			"Speed": 80
-		}
+		]
 	},
 	{
 		"id": 142,
@@ -2860,15 +1761,7 @@
 		"type": [
 			"rock",
 			" flying "
-		],
-		"call": {
-			"HP": 80,
-			"Attack": 105,
-			"Defense": 65,
-			"Sp. Attack": 60,
-			"Sp. Defense": 75,
-			"Speed": 130
-		}
+		]
 	},
 	{
 		"id": 143,
@@ -2880,15 +1773,7 @@
 		"image": "assets/images/pokemon/143.png",
 		"type": [
 			"normal "
-		],
-		"call": {
-			"HP": 160,
-			"Attack": 110,
-			"Defense": 65,
-			"Sp. Attack": 65,
-			"Sp. Defense": 110,
-			"Speed": 30
-		}
+		]
 	},
 	{
 		"id": 144,
@@ -2901,15 +1786,7 @@
 		"type": [
 			"ice",
 			" flying "
-		],
-		"call": {
-			"HP": 90,
-			"Attack": 85,
-			"Defense": 100,
-			"Sp. Attack": 95,
-			"Sp. Defense": 125,
-			"Speed": 85
-		}
+		]
 	},
 	{
 		"id": 145,
@@ -2922,15 +1799,7 @@
 		"type": [
 			"electric",
 			" flying "
-		],
-		"call": {
-			"HP": 90,
-			"Attack": 90,
-			"Defense": 85,
-			"Sp. Attack": 125,
-			"Sp. Defense": 90,
-			"Speed": 100
-		}
+		]
 	},
 	{
 		"id": 146,
@@ -2943,15 +1812,7 @@
 		"type": [
 			"fire",
 			" flying "
-		],
-		"call": {
-			"HP": 90,
-			"Attack": 100,
-			"Defense": 90,
-			"Sp. Attack": 125,
-			"Sp. Defense": 85,
-			"Speed": 90
-		}
+		]
 	},
 	{
 		"id": 147,
@@ -2963,15 +1824,7 @@
 		"image": "assets/images/pokemon/147.png",
 		"type": [
 			"dragon "
-		],
-		"call": {
-			"HP": 41,
-			"Attack": 64,
-			"Defense": 45,
-			"Sp. Attack": 50,
-			"Sp. Defense": 50,
-			"Speed": 50
-		}
+		]
 	},
 	{
 		"id": 148,
@@ -2983,15 +1836,7 @@
 		"image": "assets/images/pokemon/148.png",
 		"type": [
 			"dragon "
-		],
-		"call": {
-			"HP": 61,
-			"Attack": 84,
-			"Defense": 65,
-			"Sp. Attack": 70,
-			"Sp. Defense": 70,
-			"Speed": 70
-		}
+		]
 	},
 	{
 		"id": 149,
@@ -3004,15 +1849,7 @@
 		"type": [
 			"dragon",
 			" flying "
-		],
-		"call": {
-			"HP": 91,
-			"Attack": 134,
-			"Defense": 95,
-			"Sp. Attack": 100,
-			"Sp. Defense": 100,
-			"Speed": 80
-		}
+		]
 	},
 	{
 		"id": 150,
@@ -3024,15 +1861,7 @@
 		"image": "assets/images/pokemon/150.png",
 		"type": [
 			"psychic "
-		],
-		"call": {
-			"HP": 106,
-			"Attack": 110,
-			"Defense": 90,
-			"Sp. Attack": 154,
-			"Sp. Defense": 90,
-			"Speed": 130
-		}
+		]
 	},
 	{
 		"id": 151,
@@ -3044,14 +1873,6 @@
 		"image": "assets/images/pokemon/151.png",
 		"type": [
 			"psychic "
-		],
-		"call": {
-			"HP": 100,
-			"Attack": 100,
-			"Defense": 100,
-			"Sp. Attack": 100,
-			"Sp. Defense": 100,
-			"Speed": 100
-		}
+		]
 	}
 ]
