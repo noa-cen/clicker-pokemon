@@ -100,17 +100,7 @@ function showStarterChoice() {
             containerStarter.appendChild(element);
 
             element.addEventListener("click", () => {
-                let pokemondCall;
-                
-                if (pokemon.name.english === "Bulbasaur") {
-                    pokemondCall = "assets/sounds/pokemon's call/bulbasaur.mp3";
-                } else if (pokemon.name.english === "Charmander") {
-                    pokemondCall = "assets/sounds/pokemon's call/charmander.mp3";
-                } else if (pokemon.name.english === "Squirtle") {
-                    pokemondCall = "assets/sounds/pokemon's call/squirtle.mp3";
-                }
-            
-                const clickSound = new Audio(pokemondCall);
+                const clickSound = playSound(`assets/sounds/pokemon's call/${element.id}.mp3`);
             
                 clickSound.addEventListener("ended", () => {
                     let pokemonsCaptured = JSON.parse(localStorage.getItem("pokemons")) || [];

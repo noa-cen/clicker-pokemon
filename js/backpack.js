@@ -196,6 +196,7 @@ function pokeflute(battle) {
 
         const wildPokemon = createPokemonElement(pokemon, "wildPokemon");
         wildPokemon.src = `assets/images/pokemon/color/${pokemon.id}.png`;
+        playSound(`assets/sounds/pokemon's call/${wildPokemon.id}.mp3`);
 
         const ashBack = document.createElement("img");
         ashBack.src = "assets/images/ashBack.png";
@@ -405,11 +406,7 @@ function animatedCapture(ball, battle) {
         if (pokemondId === 151) {
             switch (ball) {
                 case "pokeball":
-                    captureRate = 0;
-                    break;
                 case "greatball":
-                    captureRate = 0;
-                    break;
                 case "ultraball":
                     captureRate = 0;
                     break;
@@ -652,7 +649,7 @@ export async function openBackpack() {
             gameContainer.appendChild(blackOverlayPokeflute);
 
 
-            const battle = playSound("assets/sounds/battle.mp3", 1, true);
+            const battle = playSound("assets/sounds/battle.mp3", 0.9, true);
             if (battle) {
                 battle.loop = true;
                 battle.play().catch(() => {});

@@ -52,6 +52,7 @@ export function openPokedex() {
             const pokemonId = pokemon.id;
             if (pokemonsCaptured.includes(pokemonId)) {
                 element.addEventListener("click", () => {
+                    playSound(`assets/sounds/pokemon's call/${element.id}.mp3`);
                     changePokemon(pokemonId);
                 });
             }
@@ -86,6 +87,7 @@ function changePokemon(pokemonId) {
     getPokemon().then(pokemons => {
         const newPokemon = pokemons.find(p => p.id === pokemonId);
         const newPokemonElement = createPokemonElement(newPokemon);
+        localStorage.setItem("clickerId", pokemonId);
         bottom.appendChild(newPokemonElement);
         const pokemonName = document.querySelector(".pokemonName");
         pokemonName.textContent = newPokemon.name.english;
