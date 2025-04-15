@@ -43,7 +43,7 @@ function startGame() {
         inputContainer.appendChild(btnSubmit);
 
         const professorOak = document.createElement("img");
-        professorOak.src = "assets/images/professorOak.png";
+        professorOak.src = "https://i.imgur.com/1ClSxhq.png";
         professorOak.classList.add("professor");
         bottom.appendChild(professorOak);
 
@@ -141,7 +141,7 @@ function rules() {
 
         const ashElement = document.createElement("img");
         ashElement.classList.add("ash");
-        ashElement.src = "assets/images/ash.png";
+        ashElement.src = "https://i.imgur.com/lCnUJnx.png";
         ashElement.alt = "Ash";
         ashElement.id = "ash";
 
@@ -169,28 +169,28 @@ function displayMenu() {
 
     const shop = document.createElement("img");
     shop.classList.add("shop");
-    shop.src = "assets/images/shop.png";
+    shop.src = "https://i.imgur.com/ZB3JDcs.png";
     shop.alt = "shop";
     shop.id = "shop";
     menu.appendChild(shop);
 
     const backpack = document.createElement("img");
     backpack.classList.add("backpack");
-    backpack.src = "assets/images/backpack.png";
+    backpack.src = "https://i.imgur.com/yweNWwc.png";
     backpack.alt = "backpack";
     backpack.id = "backpack";
     menu.appendChild(backpack);
 
     const pokedex = document.createElement("img");
     pokedex.classList.add("pokedex");
-    pokedex.src = "assets/images/pokedex.png";
+    pokedex.src = "https://i.imgur.com/ypjtCYa.png";
     pokedex.alt = "pokedex";
     pokedex.id = "pokedex";
     menu.appendChild(pokedex);
 
     const player = document.createElement("img");
     player.classList.add("player");
-    player.src = "assets/images/player.png";
+    player.src = "https://i.imgur.com/ute34jJ.png";
     player.alt = "player";
     player.id = "player";
     menu.appendChild(player);
@@ -216,7 +216,7 @@ function displayMenu() {
 }
 
 export function animatePokedollar(item = "pokedollar") {
-    const imageSrc = item === "pokedollar" ? "assets/images/pokedollar.png" : item.image;
+    const imageSrc = item === "pokedollar" ? "https://i.imgur.com/ZXIG5ZO.png" : item.image;
     const altText = item === "pokedollar" ? "Pokédollar" : item.name;
     const classItem = item === "pokedollar" ? "pokedollar-img" : "item-img";
 
@@ -411,7 +411,7 @@ export function finishGame() {
     video.classList.add("video");
     video.alt = "video of opening theme Pokémon";
 
-    video.src = "assets/images/Pokémon_OpeningTheme.mp4";
+    video.src = "https://i.imgur.com/VySqCI6.mp4";
     video.controls = true;
     video.autoplay = true;
 
@@ -421,7 +421,7 @@ export function finishGame() {
     setTimeout(() => {
         background.remove();
         video.remove();
-    }, 61000);
+    }, 60000);
 }
 
 startGame();
