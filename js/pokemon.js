@@ -122,6 +122,7 @@ export function evolutionEevee() {
     const thunderStone = JSON.parse(localStorage.getItem("thunderStone"));
     const waterStone = JSON.parse(localStorage.getItem("waterStone"));
     const fireStone = JSON.parse(localStorage.getItem("fireStone"));
+    let pokedollars = parseInt(localStorage.getItem("pokedollars")) || 0;
 
      if (thunderStone) {
         localStorage.setItem("thunderStone", JSON.stringify(false));

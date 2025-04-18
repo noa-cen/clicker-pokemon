@@ -3,7 +3,7 @@
     "name": "pokeball",
     "image": "assets/images/shop/pokeball-1.png",
     "cost": "200",
-    "description": "capture low-level Pokémon",
+    "description": "low capture rate",
     "quantity": 0
 },
 {
@@ -11,7 +11,7 @@
     "name": "greatball",
     "image": "assets/images/shop/greatball-1.png",
     "cost": "600",
-    "description": "capture medium-level Pokémon",
+    "description": "medium capture rate",
     "quantity": 0
 },
 {
@@ -19,7 +19,7 @@
     "name": "ultraball",
     "image": "assets/images/shop/ultraball-1.png",
     "cost": "1200",
-    "description": "capture high-level Pokémon",
+    "description": "high capture rate",
     "quantity": 0
 },
 {
@@ -67,7 +67,7 @@
     "name": "rare candy",
     "image": "assets/images/shop/rareCandy.png",
     "cost": "2100",
-    "description": "experience gain",
+    "description": "boost experience",
     "quantity": 0
 },
 {
@@ -91,7 +91,7 @@
     "name": "itemFinder",
     "image": "assets/images/shop/itemsFinder.png",
     "cost": "10000",
-    "description": "reveals hidden items",
+    "description": "reveals surprise items",
     "quantity": 1,
     "items": [
         {
@@ -143,7 +143,7 @@
     "name": "bicycle",
     "image": "assets/images/shop/bicycle.png",
     "cost": "1000000",
-    "description": "travel at double speed",
+    "description": "play at double speed",
     "quantity": 1
 }
 ]

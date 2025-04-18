@@ -154,8 +154,9 @@ function rules() {
         rulesMessage.innerHTML = `
             Click on ${chosenPokemon.name.english} to gain experience and on ${playerName} to gain 
             pokédollars.<br>
-            Keep going to unlock surprises.<br><br>
-            Ready? Let's go!
+            Keep going on so you can buy surprises in the shop to capture new Pokémon and fill 
+            the pokédex.<br>
+            Gotta Catch 'Em All!
         `;
         message.appendChild(rulesMessage);
 
