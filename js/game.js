@@ -425,5 +425,13 @@ export function finishGame() {
     }, 60000);
 }
 
+// TO FINISH !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+function tutorial() {
+    const mediaPlayer = document.querySelector(".mediaPlayer");
+    const questionMark = document.createElement("p");
+    questionMark.textContent = "?";
+    mediaPlayer.appendChild(questionMark);
+}
+
 startGame();
 playMusic();
