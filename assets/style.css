@@ -502,6 +502,10 @@ h1 {
     transition: 0.3s ease-in-out; 
 }
 
+#run, #shop, #backpack, #pokedex, #player, .itemImage, .pokemonPokedex, .reset, .ash, .pokemon {
+    cursor: pointer;
+}
+
 .video {
     position: relative;
     height: auto;

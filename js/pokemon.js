@@ -61,7 +61,7 @@ function finishEvolution(newPokemonId) {
     updateExpBar();
 }
 
-export function evolutionStone() {
+function evolutionStone() {
     const leafStone = JSON.parse(localStorage.getItem("leafStone"));
     const thunderStone = JSON.parse(localStorage.getItem("thunderStone"));
     const waterStone = JSON.parse(localStorage.getItem("waterStone"));
@@ -118,7 +118,7 @@ export function evolutionStone() {
     }
 }
 
-export function evolutionEevee() {
+function evolutionEevee() {
     const thunderStone = JSON.parse(localStorage.getItem("thunderStone"));
     const waterStone = JSON.parse(localStorage.getItem("waterStone"));
     const fireStone = JSON.parse(localStorage.getItem("fireStone"));
@@ -127,8 +127,8 @@ export function evolutionEevee() {
      if (thunderStone) {
         localStorage.setItem("thunderStone", JSON.stringify(false));
         
-        const currentPokemonId = parseInt(localStorage.getItem("clickerId"));
-        const newPokemonId = currentPokemonId + 2;
+        const currentPokemonId = 133;
+        const newPokemonId = 135;
         animatedEvolution(currentPokemonId, newPokemonId, () => {
             pokedollars += JSON.parse(localStorage.getItem("doubleSpeed")) ? 5000 : 2500;
             finishEvolution(newPokemonId);
